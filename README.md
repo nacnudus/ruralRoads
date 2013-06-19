@@ -34,7 +34,7 @@ xx<- readShapePoly("/home/nacnudus/R/rural_roads/data/MB06_LV2.shp"
 
 System Requirments
 ------------------
-rgeos and rgdal.  rgdal requires the (non-R) GIS packages GDAL and PROJ.4.  These would be painful to install were it not for the UbuntuGIS ppa:
+* rgeos and rgdal.  rgdal requires the (non-R) GIS packages GDAL and PROJ.4.  These would be painful to install were it not for the UbuntuGIS ppa:
 
 ```
 sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
@@ -47,4 +47,4 @@ sudo apt-get install gdal-bin libgdal-dev libgdal1 libgdal1-dev # not sure how m
 sudo apt-get install proj proj-bin proj-data libproj-dev libproj0
 
 ```
-maptools, which may also require GDAL and PROJ.4 as above
+* maptools and mapproj, which may also require GDAL and PROJ.4 as above
