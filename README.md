@@ -23,6 +23,15 @@ Helpful Docs
 
 [Merging spatial datasets](http://rpubs.com/PaulWilliamson/6577) (see System Requirments)
 
+[Extracting shapefile coordinates](https://stat.ethz.ch/pipermail/r-sig-geo/2010-June/008500.html).  Use the load command and proj4string:
+```
+xx<- readShapePoly("/home/nacnudus/R/rural_roads/data/MB06_LV2.shp"
+                   , IDvar="MB06"
+                   , proj4string=CRS("++proj=nzmg +lat_0=-41.0 +lon_0=173.0 +x_0=2510000.0 +y_0=6023150.0 +ellps=intl +units=m"
+                                     )
+                   )
+```
+
 System Requirments
 ------------------
 rgeos and rgdal.  rgdal requires the (non-R) GIS packages GDAL and PROJ.4.  These would be painful to install were it not for the UbuntuGIS ppa:
@@ -38,3 +47,4 @@ sudo apt-get install gdal-bin libgdal-dev libgdal1 libgdal1-dev # not sure how m
 sudo apt-get install proj proj-bin proj-data libproj-dev libproj0
 
 ```
+maptools, which may also require GDAL and PROJ.4 as above

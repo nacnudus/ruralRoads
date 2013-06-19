@@ -164,7 +164,16 @@ hr {
 
 <h2>Helpful Docs</h2>
 
-<p><a href="http://rpubs.com/PaulWilliamson/6577">merging spatial datasets</a></p>
+<p><a href="http://rpubs.com/PaulWilliamson/6577">Merging spatial datasets</a> (see System Requirments)</p>
+
+<p><a href="https://stat.ethz.ch/pipermail/r-sig-geo/2010-June/008500.html">Extracting shapefile coordinates</a>.  Use the load command and proj4string:</p>
+
+<pre><code>xx&lt;- readShapePoly(&quot;/home/nacnudus/R/rural_roads/data/MB06_LV2.shp&quot;
+                   , IDvar=&quot;MB06&quot;
+                   , proj4string=CRS(&quot;++proj=nzmg +lat_0=-41.0 +lon_0=173.0 +x_0=2510000.0 +y_0=6023150.0 +ellps=intl +units=m&quot;
+                                     )
+                   )
+</code></pre>
 
 <h2>System Requirments</h2>
 
@@ -180,6 +189,8 @@ sudo apt-get install gdal-bin libgdal-dev libgdal1 libgdal1-dev # not sure how m
 sudo apt-get install proj proj-bin proj-data libproj-dev libproj0
 
 </code></pre>
+
+<p>maptools, which may also require GDAL and PROJ.4 as above</p>
 
 </body>
 
