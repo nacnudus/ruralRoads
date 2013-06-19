@@ -5,17 +5,17 @@ require(maptools)
 # MB06_LV2.shp crashes the EC2 free tier instance,
 # so using REGC06_LV2.shp for testing.
 
-# xx<- readShapePoly("/home/nacnudus/R/rural_roads/data/MB06_LV2.shp"
-#                    , IDvar="MB06"
-#                    , proj4string=CRS("++proj=nzmg +lat_0=-41.0 +lon_0=173.0 +x_0=2510000.0 +y_0=6023150.0 +ellps=intl +units=m"
-#                    )
-# )
-
-xx<- readShapePoly("/home/nacnudus/R/rural_roads/data/REGC06_LV2.shp"
-                   , IDvar="REGC_NO"
+xx<- readShapePoly("/home/nacnudus/R/rural_roads/data/NZTM/MB06_LV2.shp"
+                   , IDvar="MB06"
                    , proj4string=CRS("++proj=nzmg +lat_0=-41.0 +lon_0=173.0 +x_0=2510000.0 +y_0=6023150.0 +ellps=intl +units=m"
                    )
 )
+
+# xx<- readShapePoly("/home/nacnudus/R/rural_roads/data/NZTM/REGC06_LV2.shp"
+#                    , IDvar="REGC_NO"
+#                    , proj4string=CRS("++proj=nzmg +lat_0=-41.0 +lon_0=173.0 +x_0=2510000.0 +y_0=6023150.0 +ellps=intl +units=m"
+#                    )
+# )
 
 xy <- fortify(xx)
 ggplot(data=xy, aes(long, lat, group=group)) + 

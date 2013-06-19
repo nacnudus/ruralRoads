@@ -23,11 +23,13 @@ Helpful Docs
 
 [Merging spatial datasets](http://rpubs.com/PaulWilliamson/6577) (see System Requirments)
 
-[Extracting shapefile coordinates](https://stat.ethz.ch/pipermail/r-sig-geo/2010-June/008500.html).  Use the load command and proj4string:
+[PROJ.4 CRS strings for NZTM and NZMG](http://gis.stackexchange.com/questions/20389/converting-nzmg-or-nztm-to-latitude-longitude-for-use-with-r-map-library/20401#20401)
+
+[Extracting shapefile coordinates](https://stat.ethz.ch/pipermail/r-sig-geo/2010-June/008500.html).  Use the load command and proj4string (example uses NZTM):
 ```
-xx<- readShapePoly("/home/nacnudus/R/rural_roads/data/MB06_LV2.shp"
+xx <- readShapePoly("/home/nacnudus/R/rural_roads/data/MB06_LV2.shp"
                    , IDvar="MB06"
-                   , proj4string=CRS("++proj=nzmg +lat_0=-41.0 +lon_0=173.0 +x_0=2510000.0 +y_0=6023150.0 +ellps=intl +units=m"
+                   , proj4string=CRS("+proj=tmerc +lat_0=0.0 +lon_0=173.0 +k=0.9996 +x_0=1600000.0 +y_0=10000000.0 +datum=WGS84 +units=m"
                                      )
                    )
 ```

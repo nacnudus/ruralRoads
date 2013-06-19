@@ -166,11 +166,13 @@ hr {
 
 <p><a href="http://rpubs.com/PaulWilliamson/6577">Merging spatial datasets</a> (see System Requirments)</p>
 
-<p><a href="https://stat.ethz.ch/pipermail/r-sig-geo/2010-June/008500.html">Extracting shapefile coordinates</a>.  Use the load command and proj4string:</p>
+<p><a href="http://gis.stackexchange.com/questions/20389/converting-nzmg-or-nztm-to-latitude-longitude-for-use-with-r-map-library/20401#20401">PROJ.4 CRS strings for NZTM and NZMG</a></p>
 
-<pre><code>xx&lt;- readShapePoly(&quot;/home/nacnudus/R/rural_roads/data/MB06_LV2.shp&quot;
+<p><a href="https://stat.ethz.ch/pipermail/r-sig-geo/2010-June/008500.html">Extracting shapefile coordinates</a>.  Use the load command and proj4string for NZTM (<a href="http://gis.stackexchange.com/questions/20389/converting-nzmg-or-nztm-to-latitude-longitude-for-use-with-r-map-library/20401#20401">NZMG</a>):</p>
+
+<pre><code>xx &lt;- readShapePoly(&quot;/home/nacnudus/R/rural_roads/data/MB06_LV2.shp&quot;
                    , IDvar=&quot;MB06&quot;
-                   , proj4string=CRS(&quot;++proj=nzmg +lat_0=-41.0 +lon_0=173.0 +x_0=2510000.0 +y_0=6023150.0 +ellps=intl +units=m&quot;
+                   , proj4string=CRS(&quot;+proj=tmerc +lat_0=0.0 +lon_0=173.0 +k=0.9996 +x_0=1600000.0 +y_0=10000000.0 +datum=WGS84 +units=m&quot;
                                      )
                    )
 </code></pre>
