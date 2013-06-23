@@ -13,11 +13,15 @@ Statistics New Zealand produced an unofficial [categorisation](http://www.stats.
 * Rural area with moderate urban influence
 * Satellite Urban Area
 
+Data
+----
 The 2006 Census Meshblock dataset is available as shapefiles in both [NZTM](http://www3.stats.govt.nz/digitalboundaries/census/NZ_L2_2006_NZTM_ArcShp.zip) and [NZMG](http://www3.stats.govt.nz/digitalboundaries/census/NZ_L2_2006_NZMG_ArcShp.zip) projections.
 
 The Urban/Rural Profile Geographic Concordance is available as a [.xls](http://www.stats.govt.nz/~/media/Statistics/browse-categories/people-and-communities/geographic-areas/urban-rural-profile-update/concordance-2006.xls).
 
 An [aggregation](http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/geographic-area-files.aspx#2006) into larger areas.
+
+LINZ provides road centrelines from their [data service](http://data.linz.govt.nz/).  Direct machine-machine downloads can be arranged from [here](http://data.linz.govt.nz/p/web-services/).
 
 Helpful Docs
 ------------
