@@ -88,3 +88,14 @@ ggsave("wellington.png"
        , units = "mm"
        , dpi = 600
        )
+
+# try adding roads
+roads <- readOGR("/home/nacnudus/R/rural_roads/data/LINZ_Roads", "nz-mainland-road-centreli")
+roads@data$id <- c(1:nrow(roads@data))
+wellington.roads <- wellington %over% roads
+roads.poly <- roads[na.omit(wellington.roads$id), ] # don't know why it gives NAs
+f.roads.poly <- fortify(roads.poly) # can't use region here: auto-numbered.
+j.roads.poly <- join(f.roads.poly, wellington.roads, by = "id")
+p.roads  <- ggplot(data = j.roads.poly
+                        , aes(long, lat, group = id, colour = surface)
+) + geom_line() + coord_fixed()

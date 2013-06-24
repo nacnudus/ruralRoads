@@ -21,7 +21,7 @@ The Urban/Rural Profile Geographic Concordance is available as a [.xls](http://w
 
 An [aggregation](http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/geographic-area-files.aspx#2006) into larger areas.
 
-LINZ provides road centrelines from their [data service](http://data.linz.govt.nz/).  Direct machine-machine downloads can be arranged from [here](http://data.linz.govt.nz/p/web-services/).
+LINZ provides road centrelines from their [data service](http://data.linz.govt.nz/).  Machine-machine downloads can be arranged from [here](http://data.linz.govt.nz/p/web-services/).
 
 Helpful Docs
 ------------
@@ -29,7 +29,15 @@ Helpful Docs
 
 [Merging spatial datasets](http://rpubs.com/PaulWilliamson/6577) (see System Requirments): uses readOGR, which is apparently a more general and tolerant alternative to readShapePoly.
 
-[PROJ.4 CRS strings for NZTM and NZMG](http://gis.stackexchange.com/questions/20389/converting-nzmg-or-nztm-to-latitude-longitude-for-use-with-r-map-library/20401#20401)
+[PROJ.4 CRS strings for NZTM and NZMG](http://gis.stackexchange.com/questions/20389/converting-nzmg-or-nztm-to-latitude-longitude-for-use-with-r-map-library/20401#20401):
+* NZTM: `+proj=tmerc +lat_0=0.0 +lon_0=173.0 +k=0.9996 +x_0=1600000.0 +y_0=10000000.0 +datum=WGS84 +units=m` (not really WGS84 but close)
+* NZMG: `+proj=nzmg +lat_0=-41.0 +lon_0=173.0 +x_0=2510000.0 +y_0=6023150.0 +ellps=intl +units=m` plus a transformation that might be `+towgs84=59.47,-5.04,187.44,0.47,-0.1,1.024,-4.5993`
+
+(it's not really WGS84, but NZGD2000 but close enough)
+
+NZMG uses:
+
++proj=nzmg +lat_0=-41.0 +lon_0=173.0 +x_0=2510000.0 +y_0=6023150.0 +ellps=intl +units=m
 
 System Requirments
 ------------------
