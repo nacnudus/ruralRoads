@@ -55,3 +55,18 @@ sudo apt-get install proj proj-bin proj-data libproj-dev libproj0
 
 ```
 * maptools and mapproj, which may also require GDAL and PROJ.4 as above
+
+Regions
+-------
+```
+> levels(meshblocks@data$RC06D)
+ [1] "Area Outside Region"      "Auckland Region"         
+ [3] "Bay of Plenty Region"     "Canterbury Region"       
+ [5] "Gisborne Region"          "Hawke's Bay Region"      
+ [7] "Manawatu-Wanganui Region" "Marlborough Region"      
+ [9] "Nelson Region"            "Northland Region"        
+[11] "Otago Region"             "Southland Region"        
+[13] "Taranaki Region"          "Tasman Region"           
+[15] "Waikato Region"           "Wellington Region"       
+[17] "West Coast Region"
+```
