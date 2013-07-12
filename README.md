@@ -23,6 +23,8 @@ An [aggregation](http://www.stats.govt.nz/browse_for_stats/people_and_communitie
 
 LINZ provides road centrelines from their [data service](http://data.linz.govt.nz/).  Machine-machine downloads can be arranged from [here](http://data.linz.govt.nz/p/web-services/).
 
+BoPCoordinates.csv comes from NZTA CAS.  Remove extraneous comma before header `"EASTING"`.  Add `,"NOTHING"` to the end of the first line.
+
 Helpful Docs
 ------------
 [Dealing with non-unique polygon IDs](https://stat.ethz.ch/pipermail/r-sig-geo/2009-May/005666.html): can a meshblock have several polygons?  Possibly groups of islands?  Doesn't work anyway. [This (gBuffer)](http://stackoverflow.com/questions/13662448/what-does-the-following-error-mean-topologyexception-found-non-nonded-intersec) did.  [More here](https://stat.ethz.ch/pipermail/r-sig-geo/2012-December/016952.html).

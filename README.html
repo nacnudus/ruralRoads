@@ -168,6 +168,8 @@ hr {
 
 <p>LINZ provides road centrelines from their <a href="http://data.linz.govt.nz/">data service</a>.  Machine-machine downloads can be arranged from <a href="http://data.linz.govt.nz/p/web-services/">here</a>.</p>
 
+<p>BoPCoordinates.csv comes from NZTA CAS.  Remove extraneous comma before header <code>&quot;EASTING&quot;</code>.  Add <code>,&quot;NOTHING&quot;</code> to the end of the first line.</p>
+
 <h2>Helpful Docs</h2>
 
 <p><a href="https://stat.ethz.ch/pipermail/r-sig-geo/2009-May/005666.html">Dealing with non-unique polygon IDs</a>: can a meshblock have several polygons?  Possibly groups of islands?  Doesn&#39;t work anyway. <a href="http://stackoverflow.com/questions/13662448/what-does-the-following-error-mean-topologyexception-found-non-nonded-intersec">This (gBuffer)</a> did.  <a href="https://stat.ethz.ch/pipermail/r-sig-geo/2012-December/016952.html">More here</a>.</p>

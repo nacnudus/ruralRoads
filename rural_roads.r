@@ -81,8 +81,8 @@ p.wellington  <- ggplot(data = j.wellington
   coord_fixed()  + 
   scale_fill_brewer(palette="Dark2")
 
-# bay of plenty
-bop <- meshblocks[meshblocks@data$RC06D == "Bay of Plenty Region", ]
+# bay of plenty & waikato
+bop <- meshblocks[meshblocks@data$RC06D == "Bay of Plenty Region" | meshblocks@data$RC06D == "Waikato Region", ]
 f.bop <- fortify(bop, region = "MB06") # "region" sets the "id"
 colnames(f.bop)[7] <- "MB06"
 j.bop <- join(f.bop, concordance, by = "MB06")
@@ -114,7 +114,8 @@ p.bop  <- ggplot(data = j.bop
   coord_fixed() + 
   scale_fill_brewer(palette="Dark2") + 
   geom_path(aes(long, lat, group = id, colour = surface)
-            , data = j.roads.poly)
+            , data = j.roads.poly) +
+  geom_point(aes(easting, northing), data = crashes)
 
 # save plot
 # png (raster format A4 landscape)
@@ -125,3 +126,36 @@ ggsave("bop.png"
        , units = "mm"
        , dpi = 600
 )
+
+# try adding crashes
+crashes <- read.csv("./data/BoPCoordinates.csv", quote = "\"")
+crashes <- crashes[, c("CRASH.ID", "EASTING", "NORTHING")]
+colnames(crashes) <- c("id", "easting", "northing")
+
+# I'll assume for the time being that the projections are equivalent
+ggplot(crashes, aes(easting, northing, colour = )) + geom_point()
+# okay, overlay main plot
+ggplot(data = j.bop
+       , aes(long, lat)
+) + geom_polygon(aes(long, lat, group = MB06, fill = urban.rural)
+                 , data = j.bop) + 
+  coord_fixed() + 
+  scale_fill_brewer(palette="Dark2") + 
+  geom_path(aes(long, lat, group = id, colour = surface)
+            , data = j.roads.poly) +
+  geom_point(aes(easting, northing), data = crashes)
+# it works!
+
+# join crashes to urbanity
+urbanity <- read.csv("./data/Urbanity.csv")
+crashes <- join(crashes, urbanity)
+# add to main plot, colour crashes by urbanity
+ggplot(data = j.bop
+       , aes(long, lat)
+) + geom_polygon(aes(long, lat, group = MB06, fill = urban.rural)
+                 , data = j.bop) + 
+  coord_fixed() + 
+  scale_fill_brewer(palette="Dark2") + 
+  geom_path(aes(long, lat, group = id, colour = surface)
+            , data = j.roads.poly) +
+  geom_point(aes(easting, northing), data = crashes, data = urbanity)
