@@ -149,7 +149,8 @@ ggplot(data = j.bop
 # join crashes to urbanity
 urbanity <- read.csv("./data/Urbanity.csv")
 crashes <- join(crashes, urbanity)
-# add to main plot, colour crashes by urbanity
+# add to main plot, shape crashes by urbanity (can't colour as against
+# ggplot2 philosophy)
 ggplot(data = j.bop
        , aes(long, lat)
 ) + geom_polygon(aes(long, lat, group = MB06, fill = urban.rural)
@@ -158,4 +159,28 @@ ggplot(data = j.bop
   scale_fill_brewer(palette="Dark2") + 
   geom_path(aes(long, lat, group = id, colour = surface)
             , data = j.roads.poly) +
-  geom_point(aes(easting, northing), data = crashes, data = urbanity)
+  geom_point(aes(easting, northing, shape = urbanity), data = crashes) + 
+  scale_shape(solid = FALSE) + 
+  scale_x_continuous(limits=c(1820000, 2020000)) + 
+  scale_y_continuous(limits=c(5650000, 5850000))
+
+# attempt colours by removing roads
+p.bop <- ggplot(data = j.bop
+       , aes(long, lat)
+) + geom_polygon(aes(long, lat, group = MB06, fill = urban.rural)
+                 , data = j.bop) + 
+  coord_fixed() + 
+  scale_fill_brewer(palette="Dark2") + 
+  geom_point(aes(easting, northing, colour = urbanity, alpha = 0.01), data = crashes) +
+  scale_x_continuous(limits=c(1820000, 2020000)) + 
+  scale_y_continuous(limits=c(5650000, 5850000)) + 
+  scale_colour_manual(values = c("black", "white"))
+
+# save A3 landscape
+ggsave("bop.png"
+       , p.bop
+       , width = 297 * 2
+       , height = 210 * 2
+       , units = "mm"
+       , dpi = 600
+)
