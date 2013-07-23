@@ -168,6 +168,8 @@ hr {
 
 <p>LINZ provides road centrelines from their <a href="http://data.linz.govt.nz/">data service</a>.  Machine-machine downloads can be arranged from <a href="http://data.linz.govt.nz/p/web-services/">here</a>.</p>
 
+<p>BoPCoordinates.csv comes from NZTA CAS.  Remove extraneous comma before header <code>&quot;EASTING&quot;</code>.  Add <code>,&quot;NOTHING&quot;</code> to the end of the first line.</p>
+
 <h2>Helpful Docs</h2>
 
 <p><a href="https://stat.ethz.ch/pipermail/r-sig-geo/2009-May/005666.html">Dealing with non-unique polygon IDs</a>: can a meshblock have several polygons?  Possibly groups of islands?  Doesn&#39;t work anyway. <a href="http://stackoverflow.com/questions/13662448/what-does-the-following-error-mean-topologyexception-found-non-nonded-intersec">This (gBuffer)</a> did.  <a href="https://stat.ethz.ch/pipermail/r-sig-geo/2012-December/016952.html">More here</a>.</p>
@@ -207,6 +209,20 @@ sudo apt-get install proj proj-bin proj-data libproj-dev libproj0
 <ul>
 <li>maptools and mapproj, which may also require GDAL and PROJ.4 as above</li>
 </ul>
+
+<h2>Regions</h2>
+
+<pre><code>&gt; levels(meshblocks@data$RC06D)
+ [1] &quot;Area Outside Region&quot;      &quot;Auckland Region&quot;         
+ [3] &quot;Bay of Plenty Region&quot;     &quot;Canterbury Region&quot;       
+ [5] &quot;Gisborne Region&quot;          &quot;Hawke&#39;s Bay Region&quot;      
+ [7] &quot;Manawatu-Wanganui Region&quot; &quot;Marlborough Region&quot;      
+ [9] &quot;Nelson Region&quot;            &quot;Northland Region&quot;        
+[11] &quot;Otago Region&quot;             &quot;Southland Region&quot;        
+[13] &quot;Taranaki Region&quot;          &quot;Tasman Region&quot;           
+[15] &quot;Waikato Region&quot;           &quot;Wellington Region&quot;       
+[17] &quot;West Coast Region&quot;
+</code></pre>
 
 </body>
 
