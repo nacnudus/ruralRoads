@@ -1,0 +1,114 @@
+Akaroa	Southern Canterbury	Canterbury
+Arthurs Pass	Southern Canterbury	Canterbury
+Ashurst	Palmerston North City	Central
+Bay View	Hawkes Bay	Eastern
+Beachlands	CM East	Counties/Manukau
+Benneydale	Waikato West	Waikato
+Bluff	Southland	Southern
+Bulls	Palmerston North Rural	Central
+Chatham Islands	Wellington	Wellington
+Cheviot	Northern Canterbury	Canterbury
+Clinton	Dunedin	Southern
+Clive	Hawkes Bay	Eastern
+Coromandel	Waikato East	Waikato
+Culverden	Northern Canterbury	Canterbury
+Darfield	Southern Canterbury	Canterbury
+Eastbourne	Hutt Valley	Wellington
+Edgecumbe	Eastern Bay of Plenty	Bay Of Plenty
+Eketahuna	Palmerston North Rural	Central
+Eltham	Taranaki Rural	Central
+Fairlie	Mid South Canterbury	Canterbury
+Franz Josef	West Coast	Tasman
+Geraldine	Mid South Canterbury	Canterbury
+Granity	West Coast	Tasman
+Great Barrier	Auckland Central Area	Auckland
+Greytown	Wairarapa	Wellington
+Haast	West Coast	Tasman
+HalfMoon Bay	Southland	Southern
+Hampden	Otago Rural	Southern
+Hanmer	Northern Canterbury	Canterbury
+Havelock	Marlborough	Tasman
+Hikurangi	Whangarei	Northland
+Houhora	Far North	Northland
+Hunterville	Whanganui	Central
+Inglewood	New Plymouth	Central
+Kaeo	Far North	Northland
+Katikati	Western Bay of Plenty	Bay Of Plenty
+Kawhia	Waikato West	Waikato
+Kohukohu	Far North	Northland
+Kotemaori	Tairawhiti	Eastern
+Kurow	Otago Rural	Southern
+Lake Tekapo	Mid South Canterbury	Canterbury
+Lawrence	Dunedin	Southern
+Leeston	Southern Canterbury	Canterbury
+Lincoln	Southern Canterbury	Canterbury
+Lumsden	Southland	Southern
+Manaia	Taranaki Rural	Central
+Mangakino	Taupo	Bay Of Plenty
+Mangawhai	Rodney	Waitemata
+Mangonui	Far North	Northland
+Manutuke	Tairawhiti	Eastern
+Martinborough	Wairarapa	Wellington
+Mataura	Southland	Southern
+Matawai	Tairawhiti	Eastern
+Maungaturoto	Whangarei	Northland
+Methven	Mid South Canterbury	Canterbury
+Middlemarch	Dunedin	Southern
+Milton	Dunedin	Southern
+Mokau	New Plymouth	Central
+Murchison	Nelson Bays	Tasman
+National Park	Ruapehu	Central
+Ngatea	Waikato East	Waikato
+Norsewood	Palmerston North Rural	Central
+Nuhaka	Tairawhiti	Eastern
+Ohai	Southland	Southern
+Ohura	Ruapehu	Central
+Okato	New Plymouth	Central
+Omakau	Otago Rural	Southern
+Omarama	Otago Rural	Southern
+Opunake	Taranaki Rural	Central
+Otautau	Southland	Southern
+Owaka	Dunedin	Southern
+Oxford	Northern Canterbury	Canterbury
+Palmerston  (Otago)	Otago Rural	Southern
+PioPio	Waikato West	Waikato
+Pleasant Point	Mid South Canterbury	Canterbury
+Pongaroa	Palmerston North Rural	Central
+Porangahau	Hawkes Bay	Eastern
+Port Chalmers	Dunedin	Southern
+Portobello	Dunedin	Southern
+Raetihi	Ruapehu	Central
+Rakaia	Mid South Canterbury	Canterbury
+Ranfurly	Otago Rural	Southern
+Rawene	Far North	Northland
+Reefton	West Coast	Tasman
+Ross	West Coast	Tasman
+Roxburgh	Otago Rural	Southern
+Ruawai	Whangarei	Northland
+Russell	Far North	Northland
+Shannon	Palmerston North Rural	Central
+St Andrews	Mid South Canterbury	Canterbury
+Tairua	Waikato East	Waikato
+Taneatua	Eastern Bay of Plenty	Bay Of Plenty
+Tapanui	Southland	Southern
+Te Araroa	Tairawhiti	Eastern
+Te Kaha	Eastern Bay of Plenty	Bay Of Plenty
+Te Karaka	Tairawhiti	Eastern
+Te Kauwhata	Waikato West	Waikato
+Te Teko	Eastern Bay of Plenty	Bay Of Plenty
+Tokomaru Bay	Tairawhiti	Eastern
+Tolaga Bay	Tairawhiti	Eastern
+Tuai	Tairawhiti	Eastern
+Tuatapere	Southland	Southern
+Twizel	Mid South Canterbury	Canterbury
+Waihi Beach	Waikato East	Waikato
+Waikari	Northern Canterbury	Canterbury
+Waikouaiti	Dunedin	Southern
+Waiouru	Ruapehu	Central
+Waipawa	Hawkes Bay	Eastern
+Waipu	Whangarei	Northland
+Wakefield	Nelson Bays	Tasman
+Waverley	Whanganui	Central
+Woodville	Palmerston North Rural	Central
+Wyndham	Southland	Southern
+
