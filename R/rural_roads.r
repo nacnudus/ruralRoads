@@ -5,6 +5,10 @@ require(mapproj)
 require(plyr)
 require(ggplot2)
 
+# Global
+setwd("..")
+
+
 # Load Data
 ############
 
