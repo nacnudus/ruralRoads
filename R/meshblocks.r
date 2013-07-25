@@ -32,8 +32,8 @@ concordance <- read.csv(
 # convert coast from spatialLines to spatialPolygons
 coastPolySet <- SpatialLines2PolySet(coast)
 coastPolygons <- PolySet2SpatialPolygons(coastPolySet)
-# not pretty and not for plotting, just for trimming the districts
-districts2 <- gIntersection(districts, coastPolygons, byid = TRUE)
+proj4string(coastPolygons) <- CRS(proj4string(coast))
+# not pretty and won't work.
 
 colnames(concordance) <- c("MB06", "urban.rural", "main.urban.area")
 # later, "MB06" has to be "id" so it can be joined to the polygons.
