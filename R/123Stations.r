@@ -5,21 +5,21 @@ require(ggplot2)
 require(maps)
 
 # Global
-setwd("..")
+setwd("/home/nacnudus/R/rural_roads")
 
 
 # Load Data
 ############
 
 # Coastline (police boundaries exceed the coastline)
-coast <- readOGR("/home/nacnudus/R/rural_roads/data/Coastline/", "nz-mainland-coastlines-to")
+coast <- readOGR("data/Coastline/", "nz-mainland-coastlines-to")
 
 # stations boundaries
-stations <- readOGR("/home/nacnudus/R/rural_roads/data/PoliceBoundaries/nz-police-station-boundar/", "nz-police-station-boundar")
+stations <- readOGR("data/PoliceBoundaries/nz-police-station-boundar/", "nz-police-station-boundar")
 
 # 123-person stations
 x123 <- read.table(
-  file("/home/nacnudus/R/rural_roads/data/123.txt")
+  file("data/123.txt")
   , header = FALSE
   , sep = "\t"
 )
@@ -47,7 +47,7 @@ stations@data$colour[stations@data$rural == TRUE] <- "grey"
 stations@data$colour[stations@data$rural == FALSE] <- "white"
 
 # plot and save
-png("myplot.png", width=10, height=10, units="in", res=600)
+png("plots/myplot.png", width=10, height=10, units="in", res=600)
 plot(stations, col = stations@data$colour, lwd = 0.2)
 plot(coast, add = TRUE, lwd = 0.2, col = "dark red")
 text(stationLabels$x, stationLabels$y, labels = stationLabels$label, cex = 0.2)
