@@ -11,6 +11,9 @@ setwd("/home/nacnudus/R/ruralRoads")
 # Load
 ######
 
+# meshblocks
+meshblocks <- readOGR("data/NZTM/", "MB06_LV2")
+
 # Coastline for context and because police boundaries exceed it
 coast <- readOGR("data/coastlineLine/", "nz-mainland-coastlines-to")
 
@@ -26,11 +29,14 @@ concordance <- read.csv(
   , colClasses = c("numeric", "factor", "factor")
 )
 
+# roads
+roads <- readOGR("data/LINZ_roads/", "nz-road-centrelines-topo-")
+
 # Clean
 #######
 
 # # simplify the coast polygons
-# coast2 <- gSimplify(coast, 0.4, topologyPreserve=TRUE)
+# coast2 <- gSimplify(coast, 0.4, topologyPreserve = TRUE)
 # areas <- lapply(coast2@polygons, function(x) sapply(x@Polygons, function(y) y@area))
 # bigpolys <- lapply(areas, function(x) which(x > 0.1))
 # for(i in 1:length(bigpolys)){
@@ -45,6 +51,9 @@ concordance <- read.csv(
 # coastPolygons <- PolySet2SpatialPolygons(coastPolySet)
 # proj4string(coastPolygons) <- CRS(proj4string(coast))
 # # not pretty and won't work.
+
+# subset roads
+highways <- subset(roads, !is.na(roads@data$hway_num))
 
 colnames(concordance) <- c("MB06", "urban.rural", "main.urban.area")
 # later, "MB06" has to be "id" so it can be joined to the polygons.
@@ -85,8 +94,6 @@ area.aggregation <- read.csv(
 )
 colnames(area.aggregation) <- area.colnames
 
-# meshblocks
-meshblocks <- readOGR("data/NZTM/", "MB06_LV2")
 # crashes the EC2 free tier instance
 meshblocks@data$MB06 <- as.numeric(as.character(meshblocks@data$MB06))
 # convert factor to numeric.  Go to character first, otherwise you
@@ -114,7 +121,7 @@ meshblocksE <- gBuffer(subset(meshblocks, meshblocks@data$code == "E"), width=0,
 meshblocksF <- gBuffer(subset(meshblocks, meshblocks@data$code == "F"), width=0, byid=TRUE)
 meshblocksG <- gBuffer(subset(meshblocks, meshblocks@data$code == "G"), width=0, byid=TRUE)
 meshblocksZ <- gBuffer(subset(meshblocks, meshblocks@data$code == "Z"), width=0, byid=TRUE)
-# union all polygons in each one
+# union all polygons in each one to speed up plotting
 meshblocksAunion <- unionSpatialPolygons(meshblocksA, rep(1, length(meshblocksA@polygons)))
 meshblocksBunion <- unionSpatialPolygons(meshblocksB, rep(1, length(meshblocksB@polygons)))
 meshblocksCunion <- unionSpatialPolygons(meshblocksC, rep(1, length(meshblocksC@polygons)))
@@ -128,6 +135,9 @@ meshblocksZunion <- unionSpatialPolygons(meshblocksZ, rep(1, length(meshblocksZ@
 # Do
 ####
 
+
+# Plotting
+
 ur.legend <- ddply(urban.rural, .(code), function(x) (paste(as.character(x$code), as.character(x$urban.rural))))$V1
 fillcolours <- brewer.pal(12, "Set3")
 
@@ -136,6 +146,7 @@ png("plots/A.png", width=420, height=594, units="mm", res=600) # A3 portrait
 plot(districts, col = fillcolours[districts@data$DISTRICT_N], lwd = 0.2)
 plot(meshblocksAunion, col = "white", lwd = 0.2, add = TRUE)
 plot(coast, lwd = 0.2, col = "black", add = TRUE)
+plot(highways, lwd = 0.4, col = "red", add = TRUE)
 title(main = "A = Urban")
 legend("bottomright", legend = ur.legend, cex = 0.75)
 dev.off()
@@ -146,6 +157,7 @@ plot(districts, col = fillcolours[districts@data$DISTRICT_N], lwd = 0.2)
 plot(meshblocksAunion, col = "white", lwd = 0.2, add = TRUE)
 plot(meshblocksBunion, col = "white", lwd = 0.2, add = TRUE)
 plot(coast, lwd = 0.2, col = "black", add = TRUE)
+plot(highways, lwd = 0.4, col = "red", add = TRUE)
 title(main = "AB = Urban")
 legend("bottomright", legend = ur.legend, cex = 0.75)
 dev.off()
@@ -157,6 +169,7 @@ plot(meshblocksAunion, col = "white", lwd = 0.2, add = TRUE)
 plot(meshblocksBunion, col = "white", lwd = 0.2, add = TRUE)
 plot(meshblocksCunion, col = "white", lwd = 0.2, add = TRUE)
 plot(coast, lwd = 0.2, col = "black", add = TRUE)
+plot(highways, lwd = 0.4, col = "red", add = TRUE)
 title(main = "ABC = Urban")
 legend("bottomright", legend = ur.legend, cex = 0.75)
 dev.off()
@@ -169,6 +182,7 @@ plot(meshblocksBunion, col = "white", lwd = 0.2, add = TRUE)
 plot(meshblocksCunion, col = "white", lwd = 0.2, add = TRUE)
 plot(meshblocksDunion, col = "white", lwd = 0.2, add = TRUE)
 plot(coast, lwd = 0.2, col = "black", add = TRUE)
+plot(highways, lwd = 0.4, col = "red", add = TRUE)
 title(main = "ABCD = Urban")
 legend("bottomright", legend = ur.legend, cex = 0.75)
 dev.off()
@@ -182,6 +196,7 @@ plot(meshblocksCunion, col = "white", lwd = 0.2, add = TRUE)
 plot(meshblocksDunion, col = "white", lwd = 0.2, add = TRUE)
 plot(meshblocksEunion, col = "white", lwd = 0.2, add = TRUE)
 plot(coast, lwd = 0.2, col = "black", add = TRUE)
+plot(highways, lwd = 0.4, col = "red", add = TRUE)
 title(main = "ABCDE = Urban")
 legend("bottomright", legend = ur.legend, cex = 0.75)
 dev.off()
@@ -196,6 +211,26 @@ plot(meshblocksDunion, col = "white", lwd = 0.2, add = TRUE)
 plot(meshblocksEunion, col = "white", lwd = 0.2, add = TRUE)
 plot(meshblocksFunion, col = "white", lwd = 0.2, add = TRUE)
 plot(coast, lwd = 0.2, col = "black", add = TRUE)
+plot(highways, lwd = 0.4, col = "red", add = TRUE)
 title(main = "ABCDEF = Urban")
 legend("bottomright", legend = ur.legend, cex = 0.75)
 dev.off()
+
+# Tagging
+
+# Load BoP
+bop <- read.csv("data/BoPCoordinates.csv", quote = "\"")
+bop <- bop[, c("CRASH.ID", "EASTING", "NORTHING")]
+colnames(bop) <- c("id", "easting", "northing")
+bopsp <- SpatialPointsDataFrame(coords = bop[, 2:3], data=bop)
+proj4string(bopsp) <- proj4string(meshblocks) # same crs as meshblocks
+
+# subset by ruralness
+bopA <- bopA <- gIntersection(bopsp, meshblocksAunion)
+bopB <- bopB <- gIntersection(bopsp, meshblocksBunion)
+bopC <- bopC <- gIntersection(bopsp, meshblocksCunion)
+bopD <- bopD <- gIntersection(bopsp, meshblocksDunion)
+bopE <- bopE <- gIntersection(bopsp, meshblocksEunion)
+bopF <- bopF <- gIntersection(bopsp, meshblocksFunion)
+bopG <- bopG <- gIntersection(bopsp, meshblocksGunion)
+bopZ <- bopZ <- gIntersection(bopsp, meshblocksZunion)

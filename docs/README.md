@@ -27,6 +27,8 @@ BoPCoordinates.csv comes from NZTA CAS.  Remove extraneous comma before header `
 
 Police boundaries come from Koordinates.
 
+Road centrelines (at 1:500k), coastline and coast polygons come from the LINZ Data Service.
+
 Helpful Docs
 ------------
 [Dealing with non-unique polygon IDs](https://stat.ethz.ch/pipermail/r-sig-geo/2009-May/005666.html): can a meshblock have several polygons?  Possibly groups of islands?  Doesn't work anyway. [This (gBuffer)](http://stackoverflow.com/questions/13662448/what-does-the-following-error-mean-topologyexception-found-non-nonded-intersec) did.  [More here](https://stat.ethz.ch/pipermail/r-sig-geo/2012-December/016952.html).
