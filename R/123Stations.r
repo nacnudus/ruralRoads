@@ -47,7 +47,7 @@ stations@data$colour[stations@data$rural == TRUE] <- "grey"
 stations@data$colour[stations@data$rural == FALSE] <- "white"
 
 # plot and save
-png("plots/myplot.png", width=10, height=10, units="in", res=600)
+png("plots/123personStations.png", width=10, height=10, units="in", res=600)
 plot(stations, col = stations@data$colour, lwd = 0.2)
 plot(coast, add = TRUE, lwd = 0.2, col = "dark red")
 text(stationLabels$x, stationLabels$y, labels = stationLabels$label, cex = 0.2)

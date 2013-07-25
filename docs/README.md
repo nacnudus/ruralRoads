@@ -58,7 +58,7 @@ sudo apt-get install gdal-bin libgdal-dev libgdal1 libgdal1-dev # not sure how m
 sudo apt-get install proj proj-bin proj-data libproj-dev libproj0
 
 ```
-* maptools and mapproj, which may also require GDAL and PROJ.4 as above
+* maptools, mapproj and PBSmapping, which may also require GDAL and PROJ.4 as above
 
 Regions
 -------
