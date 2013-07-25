@@ -6,7 +6,7 @@ require(plyr)
 require(ggplot2)
 
 # Global
-setwd("..")
+setwd("/home/nacnudus/R/ruralRoads")
 
 
 # Load Data
@@ -14,7 +14,7 @@ setwd("..")
 
 # urban/rural concordance
 concordance <- read.csv(
-  file("./data/concordance-2006.csv")
+  file("data/concordance-2006.csv")
   , header = TRUE
   , colClasses = c("numeric", "factor", "factor")
   )
@@ -51,14 +51,14 @@ area.colClasses <- c("numeric"
                      , "factor"
                      )
 area.aggregation <- read.csv(
-  "./data/2006 Census Areas/2006 Census Areas.txt"
+  "data/2006 Census Areas/2006 Census Areas.txt"
   , header = FALSE
   , colClasses = area.colClasses
   )
 colnames(area.aggregation) <- area.colnames
 
 # meshblocks
-meshblocks <- readOGR("./data/NZTM/", "MB06_LV2")
+meshblocks <- readOGR("data/NZTM/", "MB06_LV2")
 # crashes the EC2 free tier instance
 meshblocks@data$MB06 <- as.numeric(as.character(meshblocks@data$MB06))
 # convert factor to numeric.  Go to character first, otherwise you

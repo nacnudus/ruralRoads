@@ -5,7 +5,7 @@ require(ggplot2)
 require(maps)
 
 # Global
-setwd("/home/nacnudus/R/rural_roads")
+setwd("/home/nacnudus/R/ruralRoads")
 
 
 # Load Data
