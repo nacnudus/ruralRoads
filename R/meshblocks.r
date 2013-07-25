@@ -4,6 +4,7 @@ require(maptools)
 require(mapproj)
 require(plyr)
 require(RColorBrewer)
+require(scales) # for transparency in base graphics
 
 # Global
 setwd("/home/nacnudus/R/ruralRoads")
@@ -31,6 +32,9 @@ concordance <- read.csv(
 
 # roads
 roads <- readOGR("data/LINZ_roads/", "nz-road-centrelines-topo-")
+
+# BoP
+bop <- read.csv("data/BoPCoordinates.csv", quote = "\"")
 
 # Clean
 #######
@@ -132,11 +136,27 @@ meshblocksGunion <- unionSpatialPolygons(meshblocksG, rep(1, length(meshblocksG@
   # error but doesn't matter because is never plotted (most rural - plot by elimination)
 meshblocksZunion <- unionSpatialPolygons(meshblocksZ, rep(1, length(meshblocksZ@polygons)))
 
+# BoP
+bop <- bop[, c("CRASH.ID", "EASTING", "NORTHING")]
+colnames(bop) <- c("id", "easting", "northing")
+bopsp <- SpatialPointsDataFrame(coords = bop[, 2:3], data=bop)
+proj4string(bopsp) <- proj4string(meshblocks) # same crs as meshblocks
+
+# subset BoP by ruralness
+bopA <- bopA <- gIntersection(bopsp, meshblocksAunion)
+bopB <- bopB <- gIntersection(bopsp, meshblocksBunion)
+bopC <- bopC <- gIntersection(bopsp, meshblocksCunion)
+bopD <- bopD <- gIntersection(bopsp, meshblocksDunion)
+bopE <- bopE <- gIntersection(bopsp, meshblocksEunion)
+bopF <- bopF <- gIntersection(bopsp, meshblocksFunion)
+bopG <- bopG <- gIntersection(bopsp, meshblocksGunion)
+bopZ <- bopZ <- gIntersection(bopsp, meshblocksZunion)
+
+
 # Do
 ####
 
-
-# Plotting
+# plot meshblocks
 
 ur.legend <- ddply(urban.rural, .(code), function(x) (paste(as.character(x$code), as.character(x$urban.rural))))$V1
 fillcolours <- brewer.pal(12, "Set3")
@@ -216,21 +236,17 @@ title(main = "ABCDEF = Urban")
 legend("bottomright", legend = ur.legend, cex = 0.75)
 dev.off()
 
-# Tagging
+# plot BoP
 
-# Load BoP
-bop <- read.csv("data/BoPCoordinates.csv", quote = "\"")
-bop <- bop[, c("CRASH.ID", "EASTING", "NORTHING")]
-colnames(bop) <- c("id", "easting", "northing")
-bopsp <- SpatialPointsDataFrame(coords = bop[, 2:3], data=bop)
-proj4string(bopsp) <- proj4string(meshblocks) # same crs as meshblocks
+# plot ABCD=urban
+plot(bopsp, pch = NA) # set up coordinates extent
+plot(bopA, col = alpha("black", 0.2), pch = 16, cex = 0.5, add = TRUE)
+plot(bopB, col = alpha("black", 0.2), pch = 16, cex = 0.5, add = TRUE)
+plot(bopC, col = alpha("black", 0.2), pch = 16, cex = 0.5, add = TRUE)
+plot(bopD, col = alpha("black", 0.2), pch = 16, cex = 0.5, add = TRUE)
+plot(bopE, col = alpha("red", 0.2), pch = 16, cex = 0.5, add = TRUE)
+plot(bopF, col = alpha("red", 0.2), pch = 16, cex = 0.5, add = TRUE)
+plot(bopG, col = alpha("red", 0.2), pch = 16, cex = 0.5, add = TRUE)
 
-# subset by ruralness
-bopA <- bopA <- gIntersection(bopsp, meshblocksAunion)
-bopB <- bopB <- gIntersection(bopsp, meshblocksBunion)
-bopC <- bopC <- gIntersection(bopsp, meshblocksCunion)
-bopD <- bopD <- gIntersection(bopsp, meshblocksDunion)
-bopE <- bopE <- gIntersection(bopsp, meshblocksEunion)
-bopF <- bopF <- gIntersection(bopsp, meshblocksFunion)
-bopG <- bopG <- gIntersection(bopsp, meshblocksGunion)
-bopZ <- bopZ <- gIntersection(bopsp, meshblocksZunion)
+# subset meshblocks by BoP
+meshblocksBop <- bopsp %over% meshblocks
