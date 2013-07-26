@@ -12,16 +12,11 @@ setwd("/home/nacnudus/R/ruralRoads")
 # Load
 ######
 
+# BoP
+bop <- read.csv("data/BoPCoordinates.csv", quote = "\"")
+
 # meshblocks
 meshblocks <- readOGR("data/NZTM/", "MB06_LV2")
-
-# Coastline for context and because police boundaries exceed it
-coast <- readOGR("data/coastlineLine/", "nz-mainland-coastlines-to")
-
-# Districts, Areas, Stations
-districts <- readOGR("data/PoliceBoundaries/nz-police-district-bounda/", "nz-police-district-bounda")
-areas <- readOGR("data/PoliceBoundaries/nz-police-area-boundaries/", "nz-police-area-boundaries")
-stations <- readOGR("data/PoliceBoundaries/nz-police-station-boundar/", "nz-police-station-boundar")
 
 # urban/rural concordance
 concordance <- read.csv(
@@ -30,11 +25,24 @@ concordance <- read.csv(
   , colClasses = c("numeric", "factor", "factor")
 )
 
+# Districts, Areas, Stations
+districts <- readOGR("data/PoliceBoundaries/nz-police-district-bounda/", "nz-police-district-bounda")
+areas <- readOGR("data/PoliceBoundaries/nz-police-area-boundaries/", "nz-police-area-boundaries")
+stations <- readOGR("data/PoliceBoundaries/nz-police-station-boundar/", "nz-police-station-boundar")
+
+# 123-person stations
+x123 <- read.table(
+  file("data/123.txt")
+  , header = FALSE
+  , sep = "\t"
+)
+
+# Coastline for context and because police boundaries exceed it
+coast <- readOGR("data/coastlineLine/", "nz-mainland-coastlines-to")
+
 # roads
 roads <- readOGR("data/LINZ_roads/", "nz-road-centrelines-topo-")
 
-# BoP
-bop <- read.csv("data/BoPCoordinates.csv", quote = "\"")
 
 # Clean
 #######
@@ -152,6 +160,20 @@ bopF <- bopF <- gIntersection(bopsp, meshblocksFunion)
 bopG <- bopG <- gIntersection(bopsp, meshblocksGunion)
 bopZ <- bopZ <- gIntersection(bopsp, meshblocksZunion)
 
+# clean stations
+colnames(x123) <- c("STATION_NA", "AREA_NAME", "DISTRICT_N")
+# x123 lacks a field to say "rural" because they all are rural, but one is necessary.
+x123$rural <- TRUE
+# work out labels
+stationLabels <- as.data.frame(gCentroid(stations,byid=TRUE)@coords)
+stationLabels$label <- stations@data$STATION_NA
+stationLabels$district <- stations@data$DISTRICT_N
+# join stations and x123 concordance
+stations@data <- join(stations@data, x123[, c("STATION_NA", "rural")], by = "STATION_NA")
+stations@data[is.na(stations@data$rural), "rural"] <- FALSE
+# colour
+stations@data$colour[stations@data$rural == TRUE] <- "grey"
+stations@data$colour[stations@data$rural == FALSE] <- "white"
 
 # Do
 ####
@@ -172,6 +194,7 @@ legend("bottomright", legend = ur.legend, cex = 0.75)
 dev.off()
 
 # plot AB=Urban
+
 png("plots/AB.png", width=420, height=594, units="mm", res=600) # A3 portrait
 plot(districts, col = fillcolours[districts@data$DISTRICT_N], lwd = 0.2)
 plot(meshblocksAunion, col = "white", lwd = 0.2, add = TRUE)
@@ -238,15 +261,59 @@ dev.off()
 
 # plot BoP
 
-# plot ABCD=urban
-plot(bopsp, pch = NA) # set up coordinates extent
-plot(bopA, col = alpha("black", 0.2), pch = 16, cex = 0.5, add = TRUE)
-plot(bopB, col = alpha("black", 0.2), pch = 16, cex = 0.5, add = TRUE)
-plot(bopC, col = alpha("black", 0.2), pch = 16, cex = 0.5, add = TRUE)
-plot(bopD, col = alpha("black", 0.2), pch = 16, cex = 0.5, add = TRUE)
-plot(bopE, col = alpha("red", 0.2), pch = 16, cex = 0.5, add = TRUE)
-plot(bopF, col = alpha("red", 0.2), pch = 16, cex = 0.5, add = TRUE)
-plot(bopG, col = alpha("red", 0.2), pch = 16, cex = 0.5, add = TRUE)
+# BoP stations and labels
+stationsBop <- subset(stations, stations$DISTRICT_N == "Bay of Plenty")
+stationLabelsBop <- stationLabels[stationLabels$district == "Bay of Plenty", ]
 
-# subset meshblocks by BoP
-meshblocksBop <- bopsp %over% meshblocks
+# BoP roads
+districtBop <- subset(districts, districts@data$DISTRICT_N == "BAY OF PLENTY")
+highwaysBop <- gIntersection(districtBop, highways)
+roadsBop  <- gIntersection(districtBop, roads)
+
+# BoP coast
+coastBop <- gIntersection(districtBop, coast)
+
+# plot ABCD=urban
+# merge ABCD and EFG
+bopUrban <- rbind(bopA, bopB, bopC, bopD)
+bopRural <- rbind(bopE, bopF, bopG)
+png("plots/bopABCD.png", width=420, height=594, units="mm", res=600) # A3 portrait
+plot(bopsp, pch = NA) # set up coordinates extent
+plot(stationsBop, col = stationsBop@data$colour, add = TRUE)
+plot(bopUrban, col = alpha("blue", 0.2), pch = 16, cex = 0.5, add = TRUE)
+plot(bopRural, col = alpha("red", 0.2), pch = 16, cex = 0.5, add = TRUE)
+plot(highwaysBop, col = "darkgreen", cex = 0.2, add = TRUE)
+plot(coastBop, lwd = 0.2, col = "black", add = TRUE)
+text(stationLabelsBop$x, stationLabelsBop$y, labels = stationLabelsBop$label, cex = 0.5)
+title(main = "Bay of Plenty")
+legend("bottom", legend = c("urban", "rural"), pch = 16, col = c("blue", "red"), fill = c("white", "grey"))
+dev.off()
+
+# how many urban/rural?
+bopUR <- rbind(bopUrban, bopRural)
+length(bopUR)
+length(bopUrban)
+length(bopRural)
+length(bopUrban) / length(bopUR)
+
+# proportion of road-length in urban/rural
+roadsBop  <- gIntersection(districtBop, roads)
+# get roads by ruralness
+mbABCD <- rbind(meshblocksAunion, meshblocksBunion, meshblocksCunion, meshblocksDunion)
+meshblocksABCD <- gBuffer(subset(meshblocks, meshblocks@data$code %in% c(LETTERS[1:4])), width = 0, byid = TRUE)
+meshblocksABCDunion <- unionSpatialPolygons(meshblocksABCD, rep(1, length(meshblocksABCD@polygons)))
+BopABCD <- gIntersection(districtBop, meshblocksABCDunion)
+roadsBopUrban <- gIntersection(BopABCD, roadsBop)
+roadsBopRural <- gDifference(roadsBop, BopABCD) # other way around for differences
+# plot to check
+png("plots/bopRoads.png", width=420, height=594, units="mm", res=600) # A3 portrait
+plot(roadsBopUrban, col = "blue")
+plot(roadsBopRural, col = "red", add = TRUE)
+title(main = "Bay of Plenty Roads")
+legend("top", legend = c("urban", "rural"), pch = 16, col = c("blue", "red"))
+dev.off()
+# proportions of total length
+roadsBopLength <- gLength(roadsBop)
+roadsBopLengthUrban <- gLength(roadsBopUrban)
+roadsBopLengthRural <- gLength(roadsBopRural)
+roadsBopLengthRural / roadsBopLength
