@@ -289,7 +289,7 @@ title(main = "Bay of Plenty")
 legend("bottom", legend = c("urban", "rural"), pch = 16, col = c("blue", "red"), fill = c("white", "grey"))
 dev.off()
 
-# how many urban/rural?
+# how many urban/rural? - 1:50k roads needed (1:500k roads loaded at 26 July 2013)
 bopUR <- rbind(bopUrban, bopRural)
 length(bopUR)
 length(bopUrban)
