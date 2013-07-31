@@ -15,11 +15,20 @@ Statistics New Zealand produced an unofficial [categorisation](http://www.stats.
 
 Data
 ----
-The 2006 Census Meshblock dataset is available as [shapefiles](http://www3.stats.govt.nz/digitalboundaries/census/NZ_L2_2006_NZTM_ArcShp.zip).
+
+The 2006 Census Meshblock dataset is available as [shapefiles](http://www3.stats.govt.nz/digitalboundaries/census/NZ_L2_2006_NZTM_ArcShp.zip). Download with:
+```
+# 2006 Census Meshblock
+mkdir data/meshblocks
+cd meshblocks
+wget http://www3.stats.govt.nz/digitalboundaries/census/NZ_L2_2006_NZTM_ArcShp.zip
+unzip NZ_L2_2006_NZTM_ArcShp.zip
+rm NZ_L2_2006_NZTM_ArcShp.zip
+```
 
 The Urban/Rural Profile Geographic Concordance is available as a [.xls](http://www.stats.govt.nz/~/media/Statistics/browse-categories/people-and-communities/geographic-areas/urban-rural-profile-update/concordance-2006.xls).  The meshblocks can be [aggregated](http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/geographic-area-files.aspx#2006) into larger areas.
 
-LINZ provides road centrelines from their [data service](http://data.linz.govt.nz/).  Machine-machine downloads can be arranged from [here](http://data.linz.govt.nz/p/web-services/).
+LINZ provides road centrelines, coastlines and coast polygons from their [data service](http://data.linz.govt.nz/).  Machine-machine downloads can be arranged from [here](http://data.linz.govt.nz/p/web-services/) but downloading with wget/curl doesn't work due to authentication.
 
 Crashes are from NZTA CAS (Crash Analysis System) and are [freely redistributable](./docs/CAS_licence.eml).  CAS documentation says the projection is NZMG, but it seems to be NZTM.  Remove extraneous comma before header `"EASTING"`.  Add `,"NOTHING"` to the end of the first line.
 

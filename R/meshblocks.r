@@ -16,7 +16,7 @@ setwd("/home/nacnudus/R/ruralRoads")
 bop <- read.csv("data/BoPCoordinates.csv", quote = "\"")
 
 # meshblocks
-meshblocks <- readOGR("data/NZTM/", "MB06_LV2")
+meshblocks <- readOGR("data/meshblocks/", "MB06_LV2")
 
 # urban/rural concordance
 concordance <- read.csv(
@@ -26,9 +26,9 @@ concordance <- read.csv(
 )
 
 # Districts, Areas, Stations
-districts <- readOGR("data/PoliceBoundaries/nz-police-district-bounda/", "nz-police-district-bounda")
-areas <- readOGR("data/PoliceBoundaries/nz-police-area-boundaries/", "nz-police-area-boundaries")
-stations <- readOGR("data/PoliceBoundaries/nz-police-station-boundar/", "nz-police-station-boundar")
+districts <- readOGR("data/police_boundaries/nz-police-district-bounda/", "nz-police-district-bounda")
+areas <- readOGR("data/police_boundaries/nz-police-area-boundaries/", "nz-police-area-boundaries")
+stations <- readOGR("data/police_boundaries/nz-police-station-boundar/", "nz-police-station-boundar")
 
 # 123-person stations
 x123 <- read.table(
@@ -38,10 +38,12 @@ x123 <- read.table(
 )
 
 # Coastline for context and because police boundaries exceed it
-coast <- readOGR("data/coastlineLine/", "nz-mainland-coastlines-to")
+coast <- readOGR("data/coast/", "nz-mainland-coastlines-to")
+coastPoly <- readOGR("data/coast/", "nz-coastlines-and-islands")
 
 # roads
-roads <- readOGR("data/LINZ_roads/", "nz-road-centrelines-topo-")
+roads <- readOGR("data/roads/", "nz-road-centrelines-topo-")
+roads50k <- readOGR("data/roads/", "nz-mainland-road-centreli")
 
 
 # Clean

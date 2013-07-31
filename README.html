@@ -6,10 +6,6 @@
 
 <title>Rural Roads</title>
 
-
-
-
-
 <style type="text/css">
 body, td {
    font-family: sans-serif;
@@ -135,7 +131,10 @@ hr {
       page-break-after: avoid; 
    }
 }
+
 </style>
+
+
 
 
 
@@ -161,11 +160,19 @@ hr {
 
 <h2>Data</h2>
 
-<p>The 2006 Census Meshblock dataset is available as <a href="http://www3.stats.govt.nz/digitalboundaries/census/NZ_L2_2006_NZTM_ArcShp.zip">shapefiles</a>.</p>
+<p>The 2006 Census Meshblock dataset is available as <a href="http://www3.stats.govt.nz/digitalboundaries/census/NZ_L2_2006_NZTM_ArcShp.zip">shapefiles</a>. Download with:</p>
+
+<pre><code># 2006 Census Meshblock
+mkdir data/meshblocks
+cd meshblocks
+wget http://www3.stats.govt.nz/digitalboundaries/census/NZ_L2_2006_NZTM_ArcShp.zip
+unzip NZ_L2_2006_NZTM_ArcShp.zip
+rm NZ_L2_2006_NZTM_ArcShp.zip
+</code></pre>
 
 <p>The Urban/Rural Profile Geographic Concordance is available as a <a href="http://www.stats.govt.nz/%7E/media/Statistics/browse-categories/people-and-communities/geographic-areas/urban-rural-profile-update/concordance-2006.xls">.xls</a>.  The meshblocks can be <a href="http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/geographic-area-files.aspx#2006">aggregated</a> into larger areas.</p>
 
-<p>LINZ provides road centrelines from their <a href="http://data.linz.govt.nz/">data service</a>.  Machine-machine downloads can be arranged from <a href="http://data.linz.govt.nz/p/web-services/">here</a>.</p>
+<p>LINZ provides road centrelines from their <a href="http://data.linz.govt.nz/">data service</a>.  Machine-machine downloads can be arranged from <a href="http://data.linz.govt.nz/p/web-services/">here</a> but downloading with wget/curl doesn&#39;t work due to authentication.</p>
 
 <p>Crashes are from NZTA CAS (Crash Analysis System) and are <a href="./docs/CAS_licence.eml">freely redistributable</a>.  CAS documentation says the projection is NZMG, but it seems to be NZTM.  Remove extraneous comma before header <code>&quot;EASTING&quot;</code>.  Add <code>,&quot;NOTHING&quot;</code> to the end of the first line.</p>
 
@@ -223,3 +230,4 @@ sudo apt-get install proj proj-bin proj-data libproj-dev libproj0
 </body>
 
 </html>
+
