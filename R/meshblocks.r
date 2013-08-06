@@ -1,16 +1,16 @@
-require(rgeos)
-require(rgdal)
-require(maptools)
-require(mapproj)
-require(plyr)
-require(RColorBrewer)
+# require -----------------------------------------------------------------
+
+require(rgeos) # gBuffer
+require(rgdal) # readOGR
+require(maptools) # unionSpatialPolygons
+# require(mapproj)
+# require(plyr)
+require(RColorBrewer) # brewer.pal
 require(scales) # for transparency in base graphics
 
-# Global
 setwd("/home/nacnudus/R/ruralRoads")
 
-# Load
-######
+# load --------------------------------------------------------------------
 
 # BoP
 bop <- read.csv("data/BoPCoordinates.csv", quote = "\"")
@@ -45,26 +45,7 @@ coastPoly <- readOGR("data/coast/", "nz-coastlines-and-islands")
 roads <- readOGR("data/roads/", "nz-road-centrelines-topo-")
 roads50k <- readOGR("data/roads/", "nz-mainland-road-centreli")
 
-
-# Clean
-#######
-
-# # simplify the coast polygons
-# coast2 <- gSimplify(coast, 0.4, topologyPreserve = TRUE)
-# areas <- lapply(coast2@polygons, function(x) sapply(x@Polygons, function(y) y@area))
-# bigpolys <- lapply(areas, function(x) which(x > 0.1))
-# for(i in 1:length(bigpolys)){
-#   if(length(bigpolys[[i]]) >= 1 && bigpolys[[i]][1] >= 1){
-#     coast2@polygons[[i]]@Polygons <- coast2@polygons[[i]]@Polygons[bigpolys[[i]]]
-#     coast2@polygons[[i]]@plotOrder <- 1:length(coast2@polygons[[i]]@Polygons)
-#   }
-# }
-
-# # convert coast from spatialLines to spatialPolygons
-# coastPolySet <- SpatialLines2PolySet(coast)
-# coastPolygons <- PolySet2SpatialPolygons(coastPolySet)
-# proj4string(coastPolygons) <- CRS(proj4string(coast))
-# # not pretty and won't work.
+# clean -------------------------------------------------------------------
 
 # subset roads
 highways <- subset(roads, !is.na(roads@data$hway_num))
@@ -177,8 +158,7 @@ stations@data[is.na(stations@data$rural), "rural"] <- FALSE
 stations@data$colour[stations@data$rural == TRUE] <- "grey"
 stations@data$colour[stations@data$rural == FALSE] <- "white"
 
-# Do
-####
+# do ----------------------------------------------------------------------
 
 # plot meshblocks
 
