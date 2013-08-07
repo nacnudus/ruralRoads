@@ -26,6 +26,8 @@ unzip NZ_L2_2006_NZTM_ArcShp.zip
 rm NZ_L2_2006_NZTM_ArcShp.zip
 ```
 
+Meshblocks are aggregated into large areas using the [2006 Census Areas concordance](http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/geographic-area-files.aspx#2006), [direct link](http://www3.stats.govt.nz/streetlinks/2006%20Census%20Areas.zip).
+
 The Urban/Rural Profile Geographic Concordance is available as a [.xls](http://www.stats.govt.nz/~/media/Statistics/browse-categories/people-and-communities/geographic-areas/urban-rural-profile-update/concordance-2006.xls).  The meshblocks can be [aggregated](http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/geographic-area-files.aspx#2006) into larger areas.  It will be [updated](./docs/NZStats_urban_rural_profile.txt) some time in 2014 with the 2013 census data.
 
 LINZ provides road centrelines, coastlines and coast polygons from their [data service](http://data.linz.govt.nz/).  Machine-machine downloads can be arranged from [here](http://data.linz.govt.nz/p/web-services/) but downloading with wget/curl doesn't work due to authentication.
