@@ -6,6 +6,7 @@ require(maptools) # unionSpatialPolygons
 # require(plyr) # commented out to test necessity
 require(RColorBrewer) # brewer.pal
 require(scales) # for transparency in base graphics
+require(ggplot2)
 
 projectionString <- "+proj=tmerc +lat_0=0 +lon_0=173 +k=0.9996 +x_0=1600000 +y_0=10000000 +ellps=GRS80 +units=m +no_defs"
 # you can get this from any of the spatial objects with proj4string()

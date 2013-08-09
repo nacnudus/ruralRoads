@@ -29,3 +29,6 @@ plot(meshblocksList$B, col = "blue", add = TRUE)
 plot(meshblocksList$A, col = "red", add = TRUE)
 plot(coastline, add = TRUE)
 
+urbanCrashes <- over(crashes, as(meshblocksList$D,"SpatialPolygons"))
+crashes@data$rural <- is.na(urbanCrashes)
+qplot(easting, northing, data = as.data.frame(crashes))
