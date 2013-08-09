@@ -76,9 +76,5 @@ urban.rural <- data.frame(urban.rural = levels(meshblocks@data$urban.rural)
                           , code = c("Z", "G", "B", "A", "D", "F", "E", "C"))
 urban.rural <- urban.rural[order(urban.rural$code), ] # reorder
 meshblocks@data <- join(meshblocks@data, urban.rural, by = "urban.rural")
-
-# subset meshblocks by ruralness and optimise them for plotting.
-meshblocks <- dlply(urban.rural, .(code), function(x) (subsetMeshblock(x$code)))
-# meshblocks is now a list of eight SpatialPolygonsDataFrames, named A to Z e.g.
-# meshblocks$D is a subset of all meshblocks in the A to D ruralness categories.
-
+meshblocks@data$code <- as.character(meshblocks@data$code) # for subsetting by
+                                                           # ruralness

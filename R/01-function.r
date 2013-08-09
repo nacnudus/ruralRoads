@@ -1,3 +1,4 @@
+require(plyr)
 require(rgeos) # gBuffer
 require(rgdal) # readOGR
 require(maptools) # unionSpatialPolygons
@@ -27,7 +28,7 @@ subsetHighways <- function(x) {
 subsetMeshblock <- function(x) {
   # "mrs" stands for "meshblocks rural subset"
   mrs <- subset(meshblocks
-                , as.character(meshblocks@data$code) <= as.character(code)
+                , meshblocks@data$code <= x)
   )
   # shake everything up a bit to prevent any non-noded intersections errors
   mrs <- gBuffer(mrs, width=0, byid=TRUE)
@@ -47,15 +48,13 @@ subsetCrashes <- function(x, y) {
   crs <- gIntersection(x, meshblocks[[y]])
 }
 
-# given a filename, loads, cleans and subsets crashes by ruralness
+# given a filename (x), loads and cleans crashes ready for subsetting by 
+# ruralness
 loadCrashes <- function(x) {
   crashes <- read.csv(x, quote = "\"")
   crashes <- crashes[, c("CRASH.ID", "EASTING", "NORTHING")]
   colnames(crashes) <- c("id", "easting", "northing")
   crashes <- SpatialPointsDataFrame(coords = crashes[, 2:3], data=crashes)
   proj4string(crashes) <- projectionString # same crs as everything else
-  crashes <- dlply(urban.rural
-                   , .(code)
-                   , function(x) (subsetCrashes(crashes, x$code)))
   crashes
 }
