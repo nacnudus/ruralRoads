@@ -10,7 +10,10 @@ crashMeshblocks <- crashStations %over% meshblocks
 crashMeshblocks <- subset(meshblocks, meshblocks$STATION_ID %in% unique(crashStations$STATION_ID))
 
 # subset meshblocks by ruralness and optimise them for plotting.
-meshblocks <- dlply(urban.rural, .(code), function(x) (subsetMeshblock(x$code)), .progress = "text")
+meshblocksList <- dlply(urban.rural
+                        , .(code)
+                        , function(x) (subsetMeshblock(as.character(x$code)))
+                        , .progress = "text")
 # meshblocks is now a list of eight SpatialPolygonsDataFrames, named A to Z e.g.
 # meshblocks$D is a subset of all meshblocks in the A to D ruralness categories.
 
@@ -19,3 +22,10 @@ crashes <- dlply(urban.rural
                  , function(x) (subsetCrashes(crashes, x$code)))
 
 crashMeshblocks <- gIntersection(crashStations, meshblocks)
+
+plot(meshblocksList$D, col = "grey")
+plot(meshblocksList$C, col = "green", add = TRUE)
+plot(meshblocksList$B, col = "blue", add = TRUE)
+plot(meshblocksList$A, col = "red", add = TRUE)
+plot(coastline, add = TRUE)
+
