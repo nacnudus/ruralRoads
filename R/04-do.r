@@ -3,11 +3,13 @@ crashes <- loadCrashes("data/BoP2008-12.csv")
 
 # subset meshblocks by getting the relevant stations and putting
 # them over the meshblocks
-crashStations <- crashes %over% stations # returns a data frame, so you have to
-# subset the spatial polygons yourself
+crashStations <- crashes %over% stations
+# returns a data frame, so you have to subset the spatial polygons yourself
 crashStations <- subset(stations, stations$STATION_ID %in% unique(crashStations$STATION_ID))
+# you can't use %over% when both sides are the same class, so use gIntersection
 crashMeshblocks <- crashStations %over% meshblocks
-crashMeshblocks <- subset(meshblocks, meshblocks$STATION_ID %in% unique(crashStations$STATION_ID))
+# I don't know why the subset( syntax doesn't work here, so use [
+x <- subset(meshblocks, meshblocks@data$MB06 %in% unique(crashMeshblocks))
 
 # subset meshblocks by ruralness and optimise them for plotting.
 meshblocksList <- dlply(urban.rural
