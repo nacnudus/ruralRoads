@@ -26,9 +26,7 @@ unzip NZ_L2_2006_NZTM_ArcShp.zip
 rm NZ_L2_2006_NZTM_ArcShp.zip
 ```
 
-Meshblocks are aggregated into large areas using the [2006 Census Areas concordance](http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/geographic-area-files.aspx#2006), [direct link](http://www3.stats.govt.nz/streetlinks/2006%20Census%20Areas.zip).
-
-The Urban/Rural Profile Geographic Concordance is available as a [.xls](http://www.stats.govt.nz/~/media/Statistics/browse-categories/people-and-communities/geographic-areas/urban-rural-profile-update/concordance-2006.xls).  The meshblocks can be [aggregated](http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/geographic-area-files.aspx#2006) into larger areas.  It will be [updated](./docs/NZStats_urban_rural_profile.txt) some time in 2014 with the 2013 census data.
+The Urban/Rural Profile Geographic Concordance is available as a [.xls](http://www.stats.govt.nz/~/media/Statistics/browse-categories/people-and-communities/geographic-areas/urban-rural-profile-update/concordance-2006.xls).  The meshblocks can be [aggregated](http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/geographic-area-files.aspx#2006) into larger areas.
 
 LINZ provides road centrelines, coastlines and coast polygons from their [data service](http://data.linz.govt.nz/).  Machine-machine downloads can be arranged from [here](http://data.linz.govt.nz/p/web-services/) but downloading with wget/curl doesn't work due to authentication.
 
@@ -46,8 +44,6 @@ Helpful Docs
 * NZTM: `+proj=tmerc +lat_0=0.0 +lon_0=173.0 +k=0.9996 +x_0=1600000.0 +y_0=10000000.0 +datum=WGS84 +units=m` (not really WGS84 but close)
 * NZMG: `+proj=nzmg +lat_0=-41.0 +lon_0=173.0 +x_0=2510000.0 +y_0=6023150.0 +ellps=intl +units=m` plus a transformation that might be `+towgs84=59.47,-5.04,187.44,0.47,-0.1,1.024,-4.5993`
 (NZGD2000 isn't really WGS84, but close enough)
-
-[gIntersection drops dataframe](http://gis.stackexchange.com/questions/63793/how-to-overlay-a-polygon-over-spatialpointsdataframe-and-preserving-the-spdf-dat/63884#63884)
 
 System Requirments
 ------------------
@@ -80,3 +76,52 @@ Regions
 [15] "Waikato Region"           "Wellington Region"       
 [17] "West Coast Region"
 ```
+
+Crash Tables
+------------
+
+Each table is named with by its region, followed by a description, e.g. BoP-coordinates.txt
+
+### BoP-coordinates.txt
+...
+CRASH ID
+...
+EASTING
+NORTHING
+
+### BoP-crashes.txt
+state highway
+severity f/s/m/n
+day
+month
+year
+hour
+crashid
+
+### BoP-drivers.txt
+sex
+age
+injury
+role
+driver at fault
+driver license type
+driver overseas type
+ethnicity
+
+exclude uninjured people? No
+
+### BoP-drivers-causes.txt
+role
+driver causes
+driver cause categories
+
+exclude uninjured people? No
+
+### BoP-victims
+dvr/pass/other
+sex
+age
+injury
+role
+driver at fault
+ethnicity

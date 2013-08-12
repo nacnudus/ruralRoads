@@ -50,10 +50,15 @@ subsetCrashes <- function(x, y) {
 # given a filename (x), loads and cleans crashes ready for subsetting by 
 # ruralness
 loadCrashes <- function(x) {
-  crashes <- read.csv(x, quote = "\"")
-  crashes <- crashes[, c("CRASH.ID", "EASTING", "NORTHING")]
+  # remove extraneous comma before header `"EASTING"` and add `,"NOTHING"` to the end of the first line.
+  fixedFile <- paste(x, ".fix", sep = "")
+  sed <- paste("sed 's/\"EASTING\",,\"NORTHING\"/\"EASTING\",\"NORTHING\",\"NOTHING\"/' <", x, ">", fixedFile)
+  system(sed)
+  # read
+  crashes <- read.csv(fixedFile, quote = "\"")
+  crashes <- crashes[!is.na(crashes$NORTHING), c("CRASH.ID", "EASTING", "NORTHING")]
   colnames(crashes) <- c("id", "easting", "northing")
   crashes <- SpatialPointsDataFrame(coords = crashes[, 2:3], data=crashes)
   proj4string(crashes) <- projectionString # same crs as everything else
-  crashes
+  return(crashes)
 }
