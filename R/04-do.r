@@ -1,5 +1,5 @@
 # code to load crashes from .csv
-crashes <- loadCrashes("data/BoP 2008-12.csv")
+crashes <- loadCrashes("data/BoP2008-12.csv")
 
 # subset meshblocks by getting the relevant stations and putting
 # them over the meshblocks
@@ -32,3 +32,11 @@ plot(coastline, add = TRUE)
 urbanCrashes <- over(crashes, as(meshblocksList$D,"SpatialPolygons"))
 crashes@data$rural <- is.na(urbanCrashes)
 qplot(easting, northing, data = as.data.frame(crashes))
+
+# meshblock ID per crash ID ----------------------------------------------
+ID <- over(crashes , meshblocks)
+crashMeshblockID <- cbind(crashes@data$id ,ID[, c("MB06", "urban.rural")])
+write.table(crashMeshblockID
+            , row.names = FALSE
+            , col.names = c("crashID", "meshblockID", "urbanRural")
+            , file = "output/crashMeshblockID.txt")
