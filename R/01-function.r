@@ -53,7 +53,7 @@ loadCrashes <- function(x) {
   # remove extraneous comma before header `"EASTING"` and append `,"NOTHING"` 
   # to the end of the first line.
   fixedFile <- paste(x, ".fix", sep = "")
-  sed <- paste("sed 's/\"EASTING\",,\"NORTHING\"/\"EASTING\",\"NORTHING\",\"NOTHING\"/' <"
+  sed <- paste("sed 's/,,\"EASTING\",\"NORTHING\"/,\"EASTING\",\"NORTHING\",\"NOTHING\"/' <"
                , x, ">", fixedFile)
   system(sed)
   # read
