@@ -22,3 +22,52 @@ Initialize from a new instance in Amazon EC2.
 1.  `setwd("./07-2013-575")` into this analysis.
 
 1.  Use the R scripts in the R directory of this analysis (i.e. 07-2013-575/R/).
+
+
+CAS Data
+--------
+Each table is named with by its region, followed by a description, e.g. BoP-coordinates.txt
+
+### BoP-coordinates.txt
+...
+CRASH ID
+...
+EASTING
+NORTHING
+
+### BoP-crashes.txt
+state highway
+severity f/s/m/n
+day
+month
+year
+hour
+crashid
+
+### BoP-drivers.txt
+sex
+age
+injury
+role
+driver at fault
+driver license type
+driver overseas type
+ethnicity
+
+exclude uninjured people? No
+
+### BoP-drivers-causes.txt
+role
+driver causes
+driver cause categories
+
+exclude uninjured people? No
+
+### BoP-victims
+dvr/pass/other
+sex
+age
+injury
+role
+driver at fault
+ethnicity
