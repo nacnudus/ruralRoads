@@ -44,7 +44,7 @@ write.table(crashMeshblockID
             , file = "output/crashMeshblockID.txt")
 
 # road length per meshblock - nice try -----------------------------------
-ID <- over(roads500k, meshblocks) # nope, too many gigabytes
+ID <- over(roads50k, meshblocks) # nope, too many gigabytes, but fast!
 # start again by trimming out roads that don't intersect
 # using code from this StackOverflow question:
 # http://stackoverflow.com/questions/16918767/
@@ -60,6 +60,26 @@ roadsFeatherston <- gIntersection(roads50k, subset(meshblocks, meshblocks$UA06D 
 system.time(roadsA <- gIntersection(roads50k, meshblocksList$D))
 # try with roads50k
 roadsA <- gIntersection(roads50k, meshblocksList$A)
+
+# try with meshblocksList - works fast
+ID <- llply(meshblocksList, function(x) (over(roads50k, x)), .progress = "text")
+# gets intersecting roads, but does it pull the whole road?
+plot(subset(meshblocks, meshblocks$TA06D == "South Wairarapa District"))
+plot(meshblocksList$G, col = "red", add = TRUE)
+plot(roads50k[!is.na(ID$G), ], col = "blue", add = TRUE)
+# It does, so can't avoid intersecting, though the data size is much reduced.
+system.time(roadsG <- gIntersection(roads50k[!is.na(ID$G), ], meshblocksList$G))
+# Seems to take a long time.
+
+# try the ID method with individual meshblocks
+ID <- alply(meshblocks@data$MB06
+            , 1
+            , function(x) (over(roads50k
+                                , subset(meshblocks, meshblocks$MB06 == x)))
+            , .progress = "text")
+
+# try gContains on subset(x, x$MB06 == 2268601)
+system.time(roadsFeatherston <- gContains(roads50k, subset(x, x$MB06 == 2268601)))
 
 # area per meshblock ------------------------------------------------------
 Area <- laply(meshblocks@polygons, function(x) (x@area))
