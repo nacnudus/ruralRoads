@@ -42,3 +42,15 @@ write.table(crashMeshblockID
             , row.names = FALSE
             , col.names = c("crashID", "meshblockID", "urbanRural")
             , file = "output/crashMeshblockID.txt")
+
+# road length per meshblock - nice try -----------------------------------
+ID <- over(roads500k, meshblocks) # nope, too many gigabytes
+
+
+# area per meshblock ------------------------------------------------------
+Area <- laply(meshblocks@polygons, function(x) (x@area))
+meshblockArea <- as.data.frame(cbind(meshblocks@data$MB06, Area))
+write.table(meshblockArea
+            , row.names = FALSE
+            , col.names = c("MB06", "area")
+            , file = "output/meshblockArea.txt")
