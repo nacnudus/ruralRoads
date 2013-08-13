@@ -1,0 +1,2079 @@
+
+1,201000001,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201000001,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201000001,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201000001,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201000001,1,"532 - Casualty thrown from vehicle",Miscellaneous Person
+1,201000002,1,"121 - Swung wide on bend",Failed to Keep Left
+1,201000002,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201000012,1,"121 - Swung wide on bend",Failed to Keep Left
+1,201000014,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201000014,1,"109 - Drugs proven",Alcohol or Drugs
+1,201000014,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201000014,1,"131 - Lost control when turning",Lost Control
+1,201000015,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201000015,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201000015,1,"500 - Illness and disability",Illness and Disability
+1,201000017,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201000017,1,"135 - Lost control due to road conditions",Lost Control
+1,201000019,1,"106 - Alcohol not suspected, tested and -ve (MoT use only)",Alcohol or Drugs
+1,201000019,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201000019,1,"131 - Lost control when turning",Lost Control
+1,201000021,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201000021,1,"204 - Driving or riding on footpath",Forbidden Movements
+1,201000021,1,"407 - Driver over-reacted",Inexperience
+1,201000026,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201000026,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201000026,1,"130 - Lost control",Lost Control
+1,201000026,1,"205 - On incorrect side of the island or median",Forbidden Movements
+1,201000026,1,"400 - Inexperience",Inexperience
+1,201000028,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201000033,1,"106 - Alcohol not suspected, tested and -ve (MoT use only)",Alcohol or Drugs
+1,201000033,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201000033,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201000033,2,"414 - Fatigue due to working long hours before driving",Fatigue (Drowsy
+1,201000040,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201000040,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201000040,1,"130 - Lost control",Lost Control
+1,201000044,1,"106 - Alcohol not suspected, tested and -ve (MoT use only)",Alcohol or Drugs
+1,201000044,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201000044,1,"532 - Casualty thrown from vehicle",Miscellaneous Person
+1,201000054,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201000054,1,"112 - Too fast on straight",Too fast for Conditions
+1,201000054,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201000054,1,"350 - Attention diverted",Attention Diverted By:
+1,201000061,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201000061,1,"123 - Cutting corner on bend",Failed to Keep Left
+1,201000061,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201000062,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201000062,1,"376 - Didnt see/look when required to give way to ped",Did Not See or Look for Another Party Until Too Late
+1,201000065,1,"106 - Alcohol not suspected, tested and -ve (MoT use only)",Alcohol or Drugs
+1,201000065,1,"121 - Swung wide on bend",Failed to Keep Left
+1,201000065,1,"500 - Illness and disability",Illness and Disability
+1,201000067,2,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201000067,2,"322 - Did not stop at steady red light",Did not Stop
+1,201000073,1,"106 - Alcohol not suspected, tested and -ve (MoT use only)",Alcohol or Drugs
+1,201000073,1,"129 - Too far left/right",Failed to Keep Left
+1,201000075,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201000075,1,"131 - Lost control when turning",Lost Control
+1,201000075,1,"350 - Attention diverted",Attention Diverted By:
+1,201000075,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201000075,1,"532 - Casualty thrown from vehicle",Miscellaneous Person
+1,201000077,1,"106 - Alcohol not suspected, tested and -ve (MoT use only)",Alcohol or Drugs
+1,201000077,1,"350 - Attention diverted",Attention Diverted By:
+1,201000077,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201000077,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201000082,1,"523 - Riding in insecure position",Driver / Passenger
+1,201000082,1,"526 - Overloaded vehicle (with passengers)",Driver / Passenger
+1,201000090,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201000090,1,"129 - Too far left/right",Failed to Keep Left
+1,201000101,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201000101,1,"130 - Lost control",Lost Control
+1,201000101,1,"402 - New driver showed inexperience",Inexperience
+1,201000101,1,"407 - Driver over-reacted",Inexperience
+1,201000103,1,"106 - Alcohol not suspected, tested and -ve (MoT use only)",Alcohol or Drugs
+1,201000103,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201000103,1,"130 - Lost control",Lost Control
+1,201000103,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201000104,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201000104,1,"121 - Swung wide on bend",Failed to Keep Left
+1,201000107,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201000107,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201000107,1,"129 - Too far left/right",Failed to Keep Left
+1,201000107,1,"130 - Lost control",Lost Control
+1,201000108,1,"130 - Lost control",Lost Control
+1,201000108,1,"402 - New driver showed inexperience",Inexperience
+1,201000112,1,"131 - Lost control when turning",Lost Control
+1,201000112,1,"526 - Overloaded vehicle (with passengers)",Driver / Passenger
+1,201000115,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201000115,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201000115,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201000121,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201000121,1,"108 - Drugs suspected",Alcohol or Drugs
+1,201000121,1,"131 - Lost control when turning",Lost Control
+1,201000121,1,"357 - Emotionally upset/road rage",Attention Diverted By:
+1,201000123,1,"106 - Alcohol not suspected, tested and -ve (MoT use only)",Alcohol or Drugs
+1,201000123,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201000123,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201000128,1,"106 - Alcohol not suspected, tested and -ve (MoT use only)",Alcohol or Drugs
+1,201000128,1,"121 - Swung wide on bend",Failed to Keep Left
+1,201000130,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201000130,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201000130,1,"131 - Lost control when turning",Lost Control
+1,201000132,1,"129 - Too far left/right",Failed to Keep Left
+1,201000132,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201000132,2,"106 - Alcohol not suspected, tested and -ve (MoT use only)",Alcohol or Drugs
+1,201000138,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201000138,1,"131 - Lost control when turning",Lost Control
+1,201000140,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201000140,1,"112 - Too fast on straight",Too fast for Conditions
+1,201000140,1,"153 - Failed to notice oncoming traffic",Overtaking
+1,201000144,1,"106 - Alcohol not suspected, tested and -ve (MoT use only)",Alcohol or Drugs
+1,201000144,1,"125 - Failed to keep left on straight",Failed to Keep Left
+1,201000144,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201000144,1,"350 - Attention diverted",Attention Diverted By:
+1,201000150,1,"106 - Alcohol not suspected, tested and -ve (MoT use only)",Alcohol or Drugs
+1,201000150,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201000150,2,"350 - Attention diverted",Attention Diverted By:
+1,201000150,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201000156,1,"197 - Suddenly swerved to avoid vehicle",Sudden Action
+1,201000156,1,"363 - Attention diverted by driver dazzled by sun/lights",Attention Diverted By:
+1,201000156,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201000164,1,"106 - Alcohol not suspected, tested and -ve (MoT use only)",Alcohol or Drugs
+1,201000164,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201000164,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201000164,2,"382 - Misjudged speed etc of vehicle coming from another dirn with right of way",Misjudged speed
+1,201000166,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201000166,1,"135 - Lost control due to road conditions",Lost Control
+1,201000166,1,"402 - New driver showed inexperience",Inexperience
+1,201001000,1,"181 - Following too closely",In Line of Traffic
+1,201001001,1,"423 - Wrong pedal",Incorrect use of vehicle controls
+1,201001002,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201001028,1,"131 - Lost control when turning",Lost Control
+1,201001028,1,"402 - New driver showed inexperience",Inexperience
+1,201001028,1,"407 - Driver over-reacted",Inexperience
+1,201001030,1,"197 - Suddenly swerved to avoid vehicle",Sudden Action
+1,201001030,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001031,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001031,1,"131 - Lost control when turning",Lost Control
+1,201001031,1,"407 - Driver over-reacted",Inexperience
+1,201001032,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201001032,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001033,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201001034,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001034,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201001036,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201001037,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201001037,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001037,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201001037,1,"359 - Attention diverted by cell phone",Attention Diverted By:
+1,201001038,2,"171 - Turned right from incorrect lane",Wrong Lane/Turned From Wrong Position
+1,201001038,2,"338 - Failed to notice direction signs",Inattentive: Failed to Notice
+1,201001038,2,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201001039,1,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201001048,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201001048,1,"205 - On incorrect side of the island or median",Forbidden Movements
+1,201001048,1,"321 - Did not stop at stop sign",Did not Stop
+1,201001049,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201001049,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001049,2,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201001050,1,"370 - Did not see or look for other party until too late",Did Not See or Look for Another Party Until Too Late
+1,201001051,2,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201001052,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201001053,1,"135 - Lost control due to road conditions",Lost Control
+1,201001054,1,"512 - Intentional collision",Intentional or Criminal
+1,201001054,2,"104 - Alcohol test result unknown",Alcohol or Drugs
+1,201001055,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001055,1,"352 - Attention diverted by scenery or persons outside vehicle",Attention Diverted By:
+1,201001055,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201001056,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201001057,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201001057,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001058,1,"131 - Lost control when turning",Lost Control
+1,201001059,1,"131 - Lost control when turning",Lost Control
+1,201001059,1,"407 - Driver over-reacted",Inexperience
+1,201001073,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001073,2,"387 - Misjudged intentions of other party",Misjudged speed
+1,201001074,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001074,1,"132 - Lost control under heavy braking",Lost Control
+1,201001074,1,"407 - Driver over-reacted",Inexperience
+1,201001075,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001075,1,"132 - Lost control under heavy braking",Lost Control
+1,201001075,1,"357 - Emotionally upset/road rage",Attention Diverted By:
+1,201001076,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001076,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001078,1,"181 - Following too closely",In Line of Traffic
+1,201001078,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001078,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201001089,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201001090,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201001090,1,"158 - Overtaking on left",Overtaking
+1,201001090,1,"514 - Evading enforcement",Intentional or Criminal
+1,201001090,2,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201001091,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201001091,1,"363 - Attention diverted by driver dazzled by sun/lights",Attention Diverted By:
+1,201001092,1,"129 - Too far left/right",Failed to Keep Left
+1,201001092,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201001092,1,"407 - Driver over-reacted",Inexperience
+1,201001093,1,"104 - Alcohol test result unknown",Alcohol or Drugs
+1,201001093,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001093,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201001094,1,"112 - Too fast on straight",Too fast for Conditions
+1,201001094,1,"181 - Following too closely",In Line of Traffic
+1,201001094,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001095,1,"135 - Lost control due to road conditions",Lost Control
+1,201001096,1,"322 - Did not stop at steady red light",Did not Stop
+1,201001096,1,"334 - Failed to notice traffic lights",Inattentive: Failed to Notice
+1,201001096,2,"191 - Suddenly braked",Sudden Action
+1,201001096,3,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001096,3,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201001098,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201001098,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001253,1,"121 - Swung wide on bend",Failed to Keep Left
+1,201001286,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201001286,1,"350 - Attention diverted",Attention Diverted By:
+1,201001287,1,"129 - Too far left/right",Failed to Keep Left
+1,201001287,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201001287,1,"357 - Emotionally upset/road rage",Attention Diverted By:
+1,201001288,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201001288,1,"412 - Fatigue due to lack of sleep",Fatigue (Drowsy
+1,201001289,1,"108 - Drugs suspected",Alcohol or Drugs
+1,201001289,1,"205 - On incorrect side of the island or median",Forbidden Movements
+1,201001290,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201001290,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001298,1,"132 - Lost control under heavy braking",Lost Control
+1,201001299,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201001299,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201001307,1,"205 - On incorrect side of the island or median",Forbidden Movements
+1,201001310,1,"181 - Following too closely",In Line of Traffic
+1,201001310,2,"191 - Suddenly braked",Sudden Action
+1,201001312,1,"116 - Too fast at temporary speed limit",Too fast for Conditions
+1,201001312,1,"139 - Lost control end of seal",Lost Control
+1,201001313,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201001313,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201001314,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201001314,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001315,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001326,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201001326,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001330,1,"181 - Following too closely",In Line of Traffic
+1,201001330,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001336,1,"129 - Too far left/right",Failed to Keep Left
+1,201001336,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201001336,1,"197 - Suddenly swerved to avoid vehicle",Sudden Action
+1,201001337,1,"130 - Lost control",Lost Control
+1,201001337,1,"514 - Evading enforcement",Intentional or Criminal
+1,201001337,1,"517 - Stolen vehicle",Intentional or Criminal
+1,201001339,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201001339,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001339,1,"131 - Lost control when turning",Lost Control
+1,201001340,1,"335 - Inattentive: failed to notice intersection or its stop/give way control",Inattentive: Failed to Notice
+1,201001340,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201001340,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201001341,1,"423 - Wrong pedal",Incorrect use of vehicle controls
+1,201001342,2,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201001342,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201001343,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201001343,1,"352 - Attention diverted by scenery or persons outside vehicle",Attention Diverted By:
+1,201001344,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001344,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001346,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201001347,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201001347,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001348,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201001348,2,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201001348,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001349,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201001350,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201001351,1,"136 - Lost control due to vehicle fault",Lost Control
+1,201001352,1,"181 - Following too closely",In Line of Traffic
+1,201001352,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001353,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001353,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001355,1,"350 - Attention diverted",Attention Diverted By:
+1,201001356,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001356,1,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201001357,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001357,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001358,1,"181 - Following too closely",In Line of Traffic
+1,201001358,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001358,2,"181 - Following too closely",In Line of Traffic
+1,201001359,1,"403 - Driving unfamiliar vehicle",Inexperience
+1,201001359,1,"423 - Wrong pedal",Incorrect use of vehicle controls
+1,201001360,1,"129 - Too far left/right",Failed to Keep Left
+1,201001360,1,"131 - Lost control when turning",Lost Control
+1,201001361,2,"314 - Failed to give way when waved through by other driver",Failed to Give Way
+1,201001361,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201001362,1,"129 - Too far left/right",Failed to Keep Left
+1,201001362,1,"363 - Attention diverted by driver dazzled by sun/lights",Attention Diverted By:
+1,201001369,2,"381 - Misjudged speed, etc of vehicle coming from behind or alongside",Misjudged speed
+1,201001382,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001382,1,"131 - Lost control when turning",Lost Control
+1,201001383,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001383,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001384,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001384,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001385,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001385,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001386,2,"321 - Did not stop at stop sign",Did not Stop
+1,201001386,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001386,2,"503 - Defective vision",Illness and Disability
+1,201001387,1,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201001387,1,"370 - Did not see or look for other party until too late",Did Not See or Look for Another Party Until Too Late
+1,201001388,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201001388,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201001388,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201001389,1,"181 - Following too closely",In Line of Traffic
+1,201001389,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001390,1,"131 - Lost control when turning",Lost Control
+1,201001400,1,"131 - Lost control when turning",Lost Control
+1,201001400,1,"133 - Lost control under heavy acceleration",Lost Control
+1,201001401,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001401,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001402,1,"205 - On incorrect side of the island or median",Forbidden Movements
+1,201001403,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201001404,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001404,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201001404,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001405,1,"104 - Alcohol test result unknown",Alcohol or Drugs
+1,201001405,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201001406,1,"135 - Lost control due to road conditions",Lost Control
+1,201001407,1,"135 - Lost control due to road conditions",Lost Control
+1,201001408,1,"129 - Too far left/right",Failed to Keep Left
+1,201001408,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201001409,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001410,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001485,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201001487,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201001487,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001487,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201001489,1,"135 - Lost control due to road conditions",Lost Control
+1,201001494,2,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201001495,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001495,1,"131 - Lost control when turning",Lost Control
+1,201001496,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001496,1,"136 - Lost control due to vehicle fault",Lost Control
+1,201001497,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201001498,1,"322 - Did not stop at steady red light",Did not Stop
+1,201001499,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001499,2,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201001499,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001500,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201001500,2,"314 - Failed to give way when waved through by other driver",Failed to Give Way
+1,201001500,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001521,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201001521,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201001522,1,"131 - Lost control when turning",Lost Control
+1,201001522,1,"150 - Overtaking",Overtaking
+1,201001524,1,"401 - Inexperience in driving in fast or heavy traffic",Inexperience
+1,201001529,1,"332 - Failed to notice bend in road",Inattentive: Failed to Notice
+1,201001530,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201001530,1,"129 - Too far left/right",Failed to Keep Left
+1,201001531,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001531,1,"131 - Lost control when turning",Lost Control
+1,201001532,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001533,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201001533,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001533,1,"131 - Lost control when turning",Lost Control
+1,201001536,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001536,1,"135 - Lost control due to road conditions",Lost Control
+1,201001537,1,"135 - Lost control due to road conditions",Lost Control
+1,201001538,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201001538,2,"382 - Misjudged speed etc of vehicle coming from another dirn with right of way",Misjudged speed
+1,201001545,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201001545,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001546,1,"322 - Did not stop at steady red light",Did not Stop
+1,201001623,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001674,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001676,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201001676,1,"130 - Lost control",Lost Control
+1,201001676,1,"402 - New driver showed inexperience",Inexperience
+1,201001684,1,"131 - Lost control when turning",Lost Control
+1,201001684,1,"403 - Driving unfamiliar vehicle",Inexperience
+1,201001686,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001687,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201001687,1,"506 - Attempted suicide",Illness and Disability
+1,201001687,1,"512 - Intentional collision",Intentional or Criminal
+1,201001688,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001688,1,"131 - Lost control when turning",Lost Control
+1,201001689,1,"131 - Lost control when turning",Lost Control
+1,201001689,1,"339 - Failed to notice roadworks signs",Inattentive: Failed to Notice
+1,201001691,1,"412 - Fatigue due to lack of sleep",Fatigue (Drowsy
+1,201001692,1,"412 - Fatigue due to lack of sleep",Fatigue (Drowsy
+1,201001693,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001694,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201001695,1,"411 - Fatigue due to long trip",Fatigue (Drowsy
+1,201001695,1,"412 - Fatigue due to lack of sleep",Fatigue (Drowsy
+1,201001696,1,"354 - Attention diverted by animal or insect in vehicle",Attention Diverted By:
+1,201001697,1,"135 - Lost control due to road conditions",Lost Control
+1,201001698,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201001698,1,"109 - Drugs proven",Alcohol or Drugs
+1,201001699,1,"412 - Fatigue due to lack of sleep",Fatigue (Drowsy
+1,201001708,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001708,1,"131 - Lost control when turning",Lost Control
+1,201001729,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201001729,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001729,1,"130 - Lost control",Lost Control
+1,201001730,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201001730,2,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201001730,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001733,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201001733,2,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201001733,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001735,1,"130 - Lost control",Lost Control
+1,201001735,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201001735,1,"350 - Attention diverted",Attention Diverted By:
+1,201001736,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201001739,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201001739,1,"129 - Too far left/right",Failed to Keep Left
+1,201001739,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201001740,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201001742,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201001786,1,"181 - Following too closely",In Line of Traffic
+1,201001788,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201001788,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201001789,2,"174 - Turned right from left side of road",Wrong Lane/Turned From Wrong Position
+1,201001789,2,"373 - Didnt see/look behind when pulling out from parked position",Did Not See or Look for Another Party Until Too Late
+1,201001800,1,"306 - Failed to give way to ped on a xing",Failed to Give Way
+1,201001800,1,"376 - Didnt see/look when required to give way to ped",Did Not See or Look for Another Party Until Too Late
+1,201001802,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201001802,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201001803,1,"181 - Following too closely",In Line of Traffic
+1,201001812,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201001812,1,"352 - Attention diverted by scenery or persons outside vehicle",Attention Diverted By:
+1,201001965,1,"357 - Emotionally upset/road rage",Attention Diverted By:
+1,201001965,1,"512 - Intentional collision",Intentional or Criminal
+1,201002199,1,"131 - Lost control when turning",Lost Control
+1,201002199,1,"412 - Fatigue due to lack of sleep",Fatigue (Drowsy
+1,201002203,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201002204,1,"506 - Attempted suicide",Illness and Disability
+1,201002205,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201002205,1,"158 - Overtaking on left",Overtaking
+1,201002206,1,"414 - Fatigue due to working long hours before driving",Fatigue (Drowsy
+1,201002207,1,"104 - Alcohol test result unknown",Alcohol or Drugs
+1,201002207,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201002207,1,"131 - Lost control when turning",Lost Control
+1,201002207,1,"514 - Evading enforcement",Intentional or Criminal
+1,201002208,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201002208,1,"131 - Lost control when turning",Lost Control
+1,201002208,1,"407 - Driver over-reacted",Inexperience
+1,201002208,1,"412 - Fatigue due to lack of sleep",Fatigue (Drowsy
+1,201002209,1,"363 - Attention diverted by driver dazzled by sun/lights",Attention Diverted By:
+1,201002210,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201002211,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201002211,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201002211,1,"517 - Stolen vehicle",Intentional or Criminal
+1,201002212,1,"129 - Too far left/right",Failed to Keep Left
+1,201002213,1,"306 - Failed to give way to ped on a xing",Failed to Give Way
+1,201002213,1,"376 - Didnt see/look when required to give way to ped",Did Not See or Look for Another Party Until Too Late
+1,201002214,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201002214,2,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201002215,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201002215,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201002215,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201002220,1,"504 - Medical illness (not sudden eg flu)",Illness and Disability
+1,201002221,2,"312 - Failed to give way entering roadway not from driveway or intersection",Failed to Give Way
+1,201002221,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002222,2,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201002222,2,"402 - New driver showed inexperience",Inexperience
+1,201002232,1,"308 - Failed to give way at driveway",Failed to Give Way
+1,201002232,1,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201002266,1,"411 - Fatigue due to long trip",Fatigue (Drowsy
+1,201002267,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201002267,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201002267,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002267,2,"378 - Didnt see/look when visibility limited by roadside features",Did Not See or Look for Another Party Until Too Late
+1,201002268,1,"354 - Attention diverted by animal or insect in vehicle",Attention Diverted By:
+1,201002325,1,"132 - Lost control under heavy braking",Lost Control
+1,201002325,1,"363 - Attention diverted by driver dazzled by sun/lights",Attention Diverted By:
+1,201002326,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201002327,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201002327,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002328,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201002328,1,"131 - Lost control when turning",Lost Control
+1,201002328,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201002329,1,"321 - Did not stop at stop sign",Did not Stop
+1,201002329,1,"335 - Inattentive: failed to notice intersection or its stop/give way control",Inattentive: Failed to Notice
+1,201002331,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201002331,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201002332,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201002332,1,"132 - Lost control under heavy braking",Lost Control
+1,201002333,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201002333,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201002334,2,"370 - Did not see or look for other party until too late",Did Not See or Look for Another Party Until Too Late
+1,201002335,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201002335,1,"352 - Attention diverted by scenery or persons outside vehicle",Attention Diverted By:
+1,201002336,1,"121 - Swung wide on bend",Failed to Keep Left
+1,201002336,1,"352 - Attention diverted by scenery or persons outside vehicle",Attention Diverted By:
+1,201002337,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201002337,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002337,2,"402 - New driver showed inexperience",Inexperience
+1,201002338,2,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201002338,2,"113 - Too fast to give way at intersection",Too fast for Conditions
+1,201002338,2,"321 - Did not stop at stop sign",Did not Stop
+1,201002339,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201002339,1,"129 - Too far left/right",Failed to Keep Left
+1,201002339,1,"131 - Lost control when turning",Lost Control
+1,201002339,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201002340,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201002340,1,"131 - Lost control when turning",Lost Control
+1,201002340,1,"402 - New driver showed inexperience",Inexperience
+1,201002341,1,"112 - Too fast on straight",Too fast for Conditions
+1,201002341,1,"400 - Inexperience",Inexperience
+1,201002341,1,"426 - Lights not switched on",Incorrect use of vehicle controls
+1,201002341,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201002341,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002346,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201002347,1,"129 - Too far left/right",Failed to Keep Left
+1,201002347,1,"131 - Lost control when turning",Lost Control
+1,201002348,1,"131 - Lost control when turning",Lost Control
+1,201002349,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201002349,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201002350,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201002350,1,"129 - Too far left/right",Failed to Keep Left
+1,201002350,1,"131 - Lost control when turning",Lost Control
+1,201002351,1,"411 - Fatigue due to long trip",Fatigue (Drowsy
+1,201002352,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201002353,1,"104 - Alcohol test result unknown",Alcohol or Drugs
+1,201002353,1,"131 - Lost control when turning",Lost Control
+1,201002354,2,"373 - Didnt see/look behind when pulling out from parked position",Did Not See or Look for Another Party Until Too Late
+1,201002354,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201002367,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201002367,1,"131 - Lost control when turning",Lost Control
+1,201002367,1,"407 - Driver over-reacted",Inexperience
+1,201002368,1,"194 - Suddenly swerved to avoid pedestrian",Sudden Action
+1,201002370,1,"306 - Failed to give way to ped on a xing",Failed to Give Way
+1,201002370,1,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201002370,1,"387 - Misjudged intentions of other party",Misjudged speed
+1,201002371,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201002380,1,"156 - Overtaking with insufficient visibility",Overtaking
+1,201002381,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201002382,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201002382,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002383,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201002383,1,"131 - Lost control when turning",Lost Control
+1,201002383,1,"407 - Driver over-reacted",Inexperience
+1,201002384,1,"378 - Didnt see/look when visibility limited by roadside features",Did Not See or Look for Another Party Until Too Late
+1,201002386,2,"350 - Attention diverted",Attention Diverted By:
+1,201002386,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201002387,1,"403 - Driving unfamiliar vehicle",Inexperience
+1,201002388,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201002388,1,"129 - Too far left/right",Failed to Keep Left
+1,201002388,1,"131 - Lost control when turning",Lost Control
+1,201002389,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201002389,1,"129 - Too far left/right",Failed to Keep Left
+1,201002389,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201002390,1,"130 - Lost control",Lost Control
+1,201002390,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201002390,1,"402 - New driver showed inexperience",Inexperience
+1,201002417,1,"306 - Failed to give way to ped on a xing",Failed to Give Way
+1,201002417,1,"363 - Attention diverted by driver dazzled by sun/lights",Attention Diverted By:
+1,201002417,1,"503 - Defective vision",Illness and Disability
+1,201002422,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201002422,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002456,1,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201002620,1,"300 - Failed to give way",Failed to Give Way
+1,201002620,2,"300 - Failed to give way",Failed to Give Way
+1,201002621,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201002622,1,"145 - Didn't signal in time incorrect signal",Failed to Signal in Time
+1,201002622,1,"205 - On incorrect side of the island or median",Forbidden Movements
+1,201002623,1,"204 - Driving or riding on footpath",Forbidden Movements
+1,201002624,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201002626,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201002641,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201002641,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002642,1,"131 - Lost control when turning",Lost Control
+1,201002643,1,"131 - Lost control when turning",Lost Control
+1,201002644,1,"131 - Lost control when turning",Lost Control
+1,201002644,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201002645,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201002647,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201002672,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201002672,1,"402 - New driver showed inexperience",Inexperience
+1,201002673,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201002675,1,"181 - Following too closely",In Line of Traffic
+1,201002800,1,"132 - Lost control under heavy braking",Lost Control
+1,201002800,1,"322 - Did not stop at steady red light",Did not Stop
+1,201002801,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201002801,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002802,1,"181 - Following too closely",In Line of Traffic
+1,201002802,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201002803,1,"129 - Too far left/right",Failed to Keep Left
+1,201002803,1,"130 - Lost control",Lost Control
+1,201002803,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201002803,1,"407 - Driver over-reacted",Inexperience
+1,201002804,2,"321 - Did not stop at stop sign",Did not Stop
+1,201002804,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002805,2,"321 - Did not stop at stop sign",Did not Stop
+1,201002805,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002806,1,"132 - Lost control under heavy braking",Lost Control
+1,201002821,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201002821,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002822,1,"116 - Too fast at temporary speed limit",Too fast for Conditions
+1,201002822,1,"135 - Lost control due to road conditions",Lost Control
+1,201002823,2,"321 - Did not stop at stop sign",Did not Stop
+1,201002823,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002824,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201002824,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002825,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201002825,1,"131 - Lost control when turning",Lost Control
+1,201002826,1,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201002826,1,"381 - Misjudged speed, etc of vehicle coming from behind or alongside",Misjudged speed
+1,201002827,1,"130 - Lost control",Lost Control
+1,201002828,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201002828,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201002828,1,"133 - Lost control under heavy acceleration",Lost Control
+1,201002829,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201002829,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201002829,1,"131 - Lost control when turning",Lost Control
+1,201002830,1,"197 - Suddenly swerved to avoid vehicle",Sudden Action
+1,201002830,1,"350 - Attention diverted",Attention Diverted By:
+1,201002833,1,"131 - Lost control when turning",Lost Control
+1,201002836,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201002870,1,"135 - Lost control due to road conditions",Lost Control
+1,201002871,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201002871,1,"131 - Lost control when turning",Lost Control
+1,201002871,1,"402 - New driver showed inexperience",Inexperience
+1,201002872,1,"112 - Too fast on straight",Too fast for Conditions
+1,201002872,1,"402 - New driver showed inexperience",Inexperience
+1,201002883,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201002883,2,"382 - Misjudged speed etc of vehicle coming from another dirn with right of way",Misjudged speed
+1,201002885,1,"131 - Lost control when turning",Lost Control
+1,201002886,1,"131 - Lost control when turning",Lost Control
+1,201002887,1,"112 - Too fast on straight",Too fast for Conditions
+1,201002887,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201002887,2,"507 - Impared ability due to old age",Illness and Disability
+1,201002890,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201002891,1,"131 - Lost control when turning",Lost Control
+1,201002892,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201002892,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201002892,2,"402 - New driver showed inexperience",Inexperience
+1,201002893,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201002894,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201002895,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201002895,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201002896,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201002897,1,"131 - Lost control when turning",Lost Control
+1,201002899,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201002899,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003200,1,"181 - Following too closely",In Line of Traffic
+1,201003200,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201003201,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201003201,2,"402 - New driver showed inexperience",Inexperience
+1,201003202,2,"198 - Suddenly swerved to avoid object or for unknown reason",Sudden Action
+1,201003203,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201003203,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003204,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003204,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003204,1,"131 - Lost control when turning",Lost Control
+1,201003205,1,"181 - Following too closely",In Line of Traffic
+1,201003206,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003206,1,"131 - Lost control when turning",Lost Control
+1,201003206,1,"407 - Driver over-reacted",Inexperience
+1,201003208,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003208,1,"402 - New driver showed inexperience",Inexperience
+1,201003209,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201003210,1,"181 - Following too closely",In Line of Traffic
+1,201003210,1,"387 - Misjudged intentions of other party",Misjudged speed
+1,201003211,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201003211,1,"402 - New driver showed inexperience",Inexperience
+1,201003213,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201003214,1,"116 - Too fast at temporary speed limit",Too fast for Conditions
+1,201003214,1,"129 - Too far left/right",Failed to Keep Left
+1,201003214,1,"135 - Lost control due to road conditions",Lost Control
+1,201003217,2,"314 - Failed to give way when waved through by other driver",Failed to Give Way
+1,201003217,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201003218,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201003218,2,"363 - Attention diverted by driver dazzled by sun/lights",Attention Diverted By:
+1,201003218,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201003219,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201003219,1,"112 - Too fast on straight",Too fast for Conditions
+1,201003219,1,"153 - Failed to notice oncoming traffic",Overtaking
+1,201003220,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003220,1,"131 - Lost control when turning",Lost Control
+1,201003226,1,"181 - Following too closely",In Line of Traffic
+1,201003226,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201003227,1,"181 - Following too closely",In Line of Traffic
+1,201003227,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201003227,2,"191 - Suddenly braked",Sudden Action
+1,201003228,1,"337 - Failed to notice warning sign",Inattentive: Failed to Notice
+1,201003228,1,"383 - Misjudged pedestrians movement or intention",Misjudged speed
+1,201003229,1,"130 - Lost control",Lost Control
+1,201003229,1,"402 - New driver showed inexperience",Inexperience
+1,201003229,1,"407 - Driver over-reacted",Inexperience
+1,201003236,1,"132 - Lost control under heavy braking",Lost Control
+1,201003236,1,"420 - Incorrect use of vehicle controls",Incorrect use of vehicle controls
+1,201003238,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201003239,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201003239,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201003240,2,"309 - Failed to give way to traffic approaching/crossing from the right",Failed to Give Way
+1,201003240,2,"382 - Misjudged speed etc of vehicle coming from another dirn with right of way",Misjudged speed
+1,201003241,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003241,1,"131 - Lost control when turning",Lost Control
+1,201003242,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003242,1,"131 - Lost control when turning",Lost Control
+1,201003243,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201003244,1,"135 - Lost control due to road conditions",Lost Control
+1,201003245,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201003245,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003245,1,"131 - Lost control when turning",Lost Control
+1,201003246,1,"112 - Too fast on straight",Too fast for Conditions
+1,201003246,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201003246,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003261,1,"124 - Cutting corner at intersection",Failed to Keep Left
+1,201003261,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201003264,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201003264,2,"363 - Attention diverted by driver dazzled by sun/lights",Attention Diverted By:
+1,201003264,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003265,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201003265,1,"135 - Lost control due to road conditions",Lost Control
+1,201003266,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201003266,1,"135 - Lost control due to road conditions",Lost Control
+1,201003267,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201003267,1,"135 - Lost control due to road conditions",Lost Control
+1,201003268,1,"131 - Lost control when turning",Lost Control
+1,201003268,1,"363 - Attention diverted by driver dazzled by sun/lights",Attention Diverted By:
+1,201003269,1,"135 - Lost control due to road conditions",Lost Control
+1,201003270,1,"131 - Lost control when turning",Lost Control
+1,201003270,1,"195 - Suddenly swerved to avoid animal",Sudden Action
+1,201003270,1,"407 - Driver over-reacted",Inexperience
+1,201003282,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201003282,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003285,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003285,1,"129 - Too far left/right",Failed to Keep Left
+1,201003285,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201003285,1,"407 - Driver over-reacted",Inexperience
+1,201003286,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201003286,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003286,1,"131 - Lost control when turning",Lost Control
+1,201003286,1,"407 - Driver over-reacted",Inexperience
+1,201003286,1,"514 - Evading enforcement",Intentional or Criminal
+1,201003286,1,"517 - Stolen vehicle",Intentional or Criminal
+1,201003287,1,"195 - Suddenly swerved to avoid animal",Sudden Action
+1,201003288,1,"160 - Overtaking vehicle signaling right turn",Overtaking
+1,201003288,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201003290,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201003291,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003291,1,"130 - Lost control",Lost Control
+1,201003292,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201003292,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003293,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201003294,1,"204 - Driving or riding on footpath",Forbidden Movements
+1,201003294,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201003294,2,"378 - Didnt see/look when visibility limited by roadside features",Did Not See or Look for Another Party Until Too Late
+1,201003295,1,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201003295,1,"402 - New driver showed inexperience",Inexperience
+1,201003296,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003296,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003296,1,"131 - Lost control when turning",Lost Control
+1,201003297,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003297,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003297,1,"131 - Lost control when turning",Lost Control
+1,201003298,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003298,1,"131 - Lost control when turning",Lost Control
+1,201003298,1,"407 - Driver over-reacted",Inexperience
+1,201003299,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201003299,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003386,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003386,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201003387,1,"139 - Lost control end of seal",Lost Control
+1,201003387,1,"191 - Suddenly braked",Sudden Action
+1,201003388,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201003389,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201003389,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003391,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003392,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003395,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003395,1,"131 - Lost control when turning",Lost Control
+1,201003396,1,"112 - Too fast on straight",Too fast for Conditions
+1,201003396,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201003396,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003397,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201003398,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201003398,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201003399,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003399,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003409,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003409,1,"131 - Lost control when turning",Lost Control
+1,201003410,1,"130 - Lost control",Lost Control
+1,201003410,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201003411,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201003411,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003412,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201003412,2,"381 - Misjudged speed, etc of vehicle coming from behind or alongside",Misjudged speed
+1,201003413,2,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003413,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201003413,2,"335 - Inattentive: failed to notice intersection or its stop/give way control",Inattentive: Failed to Notice
+1,201003490,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201003490,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003491,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201003492,2,"322 - Did not stop at steady red light",Did not Stop
+1,201003492,2,"507 - Impared ability due to old age",Illness and Disability
+1,201003493,1,"181 - Following too closely",In Line of Traffic
+1,201003494,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201003494,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201003495,1,"129 - Too far left/right",Failed to Keep Left
+1,201003495,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201003497,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003497,1,"121 - Swung wide on bend",Failed to Keep Left
+1,201003498,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201003499,1,"181 - Following too closely",In Line of Traffic
+1,201003499,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201003500,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003500,1,"130 - Lost control",Lost Control
+1,201003500,1,"433 - Showing off wheelspins/wheelies/doughnuts/drifting etc",Showing Off
+1,201003501,1,"306 - Failed to give way to ped on a xing",Failed to Give Way
+1,201003501,1,"334 - Failed to notice traffic lights",Inattentive: Failed to Notice
+1,201003502,1,"132 - Lost control under heavy braking",Lost Control
+1,201003502,1,"137 - Lost control avoiding another vehicle",Lost Control
+1,201003502,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201003514,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201003514,1,"136 - Lost control due to vehicle fault",Lost Control
+1,201003526,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201003526,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003527,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003527,1,"402 - New driver showed inexperience",Inexperience
+1,201003540,2,"352 - Attention diverted by scenery or persons outside vehicle",Attention Diverted By:
+1,201003540,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201003542,1,"131 - Lost control when turning",Lost Control
+1,201003703,1,"131 - Lost control when turning",Lost Control
+1,201003703,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201003704,1,"420 - Incorrect use of vehicle controls",Incorrect use of vehicle controls
+1,201003705,2,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003705,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201003706,1,"426 - Lights not switched on",Incorrect use of vehicle controls
+1,201003707,1,"104 - Alcohol test result unknown",Alcohol or Drugs
+1,201003707,1,"131 - Lost control when turning",Lost Control
+1,201003708,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003710,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201003711,1,"112 - Too fast on straight",Too fast for Conditions
+1,201003711,1,"132 - Lost control under heavy braking",Lost Control
+1,201003711,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201003712,1,"181 - Following too closely",In Line of Traffic
+1,201003712,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201003713,1,"135 - Lost control due to road conditions",Lost Control
+1,201003713,1,"411 - Fatigue due to long trip",Fatigue (Drowsy
+1,201003714,1,"124 - Cutting corner at intersection",Failed to Keep Left
+1,201003714,1,"363 - Attention diverted by driver dazzled by sun/lights",Attention Diverted By:
+1,201003715,1,"129 - Too far left/right",Failed to Keep Left
+1,201003715,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201003715,1,"407 - Driver over-reacted",Inexperience
+1,201003716,1,"129 - Too far left/right",Failed to Keep Left
+1,201003716,1,"380 - Misjudged speed, distance or position",Misjudged speed
+1,201003716,1,"407 - Driver over-reacted",Inexperience
+1,201003717,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003717,1,"112 - Too fast on straight",Too fast for Conditions
+1,201003717,1,"402 - New driver showed inexperience",Inexperience
+1,201003718,1,"116 - Too fast at temporary speed limit",Too fast for Conditions
+1,201003718,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201003718,1,"350 - Attention diverted",Attention Diverted By:
+1,201003719,1,"112 - Too fast on straight",Too fast for Conditions
+1,201003719,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201003719,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201003720,1,"197 - Suddenly swerved to avoid vehicle",Sudden Action
+1,201003746,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201003746,1,"378 - Didnt see/look when visibility limited by roadside features",Did Not See or Look for Another Party Until Too Late
+1,201003747,1,"311 - Failed to give way to ped on footpath or verge",Failed to Give Way
+1,201003747,1,"378 - Didnt see/look when visibility limited by roadside features",Did Not See or Look for Another Party Until Too Late
+1,201003748,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201003749,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201003750,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201003750,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003751,1,"370 - Did not see or look for other party until too late",Did Not See or Look for Another Party Until Too Late
+1,201003753,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201003754,1,"129 - Too far left/right",Failed to Keep Left
+1,201003754,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201003763,1,"370 - Did not see or look for other party until too late",Did Not See or Look for Another Party Until Too Late
+1,201003764,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003764,1,"131 - Lost control when turning",Lost Control
+1,201003764,1,"407 - Driver over-reacted",Inexperience
+1,201003765,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003765,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201003766,1,"306 - Failed to give way to ped on a xing",Failed to Give Way
+1,201003766,1,"376 - Didnt see/look when required to give way to ped",Did Not See or Look for Another Party Until Too Late
+1,201003767,1,"195 - Suddenly swerved to avoid animal",Sudden Action
+1,201003769,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201003769,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003770,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003770,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003770,1,"131 - Lost control when turning",Lost Control
+1,201003770,1,"357 - Emotionally upset/road rage",Attention Diverted By:
+1,201003771,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201003774,1,"135 - Lost control due to road conditions",Lost Control
+1,201003775,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201003775,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201003775,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003776,1,"504 - Medical illness (not sudden eg flu)",Illness and Disability
+1,201003777,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201003777,1,"350 - Attention diverted",Attention Diverted By:
+1,201003784,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003784,1,"131 - Lost control when turning",Lost Control
+1,201003785,1,"131 - Lost control when turning",Lost Control
+1,201003785,1,"407 - Driver over-reacted",Inexperience
+1,201003786,1,"129 - Too far left/right",Failed to Keep Left
+1,201003786,1,"363 - Attention diverted by driver dazzled by sun/lights",Attention Diverted By:
+1,201003787,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201003787,1,"135 - Lost control due to road conditions",Lost Control
+1,201003788,1,"130 - Lost control",Lost Control
+1,201003788,1,"514 - Evading enforcement",Intentional or Criminal
+1,201003788,1,"517 - Stolen vehicle",Intentional or Criminal
+1,201003790,1,"135 - Lost control due to road conditions",Lost Control
+1,201003791,1,"135 - Lost control due to road conditions",Lost Control
+1,201003792,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201003792,2,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201003792,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003793,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201003793,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003794,1,"112 - Too fast on straight",Too fast for Conditions
+1,201003794,1,"130 - Lost control",Lost Control
+1,201003794,1,"405 - Inexperienced driver under instruction",Inexperience
+1,201003794,1,"412 - Fatigue due to lack of sleep",Fatigue (Drowsy
+1,201003795,1,"121 - Swung wide on bend",Failed to Keep Left
+1,201003796,1,"129 - Too far left/right",Failed to Keep Left
+1,201003797,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201003797,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201003797,1,"131 - Lost control when turning",Lost Control
+1,201003798,1,"385 - Misjudged size or position of fixed object or obstacle",Misjudged speed
+1,201003799,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201003799,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003989,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201003989,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201003989,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201003990,1,"129 - Too far left/right",Failed to Keep Left
+1,201003990,1,"131 - Lost control when turning",Lost Control
+1,201003990,1,"407 - Driver over-reacted",Inexperience
+1,201004100,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004100,1,"112 - Too fast on straight",Too fast for Conditions
+1,201004100,1,"132 - Lost control under heavy braking",Lost Control
+1,201004105,1,"184 - Incorrect merging/diverging manoeuvre",In Line of Traffic
+1,201004105,2,"184 - Incorrect merging/diverging manoeuvre",In Line of Traffic
+1,201004110,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004110,1,"205 - On incorrect side of the island or median",Forbidden Movements
+1,201004111,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004111,2,"387 - Misjudged intentions of other party",Misjudged speed
+1,201004112,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201004112,1,"131 - Lost control when turning",Lost Control
+1,201004113,1,"131 - Lost control when turning",Lost Control
+1,201004115,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004115,2,"382 - Misjudged speed etc of vehicle coming from another dirn with right of way",Misjudged speed
+1,201004116,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004121,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004121,1,"130 - Lost control",Lost Control
+1,201004122,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201004122,1,"386 - Misjudged speed of own vehicle",Misjudged speed
+1,201004122,1,"427 - Foot slipped or got caught under pedal",Incorrect use of vehicle controls
+1,201004134,1,"354 - Attention diverted by animal or insect in vehicle",Attention Diverted By:
+1,201004144,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201004144,1,"132 - Lost control under heavy braking",Lost Control
+1,201004144,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201004145,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004145,1,"112 - Too fast on straight",Too fast for Conditions
+1,201004145,1,"130 - Lost control",Lost Control
+1,201004149,1,"306 - Failed to give way to ped on a xing",Failed to Give Way
+1,201004149,1,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201004150,2,"373 - Didnt see/look behind when pulling out from parked position",Did Not See or Look for Another Party Until Too Late
+1,201004152,1,"181 - Following too closely",In Line of Traffic
+1,201004152,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004154,1,"131 - Lost control when turning",Lost Control
+1,201004154,1,"357 - Emotionally upset/road rage",Attention Diverted By:
+1,201004154,1,"524 - Interferred with driver",Driver / Passenger
+1,201004155,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004155,1,"130 - Lost control",Lost Control
+1,201004156,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201004156,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004157,1,"534 - Cyclist or m/cyclist wearing dark clothing",Driver / Passenger
+1,201004157,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201004158,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201004158,1,"130 - Lost control",Lost Control
+1,201004158,1,"402 - New driver showed inexperience",Inexperience
+1,201004158,1,"524 - Interferred with driver",Driver / Passenger
+1,201004158,1,"526 - Overloaded vehicle (with passengers)",Driver / Passenger
+1,201004159,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201004159,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004160,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201004160,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004160,2,"402 - New driver showed inexperience",Inexperience
+1,201004161,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004161,2,"387 - Misjudged intentions of other party",Misjudged speed
+1,201004162,1,"138 - Lost control on unsealed road",Lost Control
+1,201004162,1,"402 - New driver showed inexperience",Inexperience
+1,201004162,1,"407 - Driver over-reacted",Inexperience
+1,201004163,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201004163,1,"131 - Lost control when turning",Lost Control
+1,201004163,1,"517 - Stolen vehicle",Intentional or Criminal
+1,201004164,1,"130 - Lost control",Lost Control
+1,201004164,1,"350 - Attention diverted",Attention Diverted By:
+1,201004166,1,"151 - Overtaking line of traffic or queue",Overtaking
+1,201004166,1,"370 - Did not see or look for other party until too late",Did Not See or Look for Another Party Until Too Late
+1,201004167,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201004167,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004169,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004169,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004178,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004178,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201004179,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201004179,1,"131 - Lost control when turning",Lost Control
+1,201004179,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201004181,1,"104 - Alcohol test result unknown",Alcohol or Drugs
+1,201004181,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201004181,1,"131 - Lost control when turning",Lost Control
+1,201004182,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004182,2,"335 - Inattentive: failed to notice intersection or its stop/give way control",Inattentive: Failed to Notice
+1,201004184,1,"136 - Lost control due to vehicle fault",Lost Control
+1,201004185,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004185,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201004185,1,"131 - Lost control when turning",Lost Control
+1,201004186,1,"131 - Lost control when turning",Lost Control
+1,201004186,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201004195,1,"407 - Driver over-reacted",Inexperience
+1,201004196,1,"130 - Lost control",Lost Control
+1,201004196,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201004197,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004197,1,"112 - Too fast on straight",Too fast for Conditions
+1,201004197,1,"335 - Inattentive: failed to notice intersection or its stop/give way control",Inattentive: Failed to Notice
+1,201004198,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201004198,1,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201004199,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201004199,1,"158 - Overtaking on left",Overtaking
+1,201004215,1,"322 - Did not stop at steady red light",Did not Stop
+1,201004216,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004216,3,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004249,1,"130 - Lost control",Lost Control
+1,201004249,1,"514 - Evading enforcement",Intentional or Criminal
+1,201004304,1,"181 - Following too closely",In Line of Traffic
+1,201004304,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201004304,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201004305,1,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201004306,1,"352 - Attention diverted by scenery or persons outside vehicle",Attention Diverted By:
+1,201004306,1,"402 - New driver showed inexperience",Inexperience
+1,201004306,1,"520 - Driver/Passenger boarding, leaving, in vehicle",Driver / Passenger
+1,201004307,2,"363 - Attention diverted by driver dazzled by sun/lights",Attention Diverted By:
+1,201004307,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201004308,1,"386 - Misjudged speed of own vehicle",Misjudged speed
+1,201004315,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004316,1,"104 - Alcohol test result unknown",Alcohol or Drugs
+1,201004316,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201004316,1,"131 - Lost control when turning",Lost Control
+1,201004354,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201004354,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201004354,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201004355,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201004356,1,"132 - Lost control under heavy braking",Lost Control
+1,201004356,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004357,2,"525 - Opened door inadvertently",Driver / Passenger
+1,201004359,1,"135 - Lost control due to road conditions",Lost Control
+1,201004360,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201004360,2,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201004360,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004361,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004362,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004362,1,"387 - Misjudged intentions of other party",Misjudged speed
+1,201004363,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201004363,1,"130 - Lost control",Lost Control
+1,201004363,1,"357 - Emotionally upset/road rage",Attention Diverted By:
+1,201004365,1,"130 - Lost control",Lost Control
+1,201004365,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201004366,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004366,1,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201004366,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004367,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004367,1,"350 - Attention diverted",Attention Diverted By:
+1,201004368,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201004368,1,"109 - Drugs proven",Alcohol or Drugs
+1,201004369,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004369,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004370,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004370,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004371,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201004371,2,"382 - Misjudged speed etc of vehicle coming from another dirn with right of way",Misjudged speed
+1,201004372,1,"181 - Following too closely",In Line of Traffic
+1,201004372,1,"427 - Foot slipped or got caught under pedal",Incorrect use of vehicle controls
+1,201004374,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201004383,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004383,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004384,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004384,1,"338 - Failed to notice direction signs",Inattentive: Failed to Notice
+1,201004384,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004402,1,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201004408,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201004409,1,"129 - Too far left/right",Failed to Keep Left
+1,201004411,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004411,1,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201004412,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201004413,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004413,1,"131 - Lost control when turning",Lost Control
+1,201004414,1,"181 - Following too closely",In Line of Traffic
+1,201004415,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004415,1,"131 - Lost control when turning",Lost Control
+1,201004416,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201004416,1,"131 - Lost control when turning",Lost Control
+1,201004417,1,"181 - Following too closely",In Line of Traffic
+1,201004418,1,"129 - Too far left/right",Failed to Keep Left
+1,201004419,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201004419,1,"131 - Lost control when turning",Lost Control
+1,201004421,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004421,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004422,1,"181 - Following too closely",In Line of Traffic
+1,201004423,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004423,1,"131 - Lost control when turning",Lost Control
+1,201004425,1,"129 - Too far left/right",Failed to Keep Left
+1,201004425,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201004426,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201004426,1,"131 - Lost control when turning",Lost Control
+1,201004427,1,"181 - Following too closely",In Line of Traffic
+1,201004428,1,"104 - Alcohol test result unknown",Alcohol or Drugs
+1,201004428,1,"131 - Lost control when turning",Lost Control
+1,201004429,1,"131 - Lost control when turning",Lost Control
+1,201004430,1,"129 - Too far left/right",Failed to Keep Left
+1,201004511,1,"376 - Didnt see/look when required to give way to ped",Did Not See or Look for Another Party Until Too Late
+1,201004607,1,"350 - Attention diverted",Attention Diverted By:
+1,201004757,1,"181 - Following too closely",In Line of Traffic
+1,201004757,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004764,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004764,1,"352 - Attention diverted by scenery or persons outside vehicle",Attention Diverted By:
+1,201004765,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004765,1,"357 - Emotionally upset/road rage",Attention Diverted By:
+1,201004780,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004781,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201004781,2,"507 - Impared ability due to old age",Illness and Disability
+1,201004782,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201004782,2,"387 - Misjudged intentions of other party",Misjudged speed
+1,201004783,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201004783,1,"507 - Impared ability due to old age",Illness and Disability
+1,201004784,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201004784,1,"135 - Lost control due to road conditions",Lost Control
+1,201004784,1,"400 - Inexperience",Inexperience
+1,201004785,1,"350 - Attention diverted",Attention Diverted By:
+1,201004786,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201004786,1,"129 - Too far left/right",Failed to Keep Left
+1,201004786,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201004795,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004795,1,"402 - New driver showed inexperience",Inexperience
+1,201004796,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004796,1,"125 - Failed to keep left on straight",Failed to Keep Left
+1,201004797,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004797,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004798,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201004798,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004799,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201004799,1,"402 - New driver showed inexperience",Inexperience
+1,201004800,1,"430 - Showing off",Showing Off
+1,201004800,1,"434 - Intimidating driving",Showing Off
+1,201004801,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201004801,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004802,2,"104 - Alcohol test result unknown",Alcohol or Drugs
+1,201004802,2,"321 - Did not stop at stop sign",Did not Stop
+1,201004803,1,"129 - Too far left/right",Failed to Keep Left
+1,201004804,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004804,1,"131 - Lost control when turning",Lost Control
+1,201004806,1,"129 - Too far left/right",Failed to Keep Left
+1,201004807,1,"132 - Lost control under heavy braking",Lost Control
+1,201004807,1,"197 - Suddenly swerved to avoid vehicle",Sudden Action
+1,201004807,1,"407 - Driver over-reacted",Inexperience
+1,201004808,1,"131 - Lost control when turning",Lost Control
+1,201004808,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201004808,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201004810,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201004810,1,"336 - Inattentive: failed to notice other regulatory sign / markings",Inattentive: Failed to Notice
+1,201004813,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004813,1,"131 - Lost control when turning",Lost Control
+1,201004833,1,"158 - Overtaking on left",Overtaking
+1,201004833,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201004833,1,"387 - Misjudged intentions of other party",Misjudged speed
+1,201004833,2,"175 - Turned left from near centre line",Wrong Lane/Turned From Wrong Position
+1,201004834,1,"129 - Too far left/right",Failed to Keep Left
+1,201004834,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201004834,1,"407 - Driver over-reacted",Inexperience
+1,201004835,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201004835,2,"330 - Inattentive",Inattentive: Failed to Notice
+1,201004845,1,"130 - Lost control",Lost Control
+1,201004845,1,"412 - Fatigue due to lack of sleep",Fatigue (Drowsy
+1,201004846,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201004847,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201004848,1,"197 - Suddenly swerved to avoid vehicle",Sudden Action
+1,201004848,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201004848,2,"507 - Impared ability due to old age",Illness and Disability
+1,201004849,1,"120 - Failed to keep left",Failed to Keep Left
+1,201004849,1,"205 - On incorrect side of the island or median",Forbidden Movements
+1,201004849,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201004850,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004850,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004851,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004851,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201004852,1,"131 - Lost control when turning",Lost Control
+1,201004853,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004853,1,"131 - Lost control when turning",Lost Control
+1,201004858,1,"130 - Lost control",Lost Control
+1,201004859,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201004860,1,"104 - Alcohol test result unknown",Alcohol or Drugs
+1,201004860,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201004860,1,"131 - Lost control when turning",Lost Control
+1,201004861,1,"322 - Did not stop at steady red light",Did not Stop
+1,201004861,1,"334 - Failed to notice traffic lights",Inattentive: Failed to Notice
+1,201004862,1,"108 - Drugs suspected",Alcohol or Drugs
+1,201004862,1,"131 - Lost control when turning",Lost Control
+1,201004862,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201004863,1,"181 - Following too closely",In Line of Traffic
+1,201004863,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004863,2,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004864,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004864,1,"517 - Stolen vehicle",Intentional or Criminal
+1,201004865,1,"131 - Lost control when turning",Lost Control
+1,201004865,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201004866,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201004867,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004867,1,"112 - Too fast on straight",Too fast for Conditions
+1,201004867,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201004868,1,"129 - Too far left/right",Failed to Keep Left
+1,201004868,1,"130 - Lost control",Lost Control
+1,201004868,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201004868,1,"407 - Driver over-reacted",Inexperience
+1,201004876,1,"427 - Foot slipped or got caught under pedal",Incorrect use of vehicle controls
+1,201004876,1,"507 - Impared ability due to old age",Illness and Disability
+1,201004878,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004878,1,"108 - Drugs suspected",Alcohol or Drugs
+1,201004878,1,"350 - Attention diverted",Attention Diverted By:
+1,201004879,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004879,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004880,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201004880,2,"350 - Attention diverted",Attention Diverted By:
+1,201004880,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004881,1,"131 - Lost control when turning",Lost Control
+1,201004882,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201004882,2,"507 - Impared ability due to old age",Illness and Disability
+1,201004900,1,"112 - Too fast on straight",Too fast for Conditions
+1,201004900,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201004901,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201004901,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004902,1,"423 - Wrong pedal",Incorrect use of vehicle controls
+1,201004904,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201004904,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004929,2,"321 - Did not stop at stop sign",Did not Stop
+1,201004929,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201004931,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201004932,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201004932,1,"426 - Lights not switched on",Incorrect use of vehicle controls
+1,201004932,1,"514 - Evading enforcement",Intentional or Criminal
+1,201005023,1,"125 - Failed to keep left on straight",Failed to Keep Left
+1,201005023,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201005026,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201005026,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201005039,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005039,1,"131 - Lost control when turning",Lost Control
+1,201005040,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005040,1,"131 - Lost control when turning",Lost Control
+1,201005041,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005041,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005041,1,"131 - Lost control when turning",Lost Control
+1,201005041,1,"400 - Inexperience",Inexperience
+1,201005042,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201005042,1,"131 - Lost control when turning",Lost Control
+1,201005205,1,"129 - Too far left/right",Failed to Keep Left
+1,201005205,1,"130 - Lost control",Lost Control
+1,201005206,1,"131 - Lost control when turning",Lost Control
+1,201005206,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201005207,1,"350 - Attention diverted",Attention Diverted By:
+1,201005207,1,"370 - Did not see or look for other party until too late",Did Not See or Look for Another Party Until Too Late
+1,201005209,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201005210,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005210,1,"131 - Lost control when turning",Lost Control
+1,201005210,1,"402 - New driver showed inexperience",Inexperience
+1,201005212,2,"130 - Lost control",Lost Control
+1,201005212,2,"402 - New driver showed inexperience",Inexperience
+1,201005212,2,"405 - Inexperienced driver under instruction",Inexperience
+1,201005212,2,"423 - Wrong pedal",Incorrect use of vehicle controls
+1,201005213,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005214,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005214,1,"131 - Lost control when turning",Lost Control
+1,201005214,1,"402 - New driver showed inexperience",Inexperience
+1,201005215,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201005215,1,"504 - Medical illness (not sudden eg flu)",Illness and Disability
+1,201005216,1,"129 - Too far left/right",Failed to Keep Left
+1,201005216,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201005216,1,"407 - Driver over-reacted",Inexperience
+1,201005217,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201005218,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005218,1,"131 - Lost control when turning",Lost Control
+1,201005219,1,"135 - Lost control due to road conditions",Lost Control
+1,201005220,1,"131 - Lost control when turning",Lost Control
+1,201005220,1,"407 - Driver over-reacted",Inexperience
+1,201005220,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201005221,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005221,1,"198 - Suddenly swerved to avoid object or for unknown reason",Sudden Action
+1,201005221,1,"430 - Showing off",Showing Off
+1,201005222,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005222,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201005224,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201005224,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201005225,1,"512 - Intentional collision",Intentional or Criminal
+1,201005226,1,"129 - Too far left/right",Failed to Keep Left
+1,201005226,1,"130 - Lost control",Lost Control
+1,201005226,1,"402 - New driver showed inexperience",Inexperience
+1,201005232,1,"129 - Too far left/right",Failed to Keep Left
+1,201005232,1,"130 - Lost control",Lost Control
+1,201005232,1,"407 - Driver over-reacted",Inexperience
+1,201005233,1,"112 - Too fast on straight",Too fast for Conditions
+1,201005233,1,"132 - Lost control under heavy braking",Lost Control
+1,201005233,1,"197 - Suddenly swerved to avoid vehicle",Sudden Action
+1,201005233,1,"402 - New driver showed inexperience",Inexperience
+1,201005235,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201005235,2,"363 - Attention diverted by driver dazzled by sun/lights",Attention Diverted By:
+1,201005235,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201005236,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201005238,1,"129 - Too far left/right",Failed to Keep Left
+1,201005238,1,"350 - Attention diverted",Attention Diverted By:
+1,201005239,1,"130 - Lost control",Lost Control
+1,201005239,1,"427 - Foot slipped or got caught under pedal",Incorrect use of vehicle controls
+1,201005239,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201005240,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201005240,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201005242,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005242,1,"357 - Emotionally upset/road rage",Attention Diverted By:
+1,201005243,1,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201005243,1,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201005244,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201005245,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005245,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005245,1,"131 - Lost control when turning",Lost Control
+1,201005246,1,"181 - Following too closely",In Line of Traffic
+1,201005248,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005248,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005248,1,"131 - Lost control when turning",Lost Control
+1,201005250,1,"135 - Lost control due to road conditions",Lost Control
+1,201005251,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201005251,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201005252,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201005252,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201005254,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005254,1,"132 - Lost control under heavy braking",Lost Control
+1,201005254,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201005264,1,"104 - Alcohol test result unknown",Alcohol or Drugs
+1,201005264,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005264,1,"129 - Too far left/right",Failed to Keep Left
+1,201005264,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201005264,1,"402 - New driver showed inexperience",Inexperience
+1,201005266,1,"131 - Lost control when turning",Lost Control
+1,201005267,2,"378 - Didnt see/look when visibility limited by roadside features",Did Not See or Look for Another Party Until Too Late
+1,201005268,2,"314 - Failed to give way when waved through by other driver",Failed to Give Way
+1,201005268,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201005269,1,"309 - Failed to give way to traffic approaching/crossing from the right",Failed to Give Way
+1,201005269,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201005270,1,"181 - Following too closely",In Line of Traffic
+1,201005270,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005271,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005271,1,"131 - Lost control when turning",Lost Control
+1,201005272,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201005272,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005272,1,"131 - Lost control when turning",Lost Control
+1,201005272,1,"514 - Evading enforcement",Intentional or Criminal
+1,201005273,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201005273,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005274,1,"129 - Too far left/right",Failed to Keep Left
+1,201005274,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201005274,1,"354 - Attention diverted by animal or insect in vehicle",Attention Diverted By:
+1,201005274,1,"407 - Driver over-reacted",Inexperience
+1,201005275,1,"112 - Too fast on straight",Too fast for Conditions
+1,201005275,1,"181 - Following too closely",In Line of Traffic
+1,201005275,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005275,2,"191 - Suddenly braked",Sudden Action
+1,201005275,3,"191 - Suddenly braked",Sudden Action
+1,201005276,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005276,1,"131 - Lost control when turning",Lost Control
+1,201005276,1,"514 - Evading enforcement",Intentional or Criminal
+1,201005277,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005277,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005277,1,"131 - Lost control when turning",Lost Control
+1,201005278,1,"129 - Too far left/right",Failed to Keep Left
+1,201005278,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201005278,1,"407 - Driver over-reacted",Inexperience
+1,201005278,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201005279,1,"129 - Too far left/right",Failed to Keep Left
+1,201005279,1,"131 - Lost control when turning",Lost Control
+1,201005279,1,"407 - Driver over-reacted",Inexperience
+1,201005280,1,"131 - Lost control when turning",Lost Control
+1,201005280,1,"332 - Failed to notice bend in road",Inattentive: Failed to Notice
+1,201005298,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005298,1,"131 - Lost control when turning",Lost Control
+1,201005334,1,"151 - Overtaking line of traffic or queue",Overtaking
+1,201005334,1,"160 - Overtaking vehicle signaling right turn",Overtaking
+1,201005334,2,"151 - Overtaking line of traffic or queue",Overtaking
+1,201005334,2,"160 - Overtaking vehicle signaling right turn",Overtaking
+1,201005601,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201005601,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201005601,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201005605,1,"181 - Following too closely",In Line of Traffic
+1,201005605,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005606,1,"129 - Too far left/right",Failed to Keep Left
+1,201005606,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201005606,1,"407 - Driver over-reacted",Inexperience
+1,201005606,1,"423 - Wrong pedal",Incorrect use of vehicle controls
+1,201005607,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005607,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201005608,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201005608,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201005609,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005609,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201005609,1,"363 - Attention diverted by driver dazzled by sun/lights",Attention Diverted By:
+1,201005614,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201005614,1,"129 - Too far left/right",Failed to Keep Left
+1,201005614,1,"130 - Lost control",Lost Control
+1,201005614,1,"402 - New driver showed inexperience",Inexperience
+1,201005616,1,"129 - Too far left/right",Failed to Keep Left
+1,201005616,1,"407 - Driver over-reacted",Inexperience
+1,201005619,2,"144 - Didn't signal in time when turning right",Failed to Signal in Time
+1,201005619,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201005619,2,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201005631,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201005631,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201005632,2,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201005632,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201005634,1,"135 - Lost control due to road conditions",Lost Control
+1,201005634,1,"407 - Driver over-reacted",Inexperience
+1,201005635,2,"378 - Didnt see/look when visibility limited by roadside features",Did Not See or Look for Another Party Until Too Late
+1,201005636,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201005636,2,"402 - New driver showed inexperience",Inexperience
+1,201005638,1,"129 - Too far left/right",Failed to Keep Left
+1,201005638,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201005638,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201005640,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005640,1,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201005641,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201005642,1,"104 - Alcohol test result unknown",Alcohol or Drugs
+1,201005642,1,"112 - Too fast on straight",Too fast for Conditions
+1,201005642,1,"130 - Lost control",Lost Control
+1,201005647,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201005648,1,"129 - Too far left/right",Failed to Keep Left
+1,201005648,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201005650,1,"112 - Too fast on straight",Too fast for Conditions
+1,201005650,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201005650,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201005651,2,"101 - Alcohol suspected",Alcohol or Drugs
+1,201005651,2,"512 - Intentional collision",Intentional or Criminal
+1,201005651,2,"514 - Evading enforcement",Intentional or Criminal
+1,201005652,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005652,1,"133 - Lost control under heavy acceleration",Lost Control
+1,201005671,1,"129 - Too far left/right",Failed to Keep Left
+1,201005671,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201005671,1,"350 - Attention diverted",Attention Diverted By:
+1,201005671,1,"407 - Driver over-reacted",Inexperience
+1,201005672,1,"129 - Too far left/right",Failed to Keep Left
+1,201005672,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201005672,1,"407 - Driver over-reacted",Inexperience
+1,201005672,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201005673,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201005674,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005674,1,"131 - Lost control when turning",Lost Control
+1,201005674,1,"407 - Driver over-reacted",Inexperience
+1,201005675,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201005675,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201005675,2,"402 - New driver showed inexperience",Inexperience
+1,201005680,2,"323 - Did not stop at steady red arrow",Did not Stop
+1,201005681,1,"160 - Overtaking vehicle signaling right turn",Overtaking
+1,201005681,1,"387 - Misjudged intentions of other party",Misjudged speed
+1,201005682,1,"129 - Too far left/right",Failed to Keep Left
+1,201005682,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201005682,1,"407 - Driver over-reacted",Inexperience
+1,201005683,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005683,2,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201005683,2,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201005683,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201005684,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005684,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005684,1,"131 - Lost control when turning",Lost Control
+1,201005688,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005688,1,"412 - Fatigue due to lack of sleep",Fatigue (Drowsy
+1,201005689,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005689,1,"131 - Lost control when turning",Lost Control
+1,201005690,1,"414 - Fatigue due to working long hours before driving",Fatigue (Drowsy
+1,201005691,1,"131 - Lost control when turning",Lost Control
+1,201005691,1,"197 - Suddenly swerved to avoid vehicle",Sudden Action
+1,201005691,1,"407 - Driver over-reacted",Inexperience
+1,201005697,1,"197 - Suddenly swerved to avoid vehicle",Sudden Action
+1,201005697,1,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201005697,1,"370 - Did not see or look for other party until too late",Did Not See or Look for Another Party Until Too Late
+1,201005902,1,"112 - Too fast on straight",Too fast for Conditions
+1,201005902,1,"181 - Following too closely",In Line of Traffic
+1,201005903,2,"150 - Overtaking",Overtaking
+1,201005919,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005919,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201005919,1,"132 - Lost control under heavy braking",Lost Control
+1,201005938,1,"181 - Following too closely",In Line of Traffic
+1,201005938,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005938,2,"191 - Suddenly braked",Sudden Action
+1,201005938,2,"199 - Avoiding approaching emergency vehicle",Sudden Action
+1,201005939,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005939,1,"131 - Lost control when turning",Lost Control
+1,201005940,1,"131 - Lost control when turning",Lost Control
+1,201005940,1,"402 - New driver showed inexperience",Inexperience
+1,201005941,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005941,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201005942,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201005942,1,"131 - Lost control when turning",Lost Control
+1,201005942,1,"407 - Driver over-reacted",Inexperience
+1,201005943,1,"135 - Lost control due to road conditions",Lost Control
+1,201005943,1,"337 - Failed to notice warning sign",Inattentive: Failed to Notice
+1,201005944,1,"130 - Lost control",Lost Control
+1,201005945,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201005945,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005945,1,"131 - Lost control when turning",Lost Control
+1,201005945,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201005958,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005958,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005958,1,"131 - Lost control when turning",Lost Control
+1,201005959,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005959,1,"131 - Lost control when turning",Lost Control
+1,201005961,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201005962,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201005963,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201005963,1,"370 - Did not see or look for other party until too late",Did Not See or Look for Another Party Until Too Late
+1,201005968,1,"131 - Lost control when turning",Lost Control
+1,201005968,1,"402 - New driver showed inexperience",Inexperience
+1,201005969,1,"138 - Lost control on unsealed road",Lost Control
+1,201005970,1,"130 - Lost control",Lost Control
+1,201005970,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201005970,1,"407 - Driver over-reacted",Inexperience
+1,201005971,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005971,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005971,1,"131 - Lost control when turning",Lost Control
+1,201005972,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005972,1,"359 - Attention diverted by cell phone",Attention Diverted By:
+1,201005973,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201005974,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005974,1,"352 - Attention diverted by scenery or persons outside vehicle",Attention Diverted By:
+1,201005975,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005978,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005978,1,"131 - Lost control when turning",Lost Control
+1,201005978,1,"402 - New driver showed inexperience",Inexperience
+1,201005979,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201005979,1,"131 - Lost control when turning",Lost Control
+1,201005980,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005980,1,"112 - Too fast on straight",Too fast for Conditions
+1,201005980,1,"517 - Stolen vehicle",Intentional or Criminal
+1,201005981,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201005981,1,"414 - Fatigue due to working long hours before driving",Fatigue (Drowsy
+1,201005991,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201005991,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201005994,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201005994,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201005996,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201005996,1,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201005997,1,"181 - Following too closely",In Line of Traffic
+1,201005997,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005998,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005998,2,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201005998,3,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201005999,1,"112 - Too fast on straight",Too fast for Conditions
+1,201005999,1,"322 - Did not stop at steady red light",Did not Stop
+1,201005999,1,"334 - Failed to notice traffic lights",Inattentive: Failed to Notice
+1,201005999,1,"507 - Impared ability due to old age",Illness and Disability
+1,201006047,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201006047,1,"309 - Failed to give way to traffic approaching/crossing from the right",Failed to Give Way
+1,201006047,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201006048,1,"311 - Failed to give way to ped on footpath or verge",Failed to Give Way
+1,201006048,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201006100,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201006100,2,"381 - Misjudged speed, etc of vehicle coming from behind or alongside",Misjudged speed
+1,201006101,1,"112 - Too fast on straight",Too fast for Conditions
+1,201006102,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201006102,1,"129 - Too far left/right",Failed to Keep Left
+1,201006102,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201006103,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201006103,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201006103,1,"131 - Lost control when turning",Lost Control
+1,201006104,1,"121 - Swung wide on bend",Failed to Keep Left
+1,201006104,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201006107,1,"181 - Following too closely",In Line of Traffic
+1,201006107,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201006108,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201006108,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201006109,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201006109,2,"335 - Inattentive: failed to notice intersection or its stop/give way control",Inattentive: Failed to Notice
+1,201006111,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201006111,1,"357 - Emotionally upset/road rage",Attention Diverted By:
+1,201006112,1,"370 - Did not see or look for other party until too late",Did Not See or Look for Another Party Until Too Late
+1,201006113,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201006113,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201006114,1,"129 - Too far left/right",Failed to Keep Left
+1,201006114,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201006114,1,"350 - Attention diverted",Attention Diverted By:
+1,201006114,1,"407 - Driver over-reacted",Inexperience
+1,201006133,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201006133,2,"378 - Didnt see/look when visibility limited by roadside features",Did Not See or Look for Another Party Until Too Late
+1,201006134,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201006134,1,"131 - Lost control when turning",Lost Control
+1,201006135,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201006135,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201006136,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201006136,1,"131 - Lost control when turning",Lost Control
+1,201006136,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201006137,1,"131 - Lost control when turning",Lost Control
+1,201006137,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201006138,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201006138,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201006139,1,"131 - Lost control when turning",Lost Control
+1,201006140,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201006141,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201006141,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201006142,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201006142,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201006142,1,"131 - Lost control when turning",Lost Control
+1,201006143,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201006143,1,"131 - Lost control when turning",Lost Control
+1,201006144,1,"156 - Overtaking with insufficient visibility",Overtaking
+1,201006144,1,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201006144,2,"150 - Overtaking",Overtaking
+1,201006145,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201006145,1,"352 - Attention diverted by scenery or persons outside vehicle",Attention Diverted By:
+1,201006146,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201006146,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201006147,1,"112 - Too fast on straight",Too fast for Conditions
+1,201006147,1,"130 - Lost control",Lost Control
+1,201006148,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201006148,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201006149,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201006149,1,"131 - Lost control when turning",Lost Control
+1,201006150,1,"132 - Lost control under heavy braking",Lost Control
+1,201006150,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201006162,1,"160 - Overtaking vehicle signaling right turn",Overtaking
+1,201006162,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201006163,1,"332 - Failed to notice bend in road",Inattentive: Failed to Notice
+1,201006163,1,"352 - Attention diverted by scenery or persons outside vehicle",Attention Diverted By:
+1,201006165,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201006165,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201006166,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201006167,1,"181 - Following too closely",In Line of Traffic
+1,201006167,3,"191 - Suddenly braked",Sudden Action
+1,201006168,1,"181 - Following too closely",In Line of Traffic
+1,201006168,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201006170,1,"104 - Alcohol test result unknown",Alcohol or Drugs
+1,201006170,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201006170,1,"135 - Lost control due to road conditions",Lost Control
+1,201006177,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201006177,1,"112 - Too fast on straight",Too fast for Conditions
+1,201006177,1,"130 - Lost control",Lost Control
+1,201006177,1,"359 - Attention diverted by cell phone",Attention Diverted By:
+1,201006178,1,"130 - Lost control",Lost Control
+1,201006178,1,"423 - Wrong pedal",Incorrect use of vehicle controls
+1,201006388,1,"131 - Lost control when turning",Lost Control
+1,201006388,1,"507 - Impared ability due to old age",Illness and Disability
+1,201006390,1,"131 - Lost control when turning",Lost Control
+1,201006390,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201006394,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201006394,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201006396,1,"386 - Misjudged speed of own vehicle",Misjudged speed
+1,201006411,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201006411,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201006412,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201006429,1,"181 - Following too closely",In Line of Traffic
+1,201006499,1,"145 - Didn't signal in time incorrect signal",Failed to Signal in Time
+1,201006499,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201006499,2,"387 - Misjudged intentions of other party",Misjudged speed
+1,201030011,2,"321 - Did not stop at stop sign",Did not Stop
+1,201030011,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201030013,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201030013,2,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201030013,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201030014,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201030015,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201030016,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030016,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201030016,2,"445 - Double parked",Parked or Stopped
+1,201030017,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030017,1,"130 - Lost control",Lost Control
+1,201030017,1,"158 - Overtaking on left",Overtaking
+1,201030018,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201030019,2,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201030020,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030020,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030020,1,"131 - Lost control when turning",Lost Control
+1,201030024,1,"403 - Driving unfamiliar vehicle",Inexperience
+1,201030024,1,"407 - Driver over-reacted",Inexperience
+1,201030024,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201030036,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201030036,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201030038,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030038,1,"129 - Too far left/right",Failed to Keep Left
+1,201030038,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201030038,1,"407 - Driver over-reacted",Inexperience
+1,201030039,1,"121 - Swung wide on bend",Failed to Keep Left
+1,201030040,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201030040,1,"402 - New driver showed inexperience",Inexperience
+1,201030041,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030041,1,"129 - Too far left/right",Failed to Keep Left
+1,201030041,1,"407 - Driver over-reacted",Inexperience
+1,201030042,1,"181 - Following too closely",In Line of Traffic
+1,201030042,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201030043,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201030043,2,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201030044,1,"145 - Didn't signal in time incorrect signal",Failed to Signal in Time
+1,201030044,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201030044,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201030044,2,"387 - Misjudged intentions of other party",Misjudged speed
+1,201030045,1,"386 - Misjudged speed of own vehicle",Misjudged speed
+1,201030046,1,"135 - Lost control due to road conditions",Lost Control
+1,201030047,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030047,1,"131 - Lost control when turning",Lost Control
+1,201030048,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201030048,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201030049,1,"181 - Following too closely",In Line of Traffic
+1,201030049,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201030049,2,"181 - Following too closely",In Line of Traffic
+1,201030049,2,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201030050,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201030050,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201030051,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201030051,2,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201030052,1,"381 - Misjudged speed, etc of vehicle coming from behind or alongside",Misjudged speed
+1,201030055,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201030056,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201030056,2,"382 - Misjudged speed etc of vehicle coming from another dirn with right of way",Misjudged speed
+1,201030057,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030057,1,"132 - Lost control under heavy braking",Lost Control
+1,201030057,1,"402 - New driver showed inexperience",Inexperience
+1,201030058,1,"402 - New driver showed inexperience",Inexperience
+1,201030058,1,"405 - Inexperienced driver under instruction",Inexperience
+1,201030058,1,"423 - Wrong pedal",Incorrect use of vehicle controls
+1,201030059,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201030059,1,"131 - Lost control when turning",Lost Control
+1,201030059,1,"402 - New driver showed inexperience",Inexperience
+1,201030060,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201030060,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030060,1,"131 - Lost control when turning",Lost Control
+1,201030061,1,"181 - Following too closely",In Line of Traffic
+1,201030061,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201030061,2,"191 - Suddenly braked",Sudden Action
+1,201030062,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030062,1,"131 - Lost control when turning",Lost Control
+1,201030063,2,"373 - Didnt see/look behind when pulling out from parked position",Did Not See or Look for Another Party Until Too Late
+1,201030064,1,"423 - Wrong pedal",Incorrect use of vehicle controls
+1,201030065,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201030065,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201030066,1,"181 - Following too closely",In Line of Traffic
+1,201030066,2,"191 - Suddenly braked",Sudden Action
+1,201030067,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201030067,1,"427 - Foot slipped or got caught under pedal",Incorrect use of vehicle controls
+1,201030068,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201030068,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030068,1,"131 - Lost control when turning",Lost Control
+1,201030069,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030069,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201030070,1,"181 - Following too closely",In Line of Traffic
+1,201030070,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201030071,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201030072,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030072,1,"131 - Lost control when turning",Lost Control
+1,201030073,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201030073,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201030074,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030074,1,"197 - Suddenly swerved to avoid vehicle",Sudden Action
+1,201030074,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201030075,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030075,1,"116 - Too fast at temporary speed limit",Too fast for Conditions
+1,201030075,1,"153 - Failed to notice oncoming traffic",Overtaking
+1,201030197,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201030198,1,"380 - Misjudged speed, distance or position",Misjudged speed
+1,201030199,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201030199,2,"387 - Misjudged intentions of other party",Misjudged speed
+1,201030199,2,"400 - Inexperience",Inexperience
+1,201030204,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201030607,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201030613,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030613,1,"514 - Evading enforcement",Intentional or Criminal
+1,201030614,1,"112 - Too fast on straight",Too fast for Conditions
+1,201030614,1,"402 - New driver showed inexperience",Inexperience
+1,201030614,1,"517 - Stolen vehicle",Intentional or Criminal
+1,201030615,1,"181 - Following too closely",In Line of Traffic
+1,201030617,1,"131 - Lost control when turning",Lost Control
+1,201030617,1,"517 - Stolen vehicle",Intentional or Criminal
+1,201030620,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030621,1,"387 - Misjudged intentions of other party",Misjudged speed
+1,201030622,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030623,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030623,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201030624,1,"124 - Cutting corner at intersection",Failed to Keep Left
+1,201030638,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030638,1,"131 - Lost control when turning",Lost Control
+1,201030639,1,"131 - Lost control when turning",Lost Control
+1,201030639,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201030640,1,"129 - Too far left/right",Failed to Keep Left
+1,201030641,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030641,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030641,1,"131 - Lost control when turning",Lost Control
+1,201030642,2,"142 - Didn't signal when turning left",Failed to Signal in Time
+1,201030643,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201030643,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201030644,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030644,1,"129 - Too far left/right",Failed to Keep Left
+1,201030645,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201030645,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201030646,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201030647,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030647,1,"131 - Lost control when turning",Lost Control
+1,201030648,1,"131 - Lost control when turning",Lost Control
+1,201030648,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201030649,1,"129 - Too far left/right",Failed to Keep Left
+1,201030649,1,"386 - Misjudged speed of own vehicle",Misjudged speed
+1,201030650,1,"129 - Too far left/right",Failed to Keep Left
+1,201030651,1,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201030651,1,"387 - Misjudged intentions of other party",Misjudged speed
+1,201030652,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201030652,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201030653,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201030653,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201030654,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030654,1,"131 - Lost control when turning",Lost Control
+1,201030655,1,"131 - Lost control when turning",Lost Control
+1,201030657,1,"131 - Lost control when turning",Lost Control
+1,201030657,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201030663,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201030664,1,"434 - Intimidating driving",Showing Off
+1,201030665,1,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201030671,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030672,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030672,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201030672,1,"514 - Evading enforcement",Intentional or Criminal
+1,201030673,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030673,1,"131 - Lost control when turning",Lost Control
+1,201030674,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201030674,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201030675,2,"402 - New driver showed inexperience",Inexperience
+1,201030676,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030808,1,"181 - Following too closely",In Line of Traffic
+1,201030809,1,"131 - Lost control when turning",Lost Control
+1,201030810,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030810,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030810,1,"131 - Lost control when turning",Lost Control
+1,201030811,1,"131 - Lost control when turning",Lost Control
+1,201030812,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201030813,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201030813,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201030814,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201030815,1,"159 - Cut in after overtaking",Overtaking
+1,201030815,1,"357 - Emotionally upset/road rage",Attention Diverted By:
+1,201030816,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030816,1,"131 - Lost control when turning",Lost Control
+1,201030817,1,"181 - Following too closely",In Line of Traffic
+1,201030818,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201030818,1,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201030818,1,"387 - Misjudged intentions of other party",Misjudged speed
+1,201030819,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201030820,1,"181 - Following too closely",In Line of Traffic
+1,201030821,2,"309 - Failed to give way to traffic approaching/crossing from the right",Failed to Give Way
+1,201030822,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201030822,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201030823,1,"112 - Too fast on straight",Too fast for Conditions
+1,201030824,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030824,1,"131 - Lost control when turning",Lost Control
+1,201030825,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030825,1,"131 - Lost control when turning",Lost Control
+1,201030826,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030827,1,"124 - Cutting corner at intersection",Failed to Keep Left
+1,201030827,1,"129 - Too far left/right",Failed to Keep Left
+1,201030829,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201030830,1,"129 - Too far left/right",Failed to Keep Left
+1,201030831,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201030831,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201030832,1,"160 - Overtaking vehicle signaling right turn",Overtaking
+1,201030832,1,"514 - Evading enforcement",Intentional or Criminal
+1,201030833,1,"181 - Following too closely",In Line of Traffic
+1,201030834,1,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201030835,1,"181 - Following too closely",In Line of Traffic
+1,201030836,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201030836,2,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201030837,1,"181 - Following too closely",In Line of Traffic
+1,201030838,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201030855,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201030856,1,"177 - Weaving or cut in on multi-lane road",Wrong Lane/Turned From Wrong Position
+1,201030856,1,"200 - Forbidden movements",Forbidden Movements
+1,201030861,1,"121 - Swung wide on bend",Failed to Keep Left
+1,201030861,1,"129 - Too far left/right",Failed to Keep Left
+1,201030863,1,"129 - Too far left/right",Failed to Keep Left
+1,201030871,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030871,1,"131 - Lost control when turning",Lost Control
+1,201030902,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201030902,1,"131 - Lost control when turning",Lost Control
+1,201030902,1,"402 - New driver showed inexperience",Inexperience
+1,201030907,1,"385 - Misjudged size or position of fixed object or obstacle",Misjudged speed
+1,201030908,1,"129 - Too far left/right",Failed to Keep Left
+1,201030954,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201030954,1,"131 - Lost control when turning",Lost Control
+1,201031010,1,"131 - Lost control when turning",Lost Control
+1,201031010,1,"402 - New driver showed inexperience",Inexperience
+1,201031100,2,"374 - Didnt see/look behind when opening door or leaving vehicle",Did Not See or Look for Another Party Until Too Late
+1,201031101,1,"352 - Attention diverted by scenery or persons outside vehicle",Attention Diverted By:
+1,201031101,1,"386 - Misjudged speed of own vehicle",Misjudged speed
+1,201031103,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201031103,1,"131 - Lost control when turning",Lost Control
+1,201031103,1,"407 - Driver over-reacted",Inexperience
+1,201031104,1,"120 - Failed to keep left",Failed to Keep Left
+1,201031104,1,"340 - Failed to notice lane use arrows / markings",Inattentive: Failed to Notice
+1,201031104,1,"402 - New driver showed inexperience",Inexperience
+1,201031105,1,"308 - Failed to give way at driveway",Failed to Give Way
+1,201031105,1,"370 - Did not see or look for other party until too late",Did Not See or Look for Another Party Until Too Late
+1,201031106,1,"181 - Following too closely",In Line of Traffic
+1,201031106,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201031107,1,"181 - Following too closely",In Line of Traffic
+1,201031107,2,"181 - Following too closely",In Line of Traffic
+1,201031107,3,"191 - Suddenly braked",Sudden Action
+1,201031108,1,"109 - Drugs proven",Alcohol or Drugs
+1,201031108,1,"351 - Attention diverted by passengers",Attention Diverted By:
+1,201031109,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201031110,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201031110,1,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201031111,2,"158 - Overtaking on left",Overtaking
+1,201031111,2,"184 - Incorrect merging/diverging manoeuvre",In Line of Traffic
+1,201031111,2,"381 - Misjudged speed, etc of vehicle coming from behind or alongside",Misjudged speed
+1,201031112,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201031112,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201031113,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201031114,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201031114,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201031116,1,"501 - Illness with no warning (eg heart attack)",Illness and Disability
+1,201031117,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201031118,1,"123 - Cutting corner on bend",Failed to Keep Left
+1,201031118,1,"386 - Misjudged speed of own vehicle",Misjudged speed
+1,201031119,1,"129 - Too far left/right",Failed to Keep Left
+1,201031119,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201031119,1,"407 - Driver over-reacted",Inexperience
+1,201031120,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201031121,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201031121,1,"382 - Misjudged speed etc of vehicle coming from another dirn with right of way",Misjudged speed
+1,201031121,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201031122,1,"428 - Parking brake not fully applied",Incorrect use of vehicle controls
+1,201031123,1,"129 - Too far left/right",Failed to Keep Left
+1,201031123,1,"131 - Lost control when turning",Lost Control
+1,201031123,1,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201031124,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201031124,1,"131 - Lost control when turning",Lost Control
+1,201031125,1,"135 - Lost control due to road conditions",Lost Control
+1,201031125,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201031126,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201031130,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201031131,1,"181 - Following too closely",In Line of Traffic
+1,201031131,2,"420 - Incorrect use of vehicle controls",Incorrect use of vehicle controls
+1,201031132,1,"160 - Overtaking vehicle signaling right turn",Overtaking
+1,201031132,1,"387 - Misjudged intentions of other party",Misjudged speed
+1,201031133,1,"123 - Cutting corner on bend",Failed to Keep Left
+1,201031134,1,"110 - Too fast for conditions",Too fast for Conditions
+1,201031134,1,"138 - Lost control on unsealed road",Lost Control
+1,201031134,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201031135,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201031135,1,"130 - Lost control",Lost Control
+1,201031136,1,"131 - Lost control when turning",Lost Control
+1,201031137,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201031138,1,"129 - Too far left/right",Failed to Keep Left
+1,201031138,1,"130 - Lost control",Lost Control
+1,201031139,1,"181 - Following too closely",In Line of Traffic
+1,201031139,1,"427 - Foot slipped or got caught under pedal",Incorrect use of vehicle controls
+1,201031140,1,"195 - Suddenly swerved to avoid animal",Sudden Action
+1,201031140,1,"407 - Driver over-reacted",Inexperience
+1,201031158,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201031158,1,"130 - Lost control",Lost Control
+1,201031160,1,"129 - Too far left/right",Failed to Keep Left
+1,201031160,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201031160,1,"407 - Driver over-reacted",Inexperience
+1,201031163,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201031164,1,"381 - Misjudged speed, etc of vehicle coming from behind or alongside",Misjudged speed
+1,201031165,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201031166,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201031166,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201031167,1,"136 - Lost control due to vehicle fault",Lost Control
+1,201031167,1,"195 - Suddenly swerved to avoid animal",Sudden Action
+1,201031168,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201031168,1,"131 - Lost control when turning",Lost Control
+1,201031169,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201031170,1,"181 - Following too closely",In Line of Traffic
+1,201031170,2,"191 - Suddenly braked",Sudden Action
+1,201031171,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201031171,1,"131 - Lost control when turning",Lost Control
+1,201031172,1,"135 - Lost control due to road conditions",Lost Control
+1,201031173,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201031173,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201031174,1,"135 - Lost control due to road conditions",Lost Control
+1,201031175,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201031175,2,"377 - Didnt see/look when visibility obstructed by other vehicles",Did Not See or Look for Another Party Until Too Late
+1,201031176,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201031176,2,"387 - Misjudged intentions of other party",Misjudged speed
+1,201031177,1,"334 - Failed to notice traffic lights",Inattentive: Failed to Notice
+1,201031196,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201031196,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201031196,1,"131 - Lost control when turning",Lost Control
+1,201031197,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201031197,2,"353 - Attention diverted by other traffic",Attention Diverted By:
+1,201031197,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201031228,1,"129 - Too far left/right",Failed to Keep Left
+1,201031228,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201031228,1,"402 - New driver showed inexperience",Inexperience
+1,201031228,1,"407 - Driver over-reacted",Inexperience
+1,201031229,1,"129 - Too far left/right",Failed to Keep Left
+1,201031229,1,"134 - Lost control while returning to seal from unsealed shoulder",Lost Control
+1,201031229,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201031229,1,"407 - Driver over-reacted",Inexperience
+1,201031230,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201031230,1,"131 - Lost control when turning",Lost Control
+1,201031231,1,"411 - Fatigue due to long trip",Fatigue (Drowsy
+1,201031232,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201031232,1,"358 - Attention diverted by cigarette etc",Attention Diverted By:
+1,201031233,1,"330 - Inattentive",Inattentive: Failed to Notice
+1,201031234,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201031234,2,"354 - Attention diverted by animal or insect in vehicle",Attention Diverted By:
+1,201031237,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201031238,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201031238,1,"181 - Following too closely",In Line of Traffic
+1,201031239,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201031242,1,"101 - Alcohol suspected",Alcohol or Drugs
+1,201031242,1,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201031243,1,"181 - Following too closely",In Line of Traffic
+1,201031243,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201031244,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201031244,2,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201031245,2,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201031246,1,"138 - Lost control on unsealed road",Lost Control
+1,201031247,1,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201031248,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201031248,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201031248,1,"131 - Lost control when turning",Lost Control
+1,201031249,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201031249,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201031249,1,"131 - Lost control when turning",Lost Control
+1,201031249,1,"403 - Driving unfamiliar vehicle",Inexperience
+1,201031250,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201031250,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201031251,1,"181 - Following too closely",In Line of Traffic
+1,201031251,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201031252,1,"135 - Lost control due to road conditions",Lost Control
+1,201031253,1,"116 - Too fast at temporary speed limit",Too fast for Conditions
+1,201031253,1,"135 - Lost control due to road conditions",Lost Control
+1,201031253,1,"138 - Lost control on unsealed road",Lost Control
+1,201031254,1,"359 - Attention diverted by cell phone",Attention Diverted By:
+1,201031254,2,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201031255,1,"135 - Lost control due to road conditions",Lost Control
+1,201031257,1,"181 - Following too closely",In Line of Traffic
+1,201031257,2,"191 - Suddenly braked",Sudden Action
+1,201031258,1,"333 - Failed to notice indication of vehicle in front",Inattentive: Failed to Notice
+1,201031258,1,"414 - Fatigue due to working long hours before driving",Fatigue (Drowsy
+1,201031259,1,"181 - Following too closely",In Line of Traffic
+1,201031259,2,"144 - Didn't signal in time when turning right",Failed to Signal in Time
+1,201031260,1,"116 - Too fast at temporary speed limit",Too fast for Conditions
+1,201031260,1,"131 - Lost control when turning",Lost Control
+1,201031261,1,"103 - Alcohol test above limit or test refused",Alcohol or Drugs
+1,201031261,1,"131 - Lost control when turning",Lost Control
+1,201031262,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201031262,2,"334 - Failed to notice traffic lights",Inattentive: Failed to Notice
+1,201031263,1,"145 - Didn't signal in time incorrect signal",Failed to Signal in Time
+1,201031263,2,"303 - Failed to give way when turning to non-turning traffic",Failed to Give Way
+1,201031263,2,"387 - Misjudged intentions of other party",Misjudged speed
+1,201031264,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201031264,1,"129 - Too far left/right",Failed to Keep Left
+1,201031265,2,"308 - Failed to give way at driveway",Failed to Give Way
+1,201031265,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201031266,1,"102 - Alcohol test below limit",Alcohol or Drugs
+1,201031266,1,"130 - Lost control",Lost Control
+1,201031266,1,"197 - Suddenly swerved to avoid vehicle",Sudden Action
+1,201031267,1,"412 - Fatigue due to lack of sleep",Fatigue (Drowsy
+1,201031268,2,"357 - Emotionally upset/road rage",Attention Diverted By:
+1,201031268,2,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201031285,1,"181 - Following too closely",In Line of Traffic
+1,201031285,1,"331 - Failed to notice car slowing",Inattentive: Failed to Notice
+1,201031286,2,"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+1,201031287,1,"371 - Didnt see/look behind when reversing/manoeuvering",Did Not See or Look for Another Party Until Too Late
+1,201031288,1,"386 - Misjudged speed of own vehicle",Misjudged speed
+1,201031288,1,"402 - New driver showed inexperience",Inexperience
+1,201031289,2,"301 - Failed to give way at stop sign",Failed to Give Way
+1,201031289,2,"384 - Misjudged position of towed vehicle",Misjudged speed
+1,201031290,2,"302 - Failed to give way at give way sign",Failed to Give Way
+1,201031290,2,"375 - Didnt see/look when required to give way to traffic from another direction",Did Not See or Look for Another Party Until Too Late
+1,201031291,1,"129 - Too far left/right",Failed to Keep Left
+1,201031291,1,"131 - Lost control when turning",Lost Control
+1,201031291,1,"404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions",Inexperience
+1,201031292,1,"181 - Following too closely",In Line of Traffic
+1,201031292,2,"191 - Suddenly braked",Sudden Action
+1,201031292,2,"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+1,201031293,1,"133 - Lost control under heavy acceleration",Lost Control
+1,201031293,1,"430 - Showing off",Showing Off
+1,201031294,1,"423 - Wrong pedal",Incorrect use of vehicle controls
+1,201031295,1,"129 - Too far left/right",Failed to Keep Left
+1,201031295,1,"131 - Lost control when turning",Lost Control
+1,201031296,1,"111 - Too fast entering corner",Too fast for Conditions
+1,201031296,1,"131 - Lost control when turning",Lost Control
+1,201031297,2,"303 - Failed to give way when turning to non-turni
