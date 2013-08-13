@@ -45,7 +45,21 @@ write.table(crashMeshblockID
 
 # road length per meshblock - nice try -----------------------------------
 ID <- over(roads500k, meshblocks) # nope, too many gigabytes
+# start again by trimming out roads that don't intersect
+# using code from this StackOverflow question:
+# http://stackoverflow.com/questions/16918767/
+roads.sub <- gIntersects(roads500k, meshblocks$A, byid=TRUE) # test for areas that don't intersect
+roads.sub2 <- apply(roads.sub, 2, function(x) {sum(x)}) # test across all roads in the SpatialLines whether it intersects or not
+roads.sub3 <- roads[roads.sub2 > 0] # keep only the ones that actually intersect
+# perform the intersection. This takes a while since it also calculates area and other things, which is why we trimmed out irrelevant areas first
+int <- gIntersection(roads.sub3, meshblocks$A, byid=TRUE) # intersect the spatialLines and the meshblocks
 
+# this works fine but takes a few minutes (quite a few)
+roadsFeatherston <- gIntersection(roads50k, subset(meshblocks, meshblocks$UA06D == "Featherston"))
+# try with a much larger meshblock
+system.time(roadsA <- gIntersection(roads50k, meshblocksList$D))
+# try with roads50k
+roadsA <- gIntersection(roads50k, meshblocksList$A)
 
 # area per meshblock ------------------------------------------------------
 Area <- laply(meshblocks@polygons, function(x) (x@area))
