@@ -1,10 +1,5 @@
-# load the crashes
-crashes <- loadCrashes("data/BoP-coordinates.csv")
-
-# meshblock ID per crash ID ----------------------------------------------
-ID <- over(crashes , meshblocks)
-crashMeshblockID <- cbind(crashes@data$id, ID[, c("MB06", "urban.rural")])
-write.table(crashMeshblockID
-            , row.names = FALSE
-            , col.names = c("crashID", "meshblockID", "urbanRural")
-            , file = "output/crashMeshblockID.txt")
+coordinates <- loadCrashes("data/BoP-coordinates.csv")
+crashes <- read.csv("data/BoP-crashes.txt", header = FALSE)
+drivers <- read.csv("/data/BoP-drivers.txt", header = FALSE)
+driversCauses <- read.csv("/data/BoP-drivers-causes.txt", header = FALSE)
+victims <- read.csv("/data/BoP-victims.txt", header = FALSE)
