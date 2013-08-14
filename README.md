@@ -186,7 +186,7 @@ ruralRoads=# \q
 ```
 Back at the command line, push shapefiles into the database.
 ```
-shp2pgsql data/meshblocks/MB06-LV2 meshblocks ruralRoads | psql -d ruralRoads
+shp2pgsql data/meshblocks/MB06_LV2 meshblocks ruralRoads | psql -d ruralRoads
 shp2pgsql data/roads/nz-mainland-road-centreli/nz-mainland-road-centreli roads ruralRoads | psql -d ruralRoads
 ```
 Index
