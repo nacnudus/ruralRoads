@@ -125,3 +125,82 @@ injury
 role
 driver at fault
 ethnicity
+
+PostGIS
+-------
+[Installation](http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS20Ubuntu1204).  If you have already added the ubuntu-gis unstable ppa you'll have to remove it.
+```
+sudo add-apt-repository -r ppa:ubuntugis/ubuntugis-unstable
+```
+Then proceed with the installation instructions.
+```
+sudo apt-get install python-software-properties # you may already have this if you installed gdal etc.
+sudo apt-add-repository ppa:ubuntugis/ppa
+sudo apt-get update
+sudo apt-get install postgresql-9.1-postgis
+```
+Set up the acccounts
+```
+$ sudo passwd postgres
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+$ sudo -s -u postgres
+postgres$ psql
+psql (9.1.3)
+Type "help" for help.
+
+postgres=# \password postgres
+Enter new password: 
+Enter it again: 
+postgres=# \q
+postgres$ 
+```
+Make it easier for yourself
+```
+postgres$ createuser --superuser $USER     ---- note: createuser is a command line tool to create a PostgreSQL user, not a system account  
+postgres$ createdb $USER
+postgres$ psql
+psql (9.1.3)
+Type "help" for help.
+
+postgres=# \password $USER
+Enter new password: 
+Enter it again: 
+postgres=# \q
+postgres$ exit
+$USER$ psql
+psql (9.1.3)
+Type "help" for help.
+$USER=#                        ---- voila! 
+```
+Create a database (from the ordinary command line)
+```
+createdb ruralRoads
+psql ruralRoads
+ruralRoads=# CREATE EXTENSION postgis;
+CREATE EXTENSION
+ruralRoads=# \q
+```
+Back at the command line, push shapefiles into the database.
+```
+shp2pgsql data/meshblocks/MB06-LV2 meshblocks ruralRoads | psql -d ruralRoads
+shp2pgsql data/roads/nz-mainland-road-centreli/nz-mainland-road-centreli roads ruralRoads | psql -d ruralRoads
+```
+Index
+```
+psql ruralRoads
+CREATE INDEX i_meshblocks_geom ON meshblocks USING GIST ( geom );
+VACUUM ANALYZE meshblocks (geom);
+
+CREATE INDEX i_roads_geom ON roads USING GIST ( geom );
+VACUUM ANALYZE roads (geom);
+```
+Example queries
+```
+# Total road length?
+SELECT sum(ST_Length(geom))/1000 AS km_roads FROM roads;
+# Execute a longer query via RStudio Server on an EC2 instance
+psql -f sql/totalRoadLength.sql ruralRoads > output/totalRoadLength.txt
+psql -f sql/roadLengthByMeshblock.sql sql3 ruralRoads > output/roadLengthByMeshblock.txt
+```
