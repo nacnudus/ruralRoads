@@ -20,5 +20,6 @@ colnames(driversCauses) <- c("count", "crashID", "role", "driverCause"
 
 # remove crashes with year = NA (there was one once) ---------------------
 crashes <- crashes[!is.na(crashes$year), ]
-
-
+crashes$hour <- as.numeric(crashes$hour)
+crashes[crashes$hour == 24, "hour"] <- 0
+crashes[!(crashes$hour <= 23), "hour"] <- NA
