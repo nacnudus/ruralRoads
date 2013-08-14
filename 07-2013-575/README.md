@@ -31,45 +31,49 @@ This was last pulled from CAS on 14 August 2013.
 Each table is named with by its region, followed by a description, e.g. BoP-coordinates.txt
 
 ### BoP-coordinates.txt
-...
-CRASH ID
-...
-EASTING
-NORTHING
+* ...
+* CRASH ID
+* ...
+* EASTING
+* NORTHING
 
 ### BoP-crashes.txt
-state highway
-severity f/s/m/n
-day
-month
-year
-hour
-crashid
+* crashID
+* state highway
+* severity f/s/m/n
+* day
+* month
+* year
+* hour
+* crashid
 
 ### BoP-drivers.txt
-sex
-age
-injury
-role
-driver at fault
-driver license type
-driver overseas type
-ethnicity
+* crashID
+* sex
+* age
+* injury
+* role
+* driver at fault
+* driver license type
+* driver overseas type
+* ethnicity
 
 exclude uninjured people? No
 
 ### BoP-drivers-causes.txt
-role
-driver causes
-driver cause categories
+* crashID
+* role
+* driver causes
+* driver cause categories
 
 exclude uninjured people? No
 
 ### BoP-victims
-dvr/pass/other
-sex
-age
-injury
-role
-driver at fault
-ethnicity
+* crashID
+* dvr/pass/other
+* sex
+* age
+* injury
+* role
+* driver at fault
+* ethnicity
