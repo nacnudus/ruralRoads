@@ -1,9 +1,13 @@
 # Investigates the CAS data quality, e.g. how many crashes have coordinates?
+
 # Note that only unique crashIDs are counted.  For example, the code
 # dataQuality(driversCauses.) takes unique crashIDs from the coordinates
 # table, and sees how many unique matching crashIDs there are in the crashes
 # table. You could say, for all those crashes that have at least one
 # driver cause, so many don't even have an entry in the coordinates table.
+
+# It is also mysterious that there are no crashes in the crashes table prior
+# to 2010
 
 source("R/01-load.r")
 source("R/02-clean.r")
