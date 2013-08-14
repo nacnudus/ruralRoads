@@ -83,48 +83,50 @@ Crash Tables
 Each table is named with by its region, followed by a description, e.g. BoP-coordinates.txt
 
 ### BoP-coordinates.txt
-...
-CRASH ID
-...
-EASTING
-NORTHING
+* ...
+* CRASH ID
+* ...
+* EASTING
+* NORTHING
 
 ### BoP-crashes.txt
-state highway
-severity f/s/m/n
-day
-month
-year
-hour
-crashid
+* state highway
+* severity f/s/m/n
+* day
+* month
+* year
+* hour
+* crashid
 
 ### BoP-drivers.txt
-sex
-age
-injury
-role
-driver at fault
-driver license type
-driver overseas type
-ethnicity
+* sex
+* age
+* injury
+* role
+* driver at fault
+* driver license type
+* driver overseas type
+* ethnicity
 
 exclude uninjured people? No
 
 ### BoP-drivers-causes.txt
-role
-driver causes
-driver cause categories
+* role
+* driver causes
+* driver cause categories
 
 exclude uninjured people? No
 
 ### BoP-victims
-dvr/pass/other
-sex
-age
-injury
-role
-driver at fault
-ethnicity
+* dvr/pass/other
+* sex
+* age
+* injury
+* role
+* driver at fault
+* ethnicity
+
+exclude uninjured people? No
 
 PostGIS
 -------
@@ -198,9 +200,12 @@ VACUUM ANALYZE roads (geom);
 ```
 Example queries
 ```
-# Total road length?
+# Total road length
 SELECT sum(ST_Length(geom))/1000 AS km_roads FROM roads;
 # Execute a longer query via RStudio Server on an EC2 instance
 psql -f sql/totalRoadLength.sql ruralRoads > output/totalRoadLength.txt
+# that was total road length within meshblocks, which is very nearly the same as
+# Total road length, and should be exactly the same as the sum of the following
+# query, road lengthy by meshblock.  Use it for validation.
 psql -f sql/roadLengthByMeshblock.sql sql3 ruralRoads > output/roadLengthByMeshblock.txt
 ```

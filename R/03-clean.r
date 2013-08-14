@@ -1,6 +1,3 @@
-
-
-
 # roads -------------------------------------------------------------------
 
 # subset highways
@@ -30,7 +27,6 @@ x123$rural <- TRUE # after the join, stations@data$rural will be TRUE or NA
 
 
 # stations ----------------------------------------------------------------
-
 
 # join stations and 123-person-station concordance
 stations@data <- join(stations@data

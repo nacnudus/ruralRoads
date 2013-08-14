@@ -14,6 +14,7 @@ projectionString <- "+proj=tmerc +lat_0=0 +lon_0=173 +k=0.9996 +x_0=1600000 +y_0
 
 # subset highways ---------------------------------------------------------
 
+# TODO highway length per meshblock in PostGIS
 subsetHighways <- function(x) {
   subset(x, !is.na(x@data$hway_num))
 }
@@ -28,7 +29,7 @@ subsetHighways <- function(x) {
 
 subsetMeshblock <- function(x) {
   # "mrs" stands for "meshblocks rural subset"
-  mrs <- subset(meshblocks, meshblocks@data$code <= x)
+  mrs <- subset(meshblocks, meshblocks@data$code == x)
   # shake everything up a bit to prevent any non-noded intersections errors
   mrs <- gBuffer(mrs, width=0, byid=TRUE)
   # union all polygons in each one to speed up plotting
@@ -38,14 +39,6 @@ subsetMeshblock <- function(x) {
 
 
 # load crashes ------------------------------------------------------------
-
-# subsets crashes by ruralness once they've been loaded and cleaned,
-# generally called within loadCrashes function e.g.
-# dlply(urban.rural, .(code), function(x) (subsetCrashes(x$code))))
-subsetCrashes <- function(x, y) {
-  # "crs" stands for "crashes rural subset"
-  crs <- gIntersection(x, meshblocks[[y]])
-}
 
 # given a filename (x), loads and cleans crashes ready for subsetting by 
 # ruralness
