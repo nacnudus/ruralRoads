@@ -15,7 +15,7 @@ dataQuality <- function(x) {
   z <- melt(x[, 2:5], measure.vars = 1:4)
   z <- dcast(z, variable ~ value)
   z <- cbind(z
-             , sum = sum(z[, -1])
+             , sum = rowSums(z[, -1])
              , z[, -1] / rowSums(z[, -1]))
   return(z)
 }
