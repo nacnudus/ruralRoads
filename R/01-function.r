@@ -53,7 +53,7 @@ loadCrashes <- function(x) {
   crashes <- read.csv(fixedFile, quote = "\"")
   crashes <- crashes[!is.na(crashes$NORTHING)
                      , c("CRASH.ID", "EASTING", "NORTHING")]
-  colnames(crashes) <- c("id", "easting", "northing")
+  colnames(crashes) <- c("crashID", "easting", "northing")
   crashes <- SpatialPointsDataFrame(coords = crashes[, 2:3], data=crashes)
   proj4string(crashes) <- projectionString # same crs as everything else
   return(crashes)
