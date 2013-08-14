@@ -8,16 +8,14 @@ write.table(crashMeshblocks
             , file = "output/urbanRural.txt")
 
 # column headings of the other crash datasets ----------------------------
-colnames(crashes) <- c("count", "crashid?", "severity", "day", "month", "year", "hour", "stateHighway")
-
-### BoP-crashes.txt
-state highway - V8
-severity f/s/m/n - V3
-day - V4
-month - V5
-year
-hour
-crashid
+colnames(crashes) <- c("count", "crashID", "severity", "day", "month"
+                       , "year", "hour", "stateHighway")
+colnames(drivers) <- c("count", "crashID", "role", "injury", "driverAtFault"
+                       , "sex", "age", "ethnicity", "licence", "overseas")
+colnames(victims) <- c("count", "crashID", "driverPassengerOther", "sex", "age"
+                       , "injury", "role", "driverAtFault", "ethnicity")
+colnames(driversCauses) <- c("count", "crashID", "role", "driverCause"
+                             , "driverCauseCategory")
 
 
 # remove crashes with year = NA (there was one once) ---------------------
