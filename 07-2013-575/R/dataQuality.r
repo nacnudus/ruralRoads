@@ -10,17 +10,19 @@
 # to 2010
 
 source("R/01-load.r")
-source("R/02-clean.r")
+source("R/02-clean.r") # best to do that by hand if you don't want to
+                       # recalculate the spatial data.
 
 require(reshape2)
 
 
-# dataQuality function ----------------------------------------------------
+# dataQuality function ---------------------------------------------------
 
 # returns a table of missing values and their proportion to the whole,
 # having joined all other tables to a given table, x.
 
 dataQuality <- function(x) {
+  # fails if there is no missing data - but that's a good thing, right?
   z <- melt(x[, 2:5], measure.vars = 1:4)
   z <- dcast(z, variable ~ value)
   z <- cbind(z
@@ -30,7 +32,7 @@ dataQuality <- function(x) {
 }
 
 
-# coordinates. -----------------------------------------------------
+# coordinates. -----------------------------------------------------------
 
 # left join all the other tables onto coordinates to see how many matches there
 # are.
