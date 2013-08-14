@@ -8,8 +8,8 @@ write.table(crashMeshblocks
             , file = "output/urbanRural.txt")
 
 # column headings of the other crash datasets ----------------------------
-colnames(crashes) <- c("count", "crashID", "severity", "day", "month"
-                       , "year", "hour", "stateHighway")
+colnames(crashes) <- c("count", "crashID", "day", "month"
+                       , "year", "hour", "severity", "stateHighway")
 colnames(drivers) <- c("count", "crashID", "role", "injury", "driverAtFault"
                        , "sex", "age", "ethnicity", "licence", "overseas")
 colnames(victims) <- c("count", "crashID", "driverPassengerOther", "sex", "age"
@@ -23,3 +23,4 @@ crashes <- crashes[!is.na(crashes$year), ]
 crashes$hour <- as.numeric(crashes$hour)
 crashes[crashes$hour == 24, "hour"] <- 0
 crashes[!(crashes$hour <= 23), "hour"] <- NA
+crashes <- crashes[as.character(crashes$severity) %in% c("Fatal", "Serious"), ]

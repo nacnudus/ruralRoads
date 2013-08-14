@@ -36,6 +36,14 @@ Police boundaries are from Koordinates.  Machine-machine downloads are planned.
 
 Road centrelines (at 1:500k and 1:50k, also available at 1:250k), coastline and coast polygons are from the LINZ Data Service.
 
+Census data is from Statistics New Zealand.
+```
+cd data
+axel -n 10 http://www3.stats.govt.nz/meshblock/2006/access/CensusData.zip
+unzip CensusData.zip
+mv CensusData.zip ../
+```
+
 Helpful Docs
 ------------
 [Dealing with non-unique polygon IDs](https://stat.ethz.ch/pipermail/r-sig-geo/2009-May/005666.html): can a meshblock have several polygons?  Possibly groups of islands?  Doesn't work anyway. [gBuffer](http://stackoverflow.com/questions/13662448/what-does-the-following-error-mean-topologyexception-found-non-nonded-intersec) did.  [More here](https://stat.ethz.ch/pipermail/r-sig-geo/2012-December/016952.html).
@@ -61,6 +69,13 @@ sudo apt-get install proj proj-bin proj-data libproj-dev libproj0
 
 ```
 * maptools, mapproj and PBSmapping, which may also require GDAL and PROJ.4 as above
+* RODBC (r package) and mdbtools (linux package) to connect to a Microsoft Access .mdb database for meshblock demographics from Stats NZ.
+```
+sudo apt-get install mdbtools
+```
+```
+install.packages("RODBC")
+```
 
 Regions
 -------

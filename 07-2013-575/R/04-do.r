@@ -13,6 +13,17 @@ crashes2 <- join(crashes2, crashes, type = "inner")
 crashes2$urban <- as.character(crashes2$code) <= "D"
 
 ggplot(crashes2[!is.na(crashes2$hour), ]
+       , aes(hour)) + 
+  geom_density(alpha = 0.2) + 
+  facet_grid(urban ~ severity, margins = TRUE)
+
+ggplot(crashes2[!is.na(crashes2$hour), ]
+       , aes(hour)) + 
+  geom_density(alpha = 0.2) + 
+  aes(y = ..count..) +
+  facet_grid(urban ~ severity, margins = TRUE)
+
+ggplot(crashes2[!is.na(crashes2$hour), ]
        , aes(hour, group = urban, fill = urban)) + 
-  geom_density(alpha = 0.2) +
-  facet_grid(severity ~ stateHighway, margins = TRUE)
+  geom_bar(binwidth = 1, position = "dodge") +
+  facet_grid(. ~ severity, margins = TRUE, scales = "free")
