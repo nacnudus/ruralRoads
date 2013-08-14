@@ -28,7 +28,7 @@ subsetHighways <- function(x) {
 
 subsetMeshblock <- function(x) {
   # "mrs" stands for "meshblocks rural subset"
-  mrs <- subset(meshblocks, meshblocks@data$code == x)
+  mrs <- subset(meshblocks, meshblocks@data$code <= x)
   # shake everything up a bit to prevent any non-noded intersections errors
   mrs <- gBuffer(mrs, width=0, byid=TRUE)
   # union all polygons in each one to speed up plotting
