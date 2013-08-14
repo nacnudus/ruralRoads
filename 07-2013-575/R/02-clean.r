@@ -1,8 +1,8 @@
 # classify crashes by meshblock  ------------------------------------------
 ID <- over(coordinates , meshblocks)
-urbanRural <- cbind(coordinates@data$id, ID[, "MB06"])
-colnames(urbanRural) <- c("crashID", "meshblockID")
-write.table(urbanRural
+crashMeshblocks <- cbind(coordinates@data$id, ID[, "MB06"])
+colnames(crashMeshblocks) <- c("crashID", "meshblockID")
+write.table(crashMeshblocks
             , row.names = FALSE
             , col.names = c("crashID", "meshblockID")
             , file = "output/urbanRural.txt")
