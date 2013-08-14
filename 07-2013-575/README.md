@@ -15,7 +15,7 @@ Initialize from a new instance in Amazon EC2.
 1.  `setwd()` into the ruralRoads directory.
 
 1.  Load some workspace data (more efficient than recalculating it.)
-`load("data/spatialData")
+`load("data/spatialData")`
 
 1.  `source("R/01-function.r")`
 
@@ -26,6 +26,8 @@ Initialize from a new instance in Amazon EC2.
 
 CAS Data
 --------
+This was last pulled from CAS on 14 August 2013.
+
 Each table is named with by its region, followed by a description, e.g. BoP-coordinates.txt
 
 ### BoP-coordinates.txt
