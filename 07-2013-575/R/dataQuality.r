@@ -9,7 +9,7 @@ require(reshape2)
 # having joined all other tables to a given table, x.
 
 dataQuality <- function(x) {
-  z <- melt(x[, 4:7], measure.vars = 1:4)
+  z <- melt(x[, 2:5], measure.vars = 1:4)
   z <- dcast(z, variable ~ value)
   z <- cbind(z
              , sum = sum(z[, -1])
@@ -23,7 +23,7 @@ dataQuality <- function(x) {
 # left join all the other tables onto coordinates to see how many matches there
 # are.
 
-coordinates. <- coordinates@data
+coordinates. <- data.frame(crashID = coordinates@data[, "crashID"])
 coordinates. <- join(coordinates.
                      , data.frame(crashID = crashes$crashID, crashes = 1)
                      , match = "first")
@@ -39,3 +39,21 @@ coordinates. <- join(coordinates.
                      , match = "first")
 
 
+# crashes. ---------------------------------------------------------------
+
+# left join all the other tables onto crashes to see how many matches there are
+
+crashes. <- data.frame(crashID = crashes[, "crashID"])
+crashes. <- join(crashes.
+                     , data.frame(crashID = crashes$crashID, crashes = 1)
+                     , match = "first")
+crashes. <- join(crashes.
+                     , data.frame(crashID = crashes$crashID, drivers = 1)
+                     , match = "first")
+crashes. <- join(crashes.
+                     , data.frame(crashID = victims$crashID, victims = 1)
+                     , match = "first")
+crashes. <- join(crashes.
+                     , data.frame(crashID = driversCauses$crashID
+                                  , driversCauses = 1)
+                     , match = "first")
