@@ -224,3 +224,33 @@ psql -f sql/totalRoadLength.sql ruralRoads > output/totalRoadLength.txt
 # query, road lengthy by meshblock.  Use it for validation.
 psql -f sql/roadLengthByMeshblock.sql ruralRoads -tA -F "," > output/roadLengthByMeshblock.csv
 ```
+
+Census Data
+-----------
+using mdbtools (mdb-schema, mdb-export) dump data from CensusData.mdb into a new PostgreSQL database.
+```
+createdb censusData
+mdb-schema data/CensusData.mdb postgres | psql -d censusData
+# get a list of tables with
+mdb-tables data/CensusData.mdb
+# then for each table
+echo "\set QUIET" > censusData.sql
+echo "BEGIN; LOCK TABLE tblCountsAreaUnit; " >> censusData.sql
+mdb-export -I postgres -q \' -R "\n" data/CensusData.mdb tblCountsAreaUnit >> censusData.sql
+echo "COMMIT;" >> censusData.sql
+psql -d censusData -f censusData.sql
+
+tblCountsAreaUnit 
+tblCountsMeshBlock 
+tblCountsNewZealand 
+tblCountsRegionalCouncil 
+tblCountsTerritorialAuthority 
+tblGeogAreaUnit 
+tblGeogMeshBlock 
+tblGeogRegionalCouncil 
+tblGeogTerritorialAuthority 
+tblGeogWard 
+tblQuestions 
+tblSurveys 
+tblCountsWard
+```
