@@ -30,10 +30,10 @@ crashes$weekday <- wday(ymd(paste(crashes$year, crashes$month, crashes$day)))
 # BoP meshblocks ----------------------------------------------------------
 
 districtBoP <- subset(districts, districts$DISTRICT_N == "BAY OF PLENTY")
-meshblocksBoPID <- unique(over(meshblocks, districtBoP))
+meshblocksBoPID <- over(meshblocks, districtBoP)
 meshblocksBoP <- subset(meshblocks, !is.na(meshblocksBoPID))
 colnames(meshblocksBoP@data)[1] <- "meshblockID"
-write.table(meshblocksBoP@data[, c("meshblockID")]
+write.table(unique(meshblocksBoP@data[, c("meshblockID")])
             , row.names = FALSE
             , file = "output/meshblocksBoP.txt")
 
