@@ -9,3 +9,5 @@ meshblockUrban <- read.table("../output/meshblockUrbanRural.txt"
                              , quote = "\"")
 meshblockRoadLength <- read.csv("../output/roadLengthByMeshblock.csv"
                                 , header = FALSE)
+meshblockArea <- read.csv("../output/meshblockArea.txt"
+                          , header = TRUE)
