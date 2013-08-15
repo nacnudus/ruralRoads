@@ -5,7 +5,7 @@ colnames(crashMeshblocks) <- c("crashID", "meshblockID")
 write.table(crashMeshblocks
             , row.names = FALSE
             , col.names = c("crashID", "meshblockID")
-            , file = "output/urbanRural.txt")
+            , file = "output/crashMeshblockID.txt")
 
 # column headings of the other crash datasets ----------------------------
 colnames(crashes) <- c("count", "crashID", "day", "month"
@@ -33,7 +33,7 @@ districtBoP <- subset(districts, districts$DISTRICT_N == "BAY OF PLENTY")
 meshblocksBoPID <- over(meshblocks, districtBoP)
 meshblocksBoP <- subset(meshblocks, !is.na(meshblocksBoPID))
 colnames(meshblocksBoP@data)[1] <- "meshblockID"
-write.table(meshblocksBoP@data[, c("MB06")]
+write.table(meshblocksBoP@data[, c("meshblockID")]
             , row.names = FALSE
             , file = "output/meshblocksBoP.txt")
 
