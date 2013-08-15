@@ -24,3 +24,26 @@ crashes$hour <- as.numeric(crashes$hour)
 crashes[crashes$hour == 24, "hour"] <- 0
 crashes[!(crashes$hour <= 23), "hour"] <- NA
 crashes <- crashes[as.character(crashes$severity) %in% c("Fatal", "Serious"), ]
+crashes$weekday <- wday(ymd(paste(crashes$year, crashes$month, crashes$day)))
+
+
+# BoP meshblocks ----------------------------------------------------------
+
+districtBoP <- subset(districts, districts$DISTRICT_N == "BAY OF PLENTY")
+meshblocksBoPID <- over(meshblocks, districtBoP)
+meshblocksBoP <- subset(meshblocks, !is.na(meshblocksBoPID))
+colnames(meshblocksBoP@data)[1] <- "meshblockID"
+write.table(meshblocksBoP@data[, c("MB06")]
+            , row.names = FALSE
+            , file = "output/meshblocksBoP.txt")
+
+colnames(meshblockRoadLength) <- c("meshblockID", "roadLength")
+
+meshblocksData <- meshblocksBoP@data[, c("meshblockID", "code")]
+# code urban as ABC, rural DEFGZ
+meshblocksData$urban <- as.character(meshblocksData$code) <= "D"
+meshblocksData$urban[meshblocksData$urban == TRUE] <- "urban"
+meshblocksData$urban[meshblocksData$urban == FALSE] <- "rural"
+
+meshblocksData <- join(meshblocksData, meshblockRoadLength)
+mData <- melt(meshblocksData, id.vars <- c("meshblockID", "code", "urban"))

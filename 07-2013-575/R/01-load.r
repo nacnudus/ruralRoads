@@ -7,3 +7,5 @@ victims <- read.csv("data/BoP-victims.txt", header = FALSE)
 meshblockUrban <- read.table("../output/meshblockUrbanRural.txt"
                              , header = TRUE
                              , quote = "\"")
+meshblockRoadLength <- read.csv("../output/roadLengthByMeshblock.csv"
+                                , header = FALSE)
