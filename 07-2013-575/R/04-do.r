@@ -1,5 +1,8 @@
 # CAS data extracted on 15 August 2013.
 
+
+# load --------------------------------------------------------------------
+
 # load crashMeshblocks - this will only exist if the relevant code in
 # 02-clean.r has been run, but try to avoid that.
 crashMeshblocks <- read.table("output/crashMeshblockID.txt"
@@ -9,6 +12,10 @@ crashMeshblocks <- read.table("output/crashMeshblockID.txt"
 meshblocksBoP <- read.table("output/meshblocksBoP.txt"
                               , header = TRUE
                               , quote = "\"") # then carry on cleaning
+
+
+
+# clean -------------------------------------------------------------------
 
 # join coordinates to meshblocks to urban/rural to crashes
 crashes2 <- join(coordinates@data, crashMeshblocks, type = "inner")
@@ -20,6 +27,11 @@ crashes2$urban <- as.character(crashes2$code) <= "C"
 crashes2$urban[crashes2$urban == TRUE] <- "urban"
 crashes2$urban[crashes2$urban == FALSE] <- "rural"
 
+
+
+
+# analyse -----------------------------------------------------------------
+
 # The hourly profile of urban/rural differs.  Rural crashes peak at 1600 , urban
 # at 1700.  Rural have a small peak between 0100 and 0200 whereas Urban crashes
 # are low at that time.
@@ -29,7 +41,7 @@ ggplot(crashes2[!is.na(crashes2$hour), ]
   scale_x_continuous(breaks = seq(0,24,4)) +
   facet_grid(. ~ urban)
 
-# To put that in context, there aren't that many fewer rural crashes.
+# To put that in context, there are more rural crashes than urban.
 ggplot(crashes2[!is.na(crashes2$hour), ]
        , aes(hour)) + 
   geom_density() + 
@@ -56,6 +68,7 @@ mCrash <- melt(crashes2[, c("crashID", "urban", "month", "year", "hour"
 crashUrbanRural <- dcast(mCrash, year ~ urban, sum)
 crashUrbanRural$ruralByRoad <- crashUrbanRural$rural / (roadLength$rural / 1000)
 crashUrbanRural$urbanByRoad <- crashUrbanRural$urban / (roadLength$urban / 1000)
+crashUrbanRural
 
 # Now in terms of area.  Far more area is rural, too.
 area <- dcast(mData[!is.na(mData$value) & mData$variable == "area", ]
