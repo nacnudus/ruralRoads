@@ -1,6 +1,6 @@
 # classify crashes by meshblock  ------------------------------------------
 ID <- over(coordinates , meshblocks)
-crashMeshblocks <- cbind(coordinates@data$id, ID[, "MB06"])
+crashMeshblocks <- data.frame(cbind(coordinates@data$crashID, ID[, "MB06"]))
 colnames(crashMeshblocks) <- c("crashID", "meshblockID")
 write.table(crashMeshblocks
             , row.names = FALSE
@@ -46,4 +46,5 @@ meshblocksData$urban[meshblocksData$urban == TRUE] <- "urban"
 meshblocksData$urban[meshblocksData$urban == FALSE] <- "rural"
 
 meshblocksData <- join(meshblocksData, meshblockRoadLength)
+meshblocksData <- join(meshblocksData, meshblockArea)
 mData <- melt(meshblocksData, id.vars <- c("meshblockID", "code", "urban"))
