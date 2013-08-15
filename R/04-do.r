@@ -26,7 +26,7 @@ Area <- laply(meshblocks@polygons, function(x) (x@area))
 meshblockArea <- as.data.frame(cbind(meshblocks@data$MB06, Area / 1e6))
 write.table(meshblockArea
             , row.names = FALSE
-            , col.names = c("MB06", "area")
+            , col.names = c("meshblockID", "area")
             , file = "output/meshblockArea.txt")
 
 
