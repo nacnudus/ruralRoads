@@ -41,7 +41,7 @@ colnames(meshblockRoadLength) <- c("meshblockID", "roadLength")
 
 meshblocksData <- meshblocksBoP@data[, c("meshblockID", "code")]
 # code urban as ABC, rural DEFGZ
-meshblocksData$urban <- as.character(meshblocksData$code) <= "D"
+meshblocksData$urban <- as.character(meshblocksData$code) <= "C"
 meshblocksData$urban[meshblocksData$urban == TRUE] <- "urban"
 meshblocksData$urban[meshblocksData$urban == FALSE] <- "rural"
 
