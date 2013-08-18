@@ -227,7 +227,14 @@ psql -f sql/roadLengthByMeshblock.sql ruralRoads -tA -F "," > output/roadLengthB
 
 Census Data
 -----------
-using mdbtools (mdb-schema, mdb-export) dump data from CensusData.mdb into a new PostgreSQL database.
+The PostgreSQL method below is a grade A pain that doesn't yet work.  Try the mdb2sqlite script.
+```
+sudo apt-get install sqlite3
+sh mdb2sqlite data/CensusData.mdb censusData.sq3
+```
+
+Using mdbtools (mdb-schema, mdb-export) dump data from CensusData.mdb into a new PostgreSQL database.  You need probably 8GB of disk space to do this, so try an EC2 instance with that much larger a root volume.
+
 ```
 createdb censusData
 mdb-schema data/CensusData.mdb postgres | psql -d censusData
