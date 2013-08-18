@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Inspired by:
+# http://nialldonegan.me/2007/03/10/converting-microsoft-access-mdb-into-csv-or-mysql-in-linux/
+# http://cltb.ojuba.org/en/articles/mdb2sqlite.html
+
+# Use temporary files for sql statements to ease debugging if something goes wrong
+
+# Export schema from mdb:
+
+mdb-schema --no-indexes --no-relations $1 postgres \
+| sed "s/Int8/INTEGER(8)/" \
+| sed "s/Int4/INTEGER(4)/" \
+| sed "s/Float8/FLOAT(8)/" \
+| sed "s/Float4/FLOAT(4)/" \
+| sed "s/Bool/BOOLEAN/" \
+| sed "s/Char /VARCHAR/" \
+| sed "s/DROP TABLE/DROP TABLE IF EXISTS/" \
+| grep -v "^--" \
+> create.sql
+
+# Import schema to sqlite3
+sqlite3 $2<create.sql
+
+# Delete old import data (adding to exising file later)
+# Vast speed improvement with BEGIN..COMMIT
+echo "BEGIN;">import-data.sql
+
+# Export each table and replace nan and inf with NULL
+for table in `mdb-tables $1`
+do
+echo $table
+mdb-export -I postgres $1 $table | sed -e 's/)$/)\;/'\
+| sed "s/-inf/NULL/mg" \
+| sed "s/inf/NULL/mg" \
+| sed "s/-nan/NULL/mg" \
+| sed "s/nan/NULL/mg" \
+>>import-data.sql
+done
+
+echo "Committing..."
+echo "COMMIT;">>import-data.sql
+
+# Import data to sqlite3
+sqlite3 $2<import-data.sql
