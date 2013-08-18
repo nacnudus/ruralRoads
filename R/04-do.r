@@ -22,18 +22,13 @@ write.table(crashMeshblockID
 
 # area per meshblock ------------------------------------------------------
 
-Area <- laply(meshblocks@polygons, function(x) (x@area))
-meshblockArea <- as.data.frame(cbind(meshblocks@data$MB06, Area / 1e6))
-write.table(meshblockArea
-            , row.names = FALSE
-            , col.names = c("meshblockID", "area")
-            , file = "output/meshblockArea.txt")
-
+# refer to ruralRoads/README.md for how to do this with PostGIS, or just
+# use ruralRoads/output/areaPerMeshblock.csv
 
 # road length per meshblock -----------------------------------------------
 
 # refer to ruralRoads/README.md for how to do this with PostGIS, or just
-# use ruralRoads/output/roadPerMeshblock.txt
+# use ruralRoads/output/roadPerMeshblock.csv
 
 
 # subset meshblocks by ruralness and optimise -----------------------------
