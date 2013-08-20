@@ -8,8 +8,7 @@ meshblocks <- readOGR("data/meshblocks/", "MB06_LV2")
 concordance <- read.csv(
   file("data/concordance-2006.csv")
   , header = TRUE
-  , colClasses = c("numeric", "factor", "factor")
-)
+  , colClasses = c("numeric", "factor", "factor"))
 
 
 # census areas ------------------------------------------------------------
@@ -26,8 +25,7 @@ censusAreas.colnames <- c("MB01"
                           , "RC06"
                           , "RC06D"
                           , "DHB"
-                          , "DHBD"
-)
+                          , "DHBD")
 censusAreas.colClasses <- c("numeric"
                             , "numeric"
                             , "numeric"
@@ -39,15 +37,12 @@ censusAreas.colClasses <- c("numeric"
                             , "numeric"
                             , "factor"
                             , "numeric"
-                            , "factor"
-)
-
+                            , "factor")
 # load
 censusAreas <- read.csv(
   "data/2006 Census Areas.txt"
   , header = FALSE
-  , colClasses = censusAreas.colClasses
-)
+  , colClasses = censusAreas.colClasses)
 
 # rename columns (really a clean operation by since the preparation
 # was done here...)
@@ -69,8 +64,7 @@ stations <- readOGR("data/police_boundaries/nz-police-station-boundar/"
 x123 <- read.table(
   file("data/123.txt")
   , header = FALSE
-  , sep = "\t"
-)
+  , sep = "\t")
 
 
 # coast line and polygon --------------------------------------------------
