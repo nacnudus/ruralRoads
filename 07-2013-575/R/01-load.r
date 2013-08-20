@@ -12,7 +12,7 @@ meshblockRoadLength <- read.csv("../output/roadLengthByMeshblock.csv"
 meshblockArea <- read.csv("../output/areaByMeshblock.csv"
                           , header = FALSE)
 
-censusData <- read.table("../data/censusData.txt", header = TRUE, sep = "\t")
+censusData <- read.csv("../data/censusData.txt")
 # If this doesn't work, open the file in notepad, check there aren't any macrons
 # or other characters not in UTF-8, then save in the UTF-8 text encoding and
 # try again.

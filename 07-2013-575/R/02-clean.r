@@ -10,6 +10,9 @@ write.table(crashMeshblocks
 
 # column headings of datasets ---------------------------------------------
 colnames(meshblockArea) <- c("meshblockID", "area")
+colnames(censusData)[1:2] <- c("meshblockID", "population") # normally resident
+                                                            # population
+
 colnames(crashes) <- c("count", "crashID", "day", "month"
                        , "year", "hour", "severity", "stateHighway")
 colnames(drivers) <- c("count", "crashID", "role", "injury", "driverAtFault"

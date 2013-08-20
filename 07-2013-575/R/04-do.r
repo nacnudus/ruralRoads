@@ -17,6 +17,10 @@ meshblocksBoP <- read.table("output/meshblocksBoP.txt"
 
 # clean -------------------------------------------------------------------
 
+# column names
+colnames(meshblocksBoP) <- "meshblockID"
+colnames(meshblockRoadLength) <- c("meshblockID", "roadLength")
+
 # join coordinates to meshblocks to urban/rural to crashes
 crashes2 <- join(coordinates@data, crashMeshblocks, type = "inner")
 crashes2 <- join(crashes2, meshblockUrban, by = "meshblockID", type = "inner")
@@ -27,7 +31,12 @@ crashes2$urban <- as.character(crashes2$code) <= "C"
 crashes2$urban[crashes2$urban == TRUE] <- "urban"
 crashes2$urban[crashes2$urban == FALSE] <- "rural"
 
-
+# join meshblocksBoP to urban/rural, area, road length and censusData
+# demographics
+meshblocksBoP <- join(meshblocksBoP, meshblockUrban)
+meshblocksBoP <- join(meshblocksBoP, meshblockArea)
+meshblocksBoP <- join(meshblocksBoP, meshblockRoadLength)
+meshblocksBoP <- join(meshblocksBoP, censusData)
 
 
 # analyse -----------------------------------------------------------------
