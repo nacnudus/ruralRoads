@@ -26,7 +26,28 @@ unzip NZ_L2_2006_NZTM_ArcShp.zip
 rm NZ_L2_2006_NZTM_ArcShp.zip
 ```
 
-The Urban/Rural Profile Geographic Concordance is available as a [.xls](http://www.stats.govt.nz/~/media/Statistics/browse-categories/people-and-communities/geographic-areas/urban-rural-profile-update/concordance-2006.xls).  The meshblocks can be [aggregated](http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/geographic-area-files.aspx#2006) into larger areas.
+The Urban/Rural Profile Geographic Concordance is available as a [.xls](http://www.stats.govt.nz/~/media/Statistics/browse-categories/people-and-communities/geographic-areas/urban-rural-profile-update/concordance-2006.xls).  The meshblocks can be [aggregated](http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/geographic-area-files.aspx#2006) into larger areas.  Note that the Urban/Rural Profile Geographic Concordance and the Geographic Area File include 30 meshblocks that are not in the shapefile.  None of the 30 missing meshblocks are the mainlaind:
+
+* Oceanic-Kermadec Islands
+* Kermadec Islands
+* Oceanic-Oil Rigs Taranaki
+* Chatham Islands
+* Oceanic-Chatham Islands
+* Oceanic-Campbell Island
+* Campbell Island
+* Oceanic-Oil Rig Southland
+* Oceanic-Auckland Islands
+* Auckland Islands
+* Ross Dependency
+* NZ Economic Zone
+* Oceanic-Bounty Islands
+* Bounty Islands
+* Oceanic-Snares Islands
+* Snares Island
+* Oceanic-Antipodes Islands
+* Antipodes Islands
+
+
 
 LINZ provides road centrelines, coastlines and coast polygons from their [data service](http://data.linz.govt.nz/).  Machine-machine downloads can be arranged from [here](http://data.linz.govt.nz/p/web-services/) but downloading with wget/curl doesn't work due to authentication.
 
