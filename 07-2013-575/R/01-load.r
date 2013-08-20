@@ -9,8 +9,8 @@ meshblockUrban <- read.table("../output/meshblockUrbanRural.txt"
                              , quote = "\"")
 meshblockRoadLength <- read.csv("../output/roadLengthByMeshblock.csv"
                                 , header = FALSE)
-meshblockArea <- read.table("../output/meshblockArea.txt"
-                          , header = TRUE)
+meshblockArea <- read.csv("../output/areaByMeshblock.csv"
+                          , header = FALSE)
 
 censusData <- read.table("../data/censusData.txt", header = TRUE, sep = "\t")
 # If this doesn't work, open the file in notepad, check there aren't any macrons

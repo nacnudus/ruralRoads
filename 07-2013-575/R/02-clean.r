@@ -7,7 +7,9 @@ write.table(crashMeshblocks
             , col.names = c("crashID", "meshblockID")
             , file = "output/crashMeshblockID.txt")
 
-# column headings of the other crash datasets ----------------------------
+
+# column headings of datasets ---------------------------------------------
+colnames(meshblockArea) <- c("meshblockID", "area")
 colnames(crashes) <- c("count", "crashID", "day", "month"
                        , "year", "hour", "severity", "stateHighway")
 colnames(drivers) <- c("count", "crashID", "role", "injury", "driverAtFault"
