@@ -4,9 +4,9 @@ crashes <- loadCrashes("data/BoP2008-12.csv")
 
 # meshblock ruralness write to file --------------------------------------
 
-write.table(unique(meshblocks@data[, c("MB06", "urban.rural", "code")])
+write.table(unique(meshblocks@data[, c("MB06", "urban.rural", "code", "urban")])
             , row.names = FALSE
-            , col.names = c("meshblockID", "urbanRural", "code")
+            , col.names = c("meshblockID", "urbanRural", "code", "urban")
             , file = "output/meshblockUrbanRural.txt")
 
 

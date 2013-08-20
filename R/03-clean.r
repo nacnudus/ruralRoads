@@ -69,7 +69,9 @@ meshblocks@data <- join(meshblocks@data, censusAreas, by = "MB06")
 # code the classifications A-G and Z via a lookup table.  You can rely on them
 # being ordered alphabetically in the factor.
 urban.rural <- data.frame(urban.rural = levels(meshblocks@data$urban.rural)
-                          , code = c("Z", "G", "B", "A", "D", "F", "E", "C"))
+                          , code = c("Z", "G", "B", "A", "D", "F", "E", "C")
+                          , urban = c("rural", "rural", "urban", "urban"
+                                      , "rural", "rural", "rural", "urban"))
 urban.rural <- urban.rural[order(urban.rural$code), ] # reorder
 meshblocks@data <- join(meshblocks@data, urban.rural, by = "urban.rural")
 meshblocks@data$code <- as.character(meshblocks@data$code) # for subsetting by
