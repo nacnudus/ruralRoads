@@ -14,10 +14,10 @@ concordance <- read.csv(
 # census areas ------------------------------------------------------------
 
 # prepare column headings and classes
-censusAreas.colnames <- c("MB01"
-                          , "MB06"
-                          , "AU06"
-                          , "AU06D"
+censusAreas.colnames <- c("MB01" # not needed---the 2001 meshblock ID
+                          , "meshblockID"
+                          , "AU06" # ordinary columns are numeric codes
+                          , "AU06D" # 'D' columns are the human-readable version
                           , "UA06"
                           , "UA06D"
                           , "TA06"
@@ -44,10 +44,33 @@ censusAreas <- read.csv(
   , header = FALSE
   , colClasses = censusAreas.colClasses)
 
-# rename columns (really a clean operation by since the preparation
-# was done here...)
+# rename columns (really a clean operation but since the preparation was done
+# here...)
 colnames(censusAreas) <- censusAreas.colnames
 
+
+# census demographics -----------------------------------------------------
+
+# All figures relate to the normally-resident population.
+
+# If this doesn't work, open the file in notepad, check there aren't any macrons
+# or other characters not in UTF-8, then save in the UTF-8 text encoding and
+# try again.
+
+censusData <- read.csv("data/censusData.txt")
+
+
+# meshblock area ----------------------------------------------------------
+
+# refer to README.md for how to make this file from scratch with PostGIS
+meshblockArea <- read.csv("output/areaByMeshblock.csv"
+                          , header = FALSE)
+
+# meshblock road length ---------------------------------------------------
+
+# refer to README.md for how to make this file from scratch with PostGIS
+meshblockRoadLength <- read.csv("output/roadLengthByMeshblock.csv"
+                                , header = FALSE)
 
 # police districts/areas/stations polygons --------------------------------
 

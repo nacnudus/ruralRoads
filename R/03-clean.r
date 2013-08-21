@@ -7,11 +7,29 @@ highways50k <- subsetHighways(roads50k)
 
 # concordance -------------------------------------------------------------
 
-colnames(concordance) <- c("MB06", "urban.rural", "main.urban.area")
-# "MB06" is essential for joining to meshblocks@data using the plyr join
-# because the joining columns must be named the same.  An alternative would
-# be `merge` in base R.
+colnames(concordance) <- c("meshblockID"
+                           , "urbanRuralGrade"
+                           , "mainUrbanArea")
+# "meshblockID" is essential for joining to meshblocks@data using the plyr
+# join because the joining columns must be named the same.  An alternative
+# is `merge` in base R.
 
+
+
+# meshblock area ----------------------------------------------------------
+
+colnames(meshblockArea) <- c("meshblockID", "area")
+
+
+# meshblock road length ---------------------------------------------------
+
+colnames(meshblockRoadLength) <- c("meshblockID", "roadLength")
+
+
+# census demographics -----------------------------------------------------
+
+colnames(censusData)[1:2] <- c("meshblockID", "population")
+# all figures relate to the normally-resident population
 
 # police 123-person stations ----------------------------------------------
 
@@ -27,6 +45,8 @@ x123$rural <- TRUE # after the join, stations@data$rural will be TRUE or NA
 
 
 # stations ----------------------------------------------------------------
+
+# TODO: function to join crashes and stations
 
 # join stations and 123-person-station concordance
 stations@data <- join(stations@data
@@ -50,27 +70,65 @@ stationLabels$district <- stations@data$DISTRICT_N
 
 # meshblocks --------------------------------------------------------------
 
-# Most of these operations crash the EC2 free tier instance.
+colnames(meshblocks@data)[1] <- "meshblockID"
 
-# MB06 is the unique ID so should be numeric, not a factor.
+# "meshblockID" is the unique ID so should be numeric, not a factor.
 # Go to character first, otherwise you get the factor levels, not the 
 # original numeric values.
-meshblocks@data$MB06 <- as.numeric(as.character(meshblocks@data$MB06))
-# This and later operations crash the EC2 free tier instance.
+meshblocks@data$meshblockID <- 
+  as.numeric(as.character(meshblocks@data$meshblockID))
 
-# join meshblocks and concordance
-# interestingly, the concordance has more meshblocks than the shapefile.
-length(unique(concordance$MB06))
-length(unique(meshblocks@data$MB06))
-# never mind.  Perhaps they are offshore islands.
-meshblocks@data <- join(meshblocks@data, concordance, by = "MB06")
-meshblocks@data <- join(meshblocks@data, censusAreas, by = "MB06")
 
-# code the classifications A-G and Z via a lookup table.  You can rely on them
-# being ordered alphabetically in the factor.
-urban.rural <- data.frame(urban.rural = levels(meshblocks@data$urban.rural)
-                          , code = c("Z", "G", "B", "A", "D", "F", "E", "C"))
-urban.rural <- urban.rural[order(urban.rural$code), ] # reorder
-meshblocks@data <- join(meshblocks@data, urban.rural, by = "urban.rural")
-meshblocks@data$code <- as.character(meshblocks@data$code) # for subsetting by
-                                                           # ruralness
+# join meshblocksBoP to other datasets -----------------------------------
+# urban/rural, area, road length, census areas and censusData demographics
+
+# note: fewer meshblocks in the shapefile than the concordance because the
+# concordance includes offshore islands---see README.md
+
+# urban/rural concordance
+meshblocks@data <- join(meshblocks@data, concordance, by = "meshblockID")
+
+# urbanRural classification
+meshblocks@data <- join(meshblocks@data, urbanRural)
+meshblocks@data$code <- as.character(meshblocks@data$code) # for subsetting
+                                                           # by ruralness
+meshblocks@data <- join(meshblocks@data, meshblockArea)
+meshblocks@data <- join(meshblocks@data, meshblockRoadLength)
+meshblocks@data <- join(meshblocks@data, censusAreas, by = "meshblockID")
+meshblocks@data <- join(meshblocks@data, censusData)
+
+
+# write meshblocks@data to file -------------------------------------------
+
+# particularly useful for loading onto less-powerful EC2 instances, which
+# aren't able to get this far from shapefiles
+
+write.table(unique(meshblocks@data[, c("meshblockID", "urbanRuralGrade"
+                                       , "code", "urbanRural")])
+            , row.names = FALSE
+            , col.names = c("meshblockID", "urbanRuralGrade"
+                            , "code", "urbanRural")
+            , file = "output/meshblockData.txt")
+
+
+# subset meshblocks by ruralness and optimise -----------------------------
+
+meshblocksList <- dlply(urbanRural
+                        , .(code)
+                        , function(x) (
+                          subsetMeshblock(as.character(x$code)))
+                        , .progress = "text")
+# meshblocks is now a list of eight SpatialPolygonsDataFrames,
+# named A to Z e.g. meshblocks$D is a subset of all meshblocks 
+# in the D ruralness category.
+
+
+
+# spatialData file --------------------------------------------------------
+
+# for quickly loading into a new EC2 instance without having to compute it
+# from scratch
+
+save(meshblocks, meshblocksList, stations, stationLabels, districts, areas
+     , stations, coastline, coastpoly, roads500k, roads50k
+     , file = "output/spatialData.Rdata")
