@@ -1,17 +1,27 @@
 # classify crashes by meshblock  ------------------------------------------
-ID <- over(coordinates , meshblocks)
-crashMeshblocks <- data.frame(cbind(coordinates@data$crashID, ID[, "MB06"]))
-colnames(crashMeshblocks) <- c("crashID", "meshblockID")
-write.table(crashMeshblocks
-            , row.names = FALSE
-            , col.names = c("crashID", "meshblockID")
-            , file = "output/crashMeshblockID.txt")
+
+# for getting the urban/rural classification
+
+# 02-load.r should have attempted to load crashMeshblocks from file, but if
+# it has failed then it has to be computed from scratch.  Note that this
+# requires spatial data to be in memory.  You can get this with
+# load(../output/spatialData.Rdata) or you can run the code in ../R to
+# compute that afresh too.
+
+if (!exists("crashMeshblocks")) {
+  crashMeshblocks <- joinCrashesMeshblocks(coordinates
+                                           , "output/crashMeshblocks.txt")
+}
+
+# join to meshblockData for urban/rural
+crashMeshblocks <- join(crashMeshblocks
+                        , meshblockData[, c("meshblockID"
+                                            , "urbanRuralGrade"
+                                            , "code"
+                                            , "urbanRural")])
 
 
 # column headings of datasets ---------------------------------------------
-colnames(meshblockArea) <- c("meshblockID", "area")
-colnames(censusData)[1:2] <- c("meshblockID", "population") # normally resident
-                                                            # population
 
 colnames(crashes) <- c("count", "crashID", "day", "month"
                        , "year", "hour", "severity", "stateHighway")
@@ -23,7 +33,8 @@ colnames(driversCauses) <- c("count", "crashID", "role", "driverCause"
                              , "driverCauseCategory")
 
 
-# remove crashes with year = NA (there was one once) ---------------------
+# crashes -----------------------------------------------------------------
+
 crashes <- crashes[!is.na(crashes$year), ]
 crashes$hour <- as.numeric(crashes$hour)
 crashes[crashes$hour == 24, "hour"] <- 0
@@ -32,24 +43,32 @@ crashes <- crashes[as.character(crashes$severity) %in% c("Fatal", "Serious"), ]
 crashes$weekday <- wday(ymd(paste(crashes$year, crashes$month, crashes$day)))
 
 
+# meshblockData -----------------------------------------------------------
+
+# convert meshblockID from numeric to character, which means the colClass
+# function will report it to melt as an id variable.
+meshblockData$meshblockID <- as.character(meshblockData$meshblockID)
+
+
 # BoP meshblocks ----------------------------------------------------------
 
-districtBoP <- subset(districts, districts$DISTRICT_N == "BAY OF PLENTY")
-meshblocksBoPID <- over(meshblocks, districtBoP)
-meshblocksBoP <- subset(meshblocks, !is.na(meshblocksBoPID))
-colnames(meshblocksBoP@data)[1] <- "meshblockID"
-write.table(unique(meshblocksBoP@data[, c("meshblockID")])
-            , row.names = FALSE
-            , file = "output/meshblocksBoP.txt")
+# 02-load.r should have attempted to load meshblockDataBoP from file, but if
+# it has failed then it has to be computed from scratch.  Note that this
+# requires spatial data to be in memory.  You can get this with
+# load(../output/spatialData.Rdata) or you can run the code in ../R to
+# compute that afresh too.
 
-colnames(meshblockRoadLength) <- c("meshblockID", "roadLength")
+if (!exists("meshblockDataBoP")) {
+  districtsBoP <- subset(districts, districts$DISTRICT_N == "BAY OF PLENTY")
+  meshblocksBoPID <- over(meshblocks, districtsBoP)
+  meshblocksBoP <- subset(meshblocks, !is.na(meshblocksBoPID))
+  save(meshblocksBoP, file = "output/meshblocksBoP.Rdata")
+  
+  meshblockDataBoP <- meshblocksBoP@data
+  write.table(meshblockBoP@data
+              , row.names = FALSE
+              , file = "output/meshblockDataBoP.txt")
+}
 
-meshblocksData <- meshblocksBoP@data[, c("meshblockID", "code")]
-# code urban as ABC, rural DEFGZ
-meshblocksData$urban <- as.character(meshblocksData$code) <= "C"
-meshblocksData$urban[meshblocksData$urban == TRUE] <- "urban"
-meshblocksData$urban[meshblocksData$urban == FALSE] <- "rural"
-
-meshblocksData <- join(meshblocksData, meshblockRoadLength)
-meshblocksData <- join(meshblocksData, meshblockArea)
-mData <- melt(meshblocksData, id.vars <- c("meshblockID", "code", "urban"))
+mData <- melt(meshblockData, id.vars <- which(!colClass(meshblockData)))
+mSummary <- dcast(mData[is.numeric(mData$value), ], urbanRural ~ variable, sum, na.rm = TRUE, margins = "grand_column")
