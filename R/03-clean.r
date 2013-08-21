@@ -26,6 +26,24 @@ colnames(meshblockArea) <- c("meshblockID", "area")
 colnames(meshblockRoadLength) <- c("meshblockID", "roadLength")
 
 
+# census areas ------------------------------------------------------------
+
+colnames(censusAreas) <- c("MB01" # not needed---the 2001 meshblock ID
+                           , "meshblockID"
+                           , "AU06" # ordinary columns are numeric codes
+                           , "AU06D" # 'D' columns are the human-readable version
+                           , "UA06"
+                           , "UA06D"
+                           , "TA06"
+                           , "TA06D"
+                           , "RC06"
+                           , "RC06D"
+                           , "DHB"
+                           , "DHBD")
+# meshblockID should be character for consistency with other meshblockID fields
+censusAreas$meshblockID <- as.character(censusAreas$meshblockID)
+
+
 # census demographics -----------------------------------------------------
 
 colnames(censusData)[1:2] <- c("meshblockID", "population")
@@ -72,11 +90,9 @@ stationLabels$district <- stations@data$DISTRICT_N
 
 colnames(meshblocks@data)[1] <- "meshblockID"
 
-# "meshblockID" is the unique ID so should be numeric, not a factor.
-# Go to character first, otherwise you get the factor levels, not the 
-# original numeric values.
-meshblocks@data$meshblockID <- 
-  as.numeric(as.character(meshblocks@data$meshblockID))
+# "meshblockID" is the unique ID so should be character, not a factor or
+# numeric.
+meshblocks@data$meshblockID <- as.character(meshblocks@data$meshblockID)
 
 
 # join meshblocksBoP to other datasets -----------------------------------
@@ -103,15 +119,48 @@ meshblocks@data <- join(meshblocks@data, censusData)
 # particularly useful for loading onto less-powerful EC2 instances, which
 # aren't able to get this far from shapefiles
 
-write.table(unique(meshblocks@data[, c("meshblockID", "urbanRuralGrade"
-                                       , "code", "urbanRural")])
+# the unique is just to make sure, but it should be unique anyway.
+write.table(unique(meshblocks@data[, c("meshblockID"
+                                       , "urbanRuralGrade"
+                                       , "code"
+                                       , "urbanRural"
+                                       , "area"
+                                       , "roadLength"
+                                       , "population"
+                                       , "Male"
+                                       , "Female"
+                                       , "X0.4.Years"
+                                       , "X5.9.Years"
+                                       , "X10.14.Years"
+                                       , "X15.19.Years"
+                                       , "X20.24.Years"
+                                       , "X25.29.Years"
+                                       , "X30.34.Years"
+                                       , "X35.39.Years"
+                                       , "X40.44.Years"
+                                       , "X45.49.Years"
+                                       , "X50.54.Years"
+                                       , "X55.59.Years"
+                                       , "X60.64.Years"
+                                       , "X65.Years.and.Over"
+                                       , "Asian.Ethnic.Groups"
+                                       , "European.Ethnic.Groups"
+                                       , "Maori.Ethnic.Group"
+                                       , "Pacific.Peoples..Ethnic.Groups"
+                                       , "MELAA.Ethnic.Groups"
+                                       , "Other.Ethnic.Groups"
+                                       , "AU06D"
+                                       , "UA06D"
+                                       , "TA06D"
+                                       , "RC06D"
+                                       , "DHBD")])
             , row.names = FALSE
-            , col.names = c("meshblockID", "urbanRuralGrade"
-                            , "code", "urbanRural")
             , file = "output/meshblockData.txt")
 
 
 # subset meshblocks by ruralness and optimise -----------------------------
+
+# this is temperamental---if it doesn't work the first time, try again.
 
 meshblocksList <- dlply(urbanRural
                         , .(code)
@@ -121,7 +170,6 @@ meshblocksList <- dlply(urbanRural
 # meshblocks is now a list of eight SpatialPolygonsDataFrames,
 # named A to Z e.g. meshblocks$D is a subset of all meshblocks 
 # in the D ruralness category.
-
 
 
 # spatialData file --------------------------------------------------------

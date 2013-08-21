@@ -13,40 +13,7 @@ concordance <- read.csv(
 
 # census areas ------------------------------------------------------------
 
-# prepare column headings and classes
-censusAreas.colnames <- c("MB01" # not needed---the 2001 meshblock ID
-                          , "meshblockID"
-                          , "AU06" # ordinary columns are numeric codes
-                          , "AU06D" # 'D' columns are the human-readable version
-                          , "UA06"
-                          , "UA06D"
-                          , "TA06"
-                          , "TA06D"
-                          , "RC06"
-                          , "RC06D"
-                          , "DHB"
-                          , "DHBD")
-censusAreas.colClasses <- c("numeric"
-                            , "numeric"
-                            , "numeric"
-                            , "factor" 
-                            , "numeric"
-                            , "factor"
-                            , "numeric"
-                            , "factor"
-                            , "numeric"
-                            , "factor"
-                            , "numeric"
-                            , "factor")
-# load
-censusAreas <- read.csv(
-  "data/2006 Census Areas.txt"
-  , header = FALSE
-  , colClasses = censusAreas.colClasses)
-
-# rename columns (really a clean operation but since the preparation was done
-# here...)
-colnames(censusAreas) <- censusAreas.colnames
+censusAreas <- read.csv("data/2006 Census Areas.txt", header = FALSE)
 
 
 # census demographics -----------------------------------------------------

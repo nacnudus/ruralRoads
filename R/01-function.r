@@ -85,6 +85,7 @@ joinCrashesMeshblocks <- function(x, y) {
   ID <- over(x , meshblocks)
   crashMeshblocks <- data.frame(cbind(x@data$crashID, ID[, "meshblockID"]))
   colnames(crashMeshblocks) <- c("crashID", "meshblockID")
+  crashMeshblocks$meshblockID <- as.character(crashMeshblocks$meshblockID)
   write.table(crashMeshblocks
               , row.names = FALSE
               , col.names = c("crashID", "meshblockID")
