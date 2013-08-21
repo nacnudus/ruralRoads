@@ -41,7 +41,7 @@ crashes[crashes$hour == 24, "hour"] <- 0
 crashes[!(crashes$hour <= 23), "hour"] <- NA
 crashes <- crashes[as.character(crashes$severity) %in% c("Fatal", "Serious"), ]
 crashes$weekday <- wday(ymd(paste(crashes$year, crashes$month, crashes$day)))
-
+crashes <- join(crashes, crashMeshblocks)
 
 # meshblockData -----------------------------------------------------------
 
