@@ -1,87 +1,44 @@
-# CAS data extracted on 15 August 2013.
-
-
-# load --------------------------------------------------------------------
-
-# load crashMeshblocks - this will only exist if the relevant code in
-# 02-clean.r has been run, but try to avoid that.
-crashMeshblocks <- read.table("output/crashMeshblockID.txt"
-                              , header = TRUE
-                              , quote = "\"")
-# same goes for meshblocksBoP, which is just a list of BoP meshblock IDs
-meshblocksBoP <- read.table("output/meshblocksBoP.txt"
-                              , header = TRUE
-                              , quote = "\"") # then carry on cleaning
-
-
-
-# clean -------------------------------------------------------------------
-
-# column names
-colnames(meshblocksBoP) <- "meshblockID"
-colnames(meshblockRoadLength) <- c("meshblockID", "roadLength")
-
-# join coordinates to meshblocks to urban/rural to crashes
-crashes2 <- join(coordinates@data, crashMeshblocks, type = "inner")
-crashes2 <- join(crashes2, meshblockUrban, by = "meshblockID", type = "inner")
-crashes2 <- join(crashes2, crashes, type = "inner")
-
-# define urban as A:D
-crashes2$urban <- as.character(crashes2$code) <= "C"
-crashes2$urban[crashes2$urban == TRUE] <- "urban"
-crashes2$urban[crashes2$urban == FALSE] <- "rural"
-
-# join meshblocksBoP to urban/rural, area, road length and censusData
-# demographics
-meshblocksBoP <- join(meshblocksBoP, meshblockUrban)
-meshblocksBoP <- join(meshblocksBoP, meshblockArea)
-meshblocksBoP <- join(meshblocksBoP, meshblockRoadLength)
-meshblocksBoP <- join(meshblocksBoP, censusData)
-
-
-# analyse -----------------------------------------------------------------
-
 # The hourly profile of urban/rural differs.  Rural crashes peak at 1600 , urban
 # at 1700.  Rural have a small peak between 0100 and 0200 whereas Urban crashes
 # are low at that time.
-ggplot(crashes2[!is.na(crashes2$hour), ]
+ggplot(crashes[!is.na(crashes$hour), ]
        , aes(hour)) + 
   geom_density() + 
   scale_x_continuous(breaks = seq(0,24,4)) +
-  facet_grid(. ~ urban)
+  facet_grid(. ~ urbanRural)
 
 # To put that in context, there are more rural crashes than urban.
-ggplot(crashes2[!is.na(crashes2$hour), ]
+ggplot(crashes[!is.na(crashes$hour), ]
        , aes(hour)) + 
   geom_density() + 
   aes(y = ..count..) +
   scale_x_continuous(breaks = seq(0,24,4)) +
-  facet_grid(. ~ urban)
+  facet_grid(. ~ urbanRural)
 
-ggplot(crashes2[!is.na(crashes2$hour), ]
+ggplot(crashes[!is.na(crashes$hour), ]
        , aes(hour)) + 
   geom_bar(binwidth = 1, position = "dodge") +
   scale_x_continuous(breaks = seq(0,24,4)) +
-  facet_grid(. ~ urban)
+  facet_grid(. ~ urbanRural)
 
 # Now in terms of road length.  Far more road is rural.
 roadLength <- dcast(mData[!is.na(mData$value) & mData$variable == "roadLength", ]
-                    , variable ~ urban, sum)
+                    , variable ~ urbanRural, sum)
 roadLength
 
 # Crashes per length of road
-mCrash <- melt(crashes2[, c("crashID", "urban", "month", "year", "hour"
+mCrash <- melt(crashes[, c("crashID", "urbanRural", "month", "year", "hour"
                             , "weekday", "severity", "count")]
-               , id.vars = c("crashID", "urban", "month", "year", "hour"
+               , id.vars = c("crashID", "urbanRural", "month", "year", "hour"
                              , "weekday", "severity"))
-crashUrbanRural <- dcast(mCrash, year ~ urban, sum)
+crashUrbanRural <- dcast(mCrash, year ~ urbanRural, sum)
 crashUrbanRural$ruralByRoad <- crashUrbanRural$rural / (roadLength$rural / 1000)
 crashUrbanRural$urbanByRoad <- crashUrbanRural$urban / (roadLength$urban / 1000)
 crashUrbanRural
 
 # Now in terms of area.  Far more area is rural, too.
 area <- dcast(mData[!is.na(mData$value) & mData$variable == "area", ]
-                        , variable ~ urban, sum)
+                        , variable ~ urbanRural, sum)
 area
 
 # Crashes per area
