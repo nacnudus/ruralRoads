@@ -9,19 +9,36 @@ It only uses so much code as will identify the meshblock each crash took place i
 
 Initialize from a new instance in Amazon EC2.
 ---------------------------------------------
-1.  Clone the ruralRoads repository in github.
-(https://github.com/nacnudus/ruralRoads)
 
-1.  `setwd()` into the ruralRoads directory.
+In the shell:
+```
+cd R
+git clone https://github.com/nacnudus/ruralRoads
+```
 
-1.  Load some workspace data (more efficient than recalculating it.)
-`load("data/spatialData")`
+In RStudio:
+```
+setwd("~/R/ruralRoads/07-2013-575")
+source("R/01-function.r")
+source("R/02-load.r")
+source("R/03-clean.r")
+```
+Then start doing your analysis, perhaps in R/04-do.r.
 
-1.  `source("R/01-function.r")`
+Further work is needed to get the spatial data, which you only need to do for calculating a new district, say, of meshblocks and crashes.
 
-1.  `setwd("./07-2013-575")` into this analysis.
+In the shell, in the R directory:
+```
+# Get a copy of spatialData.Rdata, which will overwrite the data/ and output/
+# directories.
+rm -r data output # make sure you're not deleting your only copy of anything
+sudo chmod 600 nacnudus # you need the password
+# This is only an example.  You'll need an actual address where data.zip lives.
+scp -i nacnudus ec2-54-215-134-162.us-west-1.compute.amazonaws.com:/home/nacnudus/R/ruralRoads/data.zip ./
+unzip data.zip
+```
 
-1.  Use the R scripts in the R directory of this analysis (i.e. 07-2013-575/R/).
+If you ever need to add something to the zip file (say, you've saved a new spatial object into output/spatialData.Rdata), then you can remove old copies of things via the shell with `zip -d data.zip my/old.file` and add new stuff in with `zip -g data.zip my/new.file`.  To add whole directories, use the recursion flag, e.g. `zip -g -r data.zip my/new/directory/`.
 
 
 CAS Data
