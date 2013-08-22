@@ -43,6 +43,20 @@ crashes <- crashes[as.character(crashes$severity) %in% c("Fatal", "Serious"), ]
 crashes$weekday <- wday(ymd(paste(crashes$year, crashes$month, crashes$day)))
 crashes <- join(crashes, crashMeshblocks)
 crashes <- crashes[!is.na(crashes$urbanRural), ]
+crashes$urbanRuralHighway <- crashes$urbanRural
+
+# make stateHighway logical
+levels(crashes$stateHighway) <- c("false", "true")
+crashes$stateHighway <- as.logical(crashes$stateHighway)
+
+# new urban/rural/stateHighway column
+crashes$urbanRuralHighway <- crashes$urbanRural
+# expand the factor levels first
+levels(crashes$urbanRuralHighway) <- c(levels(crashes$urbanRuralHighway)
+                                       , "State Highway")
+# then change some to the new level ("State Highway")
+crashes$urbanRuralHighway[crashes$stateHighway] <- "State Highway"
+
 
 # meshblockData -----------------------------------------------------------
 
