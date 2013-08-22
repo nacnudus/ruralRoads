@@ -71,5 +71,7 @@ if (!exists("meshblockDataBoP")) {
               , file = "output/meshblockDataBoP.txt")
 }
 
-mData <- melt(meshblockData, id.vars <- which(!colClass(meshblockData)))
-mSummary <- dcast(mData[is.numeric(mData$value), ], urbanRural ~ variable, sum, na.rm = TRUE, margins = "grand_column")
+mDataBoP <- melt(meshblockDataBoP, id.vars <- which(!colClass(meshblockDataBoP)))
+mSummaryBoP <- dcast(mDataBoP, urbanRural ~ variable, sum, na.rm = TRUE
+                  , margins = "grand_column")
+rownames(mSummaryBoP) <- c("rural", "urban", "other") # for easy subsetting
