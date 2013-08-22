@@ -22,9 +22,7 @@ ggplot(crashes[!is.na(crashes$hour), ]
   facet_grid(. ~ urbanRural)
 
 # Now in terms of road length.  Far more road is rural.
-roadLength <- dcast(mData[!is.na(mData$value) & mData$variable == "roadLength", ]
-                    , variable ~ urbanRural, sum)
-roadLength
+mSummaryBoP[, c("urbanRural", "roadLength")]
 
 # Crashes per length of road
 mCrash <- melt(crashes[, c("crashID", "urbanRural", "month", "year", "hour"
@@ -32,18 +30,20 @@ mCrash <- melt(crashes[, c("crashID", "urbanRural", "month", "year", "hour"
                , id.vars = c("crashID", "urbanRural", "month", "year", "hour"
                              , "weekday", "severity"))
 crashUrbanRural <- dcast(mCrash, year ~ urbanRural, sum)
-crashUrbanRural$ruralByRoad <- crashUrbanRural$rural / (roadLength$rural / 1000)
-crashUrbanRural$urbanByRoad <- crashUrbanRural$urban / (roadLength$urban / 1000)
+crashUrbanRural$ruralByRoad <- 
+  crashUrbanRural$rural / (mSummaryBoP["rural", "roadLength"] / 1000)
+crashUrbanRural$urbanByRoad <- 
+  crashUrbanRural$urban / (mSummaryBoP["urban", "roadLength"] / 1000)
 crashUrbanRural
 
 # Now in terms of area.  Far more area is rural, too.
-area <- dcast(mData[!is.na(mData$value) & mData$variable == "area", ]
-                        , variable ~ urbanRural, sum)
-area
+mSummaryBoP[, c("urbanRural", "area")]
 
 # Crashes per area
-crashUrbanRural$ruralByArea <- crashUrbanRural$rural / (area$rural / 1000)
-crashUrbanRural$urbanByArea <- crashUrbanRural$urban / (area$urban / 1000)
+crashUrbanRural$ruralByArea <- 
+  crashUrbanRural$rural / (mSummaryBoP["rural", "area"] / 1000)
+crashUrbanRural$urbanByArea <- 
+  crashUrbanRural$urban / (mSummaryBoP["urban", "area"] / 1000)
 crashUrbanRural
 
 # As graphs
