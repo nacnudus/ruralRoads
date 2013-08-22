@@ -8,51 +8,36 @@ meshblocks <- readOGR("data/meshblocks/", "MB06_LV2")
 concordance <- read.csv(
   file("data/concordance-2006.csv")
   , header = TRUE
-  , colClasses = c("numeric", "factor", "factor")
-)
+  , colClasses = c("numeric", "factor", "factor"))
 
 
 # census areas ------------------------------------------------------------
 
-# prepare column headings and classes
-censusAreas.colnames <- c("MB01"
-                          , "MB06"
-                          , "AU06"
-                          , "AU06D"
-                          , "UA06"
-                          , "UA06D"
-                          , "TA06"
-                          , "TA06D"
-                          , "RC06"
-                          , "RC06D"
-                          , "DHB"
-                          , "DHBD"
-)
-censusAreas.colClasses <- c("numeric"
-                            , "numeric"
-                            , "numeric"
-                            , "factor" 
-                            , "numeric"
-                            , "factor"
-                            , "numeric"
-                            , "factor"
-                            , "numeric"
-                            , "factor"
-                            , "numeric"
-                            , "factor"
-)
+censusAreas <- read.csv("data/2006 Census Areas.txt", header = FALSE)
 
-# load
-censusAreas <- read.csv(
-  "data/2006 Census Areas.txt"
-  , header = FALSE
-  , colClasses = censusAreas.colClasses
-)
 
-# rename columns (really a clean operation by since the preparation
-# was done here...)
-colnames(censusAreas) <- censusAreas.colnames
+# census demographics -----------------------------------------------------
 
+# All figures relate to the normally-resident population.
+
+# If this doesn't work, open the file in notepad, check there aren't any macrons
+# or other characters not in UTF-8, then save in the UTF-8 text encoding and
+# try again.
+
+censusData <- read.csv("data/censusData.txt")
+
+
+# meshblock area ----------------------------------------------------------
+
+# refer to README.md for how to make this file from scratch with PostGIS
+meshblockArea <- read.csv("output/areaByMeshblock.csv"
+                          , header = FALSE)
+
+# meshblock road length ---------------------------------------------------
+
+# refer to README.md for how to make this file from scratch with PostGIS
+meshblockRoadLength <- read.csv("output/roadLengthByMeshblock.csv"
+                                , header = FALSE)
 
 # police districts/areas/stations polygons --------------------------------
 
@@ -69,8 +54,7 @@ stations <- readOGR("data/police_boundaries/nz-police-station-boundar/"
 x123 <- read.table(
   file("data/123.txt")
   , header = FALSE
-  , sep = "\t"
-)
+  , sep = "\t")
 
 
 # coast line and polygon --------------------------------------------------

@@ -76,7 +76,35 @@ Helpful Docs
 
 System Requirments
 ------------------
-* rgeos and rgdal.  rgdal requires the (non-R) GIS packages GDAL and PROJ.4.  These would be painful to install were it not for the UbuntuGIS ppa:
+
+### Session Info
+```
+> sessionInfo()
+R version 3.0.1 (2013-05-16)
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8 LC_NUMERIC=C         LC_TIME=C           
+ [4] LC_COLLATE=C         LC_MONETARY=C        LC_MESSAGES=C       
+ [7] LC_PAPER=C           LC_NAME=C            LC_ADDRESS=C        
+[10] LC_TELEPHONE=C       LC_MEASUREMENT=C     LC_IDENTIFICATION=C 
+
+attached base packages:
+[1] grid      stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] reshape2_1.2.2     lubridate_1.3.0    ggplot2_0.9.3.1    scales_0.2.3      
+ [5] RColorBrewer_1.0-5 maptools_0.8-25    lattice_0.20-15    foreign_0.8-54    
+ [9] rgdal_0.8-10       rgeos_0.2-19       sp_1.0-11          plyr_1.8          
+
+loaded via a namespace (and not attached):
+ [1] MASS_7.3-26      colorspace_1.2-2 dichromat_2.0-0  digest_0.6.3    
+ [5] gtable_0.1.2     labeling_0.2     munsell_0.4      proto_0.3-10    
+ [9] stringr_0.6.2    tools_3.0.1   
+ ```
+
+### rgeos and rgdal
+rgdal requires the (non-R) GIS packages GDAL and PROJ.4.  These would be painful to install were it not for the UbuntuGIS ppa:
 
 ```
 sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
@@ -89,8 +117,12 @@ sudo apt-get install gdal-bin libgdal-dev libgdal1 libgdal1-dev # not sure how m
 sudo apt-get install proj proj-bin proj-data libproj-dev libproj0
 
 ```
-* maptools, mapproj and PBSmapping, which may also require GDAL and PROJ.4 as above
-* RODBC (r package) and mdbtools (linux package) to connect to a Microsoft Access .mdb database for meshblock demographics from Stats NZ.
+### maptools, mapproj and PBSmapping
+May also require GDAL and PROJ.4 as above
+
+### RODBC (r package) and mdbtools (linux package)
+For connecting to a Microsoft Access .mdb database for meshblock demographics from Stats NZ.  See section "Census Data" below, but basically this doesn't work yet.  Instead it has been done with MS Access, and a dataset saved in data/censusData.txt.
+
 ```
 sudo apt-get install mdbtools
 ```
