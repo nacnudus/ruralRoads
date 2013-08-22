@@ -3,7 +3,7 @@ FROM (SELECT meshblocks.mb06, (ST_Dump(ST_Intersection(ST_Buffer(meshblocks.geom
   FROM meshblocks
   INNER JOIN roads
   ON ST_Intersects(meshblocks.geom, roads.geom)
-  WHERE roads.hway_num IS NULL)  As clipped
+  WHERE roads.hway_num IS NOT NULL)  As clipped
 WHERE ST_Dimension(clipped.clipped_geom) = 1
 GROUP BY clipped.mb06
 ;

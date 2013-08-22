@@ -276,6 +276,7 @@ psql -f sql/totalRoadLength.sql ruralRoads > output/totalRoadLength.txt
 # Total road length, and should be exactly the same as the sum of the following
 # query, road lengthy by meshblock.  Use it for validation.
 psql -f sql/roadLengthByMeshblock.sql ruralRoads -tA -F "," > output/roadLengthByMeshblock.csv
+psql -f sql/highwayByMeshblock.sql ruralRoads -tA -F "," > output/highwayByMeshblock.csv
 # meshblock areas
 psql -f sql/areaByMeshblock.sql ruralRoads -tA -F "," > output/areaByMeshblock.csv
 ```
