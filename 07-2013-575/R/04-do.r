@@ -5,7 +5,7 @@ ggplot(crashes[!is.na(crashes$hour), ]
        , aes(hour)) + 
   geom_density() + 
   scale_x_continuous(breaks = seq(0,24,4)) +
-  facet_grid(. ~ urbanRural)
+  facet_grid(. ~ urbanRuralHighway)
 
 # To put that in context, there are more rural crashes than urban.
 ggplot(crashes[!is.na(crashes$hour), ]
@@ -13,13 +13,13 @@ ggplot(crashes[!is.na(crashes$hour), ]
   geom_density() + 
   aes(y = ..count..) +
   scale_x_continuous(breaks = seq(0,24,4)) +
-  facet_grid(. ~ urbanRural)
+  facet_grid(. ~ urbanRuralHighway)
 
 ggplot(crashes[!is.na(crashes$hour), ]
        , aes(hour)) + 
   geom_bar(binwidth = 1, position = "dodge") +
   scale_x_continuous(breaks = seq(0,24,4)) +
-  facet_grid(. ~ urbanRural)
+  facet_grid(. ~ urbanRuralHighway)
 
 # Now in terms of road length.  Far more road is rural.
 mSummaryBoP[, c("urbanRural", "roadLength")]
