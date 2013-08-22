@@ -21,9 +21,10 @@ colnames(concordance) <- c("meshblockID"
 colnames(meshblockArea) <- c("meshblockID", "area")
 
 
-# meshblock road length ---------------------------------------------------
+# meshblock road length and highway ---------------------------------------
 
 colnames(meshblockRoadLength) <- c("meshblockID", "roadLength")
+colnames(meshblockHighway) <- c("meshblockID", "highway")
 
 
 # census areas ------------------------------------------------------------
@@ -110,6 +111,7 @@ meshblocks@data$code <- as.character(meshblocks@data$code) # for subsetting
                                                            # by ruralness
 meshblocks@data <- join(meshblocks@data, meshblockArea)
 meshblocks@data <- join(meshblocks@data, meshblockRoadLength)
+meshblocks@data <- join(meshblocks@data, meshblockHighway)
 meshblocks@data <- join(meshblocks@data, censusAreas, by = "meshblockID")
 meshblocks@data <- join(meshblocks@data, censusData)
 
@@ -126,6 +128,7 @@ write.table(unique(meshblocks@data[, c("meshblockID"
                                        , "urbanRural"
                                        , "area"
                                        , "roadLength"
+                                       , "highway"
                                        , "population"
                                        , "Male"
                                        , "Female"
@@ -180,4 +183,3 @@ meshblocksList <- dlply(urbanRural
 save(meshblocks, meshblocksList, stations, stationLabels, districts, areas
      , stations, coastline, coastpoly, roads500k, roads50k
      , file = "output/spatialData.Rdata")
->>>>>>> origin/master

@@ -35,8 +35,10 @@ meshblockArea <- read.csv("output/areaByMeshblock.csv"
 
 # meshblock road length ---------------------------------------------------
 
-# refer to README.md for how to make this file from scratch with PostGIS
+# refer to README.md for how to make these files from scratch with PostGIS
 meshblockRoadLength <- read.csv("output/roadLengthByMeshblock.csv"
+                                , header = FALSE)
+meshblockHighway <- read.csv("output/highwayByMeshblock.csv"
                                 , header = FALSE)
 
 # police districts/areas/stations polygons --------------------------------
