@@ -97,31 +97,89 @@ meshblocks@data$meshblockID <- as.character(meshblocks@data$meshblockID)
 
 
 # join meshblocksBoP to other datasets -----------------------------------
+
 # urban/rural, area, road length, census areas and censusData demographics
 
+# urban/rural concordance
 # note: fewer meshblocks in the shapefile than the concordance because the
 # concordance includes offshore islands---see README.md
-
-# urban/rural concordance
 meshblocks@data <- join(meshblocks@data, concordance, by = "meshblockID")
 
 # urbanRural classification
 meshblocks@data <- join(meshblocks@data, urbanRural)
 meshblocks@data$code <- as.character(meshblocks@data$code) # for subsetting
                                                            # by ruralness
+
+# area
 meshblocks@data <- join(meshblocks@data, meshblockArea)
+
+# road length (not including highways)
 meshblocks@data <- join(meshblocks@data, meshblockRoadLength)
+
+# highway length
 meshblocks@data <- join(meshblocks@data, meshblockHighway)
-meshblocks@data <- join(meshblocks@data, censusAreas, by = "meshblockID")
+
+# census demographics
 meshblocks@data <- join(meshblocks@data, censusData)
 
+# census areas---aggregations into larger regions
+meshblocks@data <- join(meshblocks@data, censusAreas, by = "meshblockID")
+
+
+# join meshblocks to police regions ---------------------------------------
+
+# This is complicated because some meshblocks slightly overlap neighbouring
+# regions, returning two rows.  These must be eliminated.  First, get the
+# regions.
+
+meshblocks@data$district <- districts$DISTRICT_N[over(meshblocks, districts)]
+meshblocks@data$area <- areas$AREA_NAME[over(meshblocks, areas)]
+meshblocks@data$station <- stations$STATION_NA[over(meshblocks, stations)]
+
+# now eliminate the duplicates, taking the region that overlaps the most
+districtDuplicates <- badOverlap(meshblocks, "district")
+areaDuplicates <- badOverlap(meshblocks, "area")
+stationDuplicates <- badOverlap(meshblocks, "station")
+
+# factors temporarily to characters
+meshblocks@data$district <- as.character(meshblocks@data$district)
+meshblocks@data$area <- as.character(meshblocks@data$area)
+meshblocks@data$station <- as.character(meshblocks@data$station)
+
+# delete bad districts
+lastColumnPlusOne <- length(colnames(meshblocks@data)) + 1
+if (!(is.null(districtDuplicates))) {
+  meshblocks@data <- join(meshblocks@data, ditrictDuplicates
+                          , by = c("meshblockID", "district"))
+  meshblocks <- meshblocks[is.na(meshblocks@data$overlap), -lastColumnPlusOne]
+}
+
+# delete bad areas
+if (!(is.null(areaDuplicates))) {
+  meshblocks@data <- join(meshblocks@data, areaDuplicates
+                          , by = c("meshblockID", "area"))
+  meshblocks <- meshblocks[is.na(meshblocks@data$overlap), -lastColumnPlusOne]
+}
+
+# delete bad stations
+if (!(is.null(stationDuplicates))) {
+  meshblocks@data <- join(meshblocks@data, stationDuplicates
+                          , by = c("meshblockID", "station"))
+  meshblocks <- meshblocks[is.na(meshblocks@data$overlap), -lastColumnPlusOne]
+}
+
+# tidy up
+rm(districtDuplicates, areaDuplicates, stationDuplicates)
+meshblocks@data$district <- as.factor(meshblocks@data$district)
+meshblocks@data$area <- as.factor(meshblocks@data$area)
+meshblocks@data$station <- as.factor(meshblocks@data$station)
 
 # write meshblocks@data to file -------------------------------------------
 
 # particularly useful for loading onto less-powerful EC2 instances, which
 # aren't able to get this far from shapefiles
 
-# the unique is just to make sure, but it should be unique anyway.
+# the unique is to deal with multiple polygins per meshblockID.
 write.table(unique(meshblocks@data[, c("meshblockID"
                                        , "urbanRuralGrade"
                                        , "code"
@@ -152,6 +210,9 @@ write.table(unique(meshblocks@data[, c("meshblockID"
                                        , "Pacific.Peoples..Ethnic.Groups"
                                        , "MELAA.Ethnic.Groups"
                                        , "Other.Ethnic.Groups"
+                                       , "district"
+                                       , "area"
+                                       , "station"
                                        , "AU06D"
                                        , "UA06D"
                                        , "TA06D"
