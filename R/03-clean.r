@@ -65,8 +65,6 @@ x123$rural <- TRUE # after the join, stations@data$rural will be TRUE or NA
 
 # stations ----------------------------------------------------------------
 
-# TODO: function to join crashes and stations
-
 # join stations and 123-person-station concordance
 stations@data <- join(stations@data
                       , x123[, c("STATION_NA", "rural")]

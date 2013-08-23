@@ -93,6 +93,9 @@ joinCrashesMeshblocks <- function(x, y) {
   return(crashMeshblocks)
 }
 
+
+# join meshblocks to police regions ---------------------------------------
+
 # given meshblocks and a kind of region from "district", "area", "station",
 # checks for meshblocks that have been returned for multiple regions and 
 # returns which regions are invalid (have the smallest overlap)
