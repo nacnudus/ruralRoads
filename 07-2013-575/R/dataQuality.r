@@ -9,9 +9,9 @@
 # It is also mysterious that there are no crashes in the crashes table prior
 # to 2010
 
-source("R/01-load.r")
-source("R/02-clean.r") # best to do that by hand if you don't want to
-                       # recalculate the spatial data.
+source("R/01-function.r")
+source("R/02-load.r")
+source("R/03-clean.r")
 
 require(reshape2)
 
