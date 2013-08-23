@@ -67,24 +67,9 @@ meshblockData$meshblockID <- as.character(meshblockData$meshblockID)
 
 # BoP meshblocks ----------------------------------------------------------
 
-# 02-load.r should have attempted to load meshblockDataBoP from file, but if
-# it has failed then it has to be computed from scratch.  Note that this
-# requires spatial data to be in memory.  You can get this with
-# load(../output/spatialData.Rdata) or you can run the code in ../R to
-# compute that afresh too.
+meshblockDataBoP <- meshblockData[meshblockData$policeDistrict == "BAY OF PLENTY", ]
 
-if (!exists("meshblockDataBoP")) {
-  districtsBoP <- subset(districts, districts$DISTRICT_N == "BAY OF PLENTY")
-  meshblocksBoPID <- over(meshblocks, districtsBoP)
-  meshblocksBoP <- subset(meshblocks, !is.na(meshblocksBoPID))
-  save(meshblocksBoP, file = "output/meshblocksBoP.Rdata")
-  
-  meshblockDataBoP <- meshblocksBoP@data
-  write.table(meshblockBoP@data
-              , row.names = FALSE
-              , file = "output/meshblockDataBoP.txt")
-}
-
+# create a nice summary
 mDataBoP <- melt(meshblockDataBoP, id.vars <- which(!colClass(meshblockDataBoP)))
 mSummaryBoP <- dcast(mDataBoP, urbanRural ~ variable, sum, na.rm = TRUE
                   , margins = "grand_column")

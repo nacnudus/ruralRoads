@@ -11,15 +11,6 @@ victims <- read.csv("data/BoP-victims.txt", header = FALSE)
 # length, urban/rural, census areas and census demographics.
 meshblockData <- read.table("../output/meshblockData.txt", header = TRUE)
 
-# Attempt to read meshblockDataBoP from the local output directory.  This gives 
-# a subset of the meshblock data for the BoP, as long as it has already been
-# computed once (by 03-clean.r).
-if (file.exists("output/meshblockDataBoP.txt")) {
-  meshblockDataBoP <- read.table("output/meshblockDataBoP.txt"
-                              , header = TRUE
-                              , quote = "\"")
-}
-
 # Attempt to read crashMeshblocks from the local output directory.  This gives 
 # the meshblockID of every crash in coordinates, as long as it has already been
 # computed once (by 03-clean.r).
