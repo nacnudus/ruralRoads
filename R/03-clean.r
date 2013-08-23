@@ -84,14 +84,18 @@ stationLabels$district <- stations@data$DISTRICT_N
 
 # meshblock police regions ------------------------------------------------
 
-colnames(meshblockDistricts) <- c("meshblockID", "district")
-colnames(meshblockAreas) <- c("meshblockID", "area")
-colnames(meshblockStations) <- c("meshblockID", "station")
+colnames(meshblockDistricts) <- c("meshblockID", "policeDistrict")
+colnames(meshblockAreas) <- c("meshblockID", "policeArea")
+colnames(meshblockStations) <- c("meshblockID", "policeStation")
 
 
 # meshblocks --------------------------------------------------------------
 
 colnames(meshblocks@data)[1] <- "meshblockID"
+# meshblockID as integer for joining, but to character first otherwise you
+# get the index of the factor, rather than the actual values
+meshblocks@data$meshblockID <- as.integer(
+  as.character(meshblocks@data$meshblockID))
 
 
 # join meshblocksBoP to other datasets -----------------------------------
@@ -172,9 +176,9 @@ write.table(unique(meshblocks@data[, c("meshblockID"
                                        , "Pacific.Peoples..Ethnic.Groups"
                                        , "MELAA.Ethnic.Groups"
                                        , "Other.Ethnic.Groups"
-                                       , "district"
-                                       , "area"
-                                       , "station"
+                                       , "policeDistrict"
+                                       , "policeArea"
+                                       , "policeStation"
                                        , "AU06D"
                                        , "UA06D"
                                        , "TA06D"
