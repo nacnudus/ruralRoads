@@ -46,16 +46,15 @@ crashes <- crashes[!is.na(crashes$urbanRural), ]
 crashes$urbanRuralHighway <- crashes$urbanRural
 
 # make stateHighway logical
-levels(crashes$stateHighway) <- c("false", "true")
-crashes$stateHighway <- as.logical(crashes$stateHighway)
+levels(crashes$stateHighway) <- c("road", "highway")
 
 # new urban/rural/stateHighway column
 crashes$urbanRuralHighway <- crashes$urbanRural
 # expand the factor levels first
 levels(crashes$urbanRuralHighway) <- c(levels(crashes$urbanRuralHighway)
-                                       , "State Highway")
+                                       , "highway")
 # then change some to the new level ("State Highway")
-crashes$urbanRuralHighway[crashes$stateHighway] <- "State Highway"
+crashes$urbanRuralHighway[crashes$stateHighway == "highway"] <- "highway"
 
 
 # meshblockData -----------------------------------------------------------

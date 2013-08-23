@@ -1,7 +1,10 @@
+options("scipen"=100)
+
 require(plyr)
 require(ggplot2)
 require(lubridate)
 require(reshape2)
+require(stringr)
 
 source("../R/01-function.r")
 
