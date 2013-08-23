@@ -13,6 +13,12 @@ Statistics New Zealand produced an unofficial [categorisation](http://www.stats.
 * Rural area with moderate urban influence
 * Satellite Urban Area
 
+How to Use
+----------
+1. Download the data as explained in the "Data" section.
+1. Install the system requirements as explained in the "System Requirements" section.
+1. Set up a PostGIS database and run the queries as explained in the "PostGIS" section.
+
 Data
 ----
 
@@ -256,29 +262,41 @@ Back at the command line, push shapefiles into the database.
 ```
 shp2pgsql data/meshblocks/MB06_LV2 meshblocks ruralRoads | psql -d ruralRoads
 shp2pgsql data/roads/nz-mainland-road-centreli/nz-mainland-road-centreli roads ruralRoads | psql -d ruralRoads
+shp2pgsql data/police_boundaries/nz-police-district-bounda/nz-police-district-bounda districts ruralRoads | psql -d ruralRoads
+shp2pgsql data/police_boundaries/nz-police-area-boundaries/nz-police-area-boundaries areas ruralRoads | psql -d ruralRoads
+shp2pgsql data/police_boundaries/nz-police-station-boundar/nz-police-station-boundar stations ruralRoads | psql -d ruralRoads
 ```
+
 Index
 ```
 psql ruralRoads
+# in the psql prompt:
 CREATE INDEX i_meshblocks_geom ON meshblocks USING GIST ( geom );
-VACUUM ANALYZE meshblocks (geom);
-
 CREATE INDEX i_roads_geom ON roads USING GIST ( geom );
-VACUUM ANALYZE roads (geom);
+CREATE INDEX i_districts_geom ON districts USING GIST ( geom );
+CREATE INDEX i_areas_geom ON areas USING GIST ( geom );
+CREATE INDEX i_stations_geom ON stations USING GIST ( geom );
+\q
 ```
-Example queries
+Queries, most of which are too long to execute in the shell.  Frame the "psql" commands below inside a system() command in an R script, e.g.
+```
+system("psql -f sql/totalRoadLength.sql ruralRoads > output/totalRoadLength.txt")
+```
 ```
 # Total road length
-SELECT sum(ST_Length(geom))/1000 AS km_roads FROM roads;
-# Execute a longer query via RStudio Server on an EC2 instance
 psql -f sql/totalRoadLength.sql ruralRoads > output/totalRoadLength.txt
-# that was total road length within meshblocks, which is very nearly the same as
-# Total road length, and should be exactly the same as the sum of the following
-# query, road lengthy by meshblock.  Use it for validation.
-psql -f sql/roadLengthByMeshblock.sql ruralRoads -tA -F "," > output/roadLengthByMeshblock.csv
-psql -f sql/highwayByMeshblock.sql ruralRoads -tA -F "," > output/highwayByMeshblock.csv
+# That was total road length within meshblocks, which should be exactly the same
+# as the sum of the following query, road length by meshblock.  Use it for 
+# validation.  Note: road length does not include state highways, highway length
+# includes state highways only.
+psql -f sql/roadLengthByMeshblock.sql ruralRoads -tA -F ',' > output/roadLengthByMeshblock.csv
+psql -f sql/highwayByMeshblock.sql ruralRoads -tA -F ',' > output/highwayByMeshblock.csv
 # meshblock areas
-psql -f sql/areaByMeshblock.sql ruralRoads -tA -F "," > output/areaByMeshblock.csv
+psql -f sql/areaByMeshblock.sql ruralRoads -tA -F ',' > output/areaByMeshblock.csv
+# meshblock police regions (district, area, station)
+psql -f sql/meshblockDistrict.sql ruralRoads -tA -F ',' > output/meshblockDistrict.csv
+psql -f sql/meshblockArea.sql ruralRoads -tA -F ',' > output/meshblockArea.csv
+psql -f sql/meshblockStation.sql ruralRoads -tA -F ',' > output/meshblockStation.csv
 ```
 
 Census Data
