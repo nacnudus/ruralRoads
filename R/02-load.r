@@ -51,6 +51,14 @@ stations <- readOGR("data/police_boundaries/nz-police-station-boundar/"
                     , "nz-police-station-boundar")
 
 
+
+# meshblock police regions ------------------------------------------------
+
+meshblockDistricts <- read.csv("output/meshblockDistrict.csv", header = FALSE)
+meshblockAreas <- read.csv("output/meshblockArea.csv", header = FALSE)
+meshblockStations <- read.csv("output/meshblockStation.csv", header = FALSE)
+
+
 # police 123-person stations ----------------------------------------------
 
 x123 <- read.table(

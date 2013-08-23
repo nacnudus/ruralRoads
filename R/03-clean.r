@@ -15,7 +15,6 @@ colnames(concordance) <- c("meshblockID"
 # is `merge` in base R.
 
 
-
 # meshblock area ----------------------------------------------------------
 
 colnames(meshblockArea) <- c("meshblockID", "area")
@@ -41,8 +40,6 @@ colnames(censusAreas) <- c("MB01" # not needed---the 2001 meshblock ID
                            , "RC06D"
                            , "DHB"
                            , "DHBD")
-# meshblockID should be character for consistency with other meshblockID fields
-censusAreas$meshblockID <- as.character(censusAreas$meshblockID)
 
 
 # census demographics -----------------------------------------------------
@@ -85,18 +82,22 @@ stationLabels$label <- stations@data$STATION_NA
 stationLabels$district <- stations@data$DISTRICT_N
 
 
+# meshblock police regions ------------------------------------------------
+
+colnames(meshblockDistricts) <- c("meshblockID", "district")
+colnames(meshblockAreas) <- c("meshblockID", "area")
+colnames(meshblockStations) <- c("meshblockID", "station")
+
+
 # meshblocks --------------------------------------------------------------
 
 colnames(meshblocks@data)[1] <- "meshblockID"
 
-# "meshblockID" is the unique ID so should be character, not a factor or
-# numeric.
-meshblocks@data$meshblockID <- as.character(meshblocks@data$meshblockID)
-
 
 # join meshblocksBoP to other datasets -----------------------------------
 
-# urban/rural, area, road length, census areas and censusData demographics
+# urban/rural, area, road length, census areas, census demographics and
+# police regions.
 
 # urban/rural concordance
 # note: fewer meshblocks in the shapefile than the concordance because the
@@ -123,54 +124,17 @@ meshblocks@data <- join(meshblocks@data, censusData)
 # census areas---aggregations into larger regions
 meshblocks@data <- join(meshblocks@data, censusAreas, by = "meshblockID")
 
+# police regions
+meshblocks@data <- join(meshblocks@data
+                                 , meshblockDistricts
+                                 , by = "meshblockID")
+meshblocks@data <- join(meshblocks@data
+                             , meshblockAreas
+                             , by = "meshblockID")
+meshblocks@data <- join(meshblocks@data
+                                , meshblockStations
+                                , by = "meshblockID")
 
-# join meshblocks to police regions ---------------------------------------
-
-# This is complicated because some meshblocks slightly overlap neighbouring
-# regions, returning two rows.  These must be eliminated.  First, get the
-# regions.
-
-meshblocks@data$district <- districts$DISTRICT_N[over(meshblocks, districts)]
-meshblocks@data$area <- areas$AREA_NAME[over(meshblocks, areas)]
-meshblocks@data$station <- stations$STATION_NA[over(meshblocks, stations)]
-
-# now eliminate the duplicates, taking the region that overlaps the most
-districtDuplicates <- badOverlap(meshblocks, "district")
-areaDuplicates <- badOverlap(meshblocks, "area")
-stationDuplicates <- badOverlap(meshblocks, "station")
-
-# factors temporarily to characters
-meshblocks@data$district <- as.character(meshblocks@data$district)
-meshblocks@data$area <- as.character(meshblocks@data$area)
-meshblocks@data$station <- as.character(meshblocks@data$station)
-
-# delete bad districts
-lastColumnPlusOne <- length(colnames(meshblocks@data)) + 1
-if (!(is.null(districtDuplicates))) {
-  meshblocks@data <- join(meshblocks@data, ditrictDuplicates
-                          , by = c("meshblockID", "district"))
-  meshblocks <- meshblocks[is.na(meshblocks@data$overlap), -lastColumnPlusOne]
-}
-
-# delete bad areas
-if (!(is.null(areaDuplicates))) {
-  meshblocks@data <- join(meshblocks@data, areaDuplicates
-                          , by = c("meshblockID", "area"))
-  meshblocks <- meshblocks[is.na(meshblocks@data$overlap), -lastColumnPlusOne]
-}
-
-# delete bad stations
-if (!(is.null(stationDuplicates))) {
-  meshblocks@data <- join(meshblocks@data, stationDuplicates
-                          , by = c("meshblockID", "station"))
-  meshblocks <- meshblocks[is.na(meshblocks@data$overlap), -lastColumnPlusOne]
-}
-
-# tidy up
-rm(districtDuplicates, areaDuplicates, stationDuplicates)
-meshblocks@data$district <- as.factor(meshblocks@data$district)
-meshblocks@data$area <- as.factor(meshblocks@data$area)
-meshblocks@data$station <- as.factor(meshblocks@data$station)
 
 # write meshblocks@data to file -------------------------------------------
 

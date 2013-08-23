@@ -15,13 +15,25 @@ Statistics New Zealand produced an unofficial [categorisation](http://www.stats.
 
 How to Use
 ----------
-1. Download the data as explained in the "Data" section.
-1. Install the system requirements as explained in the "System Requirements" section.
-1. Set up a PostGIS database and run the queries as explained in the "PostGIS" section.
+Get hold of data.zip, remove the ruralRoads/data and ruralRoads/output directories, and unzip data.zip.  This gives you all the input data and some very useful aggregations of it (e.g. road length per meshblock).  Unless you need to tinker with this data, you can skip the next section.
+
+### Tinker with the the national data
+This has already been done and saved into ruralRoads/output via data.zip, so only do this if you need to change something.
+
+1.  Download the data as explained in the "Data" section.
+1.  Install the system requirements as explained in the "System Requirements" section.
+1.  Set the working directory to ~/R/ruralRoads.
+1.  Set up a PostGIS database and run the queries as explained in the "PostGIS" section.
+1.  Source the numbered R scripts in the ~/R/ruralRoads/R directory in order.
+
+### Work with your own crash list
+Skip to here if you don't need to tinker with the national data.
+
+1.  Set the working directory to ~/R/ruralRoads and source the script ~/R/ruralRoads/R/01-function.r.
+1.  Set the working directory to your own crash list folder (see ~/R/ruralRoads/07-2013-575 for how you ought to write this) and run your own scripts.
 
 Data
 ----
-
 The 2006 Census Meshblock dataset is available as [shapefiles](http://www3.stats.govt.nz/digitalboundaries/census/NZ_L2_2006_NZTM_ArcShp.zip). Download with:
 ```
 # 2006 Census Meshblock
@@ -82,7 +94,6 @@ Helpful Docs
 
 System Requirments
 ------------------
-
 ### Session Info
 ```
 > sessionInfo()
@@ -153,8 +164,6 @@ Regions
 
 Crash Tables
 ------------
-
-Each table is named with by its region, followed by a description, e.g. BoP-coordinates.txt
 
 ### BoP-coordinates.txt
 * ...
@@ -294,9 +303,13 @@ psql -f sql/highwayByMeshblock.sql ruralRoads -tA -F ',' > output/highwayByMeshb
 # meshblock areas
 psql -f sql/areaByMeshblock.sql ruralRoads -tA -F ',' > output/areaByMeshblock.csv
 # meshblock police regions (district, area, station)
-psql -f sql/meshblockDistrict.sql ruralRoads -tA -F ',' > output/meshblockDistrict.csv
-psql -f sql/meshblockArea.sql ruralRoads -tA -F ',' > output/meshblockArea.csv
-psql -f sql/meshblockStation.sql ruralRoads -tA -F ',' > output/meshblockStation.csv
+psql -d ruralRoads -f sql/meshblockDistrict.sql
+psql -d ruralRoads -f sql/meshblockArea.sql
+psql -d ruralRoads -f sql/meshblockStation.sql
+# output meshblock police regions to .csv
+psql -d ruralRoads -c 'SELECT mb06 AS meshblockID, district_n AS district FROM meshblockDistrict;' -tA -F ',' > output/meshblockDistrict.csv
+psql -d ruralRoads -c 'SELECT mb06 AS meshblockID, area_name AS district FROM meshblockArea;' -tA -F ',' > output/meshblockArea.csv
+psql -d ruralRoads -c 'SELECT mb06 AS meshblockID, station_na AS district FROM meshblockStation;' -tA -F ',' > output/meshblockStation.csv
 ```
 
 Census Data
