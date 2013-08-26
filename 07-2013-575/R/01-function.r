@@ -1,4 +1,4 @@
-options("scipen"=100)
+options("scipen"=100) # avoid scientific notation e.g. 10e6 -> 10000000
 
 require(plyr)
 require(ggplot2)
