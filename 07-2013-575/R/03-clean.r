@@ -112,4 +112,10 @@ drivers$alcohol <- factor(drivers$alcohol, levels = c(TRUE, FALSE))
 # normalize crashes by population/road ------------------------------------
 
 crashes$countPopulation <- crashes$count / (SummaryBoP[crashes$urbanRural, "population"] / 1000)
-crashes$countRoad <- ddply(crashes, .(crashID), function(x) (SummaryBoP[as.character(x$urbanRural), as.character(x$stateHighway)] /1000))$V1
+crashes$countRoad <- ddply(crashes, .(crashID), function(x) (x$count / (SummaryBoP[as.character(x$urbanRural), as.character(x$stateHighway)] / 1000)))$V1
+crashes <- join(crashes, ddply(crashes
+                               , .(crashID)
+                               , function(x) (data.frame(countRoad = x$count / 
+                                                           (SummaryBoP[as.character(x$urbanRural)
+                                                                       , as.character(x$stateHighway)] 
+                                                            / 1000)))))
