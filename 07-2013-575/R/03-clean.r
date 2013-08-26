@@ -25,8 +25,8 @@ crashMeshblocks <- join(crashMeshblocks
 
 colnames(crashes) <- c("count", "crashID", "day", "month"
                        , "year", "hour", "severity", "stateHighway")
-colnames(drivers) <- c("count", "crashID", "role", "injury", "driverAtFault"
-                       , "sex", "age", "ethnicity", "licence", "overseas")
+colnames(drivers) <- c("count", "crashID", "sex", "age", "injury"
+                       , "role", "driverAtFault", "licence", "ethnicity", "overseas")
 colnames(victims) <- c("count", "crashID", "driverPassengerOther", "sex", "age"
                        , "injury", "role", "driverAtFault", "ethnicity")
 colnames(driversCauses) <- c("count", "crashID", "role", "driverCause"
@@ -44,6 +44,7 @@ crashes$weekday <- wday(ymd(paste(crashes$year, crashes$month, crashes$day)))
 crashes <- join(crashes, crashMeshblocks)
 crashes <- crashes[!is.na(crashes$urbanRural), ]
 crashes$urbanRuralHighway <- crashes$urbanRural
+crashes$year <- as.factor(crashes$year)
 
 # make stateHighway logical
 levels(crashes$stateHighway) <- c("road", "highway")
@@ -70,6 +71,46 @@ meshblockDataBoP <- meshblockData[meshblockData$policeDistrict == "BAY OF PLENTY
 
 # create a nice summary
 mDataBoP <- melt(meshblockDataBoP, id.vars <- which(!colClass(meshblockDataBoP)))
-mSummaryBoP <- dcast(mDataBoP, urbanRural ~ variable, sum, na.rm = TRUE
+SummaryBoP <- dcast(mDataBoP, urbanRural ~ variable, sum, na.rm = TRUE
                   , margins = "grand_column")
-rownames(mSummaryBoP) <- c("rural", "urban", "other") # for easy subsetting
+rownames(SummaryBoP) <- c("rural", "urban", "other") # for easy subsetting
+
+
+# apply crash lookup tables -----------------------------------------------
+
+# replace driverCauseCategory column with one that distinguishes between
+# alcohol, no alcohol, and drugs.
+driversCauses$driverCauseCategory <- NULL
+driversCauses <- join(driversCauses, causeCategories)
+
+# driver faults
+drivers <- join(drivers, faultCategories)
+
+
+# mix 'n' match crashes, causes, victims, etc. ------------------------------
+
+# alcohol
+drivers$alcohol <- !is.na(join(drivers, driversCauses[driversCauses$driverCauseCategory == "Alcohol", ], match = "first")[, "driverCauseCategory"])
+# reverse TRUE/FALSE factor level to put TRUE on the bottom of stacked graphs.
+drivers$alcohol <- as.factor(drivers$alcohol)
+drivers$alcohol <- factor(drivers$alcohol, levels = c(TRUE, FALSE))
+
+crashes$alcohol <- crashes$crashID %in% drivers[drivers$fault == TRUE & drivers$alcohol == TRUE, "crashID", ]
+# reverse TRUE/FALSE factor level to put TRUE on the bottom of stacked graphs.
+crashes$alcohol <- as.factor(crashes$alcohol)
+crashes$alcohol <- factor(crashes$alcohol, levels = c(TRUE, FALSE))
+
+victims$alcohol  <- (victims$crashID %in% crashes[crashes$alcohol == TRUE, "crashID"])
+# reverse TRUE/FALSE factor level to put TRUE on the bottom of stacked graphs.
+drivers$alcohol <- as.factor(drivers$alcohol)
+drivers$alcohol <- factor(drivers$alcohol, levels = c(TRUE, FALSE))
+
+# ethnicity
+
+
+
+# normalize crashes by population/road ------------------------------------
+
+crashes$countPopulation <- crashes$count / (SummaryBoP[crashes$urbanRural, "population"] / 1000)
+crashes$countRoad <- crashes$count / (SummaryBoP[crashes$urbanRural, crashes$stateHighway] / 1000) # doesn't work yet
+# have to correct stateHighway of SummaryBoP (in fact, of meshblockData) to be "road" and "highway", not "roadLength" and "highway"
