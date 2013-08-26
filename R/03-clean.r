@@ -22,7 +22,7 @@ colnames(meshblockArea) <- c("meshblockID", "area")
 
 # meshblock road length and highway ---------------------------------------
 
-colnames(meshblockRoadLength) <- c("meshblockID", "roadLength")
+colnames(meshblockRoadLength) <- c("meshblockID", "road")
 colnames(meshblockHighway) <- c("meshblockID", "highway")
 
 
@@ -151,7 +151,7 @@ write.table(unique(meshblocks@data[, c("meshblockID"
                                        , "code"
                                        , "urbanRural"
                                        , "area"
-                                       , "roadLength"
+                                       , "road"
                                        , "highway"
                                        , "population"
                                        , "Male"
