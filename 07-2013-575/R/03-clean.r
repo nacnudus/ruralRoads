@@ -112,5 +112,4 @@ drivers$alcohol <- factor(drivers$alcohol, levels = c(TRUE, FALSE))
 # normalize crashes by population/road ------------------------------------
 
 crashes$countPopulation <- crashes$count / (SummaryBoP[crashes$urbanRural, "population"] / 1000)
-crashes$countRoad <- crashes$count / (SummaryBoP[crashes$urbanRural, crashes$stateHighway] / 1000) # doesn't work yet
-# have to correct stateHighway of SummaryBoP (in fact, of meshblockData) to be "road" and "highway", not "roadLength" and "highway"
+crashes$countRoad <- ddply(crashes, .(crashID), function(x) (SummaryBoP[as.character(x$urbanRural), as.character(x$stateHighway)] /1000))$V1

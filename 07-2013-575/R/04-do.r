@@ -20,9 +20,9 @@ ggplot(crashes[!is.na(crashes$hour), ]
 # tables  -----------------------------------------------------------------
 
 # In terms of road length.  Far more road is rural
-signif(SummaryBoP[, c("roadLength", "highway")], digits = 2)
-signif(prop.table(SummaryBoP[, c("roadLength", "highway")]) * 100, digits = 2)
-signif(prop.table(t(SummaryBoP[, c("roadLength", "highway")])) * 100, digits = 2)
+signif(SummaryBoP[, c("road", "highway")], digits = 2)
+signif(prop.table(SummaryBoP[, c("road", "highway")]) * 100, digits = 2)
+signif(prop.table(t(SummaryBoP[, c("road", "highway")])) * 100, digits = 2)
 
 # Crashes per length of road
 mCrash <- melt(crashes[, c("crashID", "urbanRural", "stateHighway", "month"
@@ -34,16 +34,16 @@ crashUrbanRural <- dcast(mCrash, year ~ urbanRural + stateHighway, sum
 crashUrbanRural
 
 crashUrbanRural$ruralAllByRoad <- 
-  crashUrbanRural$`rural_(all)` / (SummaryBoP["rural", "roadLength"] + 
+  crashUrbanRural$`rural_(all)` / (SummaryBoP["rural", "road"] + 
                                      SummaryBoP["rural", "highway"] / 1000)
 crashUrbanRural$urbanAllByRoad <- 
-  crashUrbanRural$`urban_(all)` / (SummaryBoP["urban", "roadLength"] + 
+  crashUrbanRural$`urban_(all)` / (SummaryBoP["urban", "road"] + 
                                      SummaryBoP["urban", "highway"] / 1000)
 
 crashUrbanRural$ruralRoadByRoad <- 
-  crashUrbanRural$rural_road / (SummaryBoP["rural", "roadLength"] / 1000)
+  crashUrbanRural$rural_road / (SummaryBoP["rural", "road"] / 1000)
 crashUrbanRural$urbanRoadByRoad <- 
-  crashUrbanRural$urban_road / (SummaryBoP["urban", "roadLength"] / 1000)
+  crashUrbanRural$urban_road / (SummaryBoP["urban", "road"] / 1000)
 crashUrbanRural$ruralHighwayByHighway <- 
   crashUrbanRural$rural_highway / (SummaryBoP["rural", "highway"] / 1000)
 crashUrbanRural$urbanHighwayByHighway <- 
