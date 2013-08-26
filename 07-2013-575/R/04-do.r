@@ -10,22 +10,19 @@ ggplot(crashes[!is.na(crashes$hour), ]
 # To put that in context, there are more rural crashes than urban.
 ggplot(crashes[!is.na(crashes$hour), ]
        , aes(hour)) + 
+  geom_bar(binwidth = 1, position = "dodge", fill = "grey") +
   geom_density() + 
   aes(y = ..count..) +
   scale_x_continuous(breaks = seq(0,24,4)) +
   facet_grid(urbanRural ~ stateHighway)
 
-ggplot(crashes[!is.na(crashes$hour), ]
-       , aes(hour)) + 
-  geom_bar(binwidth = 1, position = "dodge") +
-  scale_x_continuous(breaks = seq(0,24,4)) +
-  facet_grid(urbanRural ~ stateHighway)
 
-# Now in terms of road length.  Far more road is rural
-signif(mSummaryBoP[, c("roadLength", "highway")], digits = 2)
-signif(prop.table(mSummaryBoP[, c("roadLength", "highway")]) * 100, digits = 2)
-signif(prop.table(t(mSummaryBoP[, c("roadLength", "highway")])) * 100, digits = 2)
+# tables  -----------------------------------------------------------------
 
+# In terms of road length.  Far more road is rural
+signif(SummaryBoP[, c("roadLength", "highway")], digits = 2)
+signif(prop.table(SummaryBoP[, c("roadLength", "highway")]) * 100, digits = 2)
+signif(prop.table(t(SummaryBoP[, c("roadLength", "highway")])) * 100, digits = 2)
 
 # Crashes per length of road
 mCrash <- melt(crashes[, c("crashID", "urbanRural", "stateHighway", "month"
@@ -37,49 +34,75 @@ crashUrbanRural <- dcast(mCrash, year ~ urbanRural + stateHighway, sum
 crashUrbanRural
 
 crashUrbanRural$ruralAllByRoad <- 
-  crashUrbanRural$`rural_(all)` / (mSummaryBoP["rural", "roadLength"] + 
-                                     mSummaryBoP["rural", "highway"] / 1000)
+  crashUrbanRural$`rural_(all)` / (SummaryBoP["rural", "roadLength"] + 
+                                     SummaryBoP["rural", "highway"] / 1000)
 crashUrbanRural$urbanAllByRoad <- 
-  crashUrbanRural$`urban_(all)` / (mSummaryBoP["urban", "roadLength"] + 
-                                     mSummaryBoP["urban", "highway"] / 1000)
+  crashUrbanRural$`urban_(all)` / (SummaryBoP["urban", "roadLength"] + 
+                                     SummaryBoP["urban", "highway"] / 1000)
 
 crashUrbanRural$ruralRoadByRoad <- 
-  crashUrbanRural$rural_FALSE / (mSummaryBoP["rural", "roadLength"] / 1000)
+  crashUrbanRural$rural_road / (SummaryBoP["rural", "roadLength"] / 1000)
 crashUrbanRural$urbanRoadByRoad <- 
-  crashUrbanRural$urban_FALSE / (mSummaryBoP["urban", "roadLength"] / 1000)
+  crashUrbanRural$urban_road / (SummaryBoP["urban", "roadLength"] / 1000)
 crashUrbanRural$ruralHighwayByHighway <- 
-  crashUrbanRural$rural_TRUE / (mSummaryBoP["rural", "highway"] / 1000)
+  crashUrbanRural$rural_highway / (SummaryBoP["rural", "highway"] / 1000)
 crashUrbanRural$urbanHighwayByHighway <- 
-  crashUrbanRural$urban_TRUE / (mSummaryBoP["urban", "highway"] / 1000)
+  crashUrbanRural$urban_highway / (SummaryBoP["urban", "highway"] / 1000)
 crashUrbanRural
 
-# Now in terms of area.  Far more area is rural, too.
-mSummaryBoP[, c("urbanRural", "area")]
+# In terms of area.  Far more area is rural, too.
+SummaryBoP[, c("urbanRural", "area")]
 
 # Crashes per area
 crashUrbanRural$ruralByArea <- 
-  (crashUrbanRural$rural_FALSE + crashUrbanRural$rural_TRUE) / 
-  (mSummaryBoP["rural", "area"] / 1000)
+  crashUrbanRural$`rural_(all)` / (SummaryBoP["rural", "area"] / 1000)
 crashUrbanRural$urbanByArea <- 
-  (crashUrbanRural$urban_FALSE + crashUrbanRural$urban_TRUE) / 
-  (mSummaryBoP["urban", "area"] / 1000)
+  crashUrbanRural$`urban_(all)` / (SummaryBoP["urban", "area"] / 1000)
 crashUrbanRural
+
+# In terms of population.  Far more people are urban.
+crashUrbanRural$ruralByPopulation <- crashUrbanRural$`rural_(all)` / (SummaryBoP["rural", "population"] / 1000)
+crashUrbanRural$urbanByPopulation <- crashUrbanRural$`urban_(all)` / (SummaryBoP["urban", "population"] / 1000)
+
+
+# graphs ------------------------------------------------------------------
 
 mCrashUrbanRural <- melt(crashUrbanRural, id.vars = "year")
 
-# As graphs
 # pure crashes
 ggplot(mCrashUrbanRural[mCrashUrbanRural$variable %in% c("rural_(all)", "urban_(all)"), ]
        , aes(year, value
              , group = variable
              , fill = variable)) +
   geom_bar(stat = "identity", position = "dodge")
-# crashes by area
-ggplot(mCrashUrbanRural[mCrashUrbanRural$variable %in% c("ruralByArea", "urbanByArea"), ]
+
+# crashes by population
+ggplot(mCrashUrbanRural[mCrashUrbanRural$variable %in% c("ruralByPopulation", "urbanByPopulation"), ]
        , aes(year, value, group = variable, fill = variable)) +
   geom_bar(stat = "identity", position = "dodge")
+
 # crashes by road length
 ggplot(mCrashUrbanRural[mCrashUrbanRural$variable %in% c("ruralRoadByRoad", "urbanRoadByRoad"
                                                          , "ruralHighwayByHighway", "urbanHighwayByHighway"), ]
        , aes(year, value, group = variable, fill = variable)) +
   geom_bar(stat = "identity", position = "dodge")
+
+
+
+
+
+
+
+ggplot(crashes, aes(hour, countPopulation, group = alcohol)) + geom_bar(stat = "identity") + facet_grid(urbanRural ~ stateHighway)
+ggplot(crashes, aes(hour, group = alcohol)) + geom_bar(binwidth = 1) + facet_grid(urbanRural ~ stateHighway)
+
+# pure crashes
+# Rural tends to have slightly more crashes than urban
+ggplot(crashes, aes(year, group = urbanRural, fill = urbanRural)) + geom_bar(binwidth = 1, position = "dodge")
+# Even when alcohol is accounted for, although urban-non-alcohol crashes increased in 2011&2012.  Alcohol crashes are declining in both urban&rural.
+ggplot(crashes, aes(year, group = urbanRural, fill = urbanRural)) + geom_bar(binwidth = 1, position = "dodge") + facet_wrap(.(alcohol))
+ggplot(crashes, aes(urbanRural, group = alcohol, fill = alcohol)) + geom_bar(binwidth = 1, position = "dodge")
+ggplot(crashes, aes(alcohol, group = urbanRural, fill = urbanRural)) + geom_bar(binwidth = 1, position = "dodge")
+
+# crashes by population
+ggplot(crashes, aes(year, weight = countPopulation, group = urbanRural, fill = urbanRural)) + geom_bar(position = "dodge")
