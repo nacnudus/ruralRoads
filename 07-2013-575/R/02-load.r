@@ -4,6 +4,10 @@ drivers <- read.csv("data/BoP-drivers.txt", header = FALSE)
 driversCauses <- read.csv("data/BoP-drivers-causes.txt", header = FALSE)
 victims <- read.csv("data/BoP-victims.txt", header = FALSE)
 
+# lookup tables
+causeCategories <- read.csv("data/causeCategories.csv")
+faultCategories <- read.csv("data/faultCategories.csv", sep = "|")
+
 # Note: no attempt is made to load meshblockBoP.Rdata.  This is because it is
 # only ever needed for plotting, and tends to crash small Amazon EC2 instances.
 
