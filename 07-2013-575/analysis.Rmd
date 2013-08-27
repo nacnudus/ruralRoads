@@ -36,7 +36,8 @@ ggplot(crashes, aes(year, group = urbanRural, fill = urbanRural)) +
 Drink-drive crashes are declining in both urban and rural areas.
 
 ```{r pureCrashes2, cache = TRUE}
-ggplot(crashes[crashes$alcohol == TRUE, ], aes(year, group = urbanRural, fill = urbanRural)) + 
+ggplot(crashes[crashes$alcohol == TRUE, ], aes(year, group = urbanRural
+                                               , fill = urbanRural)) + 
  geom_bar(binwidth = 1, position = "dodge")
 ```
 
@@ -59,7 +60,8 @@ pandoc.table(SummaryBoP[c("urban", "rural"), c("road", "highway")]
 Urban highways have by far the worst fatal/serious crash rate, whether drink-drive-related or not.  This probably reflects the sheer volume of traffic on urban highways
 
 ```{r roadCrashRate, cache = TRUE}
-ggplot(crashes, aes(year, weight = countRoad, group = urbanRuralRoadHighway, fill = urbanRuralRoadHighway)) + 
+ggplot(crashes, aes(year, weight = countRoad, group = urbanRuralRoadHighway
+                    , fill = urbanRuralRoadHighway)) + 
   geom_bar(position = "dodge") + facet_wrap(.(alcohol))
 ```
 
@@ -69,7 +71,9 @@ ggplot(crashes, aes(year, weight = countRoad, group = urbanRuralRoadHighway, fil
 Areas of the Bay of Plenty have been categorised into "urban" and "rural", based on a Statistics New Zealand dataset.  Demographic data are available giving the populations of urban and rural areas.  The rural population is considerably smaller than the urban population.
 
 ```{r populationTable, results = tableResults, cache = TRUE}
-pandoc.table(data.frame(Urban.or.Rural = c("urban", "rural"), Population = SummaryBoP[c("urban", "rural"), "population"])
+pandoc.table(data.frame(Urban.or.Rural = c("urban", "rural")
+                        , Population = SummaryBoP[c("urban", "rural")
+                                                  , "population"])
               , caption = "Population of the Bay of Plenty"
               ,style = "rmarkdown")
 ```
@@ -78,7 +82,8 @@ pandoc.table(data.frame(Urban.or.Rural = c("urban", "rural"), Population = Summa
 The crash rate per head population in rural areas is much higher than in urban areas.  This is because, while the number of crashes in rural areas is slightly higher than in urban areas, the population is much smaller.  This is true of both drink-drive-related crashes and others.
 
 ```{r populationCrashRate, cache = TRUE}
-ggplot(crashes, aes(year, weight = countPopulation, group = urbanRural, fill = urbanRural)) + 
+ggplot(crashes, aes(year, weight = countPopulation, group = urbanRural
+                    , fill = urbanRural)) + 
   geom_bar(position = "dodge") + facet_wrap(.(alcohol))
 ```
 
@@ -87,12 +92,32 @@ ggplot(crashes, aes(year, weight = countPopulation, group = urbanRural, fill = u
 
 Drink-drive-related crashes tend to occur in the evenings and early mornings.
 
-```{r crashesHourly}
+```{r crashesHourly, cache = TRUE}
 ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
-       , aes(hour)) + 
-  geom_histogram(aes(y = ..count..), fill = "grey", binwidth = 1) +
-  scale_x_continuous(breaks = seq(0,24,4)) +
+       , aes(factor(hour), weight = count)) + 
+  geom_bar(fill = "grey") +
+  scale_x_discrete(breaks = seq(0,24,4)) +
   facet_grid(urbanRural ~ .)
+```
+
+The nights with the highest number of drink-drive crashes are Friday, Saturday and Sunday nights.  The lowest are Tuesday and Wednesday nights.
+
+```{r crashesWeekly, cache = TRUE}
+ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
+       , aes(hour, weight = count)) + 
+  geom_histogram(binwidth = 3) +
+  scale_x_continuous(breaks = seq(0, 24 ,6), expand = c(0, 0), limits = c(0, 24)) +
+  scale_y_continuous(expand = c(0, 0)) +
+  facet_grid(. ~ weekday) +
+  theme(panel.margin = unit(0, "pt")
+        , panel.border = element_rect(colour = "black", fill = "transparent"))
+```
+
+
+### Age / ethnicity of drivers-at-fault
+
+```{r ageEthnicity}
+
 ```
 
 ### Discussion
