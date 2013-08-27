@@ -1,0 +1,102 @@
+```{r setup, include = FALSE}
+opts_chunk$set(echo = FALSE
+               , warning = FALSE
+               , fig.width = 7
+               , fig.height = 6
+               , fig.cap = "")
+
+tableStyle <- "rmarkdown" # for .docx use "multiline" otherwise "rmarkdown"
+tableResults <- "asis" # for .docx use "markup"? otherwise "asis"
+```
+
+```{r function, include = FALSE}
+source("R/01-function.r")
+```
+
+```{r source, include = FALSE, cache = TRUE}
+source("R/02-load.r")
+source("R/03-clean.r")
+```
+
+Rural Drink-Driving in the Bay of Plenty
+========================================
+
+All the crashes discussed in this document are fatal/serious-injury crashes.  The first section gives an overview of all such crashes in the Bay of Plenty between 2008 and 2012.  The second section considers drink-drive-related crashes in that context.
+
+
+### Numbers of crashes
+
+Rural areas tend to have slightly more crashes than urban areas, both drink-drive and otherwise.
+
+```{r pureCrashes1, cache = TRUE}
+ggplot(crashes, aes(year, group = urbanRural, fill = urbanRural)) + 
+ geom_bar(binwidth = 1, position = "dodge") + facet_wrap(.(alcohol))
+```
+
+Drink-drive crashes are declining in both urban and rural areas.
+
+```{r pureCrashes2, cache = TRUE}
+ggplot(crashes[crashes$alcohol == TRUE, ], aes(year, group = urbanRural, fill = urbanRural)) + 
+ geom_bar(binwidth = 1, position = "dodge")
+```
+
+
+### Crash rate per 1000 km of road
+
+Roads have been divided into four categories, according to the type of road they are, and the area they are in.
+
+* urban roads (excluding highways)
+* urban highways
+* rural roads (excluding highways)
+* rural highways
+
+```{r roadTable, results = tableResults, cache = TRUE}
+pandoc.table(SummaryBoP[c("urban", "rural"), c("road", "highway")]
+             , caption = "Road in the Bay of Plenty (km)"
+             ,style = tableStyle)
+```
+
+Urban highways have by far the worst fatal/serious crash rate, whether drink-drive-related or not.  This probably reflects the sheer volume of traffic on urban highways
+
+```{r roadCrashRate, cache = TRUE}
+ggplot(crashes, aes(year, weight = countRoad, group = urbanRuralRoadHighway, fill = urbanRuralRoadHighway)) + 
+  geom_bar(position = "dodge") + facet_wrap(.(alcohol))
+```
+
+
+### Crashes by population
+
+Areas of the Bay of Plenty have been categorised into "urban" and "rural", based on a Statistics New Zealand dataset.  Demographic data are available giving the populations of urban and rural areas.  The rural population is considerably smaller than the urban population.
+
+```{r populationTable, results = tableResults, cache = TRUE}
+pandoc.table(data.frame(Urban.or.Rural = c("urban", "rural"), Population = SummaryBoP[c("urban", "rural"), "population"])
+              , caption = "Population of the Bay of Plenty"
+              ,style = "rmarkdown")
+```
+
+
+The crash rate per head population in rural areas is much higher than in urban areas.  This is because, while the number of crashes in rural areas is slightly higher than in urban areas, the population is much smaller.  This is true of both drink-drive-related crashes and others.
+
+```{r populationCrashRate, cache = TRUE}
+ggplot(crashes, aes(year, weight = countPopulation, group = urbanRural, fill = urbanRural)) + 
+  geom_bar(position = "dodge") + facet_wrap(.(alcohol))
+```
+
+
+### Time of day of crashes
+
+Drink-drive-related crashes tend to occur in the evenings and early mornings.
+
+```{r crashesHourly}
+ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
+       , aes(hour)) + 
+  geom_histogram(aes(y = ..count..), fill = "grey", binwidth = 1) +
+  scale_x_continuous(breaks = seq(0,24,4)) +
+  facet_grid(urbanRural ~ .)
+```
+
+### Discussion
+
+The perception that drink-driving is a problem in rural areas is probably driven by the ratio of crashes to population.  In fact, there are only slightly more drink-drive crashes in rural areas than in urban areas.
+
+It may be impractical to address rural drink-driving by enforcement, because there is so much road to police.  It may be more practical to engage with the community, because the community is small.
