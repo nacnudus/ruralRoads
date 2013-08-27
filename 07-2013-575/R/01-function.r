@@ -5,6 +5,7 @@ require(ggplot2)
 require(lubridate)
 require(reshape2)
 require(stringr)
+require(xtable)
 
 source("../R/01-function.r")
 

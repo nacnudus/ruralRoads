@@ -46,7 +46,7 @@ crashes <- crashes[!is.na(crashes$urbanRural), ]
 crashes$urbanRuralHighway <- crashes$urbanRural
 crashes$year <- as.factor(crashes$year)
 
-# make stateHighway logical
+# tidy up stateHighway
 levels(crashes$stateHighway) <- c("road", "highway")
 
 # new urban/rural/stateHighway column
@@ -56,6 +56,14 @@ levels(crashes$urbanRuralHighway) <- c(levels(crashes$urbanRuralHighway)
                                        , "highway")
 # then change some to the new level ("State Highway")
 crashes$urbanRuralHighway[crashes$stateHighway == "highway"] <- "highway"
+
+# make new urban/rural/road/highway column good for plotting
+crashes$urbanRuralRoadHighway <- factor(paste(crashes$urbanRural, crashes$stateHighway))
+crashes$urbanRuralRoadHighway <- factor(crashes$urbanRuralRoadHighway
+                                         , levels = c("rural road"
+                                                      , "urban road"
+                                                      , "rural highway"
+                                                      , "urban highway"))
 
 
 # meshblockData -----------------------------------------------------------
@@ -111,8 +119,10 @@ drivers$alcohol <- factor(drivers$alcohol, levels = c(TRUE, FALSE))
 
 # normalize crashes by population/road ------------------------------------
 
+# population
 crashes$countPopulation <- crashes$count / (SummaryBoP[crashes$urbanRural, "population"] / 1000)
-crashes$countRoad <- ddply(crashes, .(crashID), function(x) (x$count / (SummaryBoP[as.character(x$urbanRural), as.character(x$stateHighway)] / 1000)))$V1
+
+# road
 crashes <- join(crashes, ddply(crashes
                                , .(crashID)
                                , function(x) (data.frame(countRoad = x$count / 

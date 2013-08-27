@@ -97,18 +97,37 @@ ggplot(crashes, aes(hour, countPopulation, group = alcohol)) + geom_bar(stat = "
 ggplot(crashes, aes(hour, group = alcohol)) + geom_bar(binwidth = 1) + facet_grid(urbanRural ~ stateHighway)
 
 # pure crashes
-# Rural tends to have slightly more crashes than urban
-ggplot(crashes, aes(year, group = urbanRural, fill = urbanRural)) + 
-  geom_bar(binwidth = 1, position = "dodge")
-# Even when alcohol is accounted for, although urban-non-alcohol crashes increased in 2011&2012.  Alcohol crashes are declining in both urban&rural.
+# Rural tends to have slightly more crashes than urban, both alcohol-related and
+# otherwise, # although urban-non-alcohol crashes increased in 2011&2012 to meet
+# rural. Alcohol crashes are declining in both urban&rural.
 ggplot(crashes, aes(year, group = urbanRural, fill = urbanRural)) + 
   geom_bar(binwidth = 1, position = "dodge") + facet_wrap(.(alcohol))
 ggplot(crashes, aes(alcohol, group = urbanRural, fill = urbanRural)) + 
   geom_bar(binwidth = 1, position = "dodge")
 
+# crashes by road
+# Per 1000 km of road, urban highways have by far the worst fatal/serious crash
+# rate.
+ggplot(crashes, aes(year, weight = countRoad, group = urbanRuralRoadHighway, fill = urbanRuralRoadHighway)) + 
+  geom_bar(position = "dodge")
+# This probably reflects the amount of traffic at peak times, given the hourly
+# profile.
+ggplot(crashes[!is.na(crashes$hour & crashes$urbanRuralRoadHighway == "urban highway"), ]
+       , aes(hour)) + 
+  geom_bar(binwidth = 1, position = "dodge", fill = "grey") +
+  geom_density() + 
+  aes(y = ..count..) +
+  scale_x_continuous(breaks = seq(0,24,4))
+# However, that cannot be the whole story, or the crash rate on rural highways
+# would be lower, because traffic volumes are lower.
+ggplot(crashes[!is.na(crashes$hour && crashes$stateHighway == "highway"), ]
+       , aes(hour)) + 
+  geom_bar(binwidth = 1, position = "dodge", fill = "grey") +
+  geom_density() + 
+  aes(y = ..count..) +
+  scale_x_continuous(breaks = seq(0,24,4)) +
+  facet_wrap(.(urbanRural))
+
 # crashes by population
 ggplot(crashes, aes(year, weight = countPopulation, group = urbanRural, fill = urbanRural)) + 
   geom_bar(position = "dodge") + facet_wrap(.(alcohol))
-# crashes by road
-ggplot(crashes, aes(year, weight = countRoad, group = paste(urbanRural, stateHighway), fill = paste(urbanRural, stateHighway))) + 
-  geom_bar(position = "dodge")
