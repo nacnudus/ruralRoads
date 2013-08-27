@@ -35,7 +35,10 @@ colnames(driversCauses) <- c("count", "crashID", "role", "driverCause"
 
 # crashes -----------------------------------------------------------------
 
+# filter out the rubbish
 crashes <- crashes[!is.na(crashes$year), ]
+crashes <- crashes[as.character(crashes$severity) %in% c("Fatal", "Serious"), ]
+crashes$year <- as.factor(crashes$year)
 
 # crashes$hour is bizarre.  Hour 25 is CAS's version of an NA.  Hour 1 is
 # between midnight and 0100 hours.
@@ -43,12 +46,22 @@ crashes$hour <- as.numeric(crashes$hour)
 crashes$hour[crashes$hour == 25] <- NA
 crashes$hour <- crashes$hour - 1
 
-crashes <- crashes[as.character(crashes$severity) %in% c("Fatal", "Serious"), ]
+# get weekdays by name and centre on Thursday for plotting
 crashes$weekday <- wday(ymd(paste(crashes$year, crashes$month, crashes$day)))
+crashes$weekday <- factor(crashes$weekday)
+# name them
+levels(crashes$weekday) <-  c("Monday", "Tuesday", "Wednesday", "Thursday"
+                              , "Friday", "Saturday", "Sunday")
+# centre on Thursday for plotting
+crashes$weekday <- factor(crashes$weekday, levels = c("Wednesday"
+                                                      , "Thursday", "Friday"
+                                                      , "Saturday", "Sunday"
+                                                      , "Monday", "Tuesday"))
+
+# get urban/rural
 crashes <- join(crashes, crashMeshblocks)
 crashes <- crashes[!is.na(crashes$urbanRural), ]
 crashes$urbanRuralHighway <- crashes$urbanRural
-crashes$year <- as.factor(crashes$year)
 
 # tidy up stateHighway
 levels(crashes$stateHighway) <- c("road", "highway")
