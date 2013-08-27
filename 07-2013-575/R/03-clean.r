@@ -36,9 +36,13 @@ colnames(driversCauses) <- c("count", "crashID", "role", "driverCause"
 # crashes -----------------------------------------------------------------
 
 crashes <- crashes[!is.na(crashes$year), ]
+
+# crashes$hour is bizarre.  Hour 25 is CAS's version of an NA.  Hour 1 is
+# between midnight and 0100 hours.
 crashes$hour <- as.numeric(crashes$hour)
-crashes[crashes$hour == 24, "hour"] <- 0
-crashes[!(crashes$hour <= 23), "hour"] <- NA
+crashes$hour[crashes$hour == 25] <- NA
+crashes$hour <- crashes$hour - 1
+
 crashes <- crashes[as.character(crashes$severity) %in% c("Fatal", "Serious"), ]
 crashes$weekday <- wday(ymd(paste(crashes$year, crashes$month, crashes$day)))
 crashes <- join(crashes, crashMeshblocks)
