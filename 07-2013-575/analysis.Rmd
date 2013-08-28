@@ -116,8 +116,14 @@ ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
 
 ### Age / ethnicity of drivers-at-fault
 
-```{r ageEthnicity}
+Drink-drivers at fault in urban crashes tend to be under 30, while in rural areas they are often up to their mid-forties.
 
+```{r age}
+x <- drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
+ggplot(x, aes(age, weight = count)) +
+  geom_histogram(binwidth = 5) +
+  scale_x_continuous(breaks = seq(20, 80, 10), limits = c(15, max(x$age))) +
+  facet_grid(urbanRural ~ .)
 ```
 
 ### Discussion
