@@ -1,3 +1,29 @@
+# meshblockData -----------------------------------------------------------
+
+# convert meshblockID from numeric to character, which means the colClass
+# function will report it to melt as an id variable.
+meshblockData$meshblockID <- as.character(meshblockData$meshblockID)
+
+
+# BoP meshblocks ----------------------------------------------------------
+
+meshblockDataBoP <- meshblockData[meshblockData$policeDistrict == "BAY OF PLENTY", ]
+
+# create a nice summary
+mDataBoP <- melt(meshblockDataBoP, id.vars <- which(!colClass(meshblockDataBoP)))
+SummaryBoP <- dcast(mDataBoP, urbanRural ~ variable, sum, na.rm = TRUE
+                    , margins = "grand_column")
+rownames(SummaryBoP) <- c("rural", "urban", "other") # for easy subsetting
+
+# summarize ageGroup population
+ageGroupPopulation <- dcast(mDataBoP[grep("[0-9]+[.]Years"
+                                          , mDataBoP$variable), ]
+                            , variable ~ .
+                            , sum
+                            , na.rm = TRUE)
+colnames(ageGroupPopulation) <- c("ageGroup", "population")
+
+
 # classify crashes by meshblock  ------------------------------------------
 
 # for getting the urban/rural classification
@@ -25,8 +51,8 @@ crashMeshblocks <- join(crashMeshblocks
 
 colnames(crashes) <- c("count", "crashID", "day", "month"
                        , "year", "hour", "severity", "stateHighway")
-colnames(drivers) <- c("count", "crashID", "sex", "age", "injury"
-                       , "role", "driverAtFault", "licence", "ethnicity", "overseas")
+colnames(drivers) <- c("count", "crashID", "sex", "age", "injury", "role"
+                       , "driverAtFault", "licence", "overseas", "ethnicity")
 colnames(victims) <- c("count", "crashID", "driverPassengerOther", "sex", "age"
                        , "injury", "role", "driverAtFault", "ethnicity")
 colnames(driversCauses) <- c("count", "crashID", "role", "driverCause"
@@ -83,22 +109,48 @@ crashes$urbanRuralRoadHighway <- factor(crashes$urbanRuralRoadHighway
                                                       , "urban highway"))
 
 
-# meshblockData -----------------------------------------------------------
+# drivers -----------------------------------------------------------------
 
-# convert meshblockID from numeric to character, which means the colClass
-# function will report it to melt as an id variable.
-meshblockData$meshblockID <- as.character(meshblockData$meshblockID)
+# get urbanRural and stateHighway from the crashes
+drivers <- join(drivers, crashes[, c("crashID", "urbanRural", "stateHighway")])
 
+# aggregate ethnicities into groups
+ethnicGroup <- read.csv(header = TRUE, 
+                        stringsAsFactors = TRUE, 
+                        text="ethnicity,ethnicGroup
+Asian,Other
+Cook Islander,Pacific Islander
+European,European
+Fijian,Pacific Islander
+NZ Maori, NZ Maori
+Other,Other
+Other Pacific Islander,Pacific Islander
+Samoan,Pacific Islander
+Tongan,Pacific Islander
+Unknown,Pacific Islander
+Pacific Islander,Pacific Islander")
+drivers$ethnicity <- factor(join(data.frame(ethnicity = drivers$ethnicity)
+                                 , ethnicGroup
+                                 , by = "ethnicity")$ethnicGroup)
+rm(ethnicGroup)
 
-# BoP meshblocks ----------------------------------------------------------
-
-meshblockDataBoP <- meshblockData[meshblockData$policeDistrict == "BAY OF PLENTY", ]
-
-# create a nice summary
-mDataBoP <- melt(meshblockDataBoP, id.vars <- which(!colClass(meshblockDataBoP)))
-SummaryBoP <- dcast(mDataBoP, urbanRural ~ variable, sum, na.rm = TRUE
-                  , margins = "grand_column")
-rownames(SummaryBoP) <- c("rural", "urban", "other") # for easy subsetting
+# aggregate ages into groups
+drivers$ageGroup <- cut(drivers$age, breaks=c(seq(0, 69, 5), 100)
+                  , right = FALSE
+                  , labels=c("X0.4.Years"
+                             , "X5.9.Years"
+                             , "X10.14.Years"
+                             , "X15.19.Years"
+                             , "X20.24.Years"
+                             , "X25.29.Years"
+                             , "X30.34.Years"
+                             , "X35.39.Years"
+                             , "X40.44.Years"
+                             , "X45.49.Years"
+                             , "X50.54.Years"
+                             , "X55.59.Years"
+                             , "X60.64.Years"
+                             , "X65.Years.and.Over"))
 
 
 # apply crash lookup tables -----------------------------------------------
@@ -133,11 +185,11 @@ drivers$alcohol <- factor(drivers$alcohol, levels = c(TRUE, FALSE))
 # ethnicity
 
 
-
-# normalize crashes by population/road ------------------------------------
+# normalize by population/road --------------------------------------------
 
 # population
 crashes$countPopulation <- crashes$count / (SummaryBoP[crashes$urbanRural, "population"] / 1000)
+drivers$countAgeGroupPopulation <- 1 / (join(drivers, ageGroupPopulation)$population / 1000)
 
 # road
 crashes <- join(crashes, ddply(crashes
