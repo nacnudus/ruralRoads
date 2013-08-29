@@ -21,7 +21,7 @@ source("R/03-clean.r")
 Rural Drink-Driving in the Bay of Plenty
 ========================================
 
-All the crashes discussed in this document are fatal/serious-injury crashes.  The first section gives an overview of all such crashes in the Bay of Plenty between 2008 and 2012.  The second section considers drink-drive-related crashes in that context.
+All the crashes discussed in this document are fatal/serious-injury crashes.
 
 
 ### Numbers of crashes
@@ -90,40 +90,89 @@ ggplot(crashes, aes(year, weight = countPopulation, group = urbanRural
 
 ### Time of day of crashes
 
-Drink-drive-related crashes tend to occur in the evenings and early mornings.
+Drink-drive-related crashes tend to occur in the evenings and early mornings.  Drink-drive-crashes become a problem earlier in the evening in rural areas than in urban areas.
 
 ```{r crashesHourly, cache = TRUE}
+# Percentage of all crashes that are drink-drive-related
 ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
-       , aes(factor(hour), weight = count)) + 
-  geom_bar(fill = "grey") +
+       , aes(factor(hour), weight = countCrashUrbanHour)) + 
+  geom_bar() +
   scale_x_discrete(breaks = seq(0,24,4)) +
   facet_grid(urbanRural ~ .)
 ```
 
-The nights with the highest number of drink-drive crashes are Friday, Saturday and Sunday nights.  The lowest are Tuesday and Wednesday nights.
+The nights with the highest number of drink-drive crashes are Saturday and Sunday nights.  Fridays and Mondays also have many crashes.  Tuesdays and Wednesdays have the fewest.
 
 ```{r crashesWeekly, cache = TRUE}
-ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
-       , aes(hour, weight = count)) + 
+# make a copy of the crashes
+x <- crashes
+# centre on Thursday for plotting
+x$weekday <- factor(x$weekday, levels = c("Wednesday"
+                                          , "Thursday", "Friday"
+                                          , "Saturday", "Sunday"
+                                          , "Monday", "Tuesday"))
+ggplot(x[!is.na(x$hour) 
+         & x$alcohol == TRUE 
+         & x$urbanRural == "rural", ]
+       , aes(hour, weight = countCrashUrbanWeekdayHour)) + 
   geom_histogram(binwidth = 3) +
   scale_x_continuous(breaks = seq(0, 24 ,6), expand = c(0, 0), limits = c(0, 24)) +
   scale_y_continuous(expand = c(0, 0)) +
   facet_grid(. ~ weekday) +
   theme(panel.margin = unit(0, "pt")
         , panel.border = element_rect(colour = "black", fill = "transparent"))
+# tidy
+rm(x)
 ```
 
+```{r crashesWeeklyCircular, cache = TRUE}
+# note: pure, unweighted crash counts
+# prepare the data
+x <- crashes[!is.na(crashes$hour) 
+               & crashes$alcohol == TRUE 
+               & crashes$urbanRural == "rural", ]
+# turn hours of the day into hours of the week
+x <- (24 * as.integer(x$weekday)) + as.integer(x$hour) - 24
+# round down to the nearest three hours (midnight, 0300, 0900, etc.) for
+# stacking
+x <- seq(0, 167, 3)[findInterval(x, seq(0, 167, 3))]
+# convert hours degrees of a circle
+x <- x / 168 * 360
+# create circular object
+x <- circular(x, units = "degrees", template = "geographics")
+# make space for the plot
+par(mar = c(0,0,0,0))
+# plot
+plot(x, stack = TRUE, shrink = 1.5, sep = 0.05, axes = FALSE)
+# smooth (a better smooth than ggplot)
+lines(density(x, bw = 200, ), col='RoyalBlue', lwd = 2)
+# prepare seven axis ticks and labels
+y <- circular(seq(0, 360 - 360 / 7, 360 / 7), units = "degrees"
+              , template = "geographics")
+# apply the ticks, noting workaround for strange bu
+axis.circular(at=y - 90 + (360 / 14), labels= rep("", 7), cex=0.6, tcl = 1)
+# apply the labels between the ticks, working around the bug the opposite way
+axis.circular(at=-y + 90 - (360 / 14)
+              , labels=levels(crashes$weekday)
+              , cex=0.6
+              , tick = FALSE)
+# tidy up
+par(mar = c(5, 4, 4, 2) + 0.1) # reset to default
+rm(x, y)
+```
 
 ### Age / ethnicity of drivers-at-fault
 
-Drink-drivers at fault in urban crashes tend to be under 30, while in rural areas they are often up to their mid-forties.
+The rate of drink-drive-crashes is highest for the 20-25 age group in both rural and urban areas.  The rate for the 15-20 age group is higher in rural areas than urban areas, and the rate does not drop off as markedly after age 25 in rural areas, but continues to be relatively high up to age 45.
 
-```{r age}
+```{r age, cache = TRUE}
 x <- drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
-ggplot(x, aes(age, weight = count)) +
+ggplot(x, aes(age, weight = countAgeGroupPopulation)) +
   geom_histogram(binwidth = 5) +
   scale_x_continuous(breaks = seq(20, 80, 10), limits = c(15, max(x$age))) +
   facet_grid(urbanRural ~ .)
+# tidy
+rm(x)
 ```
 
 ### Discussion

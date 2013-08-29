@@ -8,8 +8,7 @@ ggplot(crashes[!is.na(crashes$hour), ]
   facet_grid(urbanRural ~ stateHighway)
 
 # To put that in context, there are more rural crashes than urban.
-ggplot(crashes[!is.na(crashes$hour), ]
-       , aes(hour)) + 
+ggplot(crashes[!is.na(crashes$hour), ], aes(hour)) + 
   geom_bar(binwidth = 1, position = "dodge", fill = "grey") +
   geom_density() + 
   aes(y = ..count..) +

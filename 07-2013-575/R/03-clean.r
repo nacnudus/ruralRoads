@@ -35,6 +35,7 @@ colnames(ageGroupPopulation) <- c("ageGroup", "population")
 # compute that afresh too.
 
 if (!exists("crashMeshblocks")) {
+  coordinates <- loadCrashes("data/BoP-coordinates.csv")
   crashMeshblocks <- joinCrashesMeshblocks(coordinates
                                            , "output/crashMeshblocks.txt")
 }
@@ -72,17 +73,12 @@ crashes$hour <- as.numeric(crashes$hour)
 crashes$hour[crashes$hour == 25] <- NA
 crashes$hour <- crashes$hour - 1
 
-# get weekdays by name and centre on Thursday for plotting
+# get weekdays by name
 crashes$weekday <- wday(ymd(paste(crashes$year, crashes$month, crashes$day)))
 crashes$weekday <- factor(crashes$weekday)
 # name them
 levels(crashes$weekday) <-  c("Monday", "Tuesday", "Wednesday", "Thursday"
                               , "Friday", "Saturday", "Sunday")
-# centre on Thursday for plotting
-crashes$weekday <- factor(crashes$weekday, levels = c("Wednesday"
-                                                      , "Thursday", "Friday"
-                                                      , "Saturday", "Sunday"
-                                                      , "Monday", "Tuesday"))
 
 # get urban/rural
 crashes <- join(crashes, crashMeshblocks)
@@ -185,7 +181,7 @@ drivers$alcohol <- factor(drivers$alcohol, levels = c(TRUE, FALSE))
 # ethnicity
 
 
-# normalize by population/road --------------------------------------------
+# normalize by population etc. --------------------------------------------
 
 # population
 crashes$countPopulation <- crashes$count / (SummaryBoP[crashes$urbanRural, "population"] / 1000)
@@ -198,3 +194,38 @@ crashes <- join(crashes, ddply(crashes
                                                            (SummaryBoP[as.character(x$urbanRural)
                                                                        , as.character(x$stateHighway)] 
                                                             / 1000)))))
+
+# crashes/urbanRural/hour
+# copy the crashes, filter for ones with hours, weight, then join back on
+x <- crashes
+x <- x[!is.na(x$hour), ]
+y <- x
+x$countCrashUrbanHour <- daply(y
+                               , .(crashID)
+                               , function(x) (
+                                 x$count / 
+                                   sum(y[y$urbanRural == x$urbanRural 
+                                         & y$hour == x$hour
+                                         , "count"] / 100 # percentage of all crashes
+                                       , na.rm = TRUE)))
+crashes <- join(crashes, x, by = "crashID")
+# tidy
+rm(x, y)
+
+# crashes/urbanRural/weekday/hour
+# copy the crashes, filter for ones with hours, weight, then join back on
+x <- crashes
+x <- x[!is.na(x$hour), ]
+y <- x
+x$countCrashUrbanWeekdayHour <- daply(y
+                               , .(crashID)
+                               , function(x) (
+                                 x$count / 
+                                   sum(y[y$urbanRural == x$urbanRural 
+                                         & y$hour == x$hour
+                                         & y$weekday == x$weekday
+                                         , "count"] / 100 # percentage of all crashes
+                                       , na.rm = TRUE)))
+crashes <- join(crashes, x, by = "crashID")
+# tidy
+rm(x, y)
