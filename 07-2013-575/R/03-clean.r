@@ -9,8 +9,19 @@ meshblockData$meshblockID <- as.character(meshblockData$meshblockID)
 
 meshblockDataBoP <- meshblockData[meshblockData$policeDistrict == "BAY OF PLENTY", ]
 
+# nicer ethnic groups for joining to drivers/victims
+colnames(meshblockDataBoP)[25:30] <- c("Asian", "European", "NZ Maori"
+                                       , "Pacific Islander"
+                                       , "MELAA.Ethnic.Groups", "Other")
+meshblockDataBoP$Other2 <- rowSums(meshblockDataBoP[, c("MELAA.Ethnic.Groups"
+                                                        , "Other")]
+                                   , na.rm = TRUE)
+meshblockDataBoP <- meshblockDataBoP[, !(names(meshblockDataBoP) %in% c("MELAA.Ethnic.Groups", "Other"))]
+names(meshblockDataBoP)[names(meshblockDataBoP) == "Other2"] <- "Other"
+
 # create a nice summary
 mDataBoP <- melt(meshblockDataBoP, id.vars <- which(!colClass(meshblockDataBoP)))
+
 SummaryBoP <- dcast(mDataBoP, urbanRural ~ variable, sum, na.rm = TRUE
                     , margins = "grand_column")
 rownames(SummaryBoP) <- c("rural", "urban", "other") # for easy subsetting
@@ -118,7 +129,7 @@ Asian,Other
 Cook Islander,Pacific Islander
 European,European
 Fijian,Pacific Islander
-NZ Maori, NZ Maori
+NZ Maori,NZ Maori
 Other,Other
 Other Pacific Islander,Pacific Islander
 Samoan,Pacific Islander
@@ -186,12 +197,18 @@ drivers$alcohol <- factor(drivers$alcohol, levels = c(TRUE, FALSE))
 # population
 crashes$countPopulation <- crashes$count / (SummaryBoP[crashes$urbanRural, "population"] / 1000)
 drivers$countAgeGroupPopulation <- 1 / (join(drivers, ageGroupPopulation)$population / 1000)
+drivers <- join(drivers, ddply(drivers
+                               , .(crashID, role)
+                               , function(x) (data.frame(countUrbanEthnicity = x$count
+                                                         / (SummaryBoP[as.character(x$urbanRural)
+                                                                       , as.character(x$ethnicity)]
+                                                            / 1000)))))
 
 # road
 crashes <- join(crashes, ddply(crashes
                                , .(crashID)
-                               , function(x) (data.frame(countRoad = x$count / 
-                                                           (SummaryBoP[as.character(x$urbanRural)
+                               , function(x) (data.frame(countRoad = x$count 
+                                                         / (SummaryBoP[as.character(x$urbanRural)
                                                                        , as.character(x$stateHighway)] 
                                                             / 1000)))))
 
