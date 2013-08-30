@@ -196,7 +196,7 @@ drivers$alcohol <- factor(drivers$alcohol, levels = c(TRUE, FALSE))
 
 # population
 crashes$countPopulation <- crashes$count / (SummaryBoP[crashes$urbanRural, "population"] / 1000)
-drivers$countAgeGroupPopulation <- 1 / (join(drivers, ageGroupPopulation)$population / 1000)
+drivers$countAgeGroupPopulation <- drivers$count / (join(drivers, ageGroupPopulation)$population / 1000)
 drivers <- join(drivers, ddply(drivers
                                , .(crashID, role)
                                , function(x) (data.frame(countUrbanEthnicity = x$count
