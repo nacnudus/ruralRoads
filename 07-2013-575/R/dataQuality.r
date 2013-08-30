@@ -153,3 +153,23 @@ dataQuality(crashes.)
 dataQuality(drivers.)
 dataQuality(victims.)
 dataQuality(driversCauses.)
+
+
+# are any Area Units a mixture of urban/rural? ----------------------------
+
+# it makes integration with NZ.Stat census data possible.
+
+x <- unique(meshblockDataBoP[, c("AU06D", "urbanRural")])
+nrow(x)
+length(unique(x$AU06D)) # maybe, but
+y <- dcast(x[!is.na(x$urbanRural), ], AU06D ~ urbanRural, length
+           , margins = "grand_row")
+y[y$`(all)` > 1, ] # they were only mixtures of urban/rural and NA
+
+# same goes for the national picture
+x <- unique(meshblockData[, c("AU06D", "urbanRural")])
+nrow(x)
+length(unique(x$AU06D))
+y <- dcast(x[!is.na(x$urbanRural), ], AU06D ~ urbanRural, length
+           , margins = "grand_row")
+y[y$`(all)` > 1, ]

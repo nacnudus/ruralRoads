@@ -1,6 +1,7 @@
 ```{r setup, include = FALSE}
 opts_chunk$set(echo = FALSE
                , warning = FALSE
+               , message = FALSE
                , fig.width = 7
                , fig.height = 6
                , fig.cap = "")
@@ -177,12 +178,22 @@ rm(x)
 
 The ethnicities with the highest number of drink-drivers at fault in crashes, per head population, are by far NZ Maori and Pacific Islander.  The difference is even more marked in rural areas than in urban areas, though there are more drink-drivers at fault in crashes in rural areas generally, per head population, compared with urban areas.
 
-```{r ethnicityTableDrivers, results = tableResults, cache = TRUE}
+```{r ethnicityTableDrivers, results = tableResults, cache = TRUE, }
 x <- ddply(drivers[drivers$fault == TRUE & drivers$alcohol == TRUE, ]
-           , .(ethnicity), function(x) (sum(x$count)))
-colnames(x) <- c("Ethnicity", "Drink-Drivers At Fault")
+           , .(ethnicity, urbanRural), function(x) (sum(x$count)))
+x <- dcast(x, ethnicity ~ urbanRural, sum, margins = TRUE)
+# nicer Total row and column headings
+colnames(x) <- c("Ethnicity", "Rural Drivers", "Urban Drivers", "Total")
+x$Ethnicity <- as.character(x$Ethnicity)
+x$Ethnicity[nrow(x)] <- "Total"
+# remove row names because pander can't ignore them
+rownames(x) <- NULL
+# print
 pandoc.table(x, caption = "Drink-Drivers At Fault by Ethnicity"
-             , style = tableStyle)
+             , emphasize.strong.rows = 5, emphasize.strong.cols = 4
+             , justify = c("left", "right", "right", "right")
+             , style = tableStyle
+             , split.tables = Inf)
 # tidy
 rm(x)
 ```
@@ -199,10 +210,14 @@ x <- x[c(order(x$variable)[2:5], 5), ]
 # nicer Total row and column headings
 x$variable[length(x$variable)] <- "Total"
 colnames(x) <- c("Ethnicity", "Rural Population", "Urban Population", "Total")
+# remove row names because pander can't ignore them
+rownames(x) <- NULL
 # print
 pandoc.table(x, caption = "Population by Ethnicity"
              , emphasize.strong.rows = 5, emphasize.strong.cols = 4
-             , style = "rmarkdown")
+             , justify = c("left", "right", "right", "right")
+             , style = tableStyle
+             , split.tables = Inf)
 # tidy
 rm(x)
 ```
