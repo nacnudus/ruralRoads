@@ -68,7 +68,11 @@ Urban highways have by far the worst fatal/serious crash rate, whether drink-dri
 ```{r roadCrashRate, cache = TRUE}
 ggplot(crashes, aes(year, weight = countRoad, group = urbanRuralRoadHighway
                     , fill = urbanRuralRoadHighway)) + 
-  geom_bar(position = "dodge") + facet_wrap(.(alcohol))
+  geom_bar(position = "dodge") + facet_wrap(.(alcohol)) +
+  ggtitle("Crashes per 1000 km\nby type of road\nand whether alcohol was a factor") +
+  ylab("crashes per 1000 km") +
+  theme(legend.title = element_blank()) +
+  scale_fill_manual(values = excelPalette)
 ```
 
 
