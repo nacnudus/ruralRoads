@@ -213,36 +213,43 @@ crashes <- join(crashes, ddply(crashes
                                                             / 1000)))))
 
 # crashes/urbanRural/hour
-# copy the crashes, filter for ones with hours, weight, then join back on
-x <- crashes
-x <- x[!is.na(x$hour), ]
-y <- x
-x$countCrashUrbanHour <- daply(y
-                               , .(crashID)
-                               , function(x) (
-                                 x$count / 
-                                   sum(y[y$urbanRural == x$urbanRural 
-                                         & y$hour == x$hour
-                                         , "count"] / 100 # percentage of all crashes
-                                       , na.rm = TRUE)))
-crashes <- join(crashes, x, by = "crashID")
-# tidy
-rm(x, y)
+y <- crashes[!is.na(crashes$hour), ]
+crashes <- join(y
+  , ddply(y
+          , .(crashID)
+          , function(x) (
+            data.frame(countCrashUrbanHour = x$count / 
+                         sum(y[crashes$urbanRural == x$urbanRural 
+                               & crashes$hour == x$hour
+                               , "count"] / 100 # percentage of all crashes
+                             , na.rm = TRUE)))))
+rm(y)
 
 # crashes/urbanRural/weekday/hour
 # copy the crashes, filter for ones with hours, weight, then join back on
-x <- crashes
-x <- x[!is.na(x$hour), ]
-y <- x
-x$countCrashUrbanWeekdayHour <- daply(y
-                               , .(crashID)
-                               , function(x) (
-                                 x$count / 
-                                   sum(y[y$urbanRural == x$urbanRural 
-                                         & y$hour == x$hour
-                                         & y$weekday == x$weekday
-                                         , "count"] / 100 # percentage of all crashes
-                                       , na.rm = TRUE)))
-crashes <- join(crashes, x, by = "crashID")
-# tidy
-rm(x, y)
+y <- crashes[!is.na(crashes$hour), ]
+crashes <- join(y
+                , ddply(y
+                  , .(crashID)
+                  , function(x) (
+                    data.frame(countCrashUrbanWeekdayHour = x$count / 
+                                 sum(y[y$urbanRural == x$urbanRural 
+                                       & y$hour == x$hour
+                                       & y$weekday == x$weekday
+                                       , "count"] / 100 # percentage of all crashes
+                                     , na.rm = TRUE))))[, c("crashID", "countCrashUrbanWeekdayHour")])
+rm(y)
+
+# crashes/urbanRural/weekday/hour but hours grouped into threes for histogramming
+crashes$hour3 <- findInterval(crashes$hour, vec = seq(0, 21, 3)) * 3 - 3
+y <- crashes[!is.na(crashes$hour3), ]
+crashes <- join(y
+                , ddply(y
+                        , .(crashID)
+                        , function(x) (
+                          data.frame(countCrashUrbanWeekdayHour3 = sum(x$count) / 
+                                       sum(y[y$urbanRural == x$urbanRural 
+                                             & y$hour3 == x$hour3
+                                             & y$weekday == x$weekday
+                                             , "count"] / 100 # percentage of all crashes
+                                           , na.rm = TRUE))))[, c("crashID", "countCrashUrbanWeekdayHour3")])
