@@ -8,6 +8,7 @@ opts_chunk$set(echo = FALSE
 
 tableStyle <- "rmarkdown" # for .docx use "multiline" otherwise "rmarkdown"
 tableResults <- "asis" # for .docx use "markup"? otherwise "asis"
+excelPalette <- c("#4F81BD", "#C0504D", "#9BBB59", "#8064A2")
 ```
 
 ```{r function, include = FALSE}
@@ -30,8 +31,20 @@ All the crashes discussed in this document are fatal/serious-injury crashes.
 Rural areas tend to have slightly more crashes than urban areas, both drink-drive and otherwise.
 
 ```{r pureCrashes1, cache = TRUE}
+plotLabels <- list("TRUE" = "alcohol a factor"
+  , "FALSE" = "alcohol not a factor")
+
+plotLabeller <- function(variable, value) {
+  return(plotLabels[value])
+}
+
 ggplot(crashes, aes(year, group = urbanRural, fill = urbanRural)) + 
- geom_bar(binwidth = 1, position = "dodge") + facet_wrap(.(alcohol))
+ geom_bar(binwidth = 1, position = "dodge") + 
+  facet_grid(. ~ alcohol, labeller = plotLabeller) +
+  ggtitle("Number of Crashes\nby whether alcohol was a factor") +
+  ylab("number of crashes") +
+  theme(legend.title = element_blank()) +
+  scale_fill_manual(values = excelPalette)
 ```
 
 Drink-drive crashes are declining in both urban and rural areas.
@@ -175,6 +188,8 @@ ggplot(x, aes(age, weight = countAgeGroupPopulation)) +
 # tidy
 rm(x)
 ```
+
+
 
 The ethnicities with the highest number of drink-drivers at fault in crashes, per head population, are by far NZ Maori and Pacific Islander.  The difference is even more marked in rural areas than in urban areas, though there are more drink-drivers at fault in crashes in rural areas generally, per head population, compared with urban areas.
 
