@@ -28,9 +28,9 @@ All the crashes discussed in this document are fatal/serious-injury crashes.
 
 ### Numbers of crashes
 
-Rural areas tend to have slightly more crashes than urban areas, both drink-drive and otherwise.
+Rural areas tend to have slightly more crashes than urban areas, both drink-drive and otherwise.  Drink-drive crashes are declining in both urban and rural areas.
 
-```{r pureCrashes1, cache = TRUE}
+```{r pureCrashes, cache = TRUE}
 plotLabels <- list("TRUE" = "alcohol a factor"
   , "FALSE" = "alcohol not a factor")
 
@@ -45,14 +45,6 @@ ggplot(crashes, aes(year, group = urbanRural, fill = urbanRural)) +
   ylab("number of crashes") +
   theme(legend.title = element_blank()) +
   scale_fill_manual(values = excelPalette)
-```
-
-Drink-drive crashes are declining in both urban and rural areas.
-
-```{r pureCrashes2, cache = TRUE}
-ggplot(crashes[crashes$alcohol == TRUE, ], aes(year, group = urbanRural
-                                               , fill = urbanRural)) + 
- geom_bar(binwidth = 1, position = "dodge")
 ```
 
 
