@@ -4,10 +4,10 @@ opts_chunk$set(echo = FALSE
                , message = FALSE
                , fig.width = 16 / 2.54
                , fig.height = 6
-#               , dpi = 600 # use 600 for printing otherwise comment out
+               , dpi = 600 # use 600 for printing otherwise comment out
                , fig.cap = "")
 
-tableStyle <- "rmarkdown" # for .docx use "multiline" otherwise "rmarkdown"
+tableStyle <- "multiline" # for .docx use "multiline" otherwise "rmarkdown"
 tableResults <- "asis"
 excelPalette <- c("#4F81BD", "#C0504D", "#9BBB59", "#8064A2")
 ```
@@ -35,7 +35,7 @@ Rural areas tend to have slightly more crashes than urban areas, both drink-driv
 x <- dcast(crashes, urbanRural + alcohol ~ year, length, value.var = "count")
 colnames(x)[1:2] <- c("Urban/Rural", "Alcohol a Factor")
 pandoc.table(x
-             , caption = "Road in the Bay of Plenty (km)"
+             , caption = "Number of crashes by whether alcohol was a factor"
              ,style = tableStyle
              , split.tables = Inf)
 ```
@@ -74,12 +74,21 @@ pandoc.table(SummaryBoP[c("urban", "rural"), c("road", "highway")]
              , split.tables = Inf)
 ```
 
-Urban highways have by far the worst fatal/serious crash rate, whether drink-drive-related or not.  This probably reflects the sheer volume of traffic on urban highways
+Urban highways have by far the worst fatal/serious crash rate, whether drink-drive-related or not.  This probably reflects the sheer volume of traffic on urban highways.
+
+```{r roadCrashRateTable, results = tableResults, cache = TRUE}
+x <- dcast(crashes, urbanRuralRoadHighway + alcohol ~ year, sum, value.var = "countRoad")
+colnames(x)[1:2] <- c("Urban/Rural\nRoad/StateHighway", "Alcohol a Factor")
+pandoc.table(x
+             , caption = "Crashes per 1000 km by type of road and whether alcohol was a factor"
+             ,style = tableStyle
+             , split.tables = Inf)
+```
 
 ```{r roadCrashRate, cache = TRUE}
 ggplot(crashes, aes(year, weight = countRoad, group = urbanRuralRoadHighway
                     , fill = urbanRuralRoadHighway)) + 
-  geom_bar(position = "dodge") + facet_wrap(.(alcohol), colour = "black") +
+  geom_bar(position = "dodge", colour = "black") + facet_wrap(.(alcohol)) +
   ggtitle("Crashes per 1000 km\nby type of road\nand whether alcohol was a factor") +
   ylab("crashes per 1000 km") +
   theme(legend.title = element_blank()) +
@@ -102,6 +111,15 @@ pandoc.table(data.frame("Region" = c("urban", "rural")
 
 
 The crash rate per head population in rural areas is much higher than in urban areas.  This is because, while the number of crashes in rural areas is slightly higher than in urban areas, the population is much smaller.  This is true of both drink-drive-related crashes and others.
+
+```{r populationCrashRateTable, results = tableResults, cache = TRUE}
+x <- dcast(crashes, urbanRural + alcohol ~ year, sum, value.var = "countPopulation")
+colnames(x)[1:2] <- c("Urban/Rural\nRoad/StateHighway", "Alcohol a Factor")
+pandoc.table(x
+             , caption = "Crashes per 1000 people by urban/rural and whether alcohol was a factor"
+             ,style = tableStyle
+             , split.tables = Inf)
+```
 
 ```{r populationCrashRate, cache = TRUE}
 plotLabels <- list(
@@ -130,6 +148,16 @@ Compare with the first graph, "Number of Crashes".  Weighting by population is a
 
 Drink-drive-related crashes tend to occur in the evenings and early mornings.  Drink-drive-crashes become a problem earlier in the evening in rural areas than in urban areas.
 
+```{r crashesHourlyByNumberTable, results = tableResults, cache = TRUE}
+x <- dcast(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
+           , urbanRural + alcohol ~ hour, length, value.var = "count")
+colnames(x)[1:2] <- c("Urban/Rural\nRoad/StateHighway", "Alcohol a Factor")
+pandoc.table(x
+             , caption = "Crashes where Alcohol was a Factor by hour of the day"
+             ,style = tableStyle
+             , split.tables = Inf)
+```
+
 ```{r crashesHourlyByNumber, cache = TRUE}
 ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
        , aes(hour, weight = count
@@ -146,6 +174,16 @@ ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
 
 Alcohol is not a factor in most crashes.  However, after 8.00 pm, it is a factor in about 40-65% of crashes.
 
+```{r crashesHourlyByPercentageTable, results = tableResults, cache = TRUE}
+x <- dcast(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
+           , hour ~ urbanRural, sum, value.var = "countCrashUrbanHour")
+colnames(x)[1:2] <- c("Hour of Day", "Rural", "Urban")
+pandoc.table(x
+             , caption = "% of Crashes where alcohol was a factor by hour of the day"
+             ,style = tableStyle
+             , split.tables = Inf)
+```
+
 ```{r crashesHourlyCaption, include = FALSE, cache = TRUE}
 crashesHourlyCaption <- "The bars indicate the percentage of all crashes that were drink-drive-related in that hour of the day, in that region, e.g. the right-most bar of the top graph shows that over 60% of rural crashes between 2300 hours and midnight were drink-driver related."
 ```
@@ -154,7 +192,7 @@ crashesHourlyCaption <- "The bars indicate the percentage of all crashes that we
 # crashes that are drink-drive-related, as a percentage of all crashes
 ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
        , aes(hour, weight = countCrashUrbanHour
-             , fill = as.character(excelPalette[1]))) + 
+             , fill = as.character(excelPalette[1]), label = sum(countCrashUrbanHour))) + 
   geom_bar(binwidth = 1, colour = "black") +
   scale_x_discrete(breaks = seq(0,24,4)) +
   facet_grid(urbanRural ~ .) +
@@ -167,6 +205,20 @@ ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
 
 
 The nights with the highest percentage of drink-drive crashes are Friday, Saturday and Sunday nights.  Mondays are also high in urban areas.  Tuesdays and Wednesdays have the lowest.
+
+```{r crashesWeeklyTable, results = tableResults, cache = TRUE}
+x <- dcast(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
+           , urbanRural + weekday + hour ~ ., sum, value.var = "countCrashUrbanWeekdayHour3")
+# group into threes
+x$hour3 <- cut(as.integer(x$hour), breaks = seq(0, 24, 3), right = FALSE, labels = c(paste(seq(0, 21, 3), "-", seq(3, 24, 3), sep = "")))
+x <- ddply(x, .(urbanRural, weekday, hour3), function(x) (sum(x$`NA`)))
+x <- dcast(x, urbanRural + weekday ~ hour3, sum, value.var = "V1")
+colnames(x)[1:2] <- c("Urban/Rural", "Weekday")
+pandoc.table(x
+             , caption = "% of Crashes where Alcohol was a factor by weekday hour of the day"
+             ,style = tableStyle
+             , split.tables = Inf)
+```
 
 ```{r crashesWeekly, cache = TRUE}
 # make a copy of the crashes
@@ -199,6 +251,22 @@ rm(x)
 ### Age / ethnicity of drivers-at-fault
 
 The rate of drink-drive-crashes is highest for the 20-25 age group in both rural and urban areas.  The rate for the 15-20 age group is higher in rural areas than urban areas, and the rate does not drop off as markedly after age 25 in rural areas, but continues to be relatively high up to age 45.
+
+```{r ageTable, results = tableResults, cache = TRUE}
+x <- dcast(drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
+           , urbanRural + age ~ ., sum, value.var = "countAgeGroupPopulation")
+x <- x[x$age >= 15, ]
+# group into fives
+x$age5 <- cut(x$age, breaks = seq(15, 79, 5), right = FALSE, labels = c(paste(seq(15, 69, 5), "-", seq(19, 69, 5), sep = ""), "70+"))
+x$age5[is.na(x$age5)] <- "70+"
+x <- ddply(x, .(urbanRural, age5), function(x) (sum(x$`NA`)))
+x <- dcast(x, age5 ~ urbanRural, sum, value.var = "V1")
+colnames(x)[1:3] <- c("Age Group", "Rural", "Urban")
+pandoc.table(x
+             , caption = "Drink-Drivers in Crashes per Population by age in 5-year bands"
+             ,style = tableStyle
+             , split.tables = Inf)
+```
 
 ```{r age, cache = TRUE}
 x <- drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
@@ -264,6 +332,16 @@ pandoc.table(x, caption = "Population by Ethnicity"
 rm(x)
 ```
 
+```{r ethnicityTable, results = tableResults, cache = TRUE}
+x <- dcast(drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
+           , urbanRural + ethnicity ~ ., sum, value.var = "countUrbanEthnicity")
+colnames(x) <- c("Urban/Rural", "Ethnicity", "Drink-Drivers per 1000")
+pandoc.table(x
+             , caption = "Drink-drivers in crashes per population by urban/rural and ethnicity"
+             ,style = tableStyle
+             , split.tables = Inf)
+```
+
 ```{r ethnicity, cache = TRUE}
 x <- drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
 ggplot(x, aes(ethnicity, weight = countUrbanEthnicity
@@ -271,7 +349,7 @@ ggplot(x, aes(ethnicity, weight = countUrbanEthnicity
   geom_bar(colour = "black") + 
   facet_grid(. ~ urbanRural) +
   ggtitle("Drink-Drivers in Crashes per Population\nby urban/rural and ethnicity") +
-  xlab("age in 5-year bands") +
+  xlab("ethnicity") +
   ylab("number of drink-drivers in crashes per 1000 population") +
   theme(legend.position="none") +
   scale_fill_manual(values = excelPalette)
