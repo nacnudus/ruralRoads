@@ -184,38 +184,6 @@ ggplot(x[!is.na(x$hour)
 rm(x)
 ```
 
-```{r crashesWeeklyCircular, cache = TRUE}
-# note: pure, unweighted crash counts
-# prepare the data
-x <- crashes[!is.na(crashes$hour3) 
-             & crashes$alcohol == TRUE 
-             & crashes$urbanRural == "rural", ]
-# turn hours of the day into hours of the week
-x <- (24 * as.integer(x$weekday)) + as.integer(x$hour3) - 24
-# convert hours degrees of a circle
-x <- x / 168 * 360
-# create circular object
-x <- circular(x, units = "degrees", template = "geographics")
-# make space for the plot
-par(mar = c(0,0,0,0))
-# plot
-plot(x, stack = TRUE, shrink = 1.5, sep = 0.05, axes = FALSE)
-# smooth (a better smooth than ggplot)
-lines(density(x, bw = 200, ), col = excelPalette[1], lwd = 2)
-# prepare seven axis ticks and labels
-y <- circular(seq(0, 360 - 360 / 7, 360 / 7), units = "degrees"
-              , template = "geographics")
-# apply the ticks, noting workaround for strange bu
-axis.circular(at=y - 90 + (360 / 14), labels= rep("", 7), cex=0.6, tcl = 1)
-# apply the labels between the ticks, working around the bug the opposite way
-axis.circular(at=-y + 90 - (360 / 14)
-              , labels=levels(crashes$weekday)
-              , cex=0.6
-              , tick = FALSE)
-# tidy up
-par(mar = c(5, 4, 4, 2) + 0.1) # reset to default
-rm(x, y)
-```
 
 ### Age / ethnicity of drivers-at-fault
 
