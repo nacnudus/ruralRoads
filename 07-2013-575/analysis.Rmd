@@ -39,7 +39,7 @@ plotLabeller <- function(variable, value) {
   return(plotLabels[value])
 }
 
-ggplot(crashes, aes(year, group = urbanRural, fill = urbanRural)) + 
+ggplot(crashes, aes(year, group = urbanRural, fill = urbanRural, colour = "black")) + 
  geom_bar(binwidth = 1, position = "dodge") + 
   facet_grid(. ~ alcohol, labeller = plotLabeller) +
   ggtitle("Number of Crashes\nby whether alcohol was a factor") +
@@ -68,7 +68,7 @@ Urban highways have by far the worst fatal/serious crash rate, whether drink-dri
 
 ```{r roadCrashRate, cache = TRUE}
 ggplot(crashes, aes(year, weight = countRoad, group = urbanRuralRoadHighway
-                    , fill = urbanRuralRoadHighway)) + 
+                    , fill = urbanRuralRoadHighway, colour = "black")) + 
   geom_bar(position = "dodge") + facet_wrap(.(alcohol)) +
   ggtitle("Crashes per 1000 km\nby type of road\nand whether alcohol was a factor") +
   ylab("crashes per 1000 km") +
@@ -103,7 +103,7 @@ plotLabeller <- function(variable, value) {
 }
 
 ggplot(crashes, aes(year, weight = countPopulation, group = urbanRural
-                    , fill = urbanRural)) + 
+                    , fill = urbanRural, colour = "black")) + 
   geom_bar(position = "dodge") +
   facet_grid(. ~ alcohol, labeller = plotLabeller) +
   ggtitle("Crashes per 1000 people\nby urban/rural and whether\nalcohol was a factor") +
@@ -121,7 +121,8 @@ Drink-drive-related crashes tend to occur in the evenings and early mornings.  D
 
 ```{r crashesHourlyByNumber, cache = TRUE}
 ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
-       , aes(hour, weight = count, fill = as.character(excelPalette[1]))) + 
+       , aes(hour, weight = count
+             , fill = as.character(excelPalette[1]), colour = "black")) + 
   geom_bar(binwidth = 1) +
   scale_x_discrete(breaks = seq(0,24,4)) +
   facet_grid(urbanRural ~ .) +
@@ -141,7 +142,8 @@ crashesHourlyCaption <- "The bars indicate the percentage of all crashes that we
 ```{r crashesHourlyByPercentage, fig.cap = crashesHourlyCaption, cache = TRUE}
 # crashes that are drink-drive-related, as a percentage of all crashes
 ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
-       , aes(hour, weight = countCrashUrbanHour, fill = as.character(excelPalette[1]))) + 
+       , aes(hour, weight = countCrashUrbanHour
+             , fill = as.character(excelPalette[1]), colour = "black")) + 
   geom_bar(binwidth = 1) +
   scale_x_discrete(breaks = seq(0,24,4)) +
   facet_grid(urbanRural ~ .) +
@@ -166,7 +168,7 @@ x$weekday <- factor(x$weekday, levels = c("Wednesday"
 ggplot(x[!is.na(x$hour) 
          & x$alcohol == TRUE, ]
        , aes(hour, weight = countCrashUrbanWeekdayHour3
-             , fill = as.character(excelPalette[1]))) + 
+             , fill = as.character(excelPalette[1]), colour = "black")) + 
   geom_histogram(binwidth = 3) +
   scale_x_continuous(breaks = seq(0, 24 ,6), expand = c(0, 0), limits = c(0, 24)) +
   scale_y_continuous(expand = c(0, 0)) +
@@ -221,7 +223,8 @@ The rate of drink-drive-crashes is highest for the 20-25 age group in both rural
 
 ```{r age, cache = TRUE}
 x <- drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
-ggplot(x, aes(age, weight = countAgeGroupPopulation, fill = as.character(excelPalette[1]))) +
+ggplot(x, aes(age, weight = countAgeGroupPopulation
+              , fill = as.character(excelPalette[1]), colour = "black")) +
   geom_histogram(binwidth = 5) +
   scale_x_continuous(breaks = seq(20, 80, 10), limits = c(15, max(x$age))) +
   facet_grid(urbanRural ~ .) +
@@ -284,7 +287,8 @@ rm(x)
 
 ```{r ethnicity, cache = TRUE}
 x <- drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
-ggplot(x, aes(ethnicity, weight = countUrbanEthnicity, fill = ethnicity)) +
+ggplot(x, aes(ethnicity, weight = countUrbanEthnicity
+              , fill = ethnicity, colour = "black")) +
   geom_bar() + 
   facet_grid(. ~ urbanRural) +
   ggtitle("Drink-Drivers in Crashes per Population\nby urban/rural and ethnicity") +
