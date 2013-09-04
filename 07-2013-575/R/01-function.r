@@ -7,7 +7,7 @@ require(reshape2)
 require(stringr)
 require(xtable)
 require(pander)
-require(circular)
+require(knitr)
 
 source("../R/01-function.r")
 
