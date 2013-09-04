@@ -38,6 +38,7 @@ pandoc.table(x
              , caption = "Number of crashes by whether alcohol was a factor"
              ,style = tableStyle
              , split.tables = Inf)
+rm(x)
 ```
 
 ```{r pureCrashes, cache = TRUE}
@@ -55,6 +56,8 @@ ggplot(crashes, aes(year, group = urbanRural, fill = urbanRural)) +
   ylab("number of crashes") +
   theme(legend.title = element_blank()) +
   scale_fill_manual(values = excelPalette)
+rm(plotLabels)
+rm(plotLabeller)
 ```
 
 
@@ -83,6 +86,7 @@ pandoc.table(x
              , caption = "Crashes per 1000 km by type of road and whether alcohol was a factor"
              ,style = tableStyle
              , split.tables = Inf)
+rm(x)
 ```
 
 ```{r roadCrashRate, cache = TRUE}
@@ -119,6 +123,7 @@ pandoc.table(x
              , caption = "Crashes per 1000 people by urban/rural and whether alcohol was a factor"
              ,style = tableStyle
              , split.tables = Inf)
+rm(x)
 ```
 
 ```{r populationCrashRate, cache = TRUE}
@@ -139,6 +144,8 @@ ggplot(crashes, aes(year, weight = countPopulation, group = urbanRural
   ylab("number of crashes per 1000 people") +
   theme(legend.title = element_blank()) +
   scale_fill_manual(values = excelPalette)
+rm(plotLabels)
+rm(plotLabeller)
 ```
 
 Compare with the first graph, "Number of Crashes".  Weighting by population is a fairer estimation of the rural drink-drive problem.  A better weighting would take into account the number of licenced drivers and distance driven, however these data are not available.
@@ -156,6 +163,7 @@ pandoc.table(x
              , caption = "Crashes where Alcohol was a Factor by hour of the day"
              ,style = tableStyle
              , split.tables = Inf)
+rm(x)
 ```
 
 ```{r crashesHourlyByNumber, cache = TRUE}
@@ -266,6 +274,7 @@ pandoc.table(x
              , caption = "Drink-Drivers in Crashes per Population by age in 5-year bands"
              ,style = tableStyle
              , split.tables = Inf)
+rm(x)
 ```
 
 ```{r age, cache = TRUE}
