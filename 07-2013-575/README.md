@@ -47,7 +47,7 @@ This was last pulled from CAS on 14 August 2013.
 
 Each table is named with by its region, followed by a description, e.g. BoP-coordinates.txt
 
-### BoP-coordinates.txt
+### BoP-coordinates.csv
 * ...
 * CRASH ID
 * ...
