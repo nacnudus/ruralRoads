@@ -1,0 +1,812 @@
+
+1,201010001,Female, 49,Not injured,1,">1 party, no dvr fault",Full,,European
+1,201010005,Male, 67,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,201010010,Male, 41,Fatal,1,"1 veh, dvr at fault",Full,,NZ Maori
+1,201010012,Male, 17,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201010012,Male, 21,Fatal,1,">1 party, dvr prime fault",Never Licensed,,NZ Maori
+1,201010013,Male, 52,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,201010016,Male, 42,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,201010021,Male, 23,Fatal,1,"1 veh, no dvr fault",Disqualified,,European
+1,201010022,Male, 17,Fatal,1,"1 veh, dvr at fault",Learner,,European
+1,201010023,Male, 25,Serious,1,"1 veh, dvr at fault",Disqualified,,NZ Maori
+1,201010025,Male, 43,Fatal,1,"1 veh, dvr at fault",Full,,NZ Maori
+1,201010027,Male, 44,Fatal,1,">1 party, dvr prime fault",Full,,European
+1,201010027,Male, 50,Minor,2,">1 party, dvr part fault",Full,,European
+1,201010029,Female, 20,Minor,2,">1 party, dvr part fault",Full,,European
+1,201010029,Female, 51,Fatal,1,">1 party, no dvr fault",Full,,European
+1,201010033,Male, 60,Fatal,1,"1 veh, dvr at fault",Full,,Samoan
+1,201010040,Male, 17,Fatal,1,"1 veh, dvr at fault",Restricted,,European
+1,201010044,Female, 72,Fatal,1,">1 party, dvr prime fault",Full,,NZ Maori
+1,201010044,Male, 66,Serious,2,">1 party, no dvr fault",Full,,European
+1,201010049,Male, 38,Fatal,1,">1 party, dvr prime fault",Full,,Unknown
+1,201010049,Male, 51,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201010058,Male, 25,Fatal,2,">1 party, dvr prime fault",Wrong Class,,European
+1,201010058,Male, 33,Minor,1,">1 party, no dvr fault",Full,,European
+1,201010075,Male, 32,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,201010079,Male, 34,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201010079,Male, 91,Fatal,1,">1 party, dvr part fault",Full,,European
+1,201010085,Male, 48,Fatal,1,">1 party, dvr prime fault",Full,,NZ Maori
+1,201010085,Male, 62,Minor,2,">1 party, no dvr fault",Full,,European
+1,201010093,Male, 19,Fatal,1,">1 party, dvr prime fault",Never Licensed,,European
+1,201011036,Male, 22,Not injured,1,"1 veh, dvr at fault",Full,,European
+1,201011051,Female, 27,Serious,2,">1 party, dvr part fault",Restricted,,European
+1,201011051,Male, 23,Minor,1,">1 party, dvr prime fault",Overseas,Visitor,European
+1,201011078,Male, 16,Serious,1,">1 party, dvr prime fault",Restricted,,European
+1,201011079,Male, 49,Serious,1,">1 party, no dvr fault",Full,,European
+1,201011079,Male, 57,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201011092,Male, 36,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201011092,Male, 54,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201011126,Female, 61,Minor,1,">1 party, dvr prime fault",Full,,European
+1,201011126,Male, 25,Serious,2,">1 party, no dvr fault",Restricted,,European
+1,201011246,Female, 51,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201011301,Male, 30,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201011301,Male, 63,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201011398,Female, 75,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201011422,Male, 25,Not injured,1,"1 veh, dvr at fault",Disqualified,,Unknown
+1,201011431,Male, 23,Serious,1,"1 veh, dvr at fault",Restricted,,NZ Maori
+1,201011521,Male, 49,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201011604,Female, 26,Not injured,1,">1 party, dvr prime fault",Overseas,Immigrant,European
+1,201011604,Male,,Serious,2,">1 party, no dvr fault",Overseas,Visitor,European
+1,201011611,Female, 30,Serious,1,"1 veh, dvr at fault",Unknown,,European
+1,201011612,Female, 18,Minor,1,"1 veh, dvr at fault",Learner,,European
+1,201011647,Female, 44,Not injured,1,">1 party, no dvr fault",Full,,Unknown
+1,201011676,Female, 16,Serious,2,">1 party, dvr prime fault",Restricted,,European
+1,201011676,Male, 20,Not injured,1,">1 party, no dvr fault",Restricted,,European
+1,201011820,Male, 27,Not injured,2,">1 party, no dvr fault",Full,,Unknown
+1,201011924,Unknown,,Not injured,1,">1 party, dvr prime fault",Unknown,,Unknown
+1,201011941,Female, 55,Minor,2,">1 party, dvr prime fault",Full,,European
+1,201011941,Male, 30,Serious,1,">1 party, no dvr fault",Overseas,Unknown,European
+1,201012119,Female, 56,Serious,2,">1 party, no dvr fault",Full,,European
+1,201012119,Male, 54,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201012122,Male, 20,Not injured,1,"1 veh, dvr at fault",Full,,European
+1,201012132,Male, 54,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201012132,Male, 58,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201012162,Female, 22,Not injured,2,">1 party, dvr prime fault",Restricted,,European
+1,201012162,Male, 50,Serious,1,">1 party, no dvr fault",Full,,European
+1,201012367,Male, 58,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201012370,Female, 66,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201012379,Female, 30,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201012452,Male, 65,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201012517,Male, 47,Serious,1,"1 veh, dvr at fault",Full,,Asian
+1,201012518,Male, 47,Serious,1,"1 veh, dvr at fault",Unknown,,European
+1,201012554,Male, 30,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201012693,Male,,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201012759,Female, 60,Not injured,2,">1 party, dvr prime fault",Full,,Unknown
+1,201012759,Male, 41,Serious,1,">1 party, no dvr fault",Unknown,,Unknown
+1,201012769,Male, 38,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201012828,Male, 44,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,201012845,Female, 18,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,201012846,Female, 25,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201012901,Male, 17,Serious,1,"1 veh, dvr at fault",Disqualified,,European
+1,201012915,Female, 57,Serious,1,">1 party, no dvr fault",Full,,European
+1,201012915,Male, 75,Minor,2,">1 party, dvr prime fault",Full,,European
+1,201012951,Female, 40,Minor,1,">1 party, dvr prime fault",Unknown,,European
+1,201012951,Male, 46,Serious,2,">1 party, no dvr fault",Full,,European
+1,201013033,Male, 30,Not injured,1,">1 party, dvr prime fault",Learner,,NZ Maori
+1,201013065,Male, 26,Not injured,1,"1 veh, dvr at fault",Restricted,,NZ Maori
+1,201013104,Male, 38,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201013116,Unknown,,Not injured,1,"1 veh, dvr at fault",Unknown,,Unknown
+1,201013132,Female, 33,Serious,1,"1 veh, dvr at fault",Full,,Other
+1,201013133,Male, 43,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201013268,Male, 39,Serious,1,"1 veh, dvr at fault",Unknown,,European
+1,201013269,Male, 49,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201013326,Male, 43,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201013326,Male, 79,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201013333,Male, 20,Minor,1,">1 party, dvr prime fault",Wrong Class,,European
+1,201013340,Unknown,,Not injured,1,">1 party, dvr prime fault",Unknown,,Unknown
+1,201013383,Female, 21,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201013441,Female, 70,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201013520,Male, 64,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201013521,Female, 23,Not injured,1,">1 party, dvr prime fault",Learner,,European
+1,201013528,Male, 27,Serious,1,">1 party, dvr prime fault",Overseas,Visitor,Unknown
+1,201013528,Male, 36,Not injured,2,">1 party, no dvr fault",Full,,Unknown
+1,201013543,Male, 32,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201013567,Male, 42,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201013675,Male, 63,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201013682,Male, 41,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201013692,Female, 18,Serious,2,">1 party, no dvr fault",Full,,European
+1,201013692,Male, 64,Minor,1,">1 party, dvr prime fault",Full,,European
+1,201013724,Male, 27,Minor,2,">1 party, no dvr fault",Full,,European
+1,201013724,Male,,Serious,1,">1 party, dvr prime fault",Restricted,,European
+1,201013758,Male, 39,Not injured,1,">1 party, no dvr fault",Full,,European
+1,201013765,Female, 65,Minor,1,"1 veh, dvr at fault",Full,,European
+1,201020006,Female, 21,Not injured,1,">1 party, dvr prime fault",Unknown,,Unknown
+1,201020037,Male, 55,Fatal,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,201020055,Female, 16,Fatal,1,">1 party, dvr prime fault",Never Licensed,,NZ Maori
+1,201020055,Male, 55,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201020061,Male, 16,Minor,1,"1 veh, dvr at fault",Full,,European
+1,201020064,Male, 16,Not injured,1,">1 party, no dvr fault",Restricted,,NZ Maori
+1,201020067,Female, 27,Not injured,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,201021075,Male, 52,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201021140,Male, 57,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201021150,Male, 68,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201021153,Male, 46,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,201021155,Female, 28,Serious,2,">1 party, no dvr fault",Expired,,European
+1,201021155,Male, 31,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201021236,Male, 39,Not injured,1,">1 party, no dvr fault",Full,,European
+1,201021236,Male, 58,Serious,2,">1 party, dvr part fault",Full,,European
+1,201021240,Male, 59,Not injured,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,201021241,Female, 42,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,201021286,Female, 62,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201021315,Female, 26,Serious,1,"1 veh, dvr at fault",Overseas,Unknown,European
+1,201021444,Female, 25,Serious,2,">1 party, no dvr fault",Full,,European
+1,201021444,Male, 18,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201021498,Male,,Minor,1,"1 veh, dvr at fault",Restricted,,European
+1,201021499,Male, 33,Serious,1,"1 veh, dvr at fault",Restricted,,Unknown
+1,201021519,Male, 40,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201021609,Male, 45,Serious,1,"1 veh, dvr at fault",Full,,NZ Maori
+1,201021781,Male, 26,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,201021858,Male, 17,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,201021879,Male, 51,Serious,1,"1 veh, dvr at fault",Overseas,Unknown,European
+1,201021948,Female, 25,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,201021996,Male, 21,Serious,1,"1 veh, dvr at fault",Unknown,Student,Asian
+1,201022033,Male, 40,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201022033,Male, 43,Minor,2,">1 party, dvr part fault",Full,,European
+1,201022223,Female, 15,Not injured,1,">1 party, no dvr fault",Restricted,,European
+1,201022259,Male, 25,Serious,1,"1 veh, dvr at fault",Never Licensed,,European
+1,201022260,Female, 20,Not injured,1,"1 veh, dvr at fault",Overseas,Student,European
+1,201022291,Male, 24,Not injured,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,201022322,Male, 49,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201022443,Male, 18,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201022445,Male, 29,Minor,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,201022507,Male, 21,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,201022508,Male, 40,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201022545,Male, 58,Minor,1,">1 party, dvr prime fault",Full,,European
+1,201022547,Male, 53,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201022632,Male, 25,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201022961,Male, 39,Serious,1,"1 veh, dvr at fault",Unknown,,Unknown
+1,201022986,Male, 17,Minor,1,"1 veh, dvr at fault",Restricted,,European
+1,201023071,Male, 61,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201023075,Male, 56,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201023075,Male, 61,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201023154,Male, 22,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,201023272,Male, 38,Serious,1,"1 veh, no dvr fault",Full,,European
+1,201023292,Male, 52,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201110002,Male, 52,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,201110014,Male, 69,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,201110021,Female, 26,Minor,2,">1 party, no dvr fault",Full,,NZ Maori
+1,201110021,Male, 21,Minor,1,">1 party, dvr prime fault",Disqualified,,NZ Maori
+1,201110028,Male, 58,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201110029,Male, 22,Not injured,1,">1 party, no dvr fault",Disqualified,,European
+1,201110029,Male, 42,Serious,2,">1 party, dvr prime fault",Full,,European
+1,201110046,Female, 56,Fatal,1,">1 party, dvr prime fault",Full,,European
+1,201110046,Male, 59,Not injured,2,">1 party, no dvr fault",Full,,NZ Maori
+1,201110051,Male, 36,Fatal,1,">1 party, dvr part fault",Expired,,European
+1,201110051,Male, 69,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201110068,Male, 22,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,201110076,Male, 22,Fatal,1,">1 party, dvr prime fault",Full,,Unknown
+1,201110076,Male, 23,Not injured,2,">1 party, dvr part fault",Full,,European
+1,201111001,Female, 23,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201111001,Male, 37,Serious,1,">1 party, dvr prime fault",Restricted,,European
+1,201111005,Male, 31,Minor,1,">1 party, dvr prime fault",Full,,NZ Maori
+1,201111005,Unknown,,Not injured,2,">1 party, no dvr fault",Unknown,,Unknown
+1,201111008,Male, 51,Not injured,2,">1 party, dvr prime fault",Overseas,Visitor,European
+1,201111008,Male, 68,Serious,1,">1 party, no dvr fault",Full,,European
+1,201111164,Male, 48,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201111226,Male, 16,Serious,1,">1 party, dvr prime fault",Restricted,,European
+1,201111226,Male, 47,Not injured,2,">1 party, no dvr fault",Full,,Unknown
+1,201111241,Female, 70,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201111291,Male, 40,Not injured,1,">1 party, no dvr fault",Full,,European
+1,201111299,Female, 60,Serious,2,">1 party, no dvr fault",Full,,European
+1,201111299,Male, 35,Not injured,1,">1 party, dvr prime fault",Overseas,Visitor,European
+1,201111335,Female, 46,Serious,1,">1 party, no dvr fault",Full,,European
+1,201111335,Male, 38,Minor,2,">1 party, dvr prime fault",Full,,European
+1,201111336,Female, 16,Serious,1,"1 veh, dvr at fault",Unknown,,European
+1,201111386,Male, 25,Serious,1,"1 veh, dvr at fault",Restricted,,Unknown
+1,201111391,Male, 33,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201111414,Female, 22,Not injured,1,">1 party, no dvr fault",Overseas,Visitor,European
+1,201111416,Male, 25,Not injured,2,">1 party, dvr part fault",Full,,Unknown
+1,201111416,Male, 66,Serious,1,">1 party, dvr part fault",Full,,Unknown
+1,201111443,Male, 50,Serious,2,">1 party, no dvr fault",Full,,Unknown
+1,201111443,Unknown,,Not injured,1,">1 party, dvr prime fault",Unknown,,Unknown
+1,201111446,Male, 49,Not injured,1,">1 party, dvr prime fault",Full,,Unknown
+1,201111494,Male, 31,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,201111649,Male, 28,Serious,1,"1 veh, dvr at fault",Learner,,Fijian
+1,201111653,Female, 51,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201111704,Female, 33,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,201111738,Male, 37,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201111738,Male, 81,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201111830,Female, 85,Serious,2,">1 party, dvr prime fault",Full,,European
+1,201111830,Male, 40,Not injured,1,">1 party, no dvr fault",Full,,European
+1,201111953,Male, 21,Not injured,2,">1 party, no dvr fault",Restricted,,European
+1,201111953,Male, 26,Not injured,3,">1 party, no dvr fault",Restricted,,European
+1,201111953,Male, 49,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201111954,Male, 17,Serious,1,"1 veh, dvr at fault",Unknown,,European
+1,201111958,Female, 33,Not injured,1,"1 veh, dvr at fault",Full,,European
+1,201111984,Male, 38,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201112088,Male, 52,Serious,1,">1 party, dvr part fault",Unknown,,European
+1,201112088,Male, 90,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201112131,Female, 50,Serious,2,">1 party, dvr prime fault",Full,,European
+1,201112131,Male, 52,Minor,1,">1 party, no dvr fault",Full,,European
+1,201112284,Male, 51,Serious,1,"1 veh, dvr at fault",Full,,Fijian
+1,201112411,Female, 41,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201112482,Female, 62,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201112482,Male, 42,Minor,2,">1 party, no dvr fault",Full,,European
+1,201112610,Female, 45,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201112700,Male, 49,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201112705,Male, 45,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201112769,Male, 50,Serious,2,">1 party, dvr part fault",Full,,NZ Maori
+1,201112769,Male,,Minor,1,">1 party, dvr prime fault",Full,,European
+1,201112794,Female, 25,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,Asian
+1,201112800,Male, 37,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201112802,Male, 67,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201112899,Female, 57,Serious,1,">1 party, no dvr fault",Full,,European
+1,201112899,Male, 80,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201112927,Female, 33,Not injured,2,">1 party, no dvr fault",Overseas,Visitor,European
+1,201112927,Male, 31,Serious,1,">1 party, dvr prime fault",Learner,,European
+1,201112936,Male, 39,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201113040,Female, 39,Serious,1,"1 veh, dvr at fault",Full,,NZ Maori
+1,201113098,Female, 68,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201113155,Male, 19,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,201113204,Male, 25,Serious,1,"1 veh, dvr at fault",Full,,Other
+1,201113261,Female, 32,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201113261,Female, 91,Not injured,1,">1 party, dvr part fault",Full,,European
+1,201113264,Female, 34,Serious,2,">1 party, no dvr fault",Restricted,,European
+1,201113264,Male, 27,Not injured,1,">1 party, dvr prime fault",Restricted,,Other
+1,201113265,Male, 46,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201120006,Male, 51,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201120006,Male, 56,Fatal,2,">1 party, no dvr fault",Full,,European
+1,201120007,Female, 26,Serious,1,">1 party, dvr prime fault",Overseas,Visitor,Asian
+1,201120007,Male, 61,Fatal,2,">1 party, no dvr fault",Full,,European
+1,201120012,Female, 19,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,201120020,Male, 48,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,201120028,Male, 34,Fatal,1,">1 party, dvr prime fault",Full,,NZ Maori
+1,201120028,Male, 50,Not injured,2,">1 party, no dvr fault",Full,,NZ Maori
+1,201120029,Male, 66,Fatal,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,201120033,Male, 24,Fatal,1,"1 veh, dvr at fault",Restricted,,NZ Maori
+1,201120043,Female, 41,Not injured,1,">1 party, no dvr fault",Full,,European
+1,201120060,Male, 44,Serious,2,">1 party, no dvr fault",Full,,European
+1,201120060,Male, 45,Serious,1,">1 party, dvr prime fault",Overseas,Visitor,European
+1,201121042,Male, 42,Not injured,1,"1 veh, dvr at fault",Full,,Asian
+1,201121080,Male, 35,Not injured,2,">1 party, no dvr fault",Full,,Unknown
+1,201121080,Male,,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201121089,Male, 19,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201121221,Female, 48,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201121228,Male, 23,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201121229,Male, 25,Serious,1,"1 veh, dvr at fault",Wrong Class,,European
+1,201121472,Male, 63,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201121509,Male, 57,Serious,1,"1 veh, no dvr fault",Full,,European
+1,201121535,Male, 28,Serious,1,"1 veh, dvr at fault",Wrong Class,,European
+1,201121595,Male, 21,Minor,1,"1 veh, dvr at fault",Restricted,,European
+1,201121596,Male, 57,Serious,1,"1 veh, no dvr fault",Full,,European
+1,201121636,Male, 53,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,201121731,Male, 26,Serious,1,">1 party, dvr prime fault",Overseas,Visitor,European
+1,201121731,Male, 55,Not injured,2,">1 party, no dvr fault",Full,,Unknown
+1,201121859,Male, 39,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201121865,Female, 21,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,201121866,Female, 59,Minor,2,">1 party, no dvr fault",Full,,European
+1,201121866,Male, 37,Serious,1,">1 party, dvr prime fault",Overseas,Visitor,Asian
+1,201121995,Male, 50,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201122045,Male, 25,Minor,1,"1 veh, dvr at fault",Full,,European
+1,201122046,Male, 33,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201122050,Male, 28,Not injured,1,">1 party, no dvr fault",Full,,NZ Maori
+1,201122094,Female, 67,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201122361,Male, 37,Serious,1,"1 veh, dvr at fault",Overseas,Immigrant,Samoan
+1,201122430,Female, 29,Serious,2,">1 party, no dvr fault",Restricted,,European
+1,201122430,Male, 17,Minor,1,">1 party, dvr prime fault",Full,,European
+1,201122446,Female, 19,Serious,1,"1 veh, dvr at fault",Unknown,,European
+1,201122690,Male, 31,Minor,1,">1 party, no dvr fault",Learner,,European
+1,201122873,Male, 38,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201122873,Male, 75,Not injured,2,">1 party, dvr part fault",Overseas,Visitor,European
+1,201122986,Male, 78,Serious,2,">1 party, no dvr fault",Full,,Unknown
+1,201122986,Male,,Not injured,1,">1 party, dvr prime fault",Unknown,,Unknown
+1,201123018,Male, 54,Serious,1,"1 veh, dvr at fault",Full,,Unknown
+1,201123183,Male, 21,Serious,1,"1 veh, dvr at fault",Unknown,,European
+1,201123213,Male, 15,Not injured,1,"1 veh, dvr at fault",Never Licensed,,European
+1,201123216,Male, 16,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,201123361,Male, 37,Not injured,1,"1 veh, dvr at fault",Overseas,Immigrant,Samoan
+1,201210011,Male, 31,Minor,1,,Full,,European
+1,201210021,Male, 54,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,201210036,Male, 38,Not injured,2,">1 party, no dvr fault",Full,,Unknown
+1,201210036,Male, 40,Not injured,4,">1 party, no dvr fault",Full,,European
+1,201210036,Male, 56,Fatal,3,">1 party, no dvr fault",Overseas,Visitor,European
+1,201210036,Male, 56,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201210054,Male, 48,Not injured,1,">1 party, no dvr fault",Full,,European
+1,201210055,Female, 43,Not injured,1,"1 veh, dvr at fault",Restricted,,NZ Maori
+1,201210061,Male, 56,Fatal,1,">1 party, no dvr fault",Full,,Unknown
+1,201210061,Male, 80,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201210064,Male, 29,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201210064,Male, 38,Fatal,1,">1 party, dvr prime fault",Full,,European
+1,201210071,Female, 33,Serious,2,">1 party, no dvr fault",Full,,European
+1,201210071,Male, 28,Fatal,1,">1 party, dvr prime fault",Overseas,Visitor,European
+1,201211003,Female, 62,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201211029,Female, 31,Not injured,2,">1 party, dvr prime fault",Overseas,Visitor,European
+1,201211029,Male, 29,Serious,1,">1 party, no dvr fault",Full,,European
+1,201211031,Male, 16,Minor,1,">1 party, dvr prime fault",Restricted,,European
+1,201211031,Male, 50,Serious,2,">1 party, dvr part fault",Full,,European
+1,201211033,Male, 34,Not injured,2,">1 party, no dvr fault",Full,,Asian
+1,201211033,Male, 56,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201211110,Male, 29,Serious,1,"1 veh, dvr at fault",Full,,NZ Maori
+1,201211117,Male, 29,Serious,2,">1 party, dvr prime fault",Full,,Asian
+1,201211117,Male, 65,Minor,1,">1 party, no dvr fault",Full,,European
+1,201211131,Male, 70,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201211132,Male, 21,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201211132,Male, 61,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201211133,Male, 20,Minor,1,"1 veh, dvr at fault",Learner,,European
+1,201211134,Male, 43,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201211134,Male, 52,Minor,2,">1 party, no dvr fault",Full,,European
+1,201211208,Male, 28,Not injured,1,">1 party, dvr prime fault",Restricted,,Other Pacific Islander
+1,201211208,Male, 49,Serious,2,">1 party, no dvr fault",Full,,European
+1,201211254,Male, 43,Not injured,2,">1 party, no dvr fault",Unknown,,European
+1,201211254,Male, 53,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201211269,Male, 23,Not injured,1,"1 veh, no dvr fault",Full,,European
+1,201211286,Female, 19,Not injured,1,">1 party, no dvr fault",Restricted,,European
+1,201211286,Female, 65,Serious,2,">1 party, dvr prime fault",Full,,European
+1,201211286,Male, 58,Not injured,3,">1 party, no dvr fault",Full,,European
+1,201211320,Male, 22,Not injured,2,">1 party, dvr prime fault",Overseas,,European
+1,201211320,Male,,Serious,1,">1 party, no dvr fault",Full,,European
+1,201211342,Male, 30,Serious,1,"1 veh, dvr at fault",Disqualified,,NZ Maori
+1,201211349,Male, 16,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,201211352,Male, 55,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201211437,Female, 71,Serious,2,">1 party, dvr prime fault",Full,,NZ Maori
+1,201211437,Male, 21,Minor,1,">1 party, dvr part fault",Full,,European
+1,201211438,Male, 33,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201211468,Female, 24,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201211468,Male, 35,Serious,1,">1 party, dvr part fault",Full,,European
+1,201211471,Male, 39,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201211495,Male, 29,Serious,1,">1 party, dvr prime fault",Wrong Class,,NZ Maori
+1,201211495,Male, 48,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201211496,Female, 17,Serious,1,">1 party, dvr prime fault",Restricted,,European
+1,201211496,Male, 19,Not injured,2,">1 party, no dvr fault",Learner,,NZ Maori
+1,201211611,Female, 87,Minor,2,">1 party, no dvr fault",Full,,European
+1,201211611,Male, 20,Minor,1,">1 party, dvr prime fault",Overseas,Visitor,European
+1,201211612,Female, 19,Serious,1,">1 party, no dvr fault",Learner,,European
+1,201211612,Female, 21,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201211622,Female, 17,Serious,2,">1 party, dvr prime fault",Restricted,,European
+1,201211622,Male, 76,Not injured,1,">1 party, no dvr fault",Full,,European
+1,201211623,Male, 38,Serious,1,"1 veh, dvr at fault",Full,,Unknown
+1,201211628,Male, 26,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201211660,Female, 19,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,201211740,Female, 43,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201211763,Male, 61,Serious,1,"1 veh, dvr at fault",Full,,Unknown
+1,201212013,Male, 35,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,201212051,Male, 19,Not injured,1,"1 veh, dvr at fault",Forbidden,,NZ Maori
+1,201212055,Male, 18,Serious,2,">1 party, no dvr fault",Learner,,European
+1,201212055,Male, 49,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201212060,Female, 33,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201212074,Male, 22,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,201212195,Male, 19,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201212197,Male, 49,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201212324,Female, 52,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201212324,Male, 43,Serious,2,">1 party, no dvr fault",Restricted,,European
+1,201212325,Female, 24,Not injured,1,">1 party, no dvr fault",Full,,European
+1,201212325,Male, 20,Serious,2,">1 party, dvr prime fault",Restricted,,European
+1,201212408,Female, 61,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201212408,Female, 74,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201212409,Female, 25,Not injured,1,">1 party, dvr prime fault",Restricted,,NZ Maori
+1,201212473,Female, 51,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201212473,Male, 40,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201212590,Male, 42,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201212708,Male, 80,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201212769,Unknown,,Not injured,2,">1 party, no dvr fault",Unknown,,Unknown
+1,201212770,Male, 42,Not injured,1,">1 party, dvr prime fault",Overseas,Visitor,Other
+1,201212773,Male, 58,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201212780,Male, 53,Not injured,1,">1 party, dvr prime fault",Full,,Unknown
+1,201212851,Male, 39,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201212884,Female, 27,Not injured,1,">1 party, no dvr fault",Full,,European
+1,201212884,Female, 83,Serious,2,">1 party, dvr prime fault",Full,,European
+1,201212940,Male, 52,Serious,1,">1 party, no dvr fault",Full,,NZ Maori
+1,201212940,Male, 56,Minor,2,">1 party, dvr prime fault",Full,,European
+1,201213138,Female, 61,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201213174,Female, 20,Serious,1,">1 party, no dvr fault",Full,,European
+1,201213174,Male, 24,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,201213176,Male, 29,Serious,1,"1 veh, dvr at fault",Learner,,NZ Maori
+1,201213200,Male, 27,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201213201,Male, 53,Not injured,1,"1 veh, dvr at fault",Full,,European
+1,201213218,Female, 50,Serious,2,">1 party, no dvr fault",Full,,European
+1,201213218,Male, 60,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201213237,Female, 24,Serious,2,">1 party, no dvr fault",Full,,European
+1,201213237,Male, 51,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201220020,Male, 40,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,201220022,Male, 40,Serious,1,"1 veh, no dvr fault",Full,,Asian
+1,201220030,Male, 72,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,201220032,Male, 72,Fatal,1,"1 veh, dvr at fault",Overseas,Visitor,Unknown
+1,201220034,Male, 17,Fatal,1,"1 veh, dvr at fault",Restricted,,European
+1,201220042,Female, 18,Fatal,1,"1 veh, no dvr fault",Full,,European
+1,201220043,Male, 73,Not injured,1,">1 party, no dvr fault",Full,,European
+1,201221024,Male, 19,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,201221105,Female, 49,Minor,2,">1 party, no dvr fault",Full,,European
+1,201221105,Male, 50,Serious,1,">1 party, dvr prime fault",Overseas,Visitor,Other
+1,201221106,Male, 54,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,201221151,Female, 35,Not injured,1,">1 party, dvr prime fault",Overseas,,European
+1,201221151,Male, 38,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201221166,Female, 20,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201221169,Male, 36,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201221230,Male, 59,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201221304,Male, 30,Serious,1,"1 veh, dvr at fault",Full,,NZ Maori
+1,201221305,Male, 16,Not injured,2,">1 party, no dvr fault",Overseas,Visitor,European
+1,201221305,Male, 65,Serious,1,">1 party, dvr prime fault",Overseas,Visitor,European
+1,201221310,Male, 45,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201221334,Male, 58,Not injured,1,">1 party, no dvr fault",Full,,European
+1,201221469,Male, 56,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201221549,Male, 57,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201221577,Male, 18,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201221613,Male, 30,Serious,1,"1 veh, dvr at fault",Full,,NZ Maori
+1,201221727,Female, 25,Minor,2,">1 party, no dvr fault",Full,,European
+1,201221727,Male, 31,Serious,1,">1 party, dvr prime fault",Overseas,,European
+1,201221754,Male, 53,Serious,1,">1 party, dvr prime fault",Unknown,,European
+1,201221754,Male, 53,Minor,2,">1 party, no dvr fault",Full,,European
+1,201221758,Female, 49,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201221758,Male, 57,Not injured,2,">1 party, no dvr fault",Full,,European
+1,201221779,Male, 40,Minor,1,"1 veh, dvr at fault",Full,,European
+1,201221781,Male, 24,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201221969,Male, 27,Minor,1,"1 veh, dvr at fault",Full,,European
+1,201222065,Male, 70,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201222399,Male, 18,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201222467,Male, 48,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201222469,Male, 60,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201222572,Male, 49,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201222805,Male, 24,Minor,3,">1 party, no dvr fault",Full,,European
+1,201222805,Male, 34,Not injured,2,">1 party, no dvr fault",Full,,NZ Maori
+1,201222805,Male, 39,Serious,1,">1 party, dvr prime fault",Full,,European
+1,201222910,Male, 22,Serious,1,"1 veh, dvr at fault",Overseas,Unknown,Asian
+1,201223415,Male, 56,Serious,1,"1 veh, dvr at fault",Full,,European
+1,201223432,Male, 17,Serious,1,"1 veh, dvr at fault",Never Licensed,,European
+1,2810012,Male, 58,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,2810015,Female, 30,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,2810024,Female, 59,Minor,1,">1 party, dvr prime fault",Full,,Asian
+1,2810024,Male, 50,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2810030,Male, 40,Fatal,1,">1 party, dvr prime fault",Full,,European
+1,2810030,Male, 61,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2810034,Female, 26,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,2810070,Female, 49,Not injured,2,">1 party, no dvr fault",Full,,Unknown
+1,2810070,Female, 57,Fatal,3,">1 party, no dvr fault",Full,,European
+1,2810070,Female, 59,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2810077,Female, 24,Fatal,1,"1 veh, dvr at fault",Restricted,,European
+1,2810080,Female, 15,Fatal,1,">1 party, dvr prime fault",Restricted,,European
+1,2810080,Male, 61,Minor,2,">1 party, no dvr fault",Full,,European
+1,2810081,Female, 62,Serious,2,">1 party, no dvr fault",Full,,European
+1,2810081,Male, 51,Fatal,1,">1 party, dvr prime fault",Full,,European
+1,2810082,Male, 46,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,2811000,Female, 18,Serious,1,"1 veh, dvr at fault",Full,,Unknown
+1,2811056,Male, 58,Not injured,1,">1 party, no dvr fault",Full,,European
+1,2811056,Male, 74,Serious,2,">1 party, dvr prime fault",Full,,European
+1,2811219,Male, 19,Serious,1,"1 veh, dvr at fault",Full,,Unknown
+1,2811228,Female, 17,Serious,2,">1 party, no dvr fault",Full,,European
+1,2811228,Male, 21,Minor,1,">1 party, dvr prime fault",Full,,Unknown
+1,2811237,Male, 34,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,Asian
+1,2811260,Male, 31,Not injured,1,">1 party, no dvr fault",Full,,European
+1,2811260,Male, 37,Serious,3,">1 party, dvr part fault",Unknown,,European
+1,2811260,Male, 52,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,2811279,Male, 30,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,2811363,Male, 26,Serious,2,">1 party, no dvr fault",Full,,European
+1,2811363,Male, 43,Minor,1,">1 party, dvr prime fault",Overseas,Unknown,European
+1,2811368,Male, 16,Not injured,2,">1 party, dvr prime fault",Restricted,,European
+1,2811368,Male, 24,Not injured,3,">1 party, no dvr fault",Full,,European
+1,2811368,Male, 42,Serious,1,">1 party, no dvr fault",Full,,European
+1,2811396,Male, 33,Serious,1,">1 party, no dvr fault",Learner,,Unknown
+1,2811396,Male, 48,Not injured,2,">1 party, dvr prime fault",Full,,Unknown
+1,2811439,Male, 56,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2811453,Male, 17,Serious,1,"1 veh, dvr at fault",Unknown,,Unknown
+1,2811480,Female, 22,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2811480,Male, 59,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2811480,Male, 63,Not injured,3,">1 party, no dvr fault",Unknown,,European
+1,2811493,Male, 17,Serious,1,">1 party, dvr prime fault",Restricted,,Unknown
+1,2811493,Male, 50,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2811576,Male, 45,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2811604,Female, 69,Minor,1,">1 party, dvr prime fault",Full,,European
+1,2811657,Female, 19,Serious,1,"1 veh, dvr at fault",Learner,,NZ Maori
+1,2811671,Male, 42,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,2811692,Female, 28,Serious,1,"1 veh, dvr at fault",Restricted,,Unknown
+1,2811719,Male, 58,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2811764,Female, 58,Serious,2,">1 party, no dvr fault",Full,,European
+1,2811764,Male, 40,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,2811771,Male, 74,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2811851,Female, 50,Not injured,2,">1 party, dvr prime fault",Overseas,,European
+1,2811885,Male, 31,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,Other
+1,2811890,Male, 31,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,2811890,Male, 57,Serious,1,">1 party, no dvr fault",Full,,European
+1,2811894,Female, 46,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2811913,Male, 65,Serious,1,"1 veh, dvr at fault",Full,,Unknown
+1,2811994,Male, 46,Not injured,1,">1 party, no dvr fault",Full,,European
+1,2811994,Male, 61,Serious,2,">1 party, dvr prime fault",Full,,European
+1,2812029,Female, 36,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,2812126,Female, 40,Minor,2,">1 party, dvr prime fault",Restricted,,NZ Maori
+1,2812126,Male, 58,Not injured,1,">1 party, no dvr fault",Overseas,,Unknown
+1,2812142,Female, 16,Minor,2,">1 party, no dvr fault",Restricted,,European
+1,2812142,Male, 58,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2812248,Male, 20,Not injured,1,">1 party, dvr prime fault",Restricted,,European
+1,2812363,Male, 25,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,2812382,Male, 45,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,2812389,Male, 21,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,2812596,Male, 36,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,2812608,Female, 32,Not injured,1,"1 veh, dvr at fault",Restricted,,NZ Maori
+1,2812624,Male, 44,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2812626,Male, 26,Minor,2,">1 party, no dvr fault",Full,,Unknown
+1,2812626,Male, 57,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2812662,Male, 23,Serious,1,">1 party, no dvr fault",Learner,,Unknown
+1,2812662,Male, 27,Not injured,2,">1 party, dvr prime fault",Full,,NZ Maori
+1,2812680,Male, 51,Serious,1,"1 veh, dvr at fault",Forbidden,,European
+1,2812722,Female, 30,Serious,1,">1 party, dvr prime fault",Learner,,NZ Maori
+1,2812722,Male, 24,Serious,2,">1 party, no dvr fault",Full,,European
+1,2812726,Male, 43,Not injured,2,">1 party, dvr prime fault",Full,,Unknown
+1,2812729,Male, 37,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2812729,Male,,Not injured,2,">1 party, no dvr fault",Unknown,,European
+1,2812820,Male, 52,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2812821,Male, 23,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2812887,Female, 72,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2812910,Female, 53,Serious,1,">1 party, no dvr fault",Unknown,,European
+1,2812910,Female, 85,Not injured,2,">1 party, dvr prime fault",Unknown,,European
+1,2812937,Female, 26,Minor,2,">1 party, no dvr fault",Full,,European
+1,2812937,Male, 18,Serious,1,">1 party, dvr prime fault",Disqualified,,NZ Maori
+1,2813026,Male, 17,Minor,1,">1 party, dvr prime fault",Restricted,,European
+1,2813032,Male, 16,Minor,1,"1 veh, dvr at fault",Restricted,,European
+1,2813034,Female, 76,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2813035,Male, 26,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,2813053,Female, 20,Minor,1,">1 party, dvr prime fault",Learner,,European
+1,2813053,Male, 62,Serious,2,">1 party, no dvr fault",Unknown,,European
+1,2813060,Female, 21,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2813079,Female, 30,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2813110,Male, 43,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2813127,Male, 58,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,2813210,Female, 24,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,Other
+1,2813232,Male, 31,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2813232,Male, 45,Serious,1,">1 party, dvr prime fault",Full,,Unknown
+1,2813263,Male, 21,Not injured,2,">1 party, dvr prime fault",Disqualified,,European
+1,2813339,Female, 20,Not injured,2,">1 party, dvr prime fault",Overseas,Unknown,European
+1,2813339,Male, 45,Minor,1,">1 party, no dvr fault",Full,,Unknown
+1,2813401,Male, 31,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2813410,Male, 47,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2813524,Male, 30,Serious,1,"1 veh, dvr at fault",Unknown,,NZ Maori
+1,2813611,Male, 37,Serious,1,"1 veh, dvr at fault",Unknown,,European
+1,2813613,Female, 72,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2813631,Male, 43,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2813656,Male, 50,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2813692,Male, 52,Serious,1,"1 veh, dvr at fault",Unknown,,NZ Maori
+1,2813761,Female, 22,Serious,2,">1 party, dvr prime fault",Unknown,,Asian
+1,2813761,Male, 48,Not injured,1,">1 party, no dvr fault",Full,,European
+1,2813773,Male, 18,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2813773,Male, 69,Serious,1,">1 party, dvr part fault",Full,,European
+1,2813786,Male, 34,Serious,1,">1 party, no dvr fault",Full,,European
+1,2813786,Male, 59,Minor,2,">1 party, dvr prime fault",Overseas,Visitor,Asian
+1,2813791,Male, 23,Serious,1,"1 veh, dvr at fault",Full,,NZ Maori
+1,2813797,Male, 49,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2813877,Male, 21,Serious,1,"1 veh, dvr at fault",Unknown,,European
+1,2813966,Male, 71,Serious,1,"1 veh, dvr at fault",Overseas,Unknown,European
+1,2813967,Female, 32,Serious,2,">1 party, dvr prime fault",Full,,European
+1,2813967,Male, 35,Not injured,1,">1 party, no dvr fault",Full,,European
+1,2814005,Male, 42,Not injured,1,">1 party, no dvr fault",Full,,European
+1,2814084,Male, 17,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2820001,Female, 18,Not injured,1,">1 party, no dvr fault",Learner,,European
+1,2820006,Male,,Not injured,1,">1 party, no dvr fault",Full,,European
+1,2820012,Male, 36,Not injured,1,"1 veh, dvr at fault",Full,,European
+1,2820021,Male, 47,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,2820029,Female, 30,Serious,1,">1 party, dvr prime fault",Overseas,Visitor,Asian
+1,2820029,Male, 63,Serious,2,">1 party, no dvr fault",Full,,European
+1,2820062,Male, 51,Minor,1,"1 veh, no dvr fault",Full,,NZ Maori
+1,2820064,Male, 40,Minor,2,">1 party, no dvr fault",Full,,European
+1,2820064,Male, 69,Fatal,1,">1 party, dvr prime fault",Full,,European
+1,2820069,Male, 17,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,2820089,Male, 65,Minor,1,">1 party, dvr prime fault",Full,,European
+1,2820089,Male, 89,Fatal,2,">1 party, no dvr fault",Full,,European
+1,2821063,Female, 18,Minor,1,"1 veh, dvr at fault",Learner,,European
+1,2821064,Female, 53,Serious,2,">1 party, no dvr fault",Full,,European
+1,2821064,Male, 55,Serious,3,">1 party, no dvr fault",Full,,European
+1,2821064,Male, 61,Not injured,1,">1 party, dvr prime fault",Overseas,Visitor,European
+1,2821146,Male, 46,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2821146,Male, 57,Serious,1,">1 party, dvr prime fault",Overseas,Visitor,European
+1,2821153,Male, 26,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,2821235,Male, 38,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2821235,Male, 45,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2821477,Male, 24,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,2821535,Female, 35,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2821543,Male, 36,Not injured,2,">1 party, no dvr fault",Overseas,Immigrant,Unknown
+1,2821543,Male, 47,Serious,1,">1 party, dvr prime fault",Unknown,,European
+1,2821624,Female, 33,Minor,1,"1 veh, dvr at fault",Full,,NZ Maori
+1,2821730,Male, 70,Minor,1,"1 veh, dvr at fault",Full,,European
+1,2821751,Male, 58,Serious,1,"1 veh, no dvr fault",Full,,European
+1,2821752,Male, 39,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2821755,Female, 18,Not injured,1,"1 veh, dvr at fault",Restricted,,European
+1,2821842,Female, 35,Not injured,2,">1 party, dvr part fault",Full,,NZ Maori
+1,2821842,Male, 46,Minor,1,">1 party, dvr prime fault",Wrong Class,,European
+1,2821864,Male, 46,Serious,2,">1 party, no dvr fault",Full,,European
+1,2821864,Male, 79,Minor,1,">1 party, dvr prime fault",Full,,European
+1,2821866,Male, 63,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2822046,Male, 43,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,Other
+1,2822606,Male, 22,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,2822660,Female, 57,Serious,1,"1 veh, dvr at fault",Unknown,,Unknown
+1,2822731,Male, 16,Minor,1,"1 veh, dvr at fault",Restricted,,European
+1,2822766,Male, 38,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2822981,Female, 60,Minor,1,"1 veh, dvr at fault",Full,,European
+1,2822984,Male, 46,Serious,1,"1 veh, dvr at fault",Never Licensed,,European
+1,2823132,Male, 45,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2823189,Male, 38,Serious,1,"1 veh, no dvr fault",Full,,European
+1,2823190,Male, 20,Serious,1,"1 veh, dvr at fault",Full,,Unknown
+1,2823412,Male, 24,Not injured,2,">1 party, dvr prime fault",Learner,,European
+1,2823412,Male,,Serious,1,">1 party, no dvr fault",Unknown,,European
+1,2823413,Male, 41,Minor,1,"1 veh, dvr at fault",Overseas,Visitor,Asian
+1,2823561,Male, 62,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2823563,Male, 18,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2823572,Female, 27,Serious,1,">1 party, dvr prime fault",Overseas,Visitor,Asian
+1,2823572,Male, 51,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2823678,Male, 19,Serious,1,">1 party, dvr prime fault",Learner,,European
+1,2823678,Male, 55,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2823763,Female, 25,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2910007,Female, 20,Not injured,1,">1 party, dvr prime fault",Full,,NZ Maori
+1,2910020,Male, 78,Fatal,1,">1 party, dvr prime fault",Full,,European
+1,2910021,Male, 38,Not injured,3,">1 party, no dvr fault",Full,,European
+1,2910021,Male, 48,Fatal,2,">1 party, no dvr fault",Full,,European
+1,2910021,Male, 57,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,2910027,Female, 66,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,2910040,Male, 35,Minor,2,">1 party, no dvr fault",Full,,Unknown
+1,2910040,Male, 73,Fatal,1,">1 party, dvr prime fault",Full,,European
+1,2910047,Male, 39,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,2910052,Female, 23,Serious,2,">1 party, no dvr fault",Overseas,Visitor,European
+1,2910052,Female, 57,Fatal,1,">1 party, dvr prime fault",Expired,,European
+1,2910053,Male, 21,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,2910075,Female, 51,Fatal,2,">1 party, dvr part fault",Full,,European
+1,2910075,Male, 30,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2910076,Male, 16,Fatal,1,"1 veh, dvr at fault",Learner,,European
+1,2910084,Male, 20,Fatal,1,">1 party, dvr part fault",Full,,Unknown
+1,2910084,Male, 28,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,2910085,Male, 16,Fatal,1,"1 veh, dvr at fault",Restricted,,European
+1,2910089,Male, 33,Fatal,1,"1 veh, dvr at fault",Full,,Unknown
+1,2910100,Male, 39,Minor,3,">1 party, no dvr fault",Unknown,,European
+1,2910100,Male, 40,Serious,2,">1 party, no dvr fault",Full,,European
+1,2910100,Male, 71,Fatal,1,">1 party, dvr prime fault",Full,,European
+1,2911028,Male, 52,Serious,1,"1 veh, no dvr fault",Full,,European
+1,2911034,Male, 23,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2911083,Male, 24,Serious,1,">1 party, dvr prime fault",Restricted,,Samoan
+1,2911083,Male, 55,Minor,2,">1 party, no dvr fault",Full,,European
+1,2911087,Male, 19,Minor,1,"1 veh, dvr at fault",Restricted,,European
+1,2911121,Male, 39,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,2911126,Male, 41,Serious,2,">1 party, no dvr fault",Learner,,NZ Maori
+1,2911126,Male, 55,Not injured,1,">1 party, dvr prime fault",Overseas,Unknown,European
+1,2911128,Female, 17,Not injured,2,">1 party, dvr prime fault",Restricted,,European
+1,2911128,Female, 31,Not injured,1,">1 party, no dvr fault",Full,,European
+1,2911212,Male, 25,Not injured,1,"1 veh, dvr at fault",Restricted,,European
+1,2911237,Male, 34,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,2911261,Female, 42,Not injured,1,">1 party, no dvr fault",Full,,European
+1,2911338,Male, 52,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2911338,Male, 81,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2911340,Male, 17,Not injured,1,">1 party, no dvr fault",Full,,European
+1,2911390,Female, 58,Minor,2,">1 party, dvr prime fault",Full,,European
+1,2911390,Female, 63,Not injured,1,">1 party, no dvr fault",Full,,European
+1,2911428,Male, 50,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2911453,Male, 23,Serious,1,"1 veh, dvr at fault",Unknown,,NZ Maori
+1,2911482,Male, 46,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2911482,Male, 47,Serious,1,">1 party, dvr prime fault",Full,,NZ Maori
+1,2911501,Male, 45,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,2911512,Male, 40,Serious,1,"1 veh, dvr at fault",Overseas,,European
+1,2911531,Male, 17,Not injured,1,">1 party, dvr prime fault",Restricted,,Unknown
+1,2911549,Female, 46,Serious,2,">1 party, no dvr fault",Full,,European
+1,2911549,Female, 78,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,2911572,Male, 67,Not injured,1,">1 party, no dvr fault",Full,,European
+1,2911814,Female, 50,Serious,1,">1 party, no dvr fault",Full,,European
+1,2911814,Male, 48,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,2911831,Male, 65,Serious,1,"1 veh, dvr at fault",Full,,Unknown
+1,2911840,Male, 22,Not injured,1,">1 party, dvr prime fault",Overseas,Immigrant,Asian
+1,2911999,Male, 18,Serious,2,">1 party, no dvr fault",Full,,European
+1,2911999,Male, 26,Not injured,1,">1 party, dvr prime fault",Restricted,,European
+1,2912017,Male, 18,Not injured,1,"1 veh, dvr at fault",Full,,European
+1,2912026,Male, 77,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2912105,Female, 50,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2912136,Female, 19,Serious,1,">1 party, no dvr fault",Learner,,European
+1,2912136,Female, 19,Not injured,2,">1 party, dvr prime fault",Learner,,Unknown
+1,2912137,Male, 46,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2912137,Male, 65,Not injured,2,">1 party, dvr part fault",Full,,European
+1,2912172,Male, 19,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,2912343,Male, 25,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,2912404,Female, 34,Serious,2,">1 party, no dvr fault",Full,,European
+1,2912404,Male, 33,Serious,1,">1 party, dvr prime fault",Overseas,Unknown,European
+1,2912430,Male, 26,Serious,1,">1 party, dvr part fault",Full,,European
+1,2912430,Male, 42,Not injured,2,">1 party, no dvr fault",Full,,Unknown
+1,2912466,Female, 20,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,2912466,Male, 62,Serious,1,">1 party, no dvr fault",Full,,European
+1,2912468,Male, 41,Serious,1,"1 veh, dvr at fault",Full,,Asian
+1,2912503,Male, 16,Serious,2,">1 party, dvr prime fault",Restricted,,NZ Maori
+1,2912503,Male, 32,Not injured,1,">1 party, no dvr fault",Full,,NZ Maori
+1,2912513,Male, 49,Serious,1,">1 party, no dvr fault",Full,,Other Pacific Islander
+1,2912513,Male, 63,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,2912525,Male, 21,Minor,1,"1 veh, no dvr fault",Disqualified,,European
+1,2912696,Male, 80,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2912723,Female, 30,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,2912732,Male, 51,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2912732,Male, 53,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2912759,Female, 61,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2912863,Female, 33,Not injured,1,">1 party, dvr prime fault",Restricted,,European
+1,2912880,Female, 25,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,2912908,Male, 34,Not injured,1,"1 veh, dvr at fault",Forbidden,,Asian
+1,2913136,Male, 32,Serious,1,"1 veh, dvr at fault",Full,,Unknown
+1,2913154,Female, 21,Not injured,2,">1 party, dvr prime fault",Overseas,Unknown,European
+1,2913154,Male, 40,Serious,1,">1 party, no dvr fault",Full,,European
+1,2913193,Female, 25,Minor,2,">1 party, dvr prime fault",Overseas,Visitor,European
+1,2913193,Female, 47,Serious,1,">1 party, no dvr fault",Full,,NZ Maori
+1,2913235,Male, 19,Serious,1,"1 veh, dvr at fault",Restricted,,European
+1,2913324,Male, 19,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,2913393,Male, 40,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,2913404,Male, 27,Not injured,1,"1 veh, no dvr fault",Full,,European
+1,2913407,Male, 56,Serious,1,"1 veh, dvr at fault",Full,,Unknown
+1,2913427,Male, 36,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2913449,Female, 17,Minor,1,">1 party, no dvr fault",Restricted,,European
+1,2913449,Male, 47,Minor,2,">1 party, dvr prime fault",Full,,European
+1,2913450,Male, 31,Serious,1,"1 veh, dvr at fault",Disqualified,,European
+1,2913503,Female, 79,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2913545,Male, 49,Minor,1,"1 veh, dvr at fault",Full,,European
+1,2913547,Male, 19,Not injured,1,">1 party, dvr prime fault",Restricted,,European
+1,2913547,Male, 44,Not injured,2,">1 party, no dvr fault",Full,,NZ Maori
+1,2913645,Male, 37,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2913661,Female, 20,Serious,4,">1 party, dvr part fault",Full,,European
+1,2913661,Female, 40,Not injured,3,">1 party, no dvr fault",Full,,European
+1,2913661,Female, 49,Not injured,5,">1 party, no dvr fault",Full,,European
+1,2913661,Male, 43,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2913661,Male, 81,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2913688,Male, 63,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2913758,Female, 40,Minor,1,">1 party, dvr prime fault",Unknown,,European
+1,2913758,Male, 23,Minor,2,">1 party, no dvr fault",Overseas,Immigrant,European
+1,2913764,Male, 30,Not injured,1,">1 party, dvr prime fault",Restricted,,European
+1,2913768,Male, 18,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2913781,Male, 22,Serious,1,"1 veh, dvr at fault",Forbidden,,NZ Maori
+1,2913784,Male, 19,Serious,1,"1 veh, dvr at fault",Disqualified,,European
+1,2920017,Male, 50,Not injured,1,">1 party, no dvr fault",Overseas,Visitor,European
+1,2920022,Female, 35,Fatal,1,">1 party, dvr prime fault",Unknown,,European
+1,2920022,Male, 27,Minor,2,">1 party, no dvr fault",Full,,European
+1,2920043,Male, 37,Fatal,1,"1 veh, dvr at fault",Disqualified,,European
+1,2920050,Male, 31,Fatal,1,"1 veh, dvr at fault",Learner,,European
+1,2920052,Female, 29,Fatal,1,">1 party, dvr prime fault",Overseas,Immigrant,European
+1,2920052,Male, 51,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2920053,Male, 17,Minor,2,">1 party, no dvr fault",Full,,European
+1,2920053,Male, 40,Fatal,1,">1 party, dvr prime fault",Wrong Class,,European
+1,2920062,Male, 45,Fatal,1,"1 veh, dvr at fault",Full,,European
+1,2921003,Male, 14,Serious,1,">1 party, dvr prime fault",Never Licensed,,NZ Maori
+1,2921003,Male, 60,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2921099,Male, 17,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2921100,Male, 38,Serious,1,"1 veh, no dvr fault",Full,,Unknown
+1,2921210,Male, 15,Serious,1,"1 veh, dvr at fault",Learner,,Other
+1,2921221,Male, 52,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2921274,Male, 61,Serious,1,">1 party, dvr prime fault",Overseas,Visitor,European
+1,2921274,Male, 62,Serious,2,">1 party, no dvr fault",Full,,European
+1,2921327,Male, 37,Serious,1,"1 veh, dvr at fault",Full,,NZ Maori
+1,2921435,Female, 47,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2921435,Male, 24,Serious,1,">1 party, dvr prime fault",Unknown,,European
+1,2921466,Male, 51,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2921549,Male, 42,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2921549,Male, 70,Not injured,2,">1 party, no dvr fault",Overseas,Visitor,European
+1,2921610,Male, 47,Serious,2,">1 party, dvr part fault",Full,,European
+1,2921610,Male, 61,Not injured,1,">1 party, dvr prime fault",Full,,Unknown
+1,2921649,Male, 16,Not injured,1,">1 party, dvr prime fault",Restricted,,European
+1,2921711,Female, 34,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2921711,Male, 28,Serious,2,">1 party, no dvr fault",Overseas,Visitor,Unknown
+1,2921757,Male, 71,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2921812,Female, 62,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2922014,Male, 24,Not injured,1,"1 veh, dvr at fault",Full,,European
+1,2922015,Male, 20,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2922079,Male, 48,Not injured,1,">1 party, dvr prime fault",Full,,European
+1,2922079,Male, 52,Minor,2,">1 party, no dvr fault",Full,,European
+1,2922211,Female, 20,Minor,2,">1 party, dvr part fault",Full,,European
+1,2922211,Male, 52,Serious,1,">1 party, dvr prime fault",Full,,European
+1,2922225,Male, 17,Not injured,1,"1 veh, dvr at fault",Full,,European
+1,2922226,Female, 36,Serious,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,2922306,Male, 20,Not injured,2,">1 party, no dvr fault",Overseas,Visitor,European
+1,2922306,Male, 21,Not injured,1,">1 party, dvr prime fault",Overseas,Visitor,European
+1,2922438,Male, 37,Serious,1,">1 party, dvr prime fault",Full,,Unknown
+1,2922487,Male, 63,Serious,1,"1 veh, dvr at fault",Full,,Unknown
+1,2922532,Male, 55,Not injured,1,"1 veh, dvr at fault",Full,,European
+1,2922585,Female, 14,Serious,1,"1 veh, dvr at fault",Never Licensed,,European
+1,2922602,Male, 52,Serious,2,">1 party, no dvr fault",Overseas,Visitor,European
+1,2922602,Male, 65,Minor,1,">1 party, dvr prime fault",Overseas,Visitor,European
+1,2922636,Male, 36,Not injured,1,">1 party, dvr part fault",Disqualified,,European
+1,2922636,Male, 41,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,2922724,Female, 41,Minor,1,">1 party, dvr prime fault",Restricted,,NZ Maori
+1,2922724,Male, 29,Serious,2,">1 party, no dvr fault",Full,,European
+1,2922737,Male, 84,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2922783,Female, 43,Minor,1,"1 veh, dvr at fault",Full,,European
+1,2922806,Female, 37,Not injured,1,">1 party, dvr part fault",Full,,European
+1,2922876,Male, 19,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2922995,Female, 55,Not injured,2,">1 party, no dvr fault",Full,,European
+1,2922995,Male, 16,Not injured,1,">1 party, dvr prime fault",Forbidden,,European
+1,2923073,Male, 52,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2923106,Male, 33,Serious,1,"1 veh, dvr at fault",Learner,,European
+1,2923126,Male, 16,Not injured,1,"1 veh, dvr at fault",Full,,European
+1,2923187,Male, 53,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2923209,Male, 44,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2923210,Male, 52,Serious,1,"1 veh, dvr at fault",Full,,European
+1,2923302,Male, 71,Minor,1,"1 veh, dvr at fault",Overseas,Visitor,European
+1,2923397,Female, 66,Not injured,2,">1 party, dvr prime fault",Full,,European
+1,2923397,Male, 66,Not injured,1,">1 party, no dvr fault",Full,,European
+1,2923519,Female, 16,Not injured,1,">1 party, dvr prime fault",Restricted,,Unknown
+1,2923519,Male, 16,Not injured,2,">1 party, no dvr fault",Unknown,,European
+1,2923527,Male, 50,Serious,1,"1 veh, no dvr fault",Full,,European
+1,2923652,Female, 43,Serious,2,">1 party, no dvr fault",Restricted,,Unknown
+1,2923652,Male, 19,Not injured,1,">1 party, dvr prime fault",Full,,NZ Maori
+1,2923657,Male, 59,Serious,1,"1 veh, dvr at fault",Full,,European

@@ -1,0 +1,402 @@
+```{r setup, include = FALSE}
+opts_chunk$set(echo = FALSE
+               , warning = FALSE
+               , message = FALSE
+               , fig.width = 16 / 2.54
+               , fig.height = 6
+ #              , dpi = 600 # use 600 for printing otherwise comment out
+               , fig.cap = "")
+
+tableStyle <- "rmarkdown" # for .docx use "multiline" otherwise "rmarkdown"
+tableResults <- "asis"
+excelPalette <- c("#4F81BD", "#C0504D", "#9BBB59", "#8064A2")
+```
+
+```{r function, include = FALSE}
+source("R/01-function.r")
+```
+
+```{r source, include = FALSE, cache = TRUE}
+source("R/02-load.r")
+source("R/03-clean.r")
+```
+
+Rural Drink-Driving in [District]
+=============================
+
+All the crashes discussed in this document are fatal/serious-injury crashes.
+
+
+### Numbers of crashes
+
+[Input text here]
+
+```{r pureCrashesTable, results = tableResults, cache = TRUE}
+x <- dcast(crashes, urbanRural + alcohol ~ year, length, value.var = "count")
+colnames(x)[1:2] <- c("Urban/Rural", "Alcohol a Factor")
+pandoc.table(x
+             , caption = "Number of crashes by whether alcohol was a factor"
+             ,style = tableStyle
+             , split.tables = Inf)
+rm(x)
+```
+
+```{r pureCrashes, cache = TRUE}
+plotLabels <- list("TRUE" = "alcohol a factor"
+  , "FALSE" = "alcohol not a factor")
+
+plotLabeller <- function(variable, value) {
+  return(plotLabels[value])
+}
+
+ggplot(crashes, aes(year, group = urbanRural, fill = urbanRural)) + 
+ geom_bar(binwidth = 1, position = "dodge", colour = "black") + 
+  facet_grid(. ~ alcohol, labeller = plotLabeller) +
+  ggtitle("Number of Crashes\nby whether alcohol was a factor") +
+  ylab("number of crashes") +
+  theme(legend.title = element_blank()) +
+  scale_fill_manual(values = excelPalette)
+rm(plotLabels)
+rm(plotLabeller)
+```
+
+
+### Crash rate per 1000 km of road
+
+Roads have been divided into four categories, according to the type of road they are, and the area they are in.
+
+* urban roads (excluding highways)
+* urban highways
+* rural roads (excluding highways)
+* rural highways
+
+```{r roadTable, results = tableResults, cache = TRUE}
+pandoc.table(SummaryT[c("urban", "rural"), c("road", "highway")]
+             , caption = "Road in Tasman (km)"
+             ,style = tableStyle
+             , split.tables = Inf)
+```
+
+[Input text here]
+
+```{r roadCrashRateTable, results = tableResults, cache = TRUE}
+x <- dcast(crashes, urbanRuralRoadHighway + alcohol ~ year, sum, value.var = "countRoad")
+colnames(x)[1:2] <- c("Urban/Rural\nRoad/StateHighway", "Alcohol a Factor")
+pandoc.table(x
+             , caption = "Crashes per 1000 km by type of road and whether alcohol was a factor"
+             , round = 0
+             , keep.trailing.zeros = TRUE
+             , justify = c(rep("left", 2), rep("right", 5))
+             ,style = tableStyle
+             , split.tables = Inf)
+rm(x)
+```
+
+```{r roadCrashRate, cache = TRUE}
+ggplot(crashes, aes(year, weight = countRoad, group = urbanRuralRoadHighway
+                    , fill = urbanRuralRoadHighway)) + 
+  geom_bar(position = "dodge", colour = "black") + facet_wrap(.(alcohol)) +
+  ggtitle("Crashes per 1000 km\nby type of road\nand whether alcohol was a factor") +
+  ylab("crashes per 1000 km") +
+  theme(legend.title = element_blank()) +
+  scale_fill_manual(values = excelPalette)
+```
+
+
+### Crashes by population
+
+Areas of [District] have been categorised into "urban" and "rural", based on a Statistics New Zealand dataset.  Demographic data are available giving the populations of urban and rural areas.  [Input text here]
+
+```{r populationTable, results = tableResults, cache = TRUE}
+pandoc.table(data.frame("Region" = c("urban", "rural")
+                        , Population = SummaryT[c("urban", "rural")
+                                                  , "population"])
+             , caption = "Population of Tasman"
+             , round = 0
+             , keep.trailing.zeros = TRUE
+             , justify = c("left", "right")
+             , style = tableStyle
+             , split.tables = Inf)
+```
+
+
+[Input text here]
+
+```{r populationCrashRateTable, results = tableResults, cache = TRUE}
+x <- dcast(crashes, urbanRural + alcohol ~ year, sum, value.var = "countPopulation")
+colnames(x)[1:2] <- c("Urban/Rural\nRoad/StateHighway", "Alcohol a Factor")
+pandoc.table(x
+             , caption = "Crashes per 1000 people by urban/rural and whether alcohol was a factor"
+             , round = 2
+             , keep.trailing.zeros = TRUE
+             , justify = c(rep("left", 2), rep("right", 5))
+             , style = tableStyle
+             , split.tables = Inf)
+rm(x)
+```
+
+```{r populationCrashRate, cache = TRUE}
+plotLabels <- list(
+  "TRUE" = "alcohol a factor"
+  , "FALSE" = "alcohol not a factor"
+  )
+
+plotLabeller <- function(variable, value) {
+  return(plotLabels[value])
+}
+
+ggplot(crashes, aes(year, weight = countPopulation, group = urbanRural
+                    , fill = urbanRural)) + 
+  geom_bar(position = "dodge", colour = "black") +
+  facet_grid(. ~ alcohol, labeller = plotLabeller) +
+  ggtitle("Crashes per 1000 people\nby urban/rural and whether\nalcohol was a factor") +
+  ylab("number of crashes per 1000 people") +
+  theme(legend.title = element_blank()) +
+  scale_fill_manual(values = excelPalette)
+rm(plotLabels)
+rm(plotLabeller)
+```
+
+Compare with the first graph, "Number of Crashes".  Weighting by population is a fairer estimation of the rural drink-drive problem.  A better weighting would take into account the number of licenced drivers and distance driven, however these data are not available.
+
+
+### Time of day of crashes
+
+[Input text here]
+
+```{r crashesHourlyByNumberTable, results = tableResults, cache = TRUE}
+x <- dcast(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
+           ,  hour ~ urbanRural + alcohol, length, value.var = "count")
+colnames(x) <- c("Hour of Day", "Rural", "Urban")
+pandoc.table(x
+             , caption = "Crashes where Alcohol was a Factor by hour of the day"
+             , keep.trailing.zeros = TRUE
+             , round = 0
+             , justify = c("left", rep("right", 2))
+             , style = tableStyle
+             , split.tables = Inf)
+rm(x)
+```
+
+```{r crashesHourlyByNumber, cache = TRUE}
+ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
+       , aes(hour, weight = count
+             , fill = as.character(excelPalette[1]))) + 
+  geom_bar(binwidth = 1, colour = "black") +
+  scale_x_discrete(breaks = seq(0,24,4)) +
+  facet_grid(urbanRural ~ .) +
+  ggtitle("Crashes where Alcohol was a Factor\nby hour of the day") +
+  ylab("number of crashes") +
+  theme(legend.position="none") +
+  scale_fill_manual(values = excelPalette)
+```
+
+
+[Input text here]
+
+```{r crashesHourlyByPercentageTable, results = tableResults, cache = TRUE}
+x <- dcast(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
+           , hour ~ urbanRural, sum, value.var = "countCrashUrbanHour")
+colnames(x) <- c("Hour of Day", "Rural", "Urban")
+pandoc.table(x
+             , caption = "% of Crashes where alcohol was a factor by hour of the day"
+             , round = 0
+             , justify = c("left", rep("right", 2))
+             , keep.trailing.zeros = TRUE
+             , style = tableStyle
+             , split.tables = Inf)
+```
+
+```{r crashesHourlyCaption, include = FALSE, cache = TRUE}
+crashesHourlyCaption <- "The bars indicate the percentage of all crashes that were drink-drive-related in that hour of the day, in that region, e.g. the right-most bar of the top graph shows that over 60% of rural crashes between 2300 hours and midnight were drink-driver related."
+```
+
+```{r crashesHourlyByPercentage, fig.cap = crashesHourlyCaption, cache = TRUE}
+# crashes that are drink-drive-related, as a percentage of all crashes
+ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
+       , aes(hour, weight = countCrashUrbanHour
+             , fill = as.character(excelPalette[1]), label = sum(countCrashUrbanHour))) + 
+  geom_bar(binwidth = 1, colour = "black") +
+  scale_x_discrete(breaks = seq(0,24,4)) +
+  facet_grid(urbanRural ~ .) +
+  ggtitle("% of Crashes where Alcohol was a Factor\nby hour of the day") +
+  ylab("% of crashes") +
+  theme(legend.position="none") +
+  theme(panel.margin = unit(0, "pt")) +
+  scale_fill_manual(values = excelPalette)
+```
+
+
+[Input text here]
+
+```{r crashesWeeklyTable, results = tableResults, cache = TRUE}
+x <- dcast(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
+           , urbanRural + weekday + hour ~ ., sum, value.var = "countCrashUrbanWeekdayHour3")
+# group into threes
+x$hour3 <- cut(as.integer(x$hour), breaks = seq(0, 24, 3), right = FALSE, labels = c(paste(seq(0, 21, 3), "-", seq(3, 24, 3), sep = "")))
+x <- ddply(x, .(urbanRural, weekday, hour3), function(x) (sum(x$`NA`)))
+x <- dcast(x, urbanRural + weekday ~ hour3, sum, value.var = "V1")
+colnames(x)[1:2] <- c("Urban/Rural", "Weekday")
+pandoc.table(x
+             , caption = "% of Crashes where Alcohol was a factor by weekday hour of the day"
+             , round = 0
+             , justify = c(rep("left", 2), rep("right", 8))
+             , keep.trailing.zeros = TRUE
+             , style = tableStyle
+             , split.tables = Inf)
+```
+
+```{r crashesWeekly, cache = TRUE}
+# make a copy of the crashes
+x <- crashes
+# centre on Thursday for plotting
+x$weekday <- factor(x$weekday, levels = c("Wednesday"
+                                          , "Thursday", "Friday"
+                                          , "Saturday", "Sunday"
+                                          , "Monday", "Tuesday"))
+ggplot(x[!is.na(x$hour) 
+         & x$alcohol == TRUE, ]
+       , aes(hour, weight = countCrashUrbanWeekdayHour3
+             , fill = as.character(excelPalette[1]))) + 
+  geom_histogram(binwidth = 3, colour = "black") +
+  scale_x_continuous(breaks = seq(0, 24 ,6), expand = c(0, 0), limits = c(0, 24)) +
+  scale_y_continuous(expand = c(0, 0)) +
+  facet_grid(urbanRural ~ weekday) +
+  ggtitle("% of Crashes where Alcohol was a Factor\nby weekday and hour of the day") +
+  xlab("hour of the day (in three-hour groups)") +
+  ylab("% of crashes") +
+  theme(legend.position="none") +
+  theme(panel.margin = unit(0, "pt")
+        , panel.border = element_rect(colour = "black", fill = "transparent")) +
+  scale_fill_manual(values = excelPalette)
+# tidy
+rm(x)
+```
+
+
+### Age / ethnicity of drivers-at-fault
+
+[Input text here]
+
+```{r ageTable, results = tableResults, cache = TRUE}
+x <- dcast(drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
+           , urbanRural + age ~ ., sum, value.var = "countAgeGroupPopulation")
+x <- x[x$age >= 15, ]
+# group into fives
+x$age5 <- cut(x$age, breaks = seq(15, 79, 5), right = FALSE, labels = c(paste(seq(15, 69, 5), "-", seq(19, 69, 5), sep = ""), "70+"))
+x$age5[is.na(x$age5)] <- "70+"
+x <- ddply(x, .(urbanRural, age5), function(x) (sum(x$`NA`)))
+x <- dcast(x, age5 ~ urbanRural, sum, value.var = "V1")
+colnames(x)[1:3] <- c("Age Group", "Rural", "Urban")
+pandoc.table(x
+             , caption = "Drink-Drivers in Crashes per 1000 people by age in 5-year bands"
+             , round = 2
+             , justify = c("left", rep("right", 2))
+             , keep.trailing.zeros = TRUE
+             , style = tableStyle
+             , split.tables = Inf)
+rm(x)
+```
+
+```{r age, cache = TRUE}
+x <- drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
+ggplot(x, aes(age, weight = countAgeGroupPopulation
+              , fill = as.character(excelPalette[1]))) +
+  geom_histogram(binwidth = 5, colour = "black") +
+  scale_x_continuous(breaks = seq(20, 80, 10), limits = c(15, max(x$age))) +
+  facet_grid(urbanRural ~ .) +
+  ggtitle("Drink-Drivers in Crashes per 1000 people\nby age in 5-year bands") +
+  xlab("age in 5-year bands") +
+  ylab("number of drink-drivers in crashes per 1000 people") +
+  theme(legend.position="none") +
+  scale_fill_manual(values = excelPalette)
+# tidy
+rm(x)
+```
+
+
+
+[Input text here]
+
+```{r ethnicityTableDrivers, results = tableResults, cache = TRUE, }
+x <- ddply(drivers[drivers$fault == TRUE & drivers$alcohol == TRUE, ]
+           , .(ethnicity, urbanRural), function(x) (sum(x$count)))
+x <- dcast(x, ethnicity ~ urbanRural, sum, margins = TRUE)
+# nicer Total row and column headings
+colnames(x) <- c("Ethnicity", "Rural Drivers", "Urban Drivers", "Total")
+x$Ethnicity <- as.character(x$Ethnicity)
+x$Ethnicity[nrow(x)] <- "Total"
+# remove row names because pander can't ignore them
+rownames(x) <- NULL
+# print
+pandoc.table(x, caption = "Drink-Drivers At Fault by Ethnicity"
+             , emphasize.strong.rows = 5, emphasize.strong.cols = 4
+             , round = 0
+             , justify = c("left", rep("right", 3))
+             , keep.trailing.zeros = TRUE
+             , style = tableStyle
+             , split.tables = Inf)
+# tidy
+rm(x)
+```
+
+```{r ethnicityTablePopulation, results = tableResults, cache = TRUE}
+x <- dcast(mDataT[mDataT$variable %in% c("European", "NZ Maori", "Other"
+                                        , "Pacific Islander"), ]
+      , variable ~ urbanRural, sum, na.rm = TRUE, margins = TRUE)
+# remove NA column
+x <- x[, -4]
+# order alphabetically leaving (all) at the bottom
+x$variable <- as.character(x$variable)
+x <- x[c(order(x$variable)[2:5], 5), ]
+# nicer Total row and column headings
+x$variable[length(x$variable)] <- "Total"
+colnames(x) <- c("Ethnicity", "Rural Population", "Urban Population", "Total")
+# remove row names because pander can't ignore them
+rownames(x) <- NULL
+# print
+pandoc.table(x, caption = "Population by Ethnicity"
+             , emphasize.strong.rows = 5, emphasize.strong.cols = 4
+             , round = 0
+             , justify = c("left", rep("right", 3))
+             , keep.trailing.zeros = TRUE
+             , style = tableStyle
+             , split.tables = Inf)
+# tidy
+rm(x)
+```
+
+```{r ethnicityTable, results = tableResults, cache = TRUE}
+x <- dcast(drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
+           , urbanRural + ethnicity ~ ., sum, value.var = "countUrbanEthnicity")
+colnames(x) <- c("Urban/Rural", "Ethnicity", "Drink-Drivers per 1000")
+pandoc.table(x
+             , caption = "Drink-drivers in crashes per 1000 people by urban/rural and ethnicity"
+             , round = 2
+             , justify = c(rep("left", 2), "right")
+             , keep.trailing.zeros = TRUE
+             , style = tableStyle
+             , split.tables = Inf)
+# tidy
+rm(x)
+```
+
+```{r ethnicity, cache = TRUE}
+x <- drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
+ggplot(x, aes(ethnicity, weight = countUrbanEthnicity
+              , fill = ethnicity)) +
+  geom_bar(colour = "black") + 
+  facet_grid(. ~ urbanRural) +
+  ggtitle("Drink-Drivers in Crashes per 1000 people\nby urban/rural and ethnicity") +
+  xlab("ethnicity") +
+  ylab("number of drink-drivers in crashes per 1000 people") +
+  theme(legend.position="none") +
+  scale_fill_manual(values = excelPalette)
+# tidy
+rm(x)
+```
+
+
+### Discussion
+
+[Input text here]
