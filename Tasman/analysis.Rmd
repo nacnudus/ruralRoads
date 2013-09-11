@@ -4,10 +4,10 @@ opts_chunk$set(echo = FALSE
                , message = FALSE
                , fig.width = 16 / 2.54
                , fig.height = 6
-               , dpi = 600 # use 600 for printing otherwise comment out
+ #              , dpi = 600 # use 600 for printing otherwise comment out
                , fig.cap = "")
 
-tableStyle <- "multiline" # for .docx use "multiline" otherwise "rmarkdown"
+tableStyle <- "rmarkdown" # for .docx use "multiline" otherwise "rmarkdown"
 tableResults <- "asis"
 excelPalette <- c("#4F81BD", "#C0504D", "#9BBB59", "#8064A2")
 ```
@@ -21,15 +21,15 @@ source("R/02-load.r")
 source("R/03-clean.r")
 ```
 
-Rural Drink-Driving in the Bay of Plenty
-========================================
+Rural Drink-Driving in [District]
+=============================
 
 All the crashes discussed in this document are fatal/serious-injury crashes.
 
 
 ### Numbers of crashes
 
-Rural areas tend to have slightly more crashes than urban areas, both drink-drive and otherwise.  Drink-drive crashes are declining in both urban and rural areas.
+[Input text here]
 
 ```{r pureCrashesTable, results = tableResults, cache = TRUE}
 x <- dcast(crashes, urbanRural + alcohol ~ year, length, value.var = "count")
@@ -71,13 +71,13 @@ Roads have been divided into four categories, according to the type of road they
 * rural highways
 
 ```{r roadTable, results = tableResults, cache = TRUE}
-pandoc.table(SummaryBoP[c("urban", "rural"), c("road", "highway")]
-             , caption = "Road in the Bay of Plenty (km)"
+pandoc.table(SummaryT[c("urban", "rural"), c("road", "highway")]
+             , caption = "Road in Tasman (km)"
              ,style = tableStyle
              , split.tables = Inf)
 ```
 
-Urban highways have by far the worst fatal/serious crash rate, whether drink-drive-related or not.  This probably reflects the sheer volume of traffic on urban highways.
+[Input text here]
 
 ```{r roadCrashRateTable, results = tableResults, cache = TRUE}
 x <- dcast(crashes, urbanRuralRoadHighway + alcohol ~ year, sum, value.var = "countRoad")
@@ -105,13 +105,13 @@ ggplot(crashes, aes(year, weight = countRoad, group = urbanRuralRoadHighway
 
 ### Crashes by population
 
-Areas of the Bay of Plenty have been categorised into "urban" and "rural", based on a Statistics New Zealand dataset.  Demographic data are available giving the populations of urban and rural areas.  The rural population is considerably smaller than the urban population.
+Areas of [District] have been categorised into "urban" and "rural", based on a Statistics New Zealand dataset.  Demographic data are available giving the populations of urban and rural areas.  [Input text here]
 
 ```{r populationTable, results = tableResults, cache = TRUE}
 pandoc.table(data.frame("Region" = c("urban", "rural")
-                        , Population = SummaryBoP[c("urban", "rural")
+                        , Population = SummaryT[c("urban", "rural")
                                                   , "population"])
-             , caption = "Population of the Bay of Plenty"
+             , caption = "Population of Tasman"
              , round = 0
              , keep.trailing.zeros = TRUE
              , justify = c("left", "right")
@@ -120,7 +120,7 @@ pandoc.table(data.frame("Region" = c("urban", "rural")
 ```
 
 
-The crash rate per head population in rural areas is much higher than in urban areas.  This is because, while the number of crashes in rural areas is slightly higher than in urban areas, the population is much smaller.  This is true of both drink-drive-related crashes and others.
+[Input text here]
 
 ```{r populationCrashRateTable, results = tableResults, cache = TRUE}
 x <- dcast(crashes, urbanRural + alcohol ~ year, sum, value.var = "countPopulation")
@@ -162,7 +162,7 @@ Compare with the first graph, "Number of Crashes".  Weighting by population is a
 
 ### Time of day of crashes
 
-Drink-drive-related crashes tend to occur in the evenings and early mornings.  Drink-drive-crashes become a problem earlier in the evening in rural areas than in urban areas.
+[Input text here]
 
 ```{r crashesHourlyByNumberTable, results = tableResults, cache = TRUE}
 x <- dcast(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
@@ -192,7 +192,7 @@ ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
 ```
 
 
-Alcohol is not a factor in most crashes.  However, after 8.00 pm, it is a factor in about 40-65% of crashes.
+[Input text here]
 
 ```{r crashesHourlyByPercentageTable, results = tableResults, cache = TRUE}
 x <- dcast(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
@@ -227,7 +227,7 @@ ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
 ```
 
 
-The nights with the highest percentage of drink-drive crashes are Friday, Saturday and Sunday nights.  Mondays are also high in urban areas.  Tuesdays and Wednesdays have the lowest.
+[Input text here]
 
 ```{r crashesWeeklyTable, results = tableResults, cache = TRUE}
 x <- dcast(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
@@ -276,7 +276,7 @@ rm(x)
 
 ### Age / ethnicity of drivers-at-fault
 
-The rate of drink-drive-crashes is highest for the 20-25 age group in both rural and urban areas.  The rate for the 15-20 age group is higher in rural areas than urban areas, and the rate does not drop off as markedly after age 25 in rural areas, but continues to be relatively high up to age 45.
+[Input text here]
 
 ```{r ageTable, results = tableResults, cache = TRUE}
 x <- dcast(drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
@@ -316,7 +316,7 @@ rm(x)
 
 
 
-The ethnicities with the highest number of drink-drivers at fault in crashes, per head population, are by far NZ Maori and Pacific Islander.  The difference is even more marked in rural areas than in urban areas, though there are more drink-drivers at fault in crashes in rural areas generally, per head population, compared with urban areas.
+[Input text here]
 
 ```{r ethnicityTableDrivers, results = tableResults, cache = TRUE, }
 x <- ddply(drivers[drivers$fault == TRUE & drivers$alcohol == TRUE, ]
@@ -341,7 +341,7 @@ rm(x)
 ```
 
 ```{r ethnicityTablePopulation, results = tableResults, cache = TRUE}
-x <- dcast(mDataBoP[mDataBoP$variable %in% c("European", "NZ Maori", "Other"
+x <- dcast(mDataT[mDataT$variable %in% c("European", "NZ Maori", "Other"
                                         , "Pacific Islander"), ]
       , variable ~ urbanRural, sum, na.rm = TRUE, margins = TRUE)
 # remove NA column
@@ -399,6 +399,4 @@ rm(x)
 
 ### Discussion
 
-The perception that drink-driving is a problem in rural areas is probably driven by the ratio of crashes to population.  In fact, there are only slightly more drink-drive crashes in rural areas than in urban areas.
-
-It may be impractical to address rural drink-driving by enforcement, because there is so much road to police.  It may be more practical to engage with the community, because the community is small.
+[Input text here]

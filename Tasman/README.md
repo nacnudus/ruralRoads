@@ -43,11 +43,11 @@ If you ever need to add something to the zip file (say, you've saved a new spati
 
 CAS Data
 --------
-This was last pulled from CAS on 14 August 2013.
+This was last pulled from CAS on 5 September 2013.
 
 Each table is named with by its region, followed by a description, e.g. BoP-coordinates.txt
 
-### BoP-coordinates.csv
+### BoP-coordinates.txt
 * ...
 * CRASH ID
 * ...
@@ -94,3 +94,7 @@ exclude uninjured people? No
 * role
 * driver at fault
 * ethnicity
+
+knitr/ggplot2 bug
+-----------------
+See [here](https://github.com/hadley/evaluate/pull/26).

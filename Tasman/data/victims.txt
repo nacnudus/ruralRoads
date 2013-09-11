@@ -1,0 +1,1129 @@
+
+1,201010001,Driver,Female, 49,Not injured,1,">1 party, no dvr fault",European
+1,201010005,Driver,Male, 67,Fatal,1,"1 veh, dvr at fault",European
+1,201010010,Driver,Male, 41,Fatal,1,"1 veh, dvr at fault",NZ Maori
+1,201010012,Driver,Male, 17,Not injured,2,">1 party, no dvr fault",European
+1,201010012,Driver,Male, 21,Fatal,1,">1 party, dvr prime fault",NZ Maori
+1,201010013,Driver,Male, 52,Fatal,1,"1 veh, dvr at fault",European
+1,201010016,Driver,Male, 42,Fatal,1,"1 veh, dvr at fault",European
+1,201010021,Driver,Male, 23,Fatal,1,"1 veh, no dvr fault",European
+1,201010021,Passenger,Female, 41,Serious,1,"1 veh, no dvr fault",European
+1,201010022,Driver,Male, 17,Fatal,1,"1 veh, dvr at fault",European
+1,201010022,Passenger,Male, 18,Fatal,1,"1 veh, dvr at fault",European
+1,201010022,Passenger,Male, 18,Fatal,1,"1 veh, dvr at fault",NZ Maori
+1,201010022,Passenger,Male, 18,Serious,1,"1 veh, dvr at fault",Asian
+1,201010023,Driver,Male, 25,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,201010023,Passenger,Male, 35,Fatal,1,"1 veh, dvr at fault",European
+1,201010025,Driver,Male, 43,Fatal,1,"1 veh, dvr at fault",NZ Maori
+1,201010025,Passenger,Male, 41,Serious,1,"1 veh, dvr at fault",European
+1,201010027,Driver,Male, 44,Fatal,1,">1 party, dvr prime fault",European
+1,201010027,Driver,Male, 50,Minor,2,">1 party, dvr part fault",European
+1,201010029,Driver,Female, 20,Minor,2,">1 party, dvr part fault",European
+1,201010029,Driver,Female, 51,Fatal,1,">1 party, no dvr fault",European
+1,201010033,Driver,Male, 60,Fatal,1,"1 veh, dvr at fault",Samoan
+1,201010040,Driver,Male, 17,Fatal,1,"1 veh, dvr at fault",European
+1,201010040,Passenger,Female, 16,Serious,1,"1 veh, dvr at fault",European
+1,201010040,Passenger,Male, 16,Serious,1,"1 veh, dvr at fault",European
+1,201010040,Passenger,Male, 17,Fatal,1,"1 veh, dvr at fault",European
+1,201010040,Passenger,Male, 18,Minor,1,"1 veh, dvr at fault",European
+1,201010040,Passenger,Male,,Serious,1,"1 veh, dvr at fault",European
+1,201010044,Driver,Female, 72,Fatal,1,">1 party, dvr prime fault",NZ Maori
+1,201010044,Driver,Male, 66,Serious,2,">1 party, no dvr fault",European
+1,201010044,Passenger,Female, 41,Serious,1,">1 party, dvr prime fault",NZ Maori
+1,201010044,Passenger,Female, 65,Serious,2,">1 party, no dvr fault",European
+1,201010049,Driver,Male, 38,Fatal,1,">1 party, dvr prime fault",Unknown
+1,201010049,Driver,Male, 51,Not injured,2,">1 party, no dvr fault",European
+1,201010058,Driver,Male, 25,Fatal,2,">1 party, dvr prime fault",European
+1,201010058,Driver,Male, 33,Minor,1,">1 party, no dvr fault",European
+1,201010075,Driver,Male, 32,Fatal,1,"1 veh, dvr at fault",European
+1,201010079,Driver,Male, 34,Not injured,2,">1 party, dvr prime fault",European
+1,201010079,Driver,Male, 91,Fatal,1,">1 party, dvr part fault",European
+1,201010085,Driver,Male, 48,Fatal,1,">1 party, dvr prime fault",NZ Maori
+1,201010085,Driver,Male, 62,Minor,2,">1 party, no dvr fault",European
+1,201010085,Passenger,Male, 34,Minor,1,">1 party, dvr prime fault",NZ Maori
+1,201010093,Driver,Male, 19,Fatal,1,">1 party, dvr prime fault",European
+1,201010093,Passenger,Male, 18,Serious,1,">1 party, dvr prime fault",European
+1,201011036,Driver,Male, 22,Not injured,1,"1 veh, dvr at fault",European
+1,201011036,Passenger,Female, 18,Serious,1,"1 veh, dvr at fault",European
+1,201011051,Driver,Female, 27,Serious,2,">1 party, dvr part fault",European
+1,201011051,Driver,Male, 23,Minor,1,">1 party, dvr prime fault",European
+1,201011078,Driver,Male, 16,Serious,1,">1 party, dvr prime fault",European
+1,201011079,Driver,Male, 49,Serious,1,">1 party, no dvr fault",European
+1,201011079,Driver,Male, 57,Not injured,2,">1 party, dvr prime fault",European
+1,201011079,Passenger,Female, 45,Serious,1,">1 party, no dvr fault",European
+1,201011092,Driver,Male, 36,Not injured,2,">1 party, no dvr fault",European
+1,201011092,Driver,Male, 54,Serious,1,">1 party, dvr prime fault",European
+1,201011126,Driver,Female, 61,Minor,1,">1 party, dvr prime fault",European
+1,201011126,Driver,Male, 25,Serious,2,">1 party, no dvr fault",European
+1,201011246,Driver,Female, 51,Serious,1,"1 veh, dvr at fault",European
+1,201011301,Driver,Male, 30,Not injured,2,">1 party, no dvr fault",European
+1,201011301,Driver,Male, 63,Serious,1,">1 party, dvr prime fault",European
+1,201011398,Driver,Female, 75,Not injured,2,">1 party, dvr prime fault",European
+1,201011398,Other,Female, 46,Serious,1,">1 party, no dvr fault",European
+1,201011422,Driver,Male, 25,Not injured,1,"1 veh, dvr at fault",Unknown
+1,201011422,Passenger,Male, 29,Serious,1,"1 veh, dvr at fault",Unknown
+1,201011431,Driver,Male, 23,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,201011521,Driver,Male, 49,Serious,1,"1 veh, dvr at fault",European
+1,201011604,Driver,Female, 26,Not injured,1,">1 party, dvr prime fault",European
+1,201011604,Driver,Male,,Serious,2,">1 party, no dvr fault",European
+1,201011611,Driver,Female, 30,Serious,1,"1 veh, dvr at fault",European
+1,201011612,Driver,Female, 18,Minor,1,"1 veh, dvr at fault",European
+1,201011612,Passenger,Male, 22,Serious,1,"1 veh, dvr at fault",European
+1,201011647,Driver,Female, 44,Not injured,1,">1 party, no dvr fault",Unknown
+1,201011676,Driver,Female, 16,Serious,2,">1 party, dvr prime fault",European
+1,201011676,Driver,Male, 20,Not injured,1,">1 party, no dvr fault",European
+2,201011676,Passenger,Male, 18,Serious,2,">1 party, dvr prime fault",European
+1,201011676,Passenger,Male, 18,Minor,2,">1 party, dvr prime fault",European
+1,201011820,Driver,Male, 27,Not injured,2,">1 party, no dvr fault",Unknown
+1,201011820,Other,Male, 15,Serious,1,">1 party, dvr prime fault",European
+1,201011924,Driver,Unknown,,Not injured,1,">1 party, dvr prime fault",Unknown
+1,201011941,Driver,Female, 55,Minor,2,">1 party, dvr prime fault",European
+1,201011941,Driver,Male, 30,Serious,1,">1 party, no dvr fault",European
+1,201011941,Passenger,Female,  3,Serious,1,">1 party, no dvr fault",European
+1,201012119,Driver,Female, 56,Serious,2,">1 party, no dvr fault",European
+1,201012119,Driver,Male, 54,Not injured,1,">1 party, dvr prime fault",European
+1,201012122,Driver,Male, 20,Not injured,1,"1 veh, dvr at fault",European
+1,201012122,Passenger,Male, 47,Serious,1,"1 veh, dvr at fault",Unknown
+1,201012132,Driver,Male, 54,Serious,1,">1 party, dvr prime fault",European
+1,201012132,Driver,Male, 58,Not injured,2,">1 party, no dvr fault",European
+1,201012132,Passenger,Female, 45,Serious,1,">1 party, dvr prime fault",NZ Maori
+1,201012162,Driver,Female, 22,Not injured,2,">1 party, dvr prime fault",European
+1,201012162,Driver,Male, 50,Serious,1,">1 party, no dvr fault",European
+1,201012196,Other,Male, 15,Minor,1,">1 party, dvr prime fault",European
+1,201012367,Driver,Male, 58,Serious,1,"1 veh, dvr at fault",European
+1,201012370,Driver,Female, 66,Serious,1,"1 veh, dvr at fault",European
+1,201012379,Driver,Female, 30,Serious,1,"1 veh, dvr at fault",European
+1,201012379,Passenger,Male, 24,Minor,1,"1 veh, dvr at fault",Unknown
+1,201012379,Passenger,Male, 31,Minor,1,"1 veh, dvr at fault",European
+1,201012452,Driver,Male, 65,Serious,1,"1 veh, dvr at fault",European
+1,201012517,Driver,Male, 47,Serious,1,"1 veh, dvr at fault",Asian
+2,201012517,Passenger,Female,,Minor,1,"1 veh, dvr at fault",Asian
+1,201012518,Driver,Male, 47,Serious,1,"1 veh, dvr at fault",European
+1,201012554,Driver,Male, 30,Serious,1,"1 veh, dvr at fault",European
+1,201012693,Driver,Male,,Serious,1,"1 veh, dvr at fault",European
+1,201012759,Driver,Female, 60,Not injured,2,">1 party, dvr prime fault",Unknown
+1,201012759,Driver,Male, 41,Serious,1,">1 party, no dvr fault",Unknown
+1,201012769,Driver,Male, 38,Serious,1,"1 veh, dvr at fault",European
+1,201012828,Driver,Male, 44,Serious,1,"1 veh, dvr at fault",European
+1,201012845,Driver,Female, 18,Serious,1,"1 veh, dvr at fault",European
+2,201012845,Passenger,Female,,Serious,1,"1 veh, dvr at fault",European
+1,201012846,Driver,Female, 25,Not injured,1,">1 party, dvr prime fault",European
+1,201012901,Driver,Male, 17,Serious,1,"1 veh, dvr at fault",European
+1,201012915,Driver,Female, 57,Serious,1,">1 party, no dvr fault",European
+1,201012915,Driver,Male, 75,Minor,2,">1 party, dvr prime fault",European
+1,201012951,Driver,Female, 40,Minor,1,">1 party, dvr prime fault",European
+1,201012951,Driver,Male, 46,Serious,2,">1 party, no dvr fault",European
+1,201013033,Driver,Male, 30,Not injured,1,">1 party, dvr prime fault",NZ Maori
+1,201013065,Driver,Male, 26,Not injured,1,"1 veh, dvr at fault",NZ Maori
+1,201013104,Driver,Male, 38,Serious,1,"1 veh, dvr at fault",European
+1,201013116,Driver,Unknown,,Not injured,1,"1 veh, dvr at fault",Unknown
+1,201013116,Passenger,Male, 25,Serious,1,"1 veh, dvr at fault",European
+1,201013132,Driver,Female, 33,Serious,1,"1 veh, dvr at fault",Other
+1,201013133,Driver,Male, 43,Serious,1,"1 veh, dvr at fault",European
+1,201013268,Driver,Male, 39,Serious,1,"1 veh, dvr at fault",European
+1,201013269,Driver,Male, 49,Not injured,2,">1 party, dvr prime fault",European
+1,201013269,Other,Male, 41,Serious,1,">1 party, no dvr fault",European
+1,201013326,Driver,Male, 43,Serious,1,">1 party, dvr prime fault",European
+1,201013326,Driver,Male, 79,Not injured,2,">1 party, no dvr fault",European
+1,201013333,Driver,Male, 20,Minor,1,">1 party, dvr prime fault",European
+1,201013340,Driver,Unknown,,Not injured,1,">1 party, dvr prime fault",Unknown
+1,201013340,Other,Female, 33,Serious,2,">1 party, no dvr fault",European
+1,201013383,Driver,Female, 21,Serious,1,"1 veh, dvr at fault",European
+1,201013441,Driver,Female, 70,Serious,1,"1 veh, dvr at fault",European
+1,201013441,Passenger,Male, 68,Serious,1,"1 veh, dvr at fault",European
+1,201013520,Driver,Male, 64,Serious,1,"1 veh, dvr at fault",European
+1,201013521,Driver,Female, 23,Not injured,1,">1 party, dvr prime fault",European
+1,201013528,Driver,Male, 27,Serious,1,">1 party, dvr prime fault",Unknown
+1,201013528,Driver,Male, 36,Not injured,2,">1 party, no dvr fault",Unknown
+1,201013543,Driver,Male, 32,Serious,1,"1 veh, dvr at fault",European
+1,201013567,Driver,Male, 42,Serious,1,"1 veh, dvr at fault",European
+1,201013675,Driver,Male, 63,Not injured,2,">1 party, no dvr fault",European
+1,201013675,Other,Female, 12,Serious,1,">1 party, dvr prime fault",European
+1,201013682,Driver,Male, 41,Serious,1,"1 veh, dvr at fault",European
+1,201013692,Driver,Female, 18,Serious,2,">1 party, no dvr fault",European
+1,201013692,Driver,Male, 64,Minor,1,">1 party, dvr prime fault",European
+1,201013724,Driver,Male, 27,Minor,2,">1 party, no dvr fault",European
+1,201013724,Driver,Male,,Serious,1,">1 party, dvr prime fault",European
+1,201013758,Driver,Male, 39,Not injured,1,">1 party, no dvr fault",European
+1,201013765,Driver,Female, 65,Minor,1,"1 veh, dvr at fault",European
+1,201013765,Passenger,Male, 61,Serious,1,"1 veh, dvr at fault",European
+1,201020006,Driver,Female, 21,Not injured,1,">1 party, dvr prime fault",Unknown
+1,201020037,Driver,Male, 55,Fatal,1,"1 veh, dvr at fault",European
+1,201020037,Passenger,Male,,Serious,1,"1 veh, dvr at fault",European
+1,201020055,Driver,Female, 16,Fatal,1,">1 party, dvr prime fault",NZ Maori
+1,201020055,Driver,Male, 55,Not injured,2,">1 party, no dvr fault",European
+1,201020055,Passenger,Male, 14,Minor,1,">1 party, dvr prime fault",European
+1,201020055,Passenger,Male, 16,Fatal,1,">1 party, dvr prime fault",Unknown
+1,201020055,Passenger,Male, 17,Serious,1,">1 party, dvr prime fault",European
+1,201020055,Passenger,Male, 20,Minor,1,">1 party, dvr prime fault",European
+1,201020061,Driver,Male, 16,Minor,1,"1 veh, dvr at fault",European
+1,201020061,Passenger,Female, 16,Fatal,1,"1 veh, dvr at fault",NZ Maori
+1,201020064,Driver,Male, 16,Not injured,1,">1 party, no dvr fault",NZ Maori
+1,201020067,Driver,Female, 27,Not injured,1,"1 veh, dvr at fault",European
+1,201020067,Passenger,Female, 23,Fatal,1,"1 veh, dvr at fault",Asian
+1,201021075,Driver,Male, 52,Serious,1,"1 veh, dvr at fault",European
+1,201021140,Driver,Male, 57,Serious,1,"1 veh, dvr at fault",European
+1,201021150,Driver,Male, 68,Serious,1,"1 veh, dvr at fault",European
+1,201021153,Driver,Male, 46,Serious,1,"1 veh, dvr at fault",European
+1,201021155,Driver,Female, 28,Serious,2,">1 party, no dvr fault",European
+1,201021155,Driver,Male, 31,Not injured,1,">1 party, dvr prime fault",European
+1,201021236,Driver,Male, 39,Not injured,1,">1 party, no dvr fault",European
+1,201021236,Driver,Male, 58,Serious,2,">1 party, dvr part fault",European
+1,201021240,Driver,Male, 59,Not injured,1,"1 veh, dvr at fault",European
+1,201021240,Passenger,Female, 58,Serious,1,"1 veh, dvr at fault",European
+1,201021241,Driver,Female, 42,Serious,1,"1 veh, dvr at fault",European
+1,201021286,Driver,Female, 62,Serious,1,"1 veh, dvr at fault",European
+1,201021315,Driver,Female, 26,Serious,1,"1 veh, dvr at fault",European
+1,201021444,Driver,Female, 25,Serious,2,">1 party, no dvr fault",European
+1,201021444,Driver,Male, 18,Serious,1,">1 party, dvr prime fault",European
+1,201021444,Passenger,Male, 15,Minor,1,">1 party, dvr prime fault",European
+1,201021498,Driver,Male,,Minor,1,"1 veh, dvr at fault",European
+1,201021498,Passenger,Male, 15,Serious,1,"1 veh, dvr at fault",Asian
+1,201021498,Passenger,Male, 15,Minor,1,"1 veh, dvr at fault",European
+1,201021498,Passenger,Male,,Minor,1,"1 veh, dvr at fault",European
+1,201021499,Driver,Male, 33,Serious,1,"1 veh, dvr at fault",Unknown
+1,201021499,Passenger,Female, 37,Serious,1,"1 veh, dvr at fault",Unknown
+1,201021499,Passenger,Female,,Serious,1,"1 veh, dvr at fault",Unknown
+1,201021499,Passenger,Male,,Serious,1,"1 veh, dvr at fault",Unknown
+1,201021519,Driver,Male, 40,Serious,1,"1 veh, dvr at fault",European
+1,201021609,Driver,Male, 45,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,201021781,Driver,Male, 26,Serious,1,"1 veh, dvr at fault",European
+1,201021858,Driver,Male, 17,Serious,1,"1 veh, dvr at fault",European
+1,201021858,Passenger,Male, 16,Serious,1,"1 veh, dvr at fault",European
+1,201021858,Passenger,Male, 18,Serious,1,"1 veh, dvr at fault",European
+1,201021879,Driver,Male, 51,Serious,1,"1 veh, dvr at fault",European
+1,201021948,Driver,Female, 25,Serious,1,"1 veh, dvr at fault",European
+1,201021996,Driver,Male, 21,Serious,1,"1 veh, dvr at fault",Asian
+1,201022033,Driver,Male, 40,Serious,1,">1 party, dvr prime fault",European
+1,201022033,Driver,Male, 43,Minor,2,">1 party, dvr part fault",European
+1,201022223,Driver,Female, 15,Not injured,1,">1 party, no dvr fault",European
+1,201022259,Driver,Male, 25,Serious,1,"1 veh, dvr at fault",European
+1,201022260,Driver,Female, 20,Not injured,1,"1 veh, dvr at fault",European
+1,201022260,Passenger,Female, 20,Minor,1,"1 veh, dvr at fault",European
+1,201022260,Passenger,Male, 18,Serious,1,"1 veh, dvr at fault",European
+1,201022260,Passenger,Male, 31,Minor,1,"1 veh, dvr at fault",European
+1,201022291,Driver,Male, 24,Not injured,1,"1 veh, dvr at fault",European
+1,201022291,Passenger,Female, 21,Serious,1,"1 veh, dvr at fault",European
+1,201022291,Passenger,Male, 25,Serious,1,"1 veh, dvr at fault",European
+1,201022322,Driver,Male, 49,Serious,1,"1 veh, dvr at fault",European
+1,201022443,Driver,Male, 18,Serious,1,"1 veh, dvr at fault",European
+1,201022445,Driver,Male, 29,Minor,1,"1 veh, dvr at fault",European
+1,201022445,Passenger,Male,,Serious,1,"1 veh, dvr at fault",European
+1,201022507,Driver,Male, 21,Serious,1,"1 veh, dvr at fault",European
+1,201022508,Driver,Male, 40,Not injured,2,">1 party, dvr prime fault",European
+1,201022508,Other,Male, 56,Serious,1,">1 party, no dvr fault",European
+1,201022545,Driver,Male, 58,Minor,1,">1 party, dvr prime fault",European
+1,201022547,Driver,Male, 53,Serious,1,"1 veh, dvr at fault",European
+1,201022632,Driver,Male, 25,Not injured,1,">1 party, dvr prime fault",European
+1,201022961,Driver,Male, 39,Serious,1,"1 veh, dvr at fault",Unknown
+1,201022961,Passenger,Male,  9,Minor,1,"1 veh, dvr at fault",European
+1,201022961,Passenger,Male, 11,Minor,1,"1 veh, dvr at fault",European
+1,201022986,Driver,Male, 17,Minor,1,"1 veh, dvr at fault",European
+1,201022986,Passenger,Female, 14,Serious,1,"1 veh, dvr at fault",European
+1,201022986,Passenger,Female, 14,Minor,1,"1 veh, dvr at fault",European
+1,201022986,Passenger,Male, 15,Serious,1,"1 veh, dvr at fault",European
+1,201022986,Passenger,Male, 17,Serious,1,"1 veh, dvr at fault",European
+1,201022986,Passenger,Male, 18,Serious,1,"1 veh, dvr at fault",European
+1,201023069,Other,Male, 63,Serious,1,"1 veh, dvr at fault",European
+1,201023071,Driver,Male, 61,Serious,1,"1 veh, dvr at fault",European
+1,201023075,Driver,Male, 56,Not injured,2,">1 party, no dvr fault",European
+1,201023075,Driver,Male, 61,Not injured,1,">1 party, dvr prime fault",European
+1,201023075,Passenger,Female, 62,Serious,2,">1 party, no dvr fault",European
+1,201023154,Driver,Male, 22,Serious,1,"1 veh, dvr at fault",European
+1,201023272,Driver,Male, 38,Serious,1,"1 veh, no dvr fault",European
+1,201023272,Passenger,Female,  8,Minor,1,"1 veh, no dvr fault",European
+1,201023292,Driver,Male, 52,Serious,1,"1 veh, dvr at fault",European
+1,201110002,Driver,Male, 52,Fatal,1,"1 veh, dvr at fault",European
+1,201110014,Driver,Male, 69,Fatal,1,"1 veh, dvr at fault",European
+1,201110014,Passenger,Female, 66,Serious,1,"1 veh, dvr at fault",European
+1,201110021,Driver,Female, 26,Minor,2,">1 party, no dvr fault",NZ Maori
+1,201110021,Driver,Male, 21,Minor,1,">1 party, dvr prime fault",NZ Maori
+1,201110021,Passenger,Male, 21,Fatal,1,">1 party, dvr prime fault",European
+1,201110021,Passenger,Male, 21,Minor,1,">1 party, dvr prime fault",NZ Maori
+1,201110021,Passenger,Male, 29,Serious,2,">1 party, no dvr fault",Unknown
+1,201110028,Driver,Male, 58,Not injured,1,">1 party, dvr prime fault",European
+1,201110028,Other,Male, 60,Fatal,2,">1 party, no dvr fault",NZ Maori
+1,201110029,Driver,Male, 22,Not injured,1,">1 party, no dvr fault",European
+1,201110029,Driver,Male, 42,Serious,2,">1 party, dvr prime fault",European
+1,201110029,Passenger,Male, 39,Fatal,2,">1 party, dvr prime fault",Unknown
+1,201110046,Driver,Female, 56,Fatal,1,">1 party, dvr prime fault",European
+1,201110046,Driver,Male, 59,Not injured,2,">1 party, no dvr fault",NZ Maori
+1,201110051,Driver,Male, 36,Fatal,1,">1 party, dvr part fault",European
+1,201110051,Driver,Male, 69,Not injured,2,">1 party, dvr prime fault",European
+1,201110068,Driver,Male, 22,Fatal,1,"1 veh, dvr at fault",European
+1,201110076,Driver,Male, 22,Fatal,1,">1 party, dvr prime fault",Unknown
+1,201110076,Driver,Male, 23,Not injured,2,">1 party, dvr part fault",European
+1,201110076,Passenger,Male, 24,Fatal,1,">1 party, dvr prime fault",European
+1,201111001,Driver,Female, 23,Not injured,2,">1 party, no dvr fault",European
+1,201111001,Driver,Male, 37,Serious,1,">1 party, dvr prime fault",European
+1,201111001,Other,Female, 38,Minor,3,">1 party, no dvr fault",European
+1,201111005,Driver,Male, 31,Minor,1,">1 party, dvr prime fault",NZ Maori
+1,201111005,Driver,Unknown,,Not injured,2,">1 party, no dvr fault",Unknown
+1,201111005,Passenger,Female, 17,Minor,1,">1 party, dvr prime fault",European
+1,201111005,Passenger,Female, 17,Minor,1,">1 party, dvr prime fault",Unknown
+1,201111005,Passenger,Female, 45,Serious,1,">1 party, dvr prime fault",European
+1,201111008,Driver,Male, 51,Not injured,2,">1 party, dvr prime fault",European
+1,201111008,Driver,Male, 68,Serious,1,">1 party, no dvr fault",European
+1,201111164,Driver,Male, 48,Serious,1,"1 veh, dvr at fault",European
+1,201111226,Driver,Male, 16,Serious,1,">1 party, dvr prime fault",European
+1,201111226,Driver,Male, 47,Not injured,2,">1 party, no dvr fault",Unknown
+1,201111241,Driver,Female, 70,Serious,1,"1 veh, dvr at fault",European
+1,201111291,Driver,Male, 40,Not injured,1,">1 party, no dvr fault",European
+1,201111291,Other,Male, 12,Serious,2,">1 party, dvr prime fault",European
+1,201111299,Driver,Female, 60,Serious,2,">1 party, no dvr fault",European
+1,201111299,Driver,Male, 35,Not injured,1,">1 party, dvr prime fault",European
+1,201111335,Driver,Female, 46,Serious,1,">1 party, no dvr fault",European
+1,201111335,Driver,Male, 38,Minor,2,">1 party, dvr prime fault",European
+1,201111336,Driver,Female, 16,Serious,1,"1 veh, dvr at fault",European
+1,201111386,Driver,Male, 25,Serious,1,"1 veh, dvr at fault",Unknown
+1,201111391,Driver,Male, 33,Not injured,1,">1 party, dvr prime fault",European
+1,201111414,Driver,Female, 22,Not injured,1,">1 party, no dvr fault",European
+1,201111416,Driver,Male, 25,Not injured,2,">1 party, dvr part fault",Unknown
+1,201111416,Driver,Male, 66,Serious,1,">1 party, dvr part fault",Unknown
+1,201111443,Driver,Male, 50,Serious,2,">1 party, no dvr fault",Unknown
+1,201111443,Driver,Unknown,,Not injured,1,">1 party, dvr prime fault",Unknown
+1,201111446,Driver,Male, 49,Not injured,1,">1 party, dvr prime fault",Unknown
+1,201111494,Driver,Male, 31,Serious,1,"1 veh, dvr at fault",European
+1,201111649,Driver,Male, 28,Serious,1,"1 veh, dvr at fault",Fijian
+1,201111653,Driver,Female, 51,Serious,1,"1 veh, dvr at fault",European
+1,201111704,Driver,Female, 33,Serious,1,"1 veh, dvr at fault",European
+1,201111738,Driver,Male, 37,Serious,1,">1 party, dvr prime fault",European
+1,201111738,Driver,Male, 81,Not injured,2,">1 party, no dvr fault",European
+1,201111830,Driver,Female, 85,Serious,2,">1 party, dvr prime fault",European
+1,201111830,Driver,Male, 40,Not injured,1,">1 party, no dvr fault",European
+1,201111953,Driver,Male, 21,Not injured,2,">1 party, no dvr fault",European
+1,201111953,Driver,Male, 26,Not injured,3,">1 party, no dvr fault",European
+1,201111953,Driver,Male, 49,Not injured,1,">1 party, dvr prime fault",European
+1,201111953,Passenger,Female,  3,Serious,3,">1 party, no dvr fault",Unknown
+1,201111953,Passenger,Male,  3,Minor,3,">1 party, no dvr fault",Unknown
+1,201111954,Driver,Male, 17,Serious,1,"1 veh, dvr at fault",European
+1,201111958,Driver,Female, 33,Not injured,1,"1 veh, dvr at fault",European
+1,201111984,Driver,Male, 38,Serious,1,"1 veh, dvr at fault",European
+1,201112088,Driver,Male, 52,Serious,1,">1 party, dvr part fault",European
+1,201112088,Driver,Male, 90,Not injured,2,">1 party, dvr prime fault",European
+1,201112088,Passenger,Female, 46,Serious,1,">1 party, dvr part fault",European
+1,201112131,Driver,Female, 50,Serious,2,">1 party, dvr prime fault",European
+1,201112131,Driver,Male, 52,Minor,1,">1 party, no dvr fault",European
+1,201112131,Passenger,Female, 12,Minor,1,">1 party, no dvr fault",Unknown
+1,201112131,Passenger,Male, 11,Minor,1,">1 party, no dvr fault",Unknown
+1,201112284,Driver,Male, 51,Serious,1,"1 veh, dvr at fault",Fijian
+1,201112411,Driver,Female, 41,Serious,1,"1 veh, dvr at fault",European
+1,201112482,Driver,Female, 62,Serious,1,">1 party, dvr prime fault",European
+1,201112482,Driver,Male, 42,Minor,2,">1 party, no dvr fault",European
+1,201112482,Passenger,Male,  4,Minor,2,">1 party, no dvr fault",European
+1,201112482,Passenger,Male,  6,Serious,2,">1 party, no dvr fault",European
+1,201112610,Driver,Female, 45,Not injured,2,">1 party, dvr prime fault",European
+1,201112610,Other,Male, 11,Serious,1,">1 party, dvr part fault",European
+1,201112700,Driver,Male, 49,Serious,1,"1 veh, dvr at fault",European
+1,201112705,Driver,Male, 45,Serious,1,"1 veh, dvr at fault",European
+1,201112769,Driver,Male, 50,Serious,2,">1 party, dvr part fault",NZ Maori
+1,201112769,Driver,Male,,Minor,1,">1 party, dvr prime fault",European
+1,201112769,Passenger,Male,,Minor,1,">1 party, dvr prime fault",Unknown
+1,201112794,Driver,Female, 25,Serious,1,"1 veh, dvr at fault",Asian
+1,201112794,Passenger,Female, 27,Minor,1,"1 veh, dvr at fault",Asian
+1,201112800,Driver,Male, 37,Not injured,2,">1 party, no dvr fault",European
+1,201112800,Other,Male, 17,Serious,1,">1 party, no dvr fault",European
+1,201112802,Driver,Male, 67,Serious,1,"1 veh, dvr at fault",European
+1,201112899,Driver,Female, 57,Serious,1,">1 party, no dvr fault",European
+1,201112899,Driver,Male, 80,Not injured,2,">1 party, dvr prime fault",European
+1,201112927,Driver,Female, 33,Not injured,2,">1 party, no dvr fault",European
+1,201112927,Driver,Male, 31,Serious,1,">1 party, dvr prime fault",European
+1,201112936,Driver,Male, 39,Serious,1,"1 veh, dvr at fault",European
+1,201112936,Passenger,Female, 22,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,201112936,Passenger,Female, 38,Minor,1,"1 veh, dvr at fault",European
+1,201112936,Passenger,Male, 16,Minor,1,"1 veh, dvr at fault",European
+1,201113040,Driver,Female, 39,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,201113098,Driver,Female, 68,Serious,1,"1 veh, dvr at fault",European
+1,201113155,Driver,Male, 19,Serious,1,"1 veh, dvr at fault",European
+1,201113204,Driver,Male, 25,Serious,1,"1 veh, dvr at fault",Other
+1,201113261,Driver,Female, 32,Not injured,2,">1 party, dvr prime fault",European
+1,201113261,Driver,Female, 91,Not injured,1,">1 party, dvr part fault",European
+1,201113264,Driver,Female, 34,Serious,2,">1 party, no dvr fault",European
+1,201113264,Driver,Male, 27,Not injured,1,">1 party, dvr prime fault",Other
+1,201113265,Driver,Male, 46,Serious,1,"1 veh, dvr at fault",European
+1,201120006,Driver,Male, 51,Serious,1,">1 party, dvr prime fault",European
+1,201120006,Driver,Male, 56,Fatal,2,">1 party, no dvr fault",European
+1,201120007,Driver,Female, 26,Serious,1,">1 party, dvr prime fault",Asian
+1,201120007,Driver,Male, 61,Fatal,2,">1 party, no dvr fault",European
+1,201120012,Driver,Female, 19,Serious,1,"1 veh, dvr at fault",European
+1,201120012,Passenger,Female, 25,Serious,1,"1 veh, dvr at fault",European
+1,201120012,Passenger,Female, 27,Fatal,1,"1 veh, dvr at fault",European
+1,201120020,Driver,Male, 48,Fatal,1,"1 veh, dvr at fault",European
+1,201120028,Driver,Male, 34,Fatal,1,">1 party, dvr prime fault",NZ Maori
+1,201120028,Driver,Male, 50,Not injured,2,">1 party, no dvr fault",NZ Maori
+1,201120029,Driver,Male, 66,Fatal,1,"1 veh, dvr at fault",European
+1,201120033,Driver,Male, 24,Fatal,1,"1 veh, dvr at fault",NZ Maori
+1,201120043,Driver,Female, 41,Not injured,1,">1 party, no dvr fault",European
+1,201120060,Driver,Male, 44,Serious,2,">1 party, no dvr fault",European
+1,201120060,Driver,Male, 45,Serious,1,">1 party, dvr prime fault",European
+1,201120060,Passenger,Female, 51,Fatal,1,">1 party, dvr prime fault",European
+1,201120060,Passenger,Male, 82,Fatal,2,">1 party, no dvr fault",European
+1,201121042,Driver,Male, 42,Not injured,1,"1 veh, dvr at fault",Asian
+1,201121042,Passenger,Male, 26,Serious,1,"1 veh, dvr at fault",Asian
+1,201121080,Driver,Male, 35,Not injured,2,">1 party, no dvr fault",Unknown
+1,201121080,Driver,Male,,Serious,1,">1 party, dvr prime fault",European
+1,201121089,Driver,Male, 19,Serious,1,"1 veh, dvr at fault",European
+1,201121221,Driver,Female, 48,Serious,1,"1 veh, dvr at fault",European
+1,201121228,Driver,Male, 23,Serious,1,"1 veh, dvr at fault",European
+1,201121228,Passenger,Male, 43,Serious,1,"1 veh, dvr at fault",European
+1,201121229,Driver,Male, 25,Serious,1,"1 veh, dvr at fault",European
+1,201121472,Driver,Male, 63,Not injured,1,">1 party, dvr prime fault",European
+1,201121509,Driver,Male, 57,Serious,1,"1 veh, no dvr fault",European
+1,201121535,Driver,Male, 28,Serious,1,"1 veh, dvr at fault",European
+1,201121595,Driver,Male, 21,Minor,1,"1 veh, dvr at fault",European
+1,201121595,Passenger,Male, 18,Serious,1,"1 veh, dvr at fault",European
+2,201121595,Passenger,Male, 18,Minor,1,"1 veh, dvr at fault",European
+1,201121595,Passenger,Male, 20,Serious,1,"1 veh, dvr at fault",European
+1,201121596,Driver,Male, 57,Serious,1,"1 veh, no dvr fault",European
+1,201121596,Passenger,Female, 57,Minor,1,"1 veh, no dvr fault",European
+1,201121636,Driver,Male, 53,Serious,1,"1 veh, dvr at fault",European
+1,201121731,Driver,Male, 26,Serious,1,">1 party, dvr prime fault",European
+1,201121731,Driver,Male, 55,Not injured,2,">1 party, no dvr fault",Unknown
+1,201121731,Passenger,Female, 21,Serious,1,">1 party, dvr prime fault",Asian
+1,201121859,Driver,Male, 39,Serious,1,"1 veh, dvr at fault",European
+1,201121865,Driver,Female, 21,Serious,1,"1 veh, dvr at fault",European
+1,201121866,Driver,Female, 59,Minor,2,">1 party, no dvr fault",European
+1,201121866,Driver,Male, 37,Serious,1,">1 party, dvr prime fault",Asian
+1,201121866,Passenger,Male, 71,Minor,2,">1 party, no dvr fault",European
+1,201121995,Driver,Male, 50,Serious,1,"1 veh, dvr at fault",European
+1,201122045,Driver,Male, 25,Minor,1,"1 veh, dvr at fault",European
+1,201122045,Passenger,Male, 28,Serious,1,"1 veh, dvr at fault",European
+1,201122046,Driver,Male, 33,Serious,1,"1 veh, dvr at fault",European
+1,201122050,Driver,Male, 28,Not injured,1,">1 party, no dvr fault",NZ Maori
+1,201122094,Driver,Female, 67,Serious,1,"1 veh, dvr at fault",European
+1,201122094,Passenger,Male, 66,Serious,1,"1 veh, dvr at fault",European
+1,201122361,Driver,Male, 37,Serious,1,"1 veh, dvr at fault",Samoan
+1,201122361,Passenger,Male,  2,Serious,1,"1 veh, dvr at fault",Samoan
+1,201122430,Driver,Female, 29,Serious,2,">1 party, no dvr fault",European
+1,201122430,Driver,Male, 17,Minor,1,">1 party, dvr prime fault",European
+1,201122446,Driver,Female, 19,Serious,1,"1 veh, dvr at fault",European
+1,201122690,Driver,Male, 31,Minor,1,">1 party, no dvr fault",European
+1,201122873,Driver,Male, 38,Serious,1,">1 party, dvr prime fault",European
+1,201122873,Driver,Male, 75,Not injured,2,">1 party, dvr part fault",European
+1,201122986,Driver,Male, 78,Serious,2,">1 party, no dvr fault",Unknown
+1,201122986,Driver,Male,,Not injured,1,">1 party, dvr prime fault",Unknown
+1,201123018,Driver,Male, 54,Serious,1,"1 veh, dvr at fault",Unknown
+1,201123183,Driver,Male, 21,Serious,1,"1 veh, dvr at fault",European
+1,201123213,Driver,Male, 15,Not injured,1,"1 veh, dvr at fault",European
+1,201123213,Passenger,Female, 14,Serious,1,"1 veh, dvr at fault",European
+1,201123216,Driver,Male, 16,Serious,1,"1 veh, dvr at fault",European
+1,201123216,Passenger,Male, 16,Serious,1,"1 veh, dvr at fault",European
+1,201123361,Driver,Male, 37,Not injured,1,"1 veh, dvr at fault",Samoan
+1,201123361,Passenger,Male,  2,Serious,1,"1 veh, dvr at fault",Samoan
+1,201210011,Driver,Male, 31,Minor,1,,European
+1,201210021,Driver,Male, 54,Fatal,1,"1 veh, dvr at fault",European
+1,201210036,Driver,Male, 38,Not injured,2,">1 party, no dvr fault",Unknown
+1,201210036,Driver,Male, 40,Not injured,4,">1 party, no dvr fault",European
+1,201210036,Driver,Male, 56,Fatal,3,">1 party, no dvr fault",European
+1,201210036,Driver,Male, 56,Serious,1,">1 party, dvr prime fault",European
+1,201210054,Driver,Male, 48,Not injured,1,">1 party, no dvr fault",European
+1,201210055,Driver,Female, 43,Not injured,1,"1 veh, dvr at fault",NZ Maori
+1,201210055,Passenger,Male, 58,Fatal,1,"1 veh, dvr at fault",NZ Maori
+1,201210055,Passenger,Male, 60,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,201210061,Driver,Male, 56,Fatal,1,">1 party, no dvr fault",Unknown
+1,201210061,Driver,Male, 80,Not injured,2,">1 party, dvr prime fault",European
+1,201210064,Driver,Male, 29,Not injured,2,">1 party, no dvr fault",European
+1,201210064,Driver,Male, 38,Fatal,1,">1 party, dvr prime fault",European
+1,201210064,Passenger,Female, 20,Minor,2,">1 party, no dvr fault",European
+1,201210071,Driver,Female, 33,Serious,2,">1 party, no dvr fault",European
+1,201210071,Driver,Male, 28,Fatal,1,">1 party, dvr prime fault",European
+1,201210071,Passenger,Female, 23,Serious,1,">1 party, dvr prime fault",European
+1,201210071,Passenger,Male, 26,Fatal,1,">1 party, dvr prime fault",European
+1,201211003,Driver,Female, 62,Serious,1,"1 veh, dvr at fault",European
+1,201211015,Other,Male, 29,Serious,1,">1 party, dvr prime fault",European
+1,201211029,Driver,Female, 31,Not injured,2,">1 party, dvr prime fault",European
+1,201211029,Driver,Male, 29,Serious,1,">1 party, no dvr fault",European
+1,201211029,Passenger,Female, 20,Minor,1,">1 party, no dvr fault",European
+1,201211029,Passenger,Female, 44,Serious,1,">1 party, no dvr fault",European
+1,201211029,Passenger,Male, 17,Serious,1,">1 party, no dvr fault",European
+1,201211031,Driver,Male, 16,Minor,1,">1 party, dvr prime fault",European
+1,201211031,Driver,Male, 50,Serious,2,">1 party, dvr part fault",European
+1,201211033,Driver,Male, 34,Not injured,2,">1 party, no dvr fault",Asian
+1,201211033,Driver,Male, 56,Serious,1,">1 party, dvr prime fault",European
+1,201211110,Driver,Male, 29,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,201211117,Driver,Male, 29,Serious,2,">1 party, dvr prime fault",Asian
+1,201211117,Driver,Male, 65,Minor,1,">1 party, no dvr fault",European
+1,201211131,Driver,Male, 70,Not injured,1,">1 party, dvr prime fault",European
+1,201211131,Other,Female, 60,Serious,2,">1 party, dvr part fault",European
+1,201211132,Driver,Male, 21,Serious,1,">1 party, dvr prime fault",European
+1,201211132,Driver,Male, 61,Not injured,2,">1 party, no dvr fault",European
+1,201211132,Passenger,Male, 74,Minor,2,">1 party, no dvr fault",European
+1,201211133,Driver,Male, 20,Minor,1,"1 veh, dvr at fault",European
+1,201211133,Passenger,Female, 15,Serious,1,"1 veh, dvr at fault",European
+1,201211134,Driver,Male, 43,Serious,1,">1 party, dvr prime fault",European
+1,201211134,Driver,Male, 52,Minor,2,">1 party, no dvr fault",European
+1,201211208,Driver,Male, 28,Not injured,1,">1 party, dvr prime fault",Other Pacific Islander
+1,201211208,Driver,Male, 49,Serious,2,">1 party, no dvr fault",European
+1,201211254,Driver,Male, 43,Not injured,2,">1 party, no dvr fault",European
+1,201211254,Driver,Male, 53,Serious,1,">1 party, dvr prime fault",European
+1,201211269,Driver,Male, 23,Not injured,1,"1 veh, no dvr fault",European
+1,201211269,Passenger,Female, 22,Serious,1,"1 veh, no dvr fault",Unknown
+1,201211286,Driver,Female, 19,Not injured,1,">1 party, no dvr fault",European
+1,201211286,Driver,Female, 65,Serious,2,">1 party, dvr prime fault",European
+1,201211286,Driver,Male, 58,Not injured,3,">1 party, no dvr fault",European
+1,201211320,Driver,Male, 22,Not injured,2,">1 party, dvr prime fault",European
+1,201211320,Driver,Male,,Serious,1,">1 party, no dvr fault",European
+1,201211342,Driver,Male, 30,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,201211349,Driver,Male, 16,Serious,1,"1 veh, dvr at fault",European
+1,201211352,Driver,Male, 55,Serious,1,"1 veh, dvr at fault",European
+1,201211437,Driver,Female, 71,Serious,2,">1 party, dvr prime fault",NZ Maori
+1,201211437,Driver,Male, 21,Minor,1,">1 party, dvr part fault",European
+1,201211438,Driver,Male, 33,Serious,1,"1 veh, dvr at fault",European
+1,201211468,Driver,Female, 24,Not injured,2,">1 party, dvr prime fault",European
+1,201211468,Driver,Male, 35,Serious,1,">1 party, dvr part fault",European
+1,201211471,Driver,Male, 39,Not injured,1,">1 party, dvr prime fault",European
+1,201211471,Other,Male, 47,Serious,2,">1 party, no dvr fault",European
+1,201211495,Driver,Male, 29,Serious,1,">1 party, dvr prime fault",NZ Maori
+1,201211495,Driver,Male, 48,Not injured,2,">1 party, no dvr fault",European
+1,201211496,Driver,Female, 17,Serious,1,">1 party, dvr prime fault",European
+1,201211496,Driver,Male, 19,Not injured,2,">1 party, no dvr fault",NZ Maori
+1,201211611,Driver,Female, 87,Minor,2,">1 party, no dvr fault",European
+1,201211611,Driver,Male, 20,Minor,1,">1 party, dvr prime fault",European
+1,201211611,Passenger,Female, 85,Serious,2,">1 party, no dvr fault",European
+1,201211611,Passenger,Female, 89,Serious,2,">1 party, no dvr fault",European
+1,201211612,Driver,Female, 19,Serious,1,">1 party, no dvr fault",European
+1,201211612,Driver,Female, 21,Not injured,2,">1 party, dvr prime fault",European
+1,201211622,Driver,Female, 17,Serious,2,">1 party, dvr prime fault",European
+1,201211622,Driver,Male, 76,Not injured,1,">1 party, no dvr fault",European
+1,201211622,Passenger,Female, 69,Minor,1,">1 party, no dvr fault",European
+1,201211623,Driver,Male, 38,Serious,1,"1 veh, dvr at fault",Unknown
+1,201211623,Passenger,Male, 38,Minor,1,"1 veh, dvr at fault",European
+1,201211628,Driver,Male, 26,Not injured,1,">1 party, dvr prime fault",European
+1,201211628,Other,Female, 35,Serious,2,">1 party, no dvr fault",European
+1,201211660,Driver,Female, 19,Serious,1,"1 veh, dvr at fault",European
+1,201211740,Driver,Female, 43,Not injured,2,">1 party, dvr prime fault",European
+1,201211740,Other,Male, 17,Serious,1,">1 party, no dvr fault",European
+1,201211763,Driver,Male, 61,Serious,1,"1 veh, dvr at fault",Unknown
+1,201212013,Driver,Male, 35,Serious,1,"1 veh, dvr at fault",European
+1,201212051,Driver,Male, 19,Not injured,1,"1 veh, dvr at fault",NZ Maori
+1,201212051,Passenger,Female, 19,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,201212051,Passenger,Female, 21,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,201212055,Driver,Male, 18,Serious,2,">1 party, no dvr fault",European
+1,201212055,Driver,Male, 49,Not injured,1,">1 party, dvr prime fault",European
+1,201212060,Driver,Female, 33,Serious,1,"1 veh, dvr at fault",European
+1,201212074,Driver,Male, 22,Serious,1,"1 veh, dvr at fault",European
+1,201212195,Driver,Male, 19,Serious,1,"1 veh, dvr at fault",European
+1,201212197,Driver,Male, 49,Serious,1,"1 veh, dvr at fault",European
+1,201212324,Driver,Female, 52,Serious,1,">1 party, dvr prime fault",European
+1,201212324,Driver,Male, 43,Serious,2,">1 party, no dvr fault",European
+1,201212325,Driver,Female, 24,Not injured,1,">1 party, no dvr fault",European
+1,201212325,Driver,Male, 20,Serious,2,">1 party, dvr prime fault",European
+1,201212408,Driver,Female, 61,Not injured,2,">1 party, no dvr fault",European
+1,201212408,Driver,Female, 74,Serious,1,">1 party, dvr prime fault",European
+1,201212409,Driver,Female, 25,Not injured,1,">1 party, dvr prime fault",NZ Maori
+1,201212473,Driver,Female, 51,Serious,1,">1 party, dvr prime fault",European
+1,201212473,Driver,Male, 40,Not injured,2,">1 party, no dvr fault",European
+1,201212590,Driver,Male, 42,Serious,1,"1 veh, dvr at fault",European
+1,201212708,Driver,Male, 80,Serious,1,"1 veh, dvr at fault",European
+1,201212769,Driver,Unknown,,Not injured,2,">1 party, no dvr fault",Unknown
+1,201212769,Other,Female, 21,Serious,1,">1 party, dvr prime fault",Samoan
+1,201212770,Driver,Male, 42,Not injured,1,">1 party, dvr prime fault",Other
+1,201212770,Other,Male, 52,Serious,2,">1 party, no dvr fault",European
+1,201212773,Driver,Male, 58,Serious,1,"1 veh, dvr at fault",European
+1,201212780,Driver,Male, 53,Not injured,1,">1 party, dvr prime fault",Unknown
+1,201212780,Other,Female, 65,Serious,2,">1 party, dvr part fault",European
+1,201212851,Driver,Male, 39,Serious,1,"1 veh, dvr at fault",European
+1,201212884,Driver,Female, 27,Not injured,1,">1 party, no dvr fault",European
+1,201212884,Driver,Female, 83,Serious,2,">1 party, dvr prime fault",European
+1,201212940,Driver,Male, 52,Serious,1,">1 party, no dvr fault",NZ Maori
+1,201212940,Driver,Male, 56,Minor,2,">1 party, dvr prime fault",European
+1,201212968,Other,Male,  8,Serious,1,">1 party, dvr prime fault",European
+1,201213138,Driver,Female, 61,Not injured,1,">1 party, dvr prime fault",European
+1,201213174,Driver,Female, 20,Serious,1,">1 party, no dvr fault",European
+1,201213174,Driver,Male, 24,Not injured,2,">1 party, dvr prime fault",European
+1,201213176,Driver,Male, 29,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,201213200,Driver,Male, 27,Serious,1,"1 veh, dvr at fault",European
+1,201213200,Passenger,Male, 22,Minor,1,"1 veh, dvr at fault",European
+1,201213200,Passenger,Male, 27,Minor,1,"1 veh, dvr at fault",European
+1,201213201,Driver,Male, 53,Not injured,1,"1 veh, dvr at fault",European
+1,201213201,Passenger,Female, 54,Serious,1,"1 veh, dvr at fault",European
+1,201213218,Driver,Female, 50,Serious,2,">1 party, no dvr fault",European
+1,201213218,Driver,Male, 60,Not injured,1,">1 party, dvr prime fault",European
+1,201213237,Driver,Female, 24,Serious,2,">1 party, no dvr fault",European
+1,201213237,Driver,Male, 51,Not injured,1,">1 party, dvr prime fault",European
+1,201220020,Driver,Male, 40,Fatal,1,"1 veh, dvr at fault",European
+1,201220020,Passenger,Male, 10,Minor,1,"1 veh, dvr at fault",European
+1,201220022,Driver,Male, 40,Serious,1,"1 veh, no dvr fault",Asian
+1,201220022,Passenger,Male, 39,Serious,1,"1 veh, no dvr fault",Asian
+1,201220022,Passenger,Male, 49,Fatal,1,"1 veh, no dvr fault",Asian
+1,201220030,Driver,Male, 72,Fatal,1,"1 veh, dvr at fault",European
+1,201220032,Driver,Male, 72,Fatal,1,"1 veh, dvr at fault",Unknown
+1,201220034,Driver,Male, 17,Fatal,1,"1 veh, dvr at fault",European
+1,201220034,Passenger,Male, 17,Serious,1,"1 veh, dvr at fault",Unknown
+1,201220042,Driver,Female, 18,Fatal,1,"1 veh, no dvr fault",European
+1,201220043,Driver,Male, 73,Not injured,1,">1 party, no dvr fault",European
+1,201221024,Driver,Male, 19,Not injured,1,">1 party, dvr prime fault",European
+1,201221105,Driver,Female, 49,Minor,2,">1 party, no dvr fault",European
+1,201221105,Driver,Male, 50,Serious,1,">1 party, dvr prime fault",Other
+1,201221105,Passenger,Female, 53,Minor,1,">1 party, dvr prime fault",Other
+1,201221106,Driver,Male, 54,Serious,1,"1 veh, dvr at fault",European
+1,201221151,Driver,Female, 35,Not injured,1,">1 party, dvr prime fault",European
+1,201221151,Driver,Male, 38,Not injured,2,">1 party, no dvr fault",European
+1,201221151,Passenger,Female, 26,Serious,1,">1 party, dvr prime fault",Unknown
+1,201221166,Driver,Female, 20,Serious,1,"1 veh, dvr at fault",European
+1,201221169,Driver,Male, 36,Serious,1,"1 veh, dvr at fault",European
+1,201221230,Driver,Male, 59,Serious,1,"1 veh, dvr at fault",European
+1,201221304,Driver,Male, 30,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,201221304,Passenger,Male, 55,Minor,1,"1 veh, dvr at fault",NZ Maori
+1,201221305,Driver,Male, 16,Not injured,2,">1 party, no dvr fault",European
+1,201221305,Driver,Male, 65,Serious,1,">1 party, dvr prime fault",European
+1,201221310,Driver,Male, 45,Serious,1,"1 veh, dvr at fault",European
+1,201221334,Driver,Male, 58,Not injured,1,">1 party, no dvr fault",European
+1,201221469,Driver,Male, 56,Serious,1,"1 veh, dvr at fault",European
+1,201221549,Driver,Male, 57,Serious,1,"1 veh, dvr at fault",European
+1,201221577,Driver,Male, 18,Serious,1,"1 veh, dvr at fault",European
+1,201221613,Driver,Male, 30,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,201221727,Driver,Female, 25,Minor,2,">1 party, no dvr fault",European
+1,201221727,Driver,Male, 31,Serious,1,">1 party, dvr prime fault",European
+1,201221754,Driver,Male, 53,Serious,1,">1 party, dvr prime fault",European
+1,201221754,Driver,Male, 53,Minor,2,">1 party, no dvr fault",European
+1,201221754,Passenger,Male, 10,Minor,1,">1 party, dvr prime fault",European
+1,201221758,Driver,Female, 49,Serious,1,">1 party, dvr prime fault",European
+1,201221758,Driver,Male, 57,Not injured,2,">1 party, no dvr fault",European
+1,201221779,Driver,Male, 40,Minor,1,"1 veh, dvr at fault",European
+1,201221779,Passenger,Male, 49,Serious,1,"1 veh, dvr at fault",European
+1,201221781,Driver,Male, 24,Serious,1,"1 veh, dvr at fault",European
+1,201221969,Driver,Male, 27,Minor,1,"1 veh, dvr at fault",European
+1,201221969,Passenger,Female, 25,Serious,1,"1 veh, dvr at fault",European
+1,201222065,Driver,Male, 70,Serious,1,"1 veh, dvr at fault",European
+1,201222065,Passenger,Female, 67,Serious,1,"1 veh, dvr at fault",European
+1,201222065,Passenger,Female, 73,Serious,1,"1 veh, dvr at fault",European
+1,201222065,Passenger,Male, 74,Serious,1,"1 veh, dvr at fault",European
+1,201222399,Driver,Male, 18,Serious,1,"1 veh, dvr at fault",European
+1,201222467,Driver,Male, 48,Serious,1,"1 veh, dvr at fault",European
+1,201222469,Driver,Male, 60,Serious,1,"1 veh, dvr at fault",European
+1,201222572,Driver,Male, 49,Serious,1,"1 veh, dvr at fault",European
+1,201222805,Driver,Male, 24,Minor,3,">1 party, no dvr fault",European
+1,201222805,Driver,Male, 34,Not injured,2,">1 party, no dvr fault",NZ Maori
+1,201222805,Driver,Male, 39,Serious,1,">1 party, dvr prime fault",European
+1,201222910,Driver,Male, 22,Serious,1,"1 veh, dvr at fault",Asian
+1,201223415,Driver,Male, 56,Serious,1,"1 veh, dvr at fault",European
+1,201223432,Driver,Male, 17,Serious,1,"1 veh, dvr at fault",European
+1,201223432,Passenger,Male, 16,Minor,1,"1 veh, dvr at fault",NZ Maori
+1,2810012,Driver,Male, 58,Fatal,1,"1 veh, dvr at fault",European
+1,2810015,Driver,Female, 30,Not injured,1,">1 party, dvr prime fault",European
+1,2810024,Driver,Female, 59,Minor,1,">1 party, dvr prime fault",Asian
+1,2810024,Driver,Male, 50,Not injured,2,">1 party, no dvr fault",European
+1,2810024,Passenger,Male, 70,Fatal,1,">1 party, dvr prime fault",European
+1,2810024,Passenger,Male,,Minor,1,">1 party, dvr prime fault",European
+1,2810030,Driver,Male, 40,Fatal,1,">1 party, dvr prime fault",European
+1,2810030,Driver,Male, 61,Not injured,2,">1 party, no dvr fault",European
+1,2810034,Driver,Female, 26,Not injured,1,">1 party, dvr prime fault",European
+1,2810070,Driver,Female, 49,Not injured,2,">1 party, no dvr fault",Unknown
+1,2810070,Driver,Female, 57,Fatal,3,">1 party, no dvr fault",European
+1,2810070,Driver,Female, 59,Serious,1,">1 party, dvr prime fault",European
+1,2810070,Passenger,Male, 57,Serious,3,">1 party, no dvr fault",European
+1,2810077,Driver,Female, 24,Fatal,1,"1 veh, dvr at fault",European
+1,2810080,Driver,Female, 15,Fatal,1,">1 party, dvr prime fault",European
+1,2810080,Driver,Male, 61,Minor,2,">1 party, no dvr fault",European
+1,2810080,Passenger,Female, 20,Serious,2,">1 party, no dvr fault",European
+1,2810080,Passenger,Female, 21,Minor,2,">1 party, no dvr fault",European
+1,2810080,Passenger,Female, 25,Serious,2,">1 party, no dvr fault",European
+1,2810080,Passenger,Female, 25,Minor,2,">1 party, no dvr fault",European
+2,2810080,Passenger,Male, 20,Minor,2,">1 party, no dvr fault",European
+1,2810080,Passenger,Male, 50,Serious,2,">1 party, no dvr fault",European
+1,2810080,Passenger,Male, 52,Minor,2,">1 party, no dvr fault",NZ Maori
+1,2810081,Driver,Female, 62,Serious,2,">1 party, no dvr fault",European
+1,2810081,Driver,Male, 51,Fatal,1,">1 party, dvr prime fault",European
+1,2810082,Driver,Male, 46,Not injured,1,">1 party, dvr prime fault",European
+1,2811000,Driver,Female, 18,Serious,1,"1 veh, dvr at fault",Unknown
+1,2811056,Driver,Male, 58,Not injured,1,">1 party, no dvr fault",European
+1,2811056,Driver,Male, 74,Serious,2,">1 party, dvr prime fault",European
+1,2811219,Driver,Male, 19,Serious,1,"1 veh, dvr at fault",Unknown
+1,2811228,Driver,Female, 17,Serious,2,">1 party, no dvr fault",European
+1,2811228,Driver,Male, 21,Minor,1,">1 party, dvr prime fault",Unknown
+1,2811228,Passenger,Female, 17,Minor,2,">1 party, no dvr fault",Unknown
+1,2811237,Driver,Male, 34,Serious,1,"1 veh, dvr at fault",Asian
+1,2811260,Driver,Male, 31,Not injured,1,">1 party, no dvr fault",European
+1,2811260,Driver,Male, 37,Serious,3,">1 party, dvr part fault",European
+1,2811260,Driver,Male, 52,Not injured,2,">1 party, dvr prime fault",European
+1,2811279,Driver,Male, 30,Serious,1,"1 veh, dvr at fault",European
+1,2811363,Driver,Male, 26,Serious,2,">1 party, no dvr fault",European
+1,2811363,Driver,Male, 43,Minor,1,">1 party, dvr prime fault",European
+1,2811363,Passenger,Male, 16,Serious,2,">1 party, no dvr fault",European
+1,2811363,Passenger,Male, 18,Serious,2,">1 party, no dvr fault",European
+1,2811368,Driver,Male, 16,Not injured,2,">1 party, dvr prime fault",European
+1,2811368,Driver,Male, 24,Not injured,3,">1 party, no dvr fault",European
+1,2811368,Driver,Male, 42,Serious,1,">1 party, no dvr fault",European
+1,2811396,Driver,Male, 33,Serious,1,">1 party, no dvr fault",Unknown
+1,2811396,Driver,Male, 48,Not injured,2,">1 party, dvr prime fault",Unknown
+1,2811439,Driver,Male, 56,Serious,1,"1 veh, dvr at fault",European
+1,2811453,Driver,Male, 17,Serious,1,"1 veh, dvr at fault",Unknown
+1,2811480,Driver,Female, 22,Serious,1,">1 party, dvr prime fault",European
+1,2811480,Driver,Male, 59,Not injured,2,">1 party, no dvr fault",European
+1,2811480,Driver,Male, 63,Not injured,3,">1 party, no dvr fault",European
+1,2811493,Driver,Male, 17,Serious,1,">1 party, dvr prime fault",Unknown
+1,2811493,Driver,Male, 50,Not injured,2,">1 party, no dvr fault",European
+1,2811576,Driver,Male, 45,Serious,1,"1 veh, dvr at fault",European
+1,2811604,Driver,Female, 69,Minor,1,">1 party, dvr prime fault",European
+1,2811657,Driver,Female, 19,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,2811657,Passenger,Female, 17,Minor,1,"1 veh, dvr at fault",Unknown
+1,2811671,Driver,Male, 42,Serious,1,"1 veh, dvr at fault",European
+1,2811692,Driver,Female, 28,Serious,1,"1 veh, dvr at fault",Unknown
+1,2811719,Driver,Male, 58,Serious,1,"1 veh, dvr at fault",European
+1,2811764,Driver,Female, 58,Serious,2,">1 party, no dvr fault",European
+1,2811764,Driver,Male, 40,Not injured,1,">1 party, dvr prime fault",European
+1,2811771,Driver,Male, 74,Serious,1,"1 veh, dvr at fault",European
+1,2811851,Driver,Female, 50,Not injured,2,">1 party, dvr prime fault",European
+1,2811851,Other,Female, 50,Serious,1,">1 party, no dvr fault",European
+1,2811885,Driver,Male, 31,Serious,1,"1 veh, dvr at fault",Other
+1,2811890,Driver,Male, 31,Not injured,2,">1 party, dvr prime fault",European
+1,2811890,Driver,Male, 57,Serious,1,">1 party, no dvr fault",European
+1,2811894,Driver,Female, 46,Serious,1,"1 veh, dvr at fault",European
+1,2811913,Driver,Male, 65,Serious,1,"1 veh, dvr at fault",Unknown
+1,2811913,Passenger,Female, 62,Minor,1,"1 veh, dvr at fault",European
+1,2811994,Driver,Male, 46,Not injured,1,">1 party, no dvr fault",European
+1,2811994,Driver,Male, 61,Serious,2,">1 party, dvr prime fault",European
+1,2812029,Driver,Female, 36,Not injured,1,">1 party, dvr prime fault",European
+1,2812029,Other,Male, 13,Serious,2,">1 party, no dvr fault",European
+1,2812126,Driver,Female, 40,Minor,2,">1 party, dvr prime fault",NZ Maori
+1,2812126,Driver,Male, 58,Not injured,1,">1 party, no dvr fault",Unknown
+1,2812126,Passenger,Female, 31,Serious,1,">1 party, no dvr fault",European
+1,2812142,Driver,Female, 16,Minor,2,">1 party, no dvr fault",European
+1,2812142,Driver,Male, 58,Serious,1,">1 party, dvr prime fault",European
+1,2812248,Driver,Male, 20,Not injured,1,">1 party, dvr prime fault",European
+1,2812248,Other,Male, 58,Serious,2,">1 party, no dvr fault",European
+1,2812363,Driver,Male, 25,Serious,1,"1 veh, dvr at fault",European
+1,2812363,Passenger,Female, 20,Minor,1,"1 veh, dvr at fault",European
+1,2812382,Driver,Male, 45,Serious,1,"1 veh, dvr at fault",European
+1,2812389,Driver,Male, 21,Serious,1,"1 veh, dvr at fault",European
+1,2812596,Driver,Male, 36,Serious,1,"1 veh, dvr at fault",European
+1,2812608,Driver,Female, 32,Not injured,1,"1 veh, dvr at fault",NZ Maori
+1,2812608,Passenger,Male, 31,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,2812624,Driver,Male, 44,Serious,1,"1 veh, dvr at fault",European
+1,2812626,Driver,Male, 26,Minor,2,">1 party, no dvr fault",Unknown
+1,2812626,Driver,Male, 57,Serious,1,">1 party, dvr prime fault",European
+1,2812626,Passenger,Female, 24,Minor,2,">1 party, no dvr fault",European
+1,2812662,Driver,Male, 23,Serious,1,">1 party, no dvr fault",Unknown
+1,2812662,Driver,Male, 27,Not injured,2,">1 party, dvr prime fault",NZ Maori
+1,2812680,Driver,Male, 51,Serious,1,"1 veh, dvr at fault",European
+1,2812722,Driver,Female, 30,Serious,1,">1 party, dvr prime fault",NZ Maori
+1,2812722,Driver,Male, 24,Serious,2,">1 party, no dvr fault",European
+1,2812726,Driver,Male, 43,Not injured,2,">1 party, dvr prime fault",Unknown
+1,2812726,Other,Male, 49,Serious,1,">1 party, no dvr fault",European
+1,2812729,Driver,Male, 37,Serious,1,">1 party, dvr prime fault",European
+1,2812729,Driver,Male,,Not injured,2,">1 party, no dvr fault",European
+1,2812820,Driver,Male, 52,Serious,1,"1 veh, dvr at fault",European
+1,2812821,Driver,Male, 23,Serious,1,"1 veh, dvr at fault",European
+1,2812887,Driver,Female, 72,Not injured,2,">1 party, no dvr fault",European
+1,2812887,Other,Female, 14,Serious,1,">1 party, dvr prime fault",European
+1,2812910,Driver,Female, 53,Serious,1,">1 party, no dvr fault",European
+1,2812910,Driver,Female, 85,Not injured,2,">1 party, dvr prime fault",European
+1,2812937,Driver,Female, 26,Minor,2,">1 party, no dvr fault",European
+1,2812937,Driver,Male, 18,Serious,1,">1 party, dvr prime fault",NZ Maori
+2,2812937,Passenger,Female, 15,Serious,1,">1 party, dvr prime fault",Unknown
+2,2812937,Passenger,Male, 17,Minor,1,">1 party, dvr prime fault",Unknown
+1,2812937,Passenger,Male, 29,Minor,2,">1 party, no dvr fault",Unknown
+1,2813026,Driver,Male, 17,Minor,1,">1 party, dvr prime fault",European
+1,2813026,Passenger,Female, 15,Serious,1,">1 party, dvr prime fault",European
+1,2813026,Passenger,Female, 19,Minor,1,">1 party, dvr prime fault",European
+1,2813032,Driver,Male, 16,Minor,1,"1 veh, dvr at fault",European
+1,2813032,Passenger,Male, 15,Serious,1,"1 veh, dvr at fault",European
+1,2813034,Driver,Female, 76,Serious,1,"1 veh, dvr at fault",European
+1,2813035,Driver,Male, 26,Serious,1,"1 veh, dvr at fault",European
+1,2813053,Driver,Female, 20,Minor,1,">1 party, dvr prime fault",European
+1,2813053,Driver,Male, 62,Serious,2,">1 party, no dvr fault",European
+1,2813053,Passenger,Female,,Serious,2,">1 party, no dvr fault",Unknown
+1,2813060,Driver,Female, 21,Serious,1,"1 veh, dvr at fault",European
+1,2813079,Driver,Female, 30,Serious,1,"1 veh, dvr at fault",European
+1,2813110,Driver,Male, 43,Serious,1,"1 veh, dvr at fault",European
+1,2813127,Driver,Male, 58,Not injured,1,">1 party, dvr prime fault",European
+1,2813210,Driver,Female, 24,Serious,1,"1 veh, dvr at fault",Other
+1,2813232,Driver,Male, 31,Not injured,2,">1 party, no dvr fault",European
+1,2813232,Driver,Male, 45,Serious,1,">1 party, dvr prime fault",Unknown
+1,2813263,Driver,Male, 21,Not injured,2,">1 party, dvr prime fault",European
+1,2813263,Other,Female, 18,Serious,1,">1 party, no dvr fault",European
+1,2813318,Other,Male, 37,Serious,1,"1 veh, dvr at fault",Unknown
+1,2813339,Driver,Female, 20,Not injured,2,">1 party, dvr prime fault",European
+1,2813339,Driver,Male, 45,Minor,1,">1 party, no dvr fault",Unknown
+1,2813339,Passenger,Female, 49,Serious,1,">1 party, no dvr fault",European
+1,2813401,Driver,Male, 31,Serious,1,"1 veh, dvr at fault",European
+1,2813410,Driver,Male, 47,Serious,1,"1 veh, dvr at fault",European
+1,2813524,Driver,Male, 30,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,2813611,Driver,Male, 37,Serious,1,"1 veh, dvr at fault",European
+1,2813613,Driver,Female, 72,Serious,1,"1 veh, dvr at fault",European
+1,2813631,Driver,Male, 43,Serious,1,"1 veh, dvr at fault",European
+1,2813656,Driver,Male, 50,Serious,1,"1 veh, dvr at fault",European
+1,2813656,Passenger,Female, 45,Serious,1,"1 veh, dvr at fault",European
+1,2813692,Driver,Male, 52,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,2813761,Driver,Female, 22,Serious,2,">1 party, dvr prime fault",Asian
+1,2813761,Driver,Male, 48,Not injured,1,">1 party, no dvr fault",European
+1,2813773,Driver,Male, 18,Not injured,2,">1 party, no dvr fault",European
+1,2813773,Driver,Male, 69,Serious,1,">1 party, dvr part fault",European
+1,2813786,Driver,Male, 34,Serious,1,">1 party, no dvr fault",European
+1,2813786,Driver,Male, 59,Minor,2,">1 party, dvr prime fault",Asian
+1,2813786,Passenger,Female, 34,Serious,1,">1 party, no dvr fault",European
+1,2813791,Driver,Male, 23,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,2813797,Driver,Male, 49,Serious,1,"1 veh, dvr at fault",European
+1,2813877,Driver,Male, 21,Serious,1,"1 veh, dvr at fault",European
+1,2813966,Driver,Male, 71,Serious,1,"1 veh, dvr at fault",European
+1,2813966,Passenger,Male,,Minor,1,"1 veh, dvr at fault",Unknown
+1,2813967,Driver,Female, 32,Serious,2,">1 party, dvr prime fault",European
+1,2813967,Driver,Male, 35,Not injured,1,">1 party, no dvr fault",European
+1,2813967,Passenger,Male,  3,Minor,1,">1 party, no dvr fault",European
+1,2814005,Driver,Male, 42,Not injured,1,">1 party, no dvr fault",European
+1,2814084,Driver,Male, 17,Serious,1,">1 party, dvr prime fault",European
+1,2814084,Passenger,Male, 18,Serious,1,">1 party, dvr prime fault",European
+1,2820001,Driver,Female, 18,Not injured,1,">1 party, no dvr fault",European
+1,2820006,Driver,Male,,Not injured,1,">1 party, no dvr fault",European
+1,2820012,Driver,Male, 36,Not injured,1,"1 veh, dvr at fault",European
+1,2820012,Passenger,Female, 62,Fatal,1,"1 veh, dvr at fault",Unknown
+1,2820021,Driver,Male, 47,Fatal,1,"1 veh, dvr at fault",European
+1,2820029,Driver,Female, 30,Serious,1,">1 party, dvr prime fault",Asian
+1,2820029,Driver,Male, 63,Serious,2,">1 party, no dvr fault",European
+1,2820029,Passenger,Male, 32,Fatal,1,">1 party, dvr prime fault",Asian
+1,2820062,Driver,Male, 51,Minor,1,"1 veh, no dvr fault",NZ Maori
+1,2820062,Passenger,Male,  9,Fatal,1,"1 veh, no dvr fault",NZ Maori
+1,2820064,Driver,Male, 40,Minor,2,">1 party, no dvr fault",European
+1,2820064,Driver,Male, 69,Fatal,1,">1 party, dvr prime fault",European
+1,2820064,Passenger,Male, 62,Fatal,1,">1 party, dvr prime fault",European
+1,2820069,Driver,Male, 17,Not injured,1,">1 party, dvr prime fault",European
+1,2820089,Driver,Male, 65,Minor,1,">1 party, dvr prime fault",European
+1,2820089,Driver,Male, 89,Fatal,2,">1 party, no dvr fault",European
+1,2821063,Driver,Female, 18,Minor,1,"1 veh, dvr at fault",European
+1,2821063,Passenger,Female, 16,Minor,1,"1 veh, dvr at fault",Unknown
+1,2821063,Passenger,Female, 17,Serious,1,"1 veh, dvr at fault",Unknown
+1,2821063,Passenger,Male,  8,Minor,1,"1 veh, dvr at fault",Unknown
+1,2821063,Passenger,Male, 17,Minor,1,"1 veh, dvr at fault",Unknown
+1,2821064,Driver,Female, 53,Serious,2,">1 party, no dvr fault",European
+1,2821064,Driver,Male, 55,Serious,3,">1 party, no dvr fault",European
+1,2821064,Driver,Male, 61,Not injured,1,">1 party, dvr prime fault",European
+1,2821146,Driver,Male, 46,Not injured,2,">1 party, no dvr fault",European
+1,2821146,Driver,Male, 57,Serious,1,">1 party, dvr prime fault",European
+1,2821146,Passenger,Female, 51,Serious,1,">1 party, dvr prime fault",Unknown
+1,2821153,Driver,Male, 26,Serious,1,"1 veh, dvr at fault",European
+1,2821153,Passenger,Female, 26,Serious,1,"1 veh, dvr at fault",European
+1,2821235,Driver,Male, 38,Serious,1,">1 party, dvr prime fault",European
+1,2821235,Driver,Male, 45,Not injured,2,">1 party, no dvr fault",European
+1,2821235,Passenger,Female,  4,Minor,1,">1 party, dvr prime fault",Unknown
+1,2821235,Passenger,Female,  9,Minor,1,">1 party, dvr prime fault",Unknown
+1,2821235,Passenger,Female, 39,Serious,1,">1 party, dvr prime fault",European
+1,2821235,Passenger,Male, 12,Serious,1,">1 party, dvr prime fault",Unknown
+1,2821235,Passenger,Male, 70,Serious,1,">1 party, dvr prime fault",European
+1,2821235,Passenger,Male,,Minor,1,">1 party, dvr prime fault",European
+1,2821477,Driver,Male, 24,Serious,1,"1 veh, dvr at fault",European
+1,2821535,Driver,Female, 35,Serious,1,"1 veh, dvr at fault",European
+1,2821543,Driver,Male, 36,Not injured,2,">1 party, no dvr fault",Unknown
+1,2821543,Driver,Male, 47,Serious,1,">1 party, dvr prime fault",European
+1,2821624,Driver,Female, 33,Minor,1,"1 veh, dvr at fault",NZ Maori
+1,2821624,Passenger,Male, 45,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,2821730,Driver,Male, 70,Minor,1,"1 veh, dvr at fault",European
+1,2821730,Passenger,Female, 72,Serious,1,"1 veh, dvr at fault",European
+1,2821751,Driver,Male, 58,Serious,1,"1 veh, no dvr fault",European
+1,2821752,Driver,Male, 39,Serious,1,"1 veh, dvr at fault",European
+1,2821755,Driver,Female, 18,Not injured,1,"1 veh, dvr at fault",European
+1,2821755,Passenger,Male,  1,Serious,1,"1 veh, dvr at fault",European
+1,2821755,Passenger,Male,  2,Minor,1,"1 veh, dvr at fault",European
+1,2821755,Passenger,Male, 21,Minor,1,"1 veh, dvr at fault",European
+1,2821842,Driver,Female, 35,Not injured,2,">1 party, dvr part fault",NZ Maori
+1,2821842,Driver,Male, 46,Minor,1,">1 party, dvr prime fault",European
+1,2821842,Passenger,Female, 33,Serious,1,">1 party, dvr prime fault",Unknown
+1,2821864,Driver,Male, 46,Serious,2,">1 party, no dvr fault",European
+1,2821864,Driver,Male, 79,Minor,1,">1 party, dvr prime fault",European
+1,2821866,Driver,Male, 63,Serious,1,"1 veh, dvr at fault",European
+1,2822046,Driver,Male, 43,Serious,1,"1 veh, dvr at fault",Other
+1,2822046,Passenger,Female, 14,Serious,1,"1 veh, dvr at fault",Other
+1,2822046,Passenger,Female, 16,Serious,1,"1 veh, dvr at fault",Other
+1,2822046,Passenger,Female, 36,Serious,1,"1 veh, dvr at fault",Other
+1,2822046,Passenger,Female, 41,Serious,1,"1 veh, dvr at fault",Other
+1,2822046,Passenger,Male,  7,Serious,1,"1 veh, dvr at fault",Other
+1,2822046,Passenger,Male, 48,Serious,1,"1 veh, dvr at fault",Other
+1,2822606,Driver,Male, 22,Serious,1,"1 veh, dvr at fault",European
+1,2822660,Driver,Female, 57,Serious,1,"1 veh, dvr at fault",Unknown
+1,2822731,Driver,Male, 16,Minor,1,"1 veh, dvr at fault",European
+1,2822731,Passenger,Female, 17,Serious,1,"1 veh, dvr at fault",European
+1,2822731,Passenger,Male, 17,Minor,1,"1 veh, dvr at fault",European
+1,2822731,Passenger,Male, 24,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,2822766,Driver,Male, 38,Serious,1,">1 party, dvr prime fault",European
+1,2822981,Driver,Female, 60,Minor,1,"1 veh, dvr at fault",European
+1,2822981,Passenger,Female,  3,Minor,1,"1 veh, dvr at fault",Unknown
+1,2822981,Passenger,Female,,Serious,1,"1 veh, dvr at fault",Unknown
+1,2822984,Driver,Male, 46,Serious,1,"1 veh, dvr at fault",European
+1,2823132,Driver,Male, 45,Serious,1,"1 veh, dvr at fault",European
+1,2823189,Driver,Male, 38,Serious,1,"1 veh, no dvr fault",European
+1,2823190,Driver,Male, 20,Serious,1,"1 veh, dvr at fault",Unknown
+1,2823190,Passenger,Female, 23,Serious,1,"1 veh, dvr at fault",European
+1,2823412,Driver,Male, 24,Not injured,2,">1 party, dvr prime fault",European
+1,2823412,Driver,Male,,Serious,1,">1 party, no dvr fault",European
+1,2823413,Driver,Male, 41,Minor,1,"1 veh, dvr at fault",Asian
+1,2823413,Passenger,Female, 39,Serious,1,"1 veh, dvr at fault",Asian
+1,2823561,Driver,Male, 62,Serious,1,"1 veh, dvr at fault",European
+1,2823563,Driver,Male, 18,Serious,1,"1 veh, dvr at fault",European
+1,2823572,Driver,Female, 27,Serious,1,">1 party, dvr prime fault",Asian
+1,2823572,Driver,Male, 51,Not injured,2,">1 party, no dvr fault",European
+1,2823572,Passenger,Female, 25,Minor,1,">1 party, dvr prime fault",Asian
+1,2823572,Passenger,Female, 27,Serious,1,">1 party, dvr prime fault",Asian
+1,2823678,Driver,Male, 19,Serious,1,">1 party, dvr prime fault",European
+1,2823678,Driver,Male, 55,Not injured,2,">1 party, no dvr fault",European
+1,2823763,Driver,Female, 25,Serious,1,"1 veh, dvr at fault",European
+1,2910007,Driver,Female, 20,Not injured,1,">1 party, dvr prime fault",NZ Maori
+1,2910020,Driver,Male, 78,Fatal,1,">1 party, dvr prime fault",European
+1,2910021,Driver,Male, 38,Not injured,3,">1 party, no dvr fault",European
+1,2910021,Driver,Male, 48,Fatal,2,">1 party, no dvr fault",European
+1,2910021,Driver,Male, 57,Not injured,1,">1 party, dvr prime fault",European
+1,2910027,Driver,Female, 66,Fatal,1,"1 veh, dvr at fault",European
+1,2910040,Driver,Male, 35,Minor,2,">1 party, no dvr fault",Unknown
+1,2910040,Driver,Male, 73,Fatal,1,">1 party, dvr prime fault",European
+1,2910040,Passenger,Male, 68,Minor,1,">1 party, dvr prime fault",European
+1,2910047,Driver,Male, 39,Fatal,1,"1 veh, dvr at fault",European
+1,2910052,Driver,Female, 23,Serious,2,">1 party, no dvr fault",European
+1,2910052,Driver,Female, 57,Fatal,1,">1 party, dvr prime fault",European
+1,2910052,Passenger,Female, 55,Serious,2,">1 party, no dvr fault",European
+1,2910052,Passenger,Male, 20,Serious,2,">1 party, no dvr fault",European
+1,2910052,Passenger,Male, 55,Serious,2,">1 party, no dvr fault",European
+1,2910053,Driver,Male, 21,Fatal,1,"1 veh, dvr at fault",European
+1,2910053,Passenger,Male, 19,Serious,1,"1 veh, dvr at fault",European
+1,2910075,Driver,Female, 51,Fatal,2,">1 party, dvr part fault",European
+1,2910075,Driver,Male, 30,Serious,1,">1 party, dvr prime fault",European
+1,2910076,Driver,Male, 16,Fatal,1,"1 veh, dvr at fault",European
+1,2910076,Passenger,Male, 19,Minor,1,"1 veh, dvr at fault",Unknown
+1,2910084,Driver,Male, 20,Fatal,1,">1 party, dvr part fault",Unknown
+1,2910084,Driver,Male, 28,Not injured,2,">1 party, dvr prime fault",European
+1,2910085,Driver,Male, 16,Fatal,1,"1 veh, dvr at fault",European
+1,2910085,Passenger,Male, 14,Minor,1,"1 veh, dvr at fault",European
+1,2910089,Driver,Male, 33,Fatal,1,"1 veh, dvr at fault",Unknown
+1,2910100,Driver,Male, 39,Minor,3,">1 party, no dvr fault",European
+1,2910100,Driver,Male, 40,Serious,2,">1 party, no dvr fault",European
+1,2910100,Driver,Male, 71,Fatal,1,">1 party, dvr prime fault",European
+1,2911028,Driver,Male, 52,Serious,1,"1 veh, no dvr fault",European
+1,2911028,Passenger,Female, 49,Serious,1,"1 veh, no dvr fault",European
+1,2911034,Driver,Male, 23,Serious,1,"1 veh, dvr at fault",European
+1,2911083,Driver,Male, 24,Serious,1,">1 party, dvr prime fault",Samoan
+1,2911083,Driver,Male, 55,Minor,2,">1 party, no dvr fault",European
+1,2911083,Passenger,Female, 56,Minor,2,">1 party, no dvr fault",European
+1,2911087,Driver,Male, 19,Minor,1,"1 veh, dvr at fault",European
+1,2911087,Passenger,Female, 18,Minor,1,"1 veh, dvr at fault",European
+1,2911087,Passenger,Male, 18,Serious,1,"1 veh, dvr at fault",European
+1,2911121,Driver,Male, 39,Not injured,1,">1 party, dvr prime fault",European
+1,2911126,Driver,Male, 41,Serious,2,">1 party, no dvr fault",NZ Maori
+1,2911126,Driver,Male, 55,Not injured,1,">1 party, dvr prime fault",European
+1,2911128,Driver,Female, 17,Not injured,2,">1 party, dvr prime fault",European
+1,2911128,Driver,Female, 31,Not injured,1,">1 party, no dvr fault",European
+1,2911212,Driver,Male, 25,Not injured,1,"1 veh, dvr at fault",European
+1,2911212,Passenger,Male, 26,Serious,1,"1 veh, dvr at fault",European
+1,2911237,Driver,Male, 34,Not injured,1,">1 party, dvr prime fault",European
+1,2911237,Other,Male, 49,Serious,2,">1 party, no dvr fault",European
+1,2911261,Driver,Female, 42,Not injured,1,">1 party, no dvr fault",European
+1,2911338,Driver,Male, 52,Not injured,2,">1 party, no dvr fault",European
+1,2911338,Driver,Male, 81,Serious,1,">1 party, dvr prime fault",European
+1,2911340,Driver,Male, 17,Not injured,1,">1 party, no dvr fault",European
+1,2911390,Driver,Female, 58,Minor,2,">1 party, dvr prime fault",European
+1,2911390,Driver,Female, 63,Not injured,1,">1 party, no dvr fault",European
+1,2911390,Passenger,Female, 81,Serious,1,">1 party, no dvr fault",European
+1,2911390,Passenger,Male, 86,Minor,1,">1 party, no dvr fault",European
+1,2911428,Driver,Male, 50,Serious,1,"1 veh, dvr at fault",European
+1,2911453,Driver,Male, 23,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,2911482,Driver,Male, 46,Not injured,2,">1 party, no dvr fault",European
+1,2911482,Driver,Male, 47,Serious,1,">1 party, dvr prime fault",NZ Maori
+1,2911482,Passenger,Male, 43,Serious,1,">1 party, dvr prime fault",NZ Maori
+1,2911501,Driver,Male, 45,Serious,1,"1 veh, dvr at fault",European
+1,2911512,Driver,Male, 40,Serious,1,"1 veh, dvr at fault",European
+1,2911531,Driver,Male, 17,Not injured,1,">1 party, dvr prime fault",Unknown
+1,2911531,Other,Male, 43,Serious,2,">1 party, dvr part fault",European
+1,2911549,Driver,Female, 46,Serious,2,">1 party, no dvr fault",European
+1,2911549,Driver,Female, 78,Not injured,1,">1 party, dvr prime fault",European
+1,2911572,Driver,Male, 67,Not injured,1,">1 party, no dvr fault",European
+1,2911757,Other,Female, 36,Serious,1,">1 party, no dvr fault",European
+1,2911814,Driver,Female, 50,Serious,1,">1 party, no dvr fault",European
+1,2911814,Driver,Male, 48,Not injured,2,">1 party, dvr prime fault",European
+1,2911831,Driver,Male, 65,Serious,1,"1 veh, dvr at fault",Unknown
+1,2911840,Driver,Male, 22,Not injured,1,">1 party, dvr prime fault",Asian
+1,2911844,Other,Male, 50,Serious,1,"1 veh, dvr at fault",European
+1,2911999,Driver,Male, 18,Serious,2,">1 party, no dvr fault",European
+1,2911999,Driver,Male, 26,Not injured,1,">1 party, dvr prime fault",European
+1,2912017,Driver,Male, 18,Not injured,1,"1 veh, dvr at fault",European
+1,2912026,Driver,Male, 77,Serious,1,">1 party, dvr prime fault",European
+1,2912105,Driver,Female, 50,Serious,1,"1 veh, dvr at fault",European
+2,2912105,Passenger,Female, 14,Serious,1,"1 veh, dvr at fault",Unknown
+1,2912136,Driver,Female, 19,Serious,1,">1 party, no dvr fault",European
+1,2912136,Driver,Female, 19,Not injured,2,">1 party, dvr prime fault",Unknown
+1,2912137,Driver,Male, 46,Serious,1,">1 party, dvr prime fault",European
+1,2912137,Driver,Male, 65,Not injured,2,">1 party, dvr part fault",European
+1,2912172,Driver,Male, 19,Serious,1,"1 veh, dvr at fault",European
+1,2912343,Driver,Male, 25,Serious,1,"1 veh, dvr at fault",European
+1,2912404,Driver,Female, 34,Serious,2,">1 party, no dvr fault",European
+1,2912404,Driver,Male, 33,Serious,1,">1 party, dvr prime fault",European
+1,2912430,Driver,Male, 26,Serious,1,">1 party, dvr part fault",European
+1,2912430,Driver,Male, 42,Not injured,2,">1 party, no dvr fault",Unknown
+1,2912466,Driver,Female, 20,Not injured,2,">1 party, dvr prime fault",European
+1,2912466,Driver,Male, 62,Serious,1,">1 party, no dvr fault",European
+1,2912468,Driver,Male, 41,Serious,1,"1 veh, dvr at fault",Asian
+1,2912503,Driver,Male, 16,Serious,2,">1 party, dvr prime fault",NZ Maori
+1,2912503,Driver,Male, 32,Not injured,1,">1 party, no dvr fault",NZ Maori
+1,2912513,Driver,Male, 49,Serious,1,">1 party, no dvr fault",Other Pacific Islander
+1,2912513,Driver,Male, 63,Not injured,2,">1 party, dvr prime fault",European
+1,2912525,Driver,Male, 21,Minor,1,"1 veh, no dvr fault",European
+1,2912525,Passenger,Male, 22,Serious,1,"1 veh, no dvr fault",European
+1,2912696,Driver,Male, 80,Serious,1,"1 veh, dvr at fault",European
+1,2912723,Driver,Female, 30,Serious,1,"1 veh, dvr at fault",European
+1,2912732,Driver,Male, 51,Not injured,2,">1 party, no dvr fault",European
+1,2912732,Driver,Male, 53,Serious,1,">1 party, dvr prime fault",European
+1,2912759,Driver,Female, 61,Serious,1,"1 veh, dvr at fault",European
+1,2912811,Other,Male, 53,Minor,1,">1 party, no dvr fault",European
+1,2912863,Driver,Female, 33,Not injured,1,">1 party, dvr prime fault",European
+1,2912880,Driver,Female, 25,Serious,1,"1 veh, dvr at fault",European
+1,2912880,Passenger,Male,  7,Serious,1,"1 veh, dvr at fault",European
+1,2912908,Driver,Male, 34,Not injured,1,"1 veh, dvr at fault",Asian
+1,2912908,Passenger,Male, 35,Serious,1,"1 veh, dvr at fault",Asian
+1,2913136,Driver,Male, 32,Serious,1,"1 veh, dvr at fault",Unknown
+1,2913154,Driver,Female, 21,Not injured,2,">1 party, dvr prime fault",European
+1,2913154,Driver,Male, 40,Serious,1,">1 party, no dvr fault",European
+1,2913193,Driver,Female, 25,Minor,2,">1 party, dvr prime fault",European
+1,2913193,Driver,Female, 47,Serious,1,">1 party, no dvr fault",NZ Maori
+1,2913193,Passenger,Female, 27,Minor,1,">1 party, no dvr fault",NZ Maori
+1,2913193,Passenger,Female, 32,Minor,1,">1 party, no dvr fault",NZ Maori
+1,2913235,Driver,Male, 19,Serious,1,"1 veh, dvr at fault",European
+1,2913324,Driver,Male, 19,Serious,1,"1 veh, dvr at fault",European
+1,2913324,Passenger,Female, 15,Serious,1,"1 veh, dvr at fault",Unknown
+1,2913324,Passenger,Male, 20,Minor,1,"1 veh, dvr at fault",European
+1,2913393,Driver,Male, 40,Serious,1,"1 veh, dvr at fault",European
+1,2913404,Driver,Male, 27,Not injured,1,"1 veh, no dvr fault",European
+1,2913404,Passenger,Male, 23,Serious,1,"1 veh, no dvr fault",European
+1,2913407,Driver,Male, 56,Serious,1,"1 veh, dvr at fault",Unknown
+1,2913427,Driver,Male, 36,Serious,1,"1 veh, dvr at fault",European
+1,2913449,Driver,Female, 17,Minor,1,">1 party, no dvr fault",European
+1,2913449,Driver,Male, 47,Minor,2,">1 party, dvr prime fault",European
+1,2913449,Passenger,Male, 60,Serious,2,">1 party, dvr prime fault",European
+1,2913450,Driver,Male, 31,Serious,1,"1 veh, dvr at fault",European
+1,2913450,Passenger,Male, 21,Minor,1,"1 veh, dvr at fault",NZ Maori
+1,2913450,Passenger,Male,,Minor,1,"1 veh, dvr at fault",European
+1,2913503,Driver,Female, 79,Serious,1,"1 veh, dvr at fault",European
+1,2913545,Driver,Male, 49,Minor,1,"1 veh, dvr at fault",European
+1,2913545,Passenger,Female, 47,Serious,1,"1 veh, dvr at fault",European
+1,2913547,Driver,Male, 19,Not injured,1,">1 party, dvr prime fault",European
+1,2913547,Driver,Male, 44,Not injured,2,">1 party, no dvr fault",NZ Maori
+1,2913547,Passenger,Male, 21,Minor,1,">1 party, dvr prime fault",European
+1,2913547,Passenger,Male, 25,Minor,1,">1 party, dvr prime fault",European
+1,2913547,Passenger,Male, 26,Serious,1,">1 party, dvr prime fault",European
+1,2913645,Driver,Male, 37,Serious,1,"1 veh, dvr at fault",European
+1,2913661,Driver,Female, 20,Serious,4,">1 party, dvr part fault",European
+1,2913661,Driver,Female, 40,Not injured,3,">1 party, no dvr fault",European
+1,2913661,Driver,Female, 49,Not injured,5,">1 party, no dvr fault",European
+1,2913661,Driver,Male, 43,Not injured,2,">1 party, no dvr fault",European
+1,2913661,Driver,Male, 81,Serious,1,">1 party, dvr prime fault",European
+1,2913688,Driver,Male, 63,Serious,1,"1 veh, dvr at fault",European
+1,2913758,Driver,Female, 40,Minor,1,">1 party, dvr prime fault",European
+1,2913758,Driver,Male, 23,Minor,2,">1 party, no dvr fault",European
+1,2913758,Passenger,Female, 38,Serious,2,">1 party, no dvr fault",European
+1,2913758,Passenger,Male, 22,Minor,1,">1 party, dvr prime fault",European
+1,2913758,Passenger,Male, 41,Minor,2,">1 party, no dvr fault",European
+1,2913764,Driver,Male, 30,Not injured,1,">1 party, dvr prime fault",European
+1,2913768,Driver,Male, 18,Serious,1,"1 veh, dvr at fault",European
+1,2913781,Driver,Male, 22,Serious,1,"1 veh, dvr at fault",NZ Maori
+2,2913781,Passenger,Male, 16,Minor,1,"1 veh, dvr at fault",European
+1,2913781,Passenger,Male, 17,Minor,1,"1 veh, dvr at fault",European
+1,2913781,Passenger,Male, 17,Minor,1,"1 veh, dvr at fault",NZ Maori
+1,2913784,Driver,Male, 19,Serious,1,"1 veh, dvr at fault",European
+1,2913784,Passenger,Female, 21,Minor,1,"1 veh, dvr at fault",European
+1,2913784,Passenger,Female, 22,Minor,1,"1 veh, dvr at fault",European
+1,2913784,Passenger,Male, 24,Serious,1,"1 veh, dvr at fault",European
+1,2920017,Driver,Male, 50,Not injured,1,">1 party, no dvr fault",European
+1,2920022,Driver,Female, 35,Fatal,1,">1 party, dvr prime fault",European
+1,2920022,Driver,Male, 27,Minor,2,">1 party, no dvr fault",European
+1,2920022,Passenger,Male,  4,Serious,1,">1 party, dvr prime fault",European
+1,2920022,Passenger,Male,  6,Minor,1,">1 party, dvr prime fault",European
+1,2920022,Passenger,Male, 33,Serious,1,">1 party, dvr prime fault",European
+1,2920043,Driver,Male, 37,Fatal,1,"1 veh, dvr at fault",European
+1,2920050,Driver,Male, 31,Fatal,1,"1 veh, dvr at fault",European
+1,2920052,Driver,Female, 29,Fatal,1,">1 party, dvr prime fault",European
+1,2920052,Driver,Male, 51,Not injured,2,">1 party, no dvr fault",European
+1,2920053,Driver,Male, 17,Minor,2,">1 party, no dvr fault",European
+1,2920053,Driver,Male, 40,Fatal,1,">1 party, dvr prime fault",European
+1,2920053,Passenger,Male, 19,Serious,2,">1 party, no dvr fault",European
+1,2920062,Driver,Male, 45,Fatal,1,"1 veh, dvr at fault",European
+1,2921003,Driver,Male, 14,Serious,1,">1 party, dvr prime fault",NZ Maori
+1,2921003,Driver,Male, 60,Not injured,2,">1 party, no dvr fault",European
+1,2921099,Driver,Male, 17,Serious,1,"1 veh, dvr at fault",European
+1,2921099,Passenger,Male, 20,Minor,1,"1 veh, dvr at fault",European
+1,2921100,Driver,Male, 38,Serious,1,"1 veh, no dvr fault",Unknown
+1,2921100,Passenger,Female, 41,Minor,1,"1 veh, no dvr fault",European
+1,2921210,Driver,Male, 15,Serious,1,"1 veh, dvr at fault",Other
+1,2921221,Driver,Male, 52,Serious,1,"1 veh, dvr at fault",European
+1,2921274,Driver,Male, 61,Serious,1,">1 party, dvr prime fault",European
+1,2921274,Driver,Male, 62,Serious,2,">1 party, no dvr fault",European
+1,2921274,Passenger,Female, 46,Serious,2,">1 party, no dvr fault",European
+1,2921274,Passenger,Male, 15,Serious,2,">1 party, no dvr fault",European
+1,2921327,Driver,Male, 37,Serious,1,"1 veh, dvr at fault",NZ Maori
+1,2921435,Driver,Female, 47,Not injured,2,">1 party, no dvr fault",European
+1,2921435,Driver,Male, 24,Serious,1,">1 party, dvr prime fault",European
+1,2921466,Driver,Male, 51,Serious,1,">1 party, dvr prime fault",European
+1,2921466,Passenger,Male, 20,Serious,1,">1 party, dvr prime fault",European
+1,2921549,Driver,Male, 42,Serious,1,">1 party, dvr prime fault",European
+1,2921549,Driver,Male, 70,Not injured,2,">1 party, no dvr fault",European
+1,2921610,Driver,Male, 47,Serious,2,">1 party, dvr part fault",European
+1,2921610,Driver,Male, 61,Not injured,1,">1 party, dvr prime fault",Unknown
+1,2921610,Passenger,Female, 25,Minor,2,">1 party, dvr part fault",European
+1,2921649,Driver,Male, 16,Not injured,1,">1 party, dvr prime fault",European
+1,2921649,Other,Male,  9,Serious,2,">1 party, no dvr fault",European
+1,2921711,Driver,Female, 34,Serious,1,">1 party, dvr prime fault",European
+1,2921711,Driver,Male, 28,Serious,2,">1 party, no dvr fault",Unknown
+1,2921711,Passenger,Female, 51,Serious,2,">1 party, no dvr fault",European
+1,2921711,Passenger,Female,,Serious,2,">1 party, no dvr fault",European
+1,2921757,Driver,Male, 71,Serious,1,"1 veh, dvr at fault",European
+1,2921812,Driver,Female, 62,Serious,1,"1 veh, dvr at fault",European
+1,2922014,Driver,Male, 24,Not injured,1,"1 veh, dvr at fault",European
+1,2922014,Passenger,Male, 20,Serious,1,"1 veh, dvr at fault",European
+1,2922015,Driver,Male, 20,Serious,1,"1 veh, dvr at fault",European
+1,2922079,Driver,Male, 48,Not injured,1,">1 party, dvr prime fault",European
+1,2922079,Driver,Male, 52,Minor,2,">1 party, no dvr fault",European
+1,2922079,Passenger,Female,,Serious,2,">1 party, no dvr fault",Unknown
+1,2922211,Driver,Female, 20,Minor,2,">1 party, dvr part fault",European
+1,2922211,Driver,Male, 52,Serious,1,">1 party, dvr prime fault",European
+1,2922225,Driver,Male, 17,Not injured,1,"1 veh, dvr at fault",European
+1,2922225,Passenger,Male, 17,Serious,1,"1 veh, dvr at fault",European
+1,2922226,Driver,Female, 36,Serious,1,"1 veh, dvr at fault",European
+1,2922226,Passenger,Male, 40,Serious,1,"1 veh, dvr at fault",European
+1,2922306,Driver,Male, 20,Not injured,2,">1 party, no dvr fault",European
+1,2922306,Driver,Male, 21,Not injured,1,">1 party, dvr prime fault",European
+1,2922306,Passenger,Male, 21,Minor,1,">1 party, dvr prime fault",European
+1,2922306,Passenger,Male, 22,Serious,1,">1 party, dvr prime fault",European
+1,2922438,Driver,Male, 37,Serious,1,">1 party, dvr prime fault",Unknown
+1,2922438,Passenger,Female,,Minor,1,">1 party, dvr prime fault",NZ Maori
+1,2922487,Driver,Male, 63,Serious,1,"1 veh, dvr at fault",Unknown
+1,2922487,Passenger,Male, 52,Minor,1,"1 veh, dvr at fault",European
+1,2922532,Driver,Male, 55,Not injured,1,"1 veh, dvr at fault",European
+1,2922532,Passenger,Female, 50,Serious,1,"1 veh, dvr at fault",European
+1,2922585,Driver,Female, 14,Serious,1,"1 veh, dvr at fault",European
+1,2922585,Passenger,Female, 15,Serious,1,"1 veh, dvr at fault",European
+1,2922602,Driver,Male, 52,Serious,2,">1 party, no dvr fault",European
+1,2922602,Driver,Male, 65,Minor,1,">1 party, dvr prime fault",European
+1,2922602,Passenger,Male, 10,Minor,2,">1 party, no dvr fault",European
+1,2922602,Passenger,Male, 12,Serious,1,">1 party, dvr prime fault",European
+1,2922602,Passenger,Male, 16,Serious,1,">1 party, dvr prime fault",European
+1,2922602,Passenger,Male, 16,Minor,2,">1 party, no dvr fault",European
+1,2922636,Driver,Male, 36,Not injured,1,">1 party, dvr part fault",European
+1,2922636,Driver,Male, 41,Not injured,2,">1 party, dvr prime fault",European
+1,2922636,Passenger,Female, 25,Serious,1,">1 party, dvr part fault",Unknown
+1,2922724,Driver,Female, 41,Minor,1,">1 party, dvr prime fault",NZ Maori
+1,2922724,Driver,Male, 29,Serious,2,">1 party, no dvr fault",European
+1,2922737,Driver,Male, 84,Serious,1,"1 veh, dvr at fault",European
+1,2922737,Passenger,Female, 81,Serious,1,"1 veh, dvr at fault",Unknown
+1,2922783,Driver,Female, 43,Minor,1,"1 veh, dvr at fault",European
+1,2922783,Passenger,Female, 46,Serious,1,"1 veh, dvr at fault",European
+1,2922806,Driver,Female, 37,Not injured,1,">1 party, dvr part fault",European
+1,2922806,Other,Female,  9,Serious,2,">1 party, dvr prime fault",European
+1,2922876,Driver,Male, 19,Serious,1,"1 veh, dvr at fault",European
+1,2922995,Driver,Female, 55,Not injured,2,">1 party, no dvr fault",European
+1,2922995,Driver,Male, 16,Not injured,1,">1 party, dvr prime fault",European
+1,2922995,Passenger,Male, 16,Serious,1,">1 party, dvr prime fault",European
+1,2923073,Driver,Male, 52,Serious,1,"1 veh, dvr at fault",European
+1,2923106,Driver,Male, 33,Serious,1,"1 veh, dvr at fault",European
+1,2923126,Driver,Male, 16,Not injured,1,"1 veh, dvr at fault",European
+1,2923126,Passenger,Male, 16,Serious,1,"1 veh, dvr at fault",European
+1,2923187,Driver,Male, 53,Serious,1,"1 veh, dvr at fault",European
+1,2923209,Driver,Male, 44,Serious,1,"1 veh, dvr at fault",European
+1,2923210,Driver,Male, 52,Serious,1,"1 veh, dvr at fault",European
+1,2923302,Driver,Male, 71,Minor,1,"1 veh, dvr at fault",European
+1,2923302,Passenger,Female, 69,Serious,1,"1 veh, dvr at fault",European
+1,2923302,Passenger,Female, 70,Minor,1,"1 veh, dvr at fault",European
+1,2923302,Passenger,Male, 71,Minor,1,"1 veh, dvr at fault",European
+1,2923397,Driver,Female, 66,Not injured,2,">1 party, dvr prime fault",European
+1,2923397,Driver,Male, 66,Not injured,1,">1 party, no dvr fault",European
+1,2923397,Passenger,Female, 64,Serious,1,">1 party, no dvr fault",European
+1,2923519,Driver,Female, 16,Not injured,1,">1 party, dvr prime fault",Unknown
+1,2923519,Driver,Male, 16,Not injured,2,">1 party, no dvr fault",European
+1,2923519,Passenger,Female, 16,Serious,1,">1 party, dvr prime fault",European
+1,2923527,Driver,Male, 50,Serious,1,"1 veh, no dvr fault",European
+1,2923652,Driver,Female, 43,Serious,2,">1 party, no dvr fault",Unknown
+1,2923652,Driver,Male, 19,Not injured,1,">1 party, dvr prime fault",NZ Maori
+1,2923657,Driver,Male, 59,Serious,1,"1 veh, dvr at fault",European
