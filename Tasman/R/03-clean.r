@@ -49,8 +49,8 @@ if (!exists("crashMeshblocks")) {
   if (!exists("meshblocks")) {
     load("../output/spatialData.Rdata")
   }
-  coordinates <- loadCrashes("data/coordinates.csv")
-  crashMeshblocks <- joinCrashesMeshblocks(coordinates
+  Coordinates <- loadCrashes("data/coordinates.csv")
+  crashMeshblocks <- joinCrashesMeshblocks(Coordinates
                                            , "output/crashMeshblocks.txt")
 }
 
