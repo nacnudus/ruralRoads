@@ -98,3 +98,9 @@ exclude uninjured people? No
 knitr/ggplot2 bug
 -----------------
 See [here](https://github.com/hadley/evaluate/pull/26).
+```
+library(devtools)
+install_github('evaluate', 'hadley')
+dev_mode(on=T)
+install_github("ggplot2")
+```
