@@ -69,6 +69,11 @@ The Urban/Rural Profile Geographic Concordance is available as a [.xls](http://w
 
 LINZ provides road centrelines, coastlines and coast polygons from their [data service](http://data.linz.govt.nz/).  Machine-machine downloads can be arranged from [here](http://data.linz.govt.nz/p/web-services/) but downloading with wget/curl doesn't work due to authentication.
 
+NZ Road Centrelines (Topo, 1:500k)
+NZ Mainland Road Centrelines (Topo, 1:50K)
+NZ Coastlines and Islands Polygons (Topo, 1:50k)
+NZ Mainland Coastlines (Topo, 1:50k)
+
 Crashes are from NZTA CAS (Crash Analysis System) and are [freely redistributable](./docs/CAS_licence.eml).  CAS documentation says the projection is NZMG, but it seems to be NZTM.  Remove extraneous comma before header `"EASTING"`.  Add `,"NOTHING"` to the end of the first line.  Note that crash hours are bizarre - subtract 1 from each hour to get the beginning of the hour (e.g. 1 in the data = between midnight and 0100 hours, so 1 - 1 = 0 for midnight), and where the hour is now 24 (25 in the data), set it to NA, as that is CAS's null value.
 
 Police boundaries are from Koordinates.  Machine-machine downloads are planned.
