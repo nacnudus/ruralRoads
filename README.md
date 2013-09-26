@@ -38,13 +38,13 @@ The 2006 Census Meshblock dataset is available as [shapefiles](http://www3.stats
 ```
 # 2006 Census Meshblock
 mkdir data/meshblocks
-cd meshblocks
-wget http://www3.stats.govt.nz/digitalboundaries/census/NZ_L2_2006_NZTM_ArcShp.zip
+cd data/meshblocks
+axel -n 10 http://www3.stats.govt.nz/digitalboundaries/census/NZ_L2_2006_NZTM_ArcShp.zip
 unzip NZ_L2_2006_NZTM_ArcShp.zip
 rm NZ_L2_2006_NZTM_ArcShp.zip
 ```
 
-The Urban/Rural Profile Geographic Concordance is available as a [.xls](http://www.stats.govt.nz/~/media/Statistics/browse-categories/people-and-communities/geographic-areas/urban-rural-profile-update/concordance-2006.xls).  The meshblocks can be [aggregated](http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/geographic-area-files.aspx#2006) into larger areas.  Note that the Urban/Rural Profile Geographic Concordance and the Geographic Area File include 30 meshblocks that are not in the shapefile.  None of the 30 missing meshblocks are the mainlaind:
+The Urban/Rural Profile Geographic Concordance is available as a [.xls](http://www.stats.govt.nz/~/media/Statistics/browse-categories/people-and-communities/geographic-areas/urban-rural-profile-update/concordance-2006.xls).  The meshblocks can be [aggregated](http://www3.stats.govt.nz/streetlinks/2006%20Census%20Areas.zip) into larger areas.  Note that the Urban/Rural Profile Geographic Concordance and the Geographic Area File include 30 meshblocks that are not in the shapefile.  None of the 30 missing meshblocks are the mainlaind:
 
 * Oceanic-Kermadec Islands
 * Kermadec Islands
