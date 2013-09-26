@@ -1,0 +1,14 @@
+Urban/Rural Classification
+==========================
+
+Rural roads do not have a set definition in New Zealand. The NZTA High Risk Rural Road Guide classifies roads as rural if they have a speed limit of 80km/h or more.  A problem with this definition is that it does not take into account other factors, such as demographics of the surrounding area.  Under this definition, roads within urban areas that have high speed limits are classified as rural roads, while roads in urban areas with low speed limits are classified as urban roads.  While this definition may work for structural/engineering solutions, it does not take into account the community or environment.  Because the purpose of this analysis is to inform a community engagement initiative, a definition of urban and rural roads is needed that takes community factors into account.
+
+This analysis classifies roads as urban or rural based on a dataset from Statistics New Zealand called the Urban Rural Profile.  The Urban Rural Profile classifies areas as urban or rural based on factors such as the population and the place of work of the resident population.  For example, if a high proportion of the population of a town goes to work in a main urban area, that town may be classified as an urban area, even though it may be some distance away from a main centre. 
+
+This analysis compares crash data from the NZTA Crash Analysis System (CAS) with the Statistics New Zealand Urban Rural Profile.  Crashes that occurred within the boundaries of urban areas are defined as urban crashes.  All other crashes are defined as rural crashes.
+
+CAS also records whether a crash occurred on a state highway.  This means the crashes can be further broken down into those that took place in urban areas on state highways, in urban areas on ordinary roads, in rural areas on state highways, and in rural areas on ordinary roads.
+
+In order to compare the number of crashes with the comparitive size and demographics of urban/rural populations, population data from the Statistcs New Zealand Census Dataset is used.  That dataset is compatible with the Urban Rural Profile, allowing the comparison of urban and rural demographics and populations.
+
+In order to compare the number of crashes with the comparative amount of road in urban/rural areas, road data from Land Information New Zealand (LINZ) is used.  This analysis classifies a length of road as rural road if it passes through a rural area.  It is smart enough that if a long road passes through both urban and rural areas, only those sections of it that pass through rural areas are classified as rural.  The roads are additionally classified as state highways or ordinary roads.
