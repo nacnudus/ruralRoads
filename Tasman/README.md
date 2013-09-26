@@ -56,13 +56,12 @@ Each table is named with by its region, followed by a description, e.g. BoP-coor
 
 ### BoP-crashes.txt
 * crashID
-* state highway
+* SH number
 * severity f/s/m/n
 * day
 * month
 * year
 * hour
-* crashid
 
 ### BoP-drivers.txt
 * crashID
