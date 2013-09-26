@@ -4,10 +4,10 @@ opts_chunk$set(echo = FALSE
                , message = FALSE
                , fig.width = 16 / 2.54
                , fig.height = 6
-               , dpi = 600 # use 600 for printing otherwise comment out
+#                , dpi = 600 # use 600 for printing otherwise comment out
                , fig.cap = "")
 
-tableStyle <- "multiline" # for .docx use "multiline" otherwise "rmarkdown"
+tableStyle <- "rmarkdown" # for .docx use "multiline" otherwise "rmarkdown"
 tableResults <- "asis"
 excelPalette <- c("#4F81BD", "#C0504D", "#9BBB59", "#8064A2")
 ```
@@ -135,6 +135,19 @@ pandoc.table(x
 rm(x)
 ```
 
+```{r populationCrashRateTable2, results = tableResults, cache = TRUE}
+x <- dcast(crashes[crashes$urbanRuralHighway!="highway", ], urbanRural + alcohol ~ year, sum, value.var = "countPopulation")
+colnames(x)[1:2] <- c("Urban/Rural\nRoad/StateHighway", "Alcohol a Factor")
+pandoc.table(x
+             , caption = "Crashes per 1000 people by urban/rural and whether alcohol was a factor\nexcluding state highways"
+             , round = 2
+             , keep.trailing.zeros = TRUE
+             , justify = c(rep("left", 2), rep("right", 5))
+             , style = tableStyle
+             , split.tables = Inf)
+rm(x)
+```
+
 ```{r populationCrashRate, cache = TRUE}
 plotLabels <- list(
   "TRUE" = "alcohol a factor"
@@ -150,6 +163,28 @@ ggplot(crashes, aes(year, weight = countPopulation, group = urbanRural
   geom_bar(position = "dodge", colour = "black") +
   facet_grid(. ~ alcohol, labeller = plotLabeller) +
   ggtitle("Crashes per 1000 people\nby urban/rural and whether\nalcohol was a factor") +
+  ylab("number of crashes per 1000 people") +
+  theme(legend.title = element_blank()) +
+  scale_fill_manual(values = excelPalette)
+rm(plotLabels)
+rm(plotLabeller)
+```
+
+```{r populationCrashRate2, cache = TRUE}
+plotLabels <- list(
+  "TRUE" = "alcohol a factor"
+  , "FALSE" = "alcohol not a factor"
+  )
+
+plotLabeller <- function(variable, value) {
+  return(plotLabels[value])
+}
+
+ggplot(crashes[crashes$urbanRuralHighway!="highway", ], aes(year, weight = countPopulation, group = urbanRural
+                    , fill = urbanRural)) + 
+  geom_bar(position = "dodge", colour = "black") +
+  facet_grid(. ~ alcohol, labeller = plotLabeller) +
+  ggtitle("Crashes per 1000 people\nby urban/rural and whether\nalcohol was a factor\nexcluding state highways") +
   ylab("number of crashes per 1000 people") +
   theme(legend.title = element_blank()) +
   scale_fill_manual(values = excelPalette)
