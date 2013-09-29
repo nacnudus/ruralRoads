@@ -1,0 +1,137 @@
+driverCause,driverCauseCategory
+101 - Alcohol suspected,Alcohol
+102 - Alcohol test below limit,Not Alcohol
+103 - Alcohol test above limit or test refused,Alcohol
+104 - Alcohol test result unknown,Alcohol
+"106 - Alcohol not suspected, tested and -ve (MoT use only)",Not Alcohol
+108 - Drugs suspected,Drugs
+109 - Drugs proven,Drugs
+110 - Too fast for conditions,Too fast for Conditions
+111 - Too fast entering corner,Too fast for Conditions
+112 - Too fast on straight,Too fast for Conditions
+113 - Too fast to give way at intersection,Too fast for Conditions
+115 - Too fast passing stationary school bus,Too fast for Conditions
+116 - Too fast at temporary speed limit,Too fast for Conditions
+120 - Failed to keep left,Failed to Keep Left
+121 - Swung wide on bend,Failed to Keep Left
+122 - Swung wide at intersection,Failed to Keep Left
+123 - Cutting corner on bend,Failed to Keep Left
+124 - Cutting corner at intersection,Failed to Keep Left
+125 - Failed to keep left on straight,Failed to Keep Left
+128 - Wandering or wobbling,Failed to Keep Left
+129 - Too far left/right,Failed to Keep Left
+130 - Lost control,Lost Control
+131 - Lost control when turning,Lost Control
+132 - Lost control under heavy braking,Lost Control
+133 - Lost control under heavy acceleration,Lost Control
+134 - Lost control while returning to seal from unsealed shoulder,Lost Control
+135 - Lost control due to road conditions,Lost Control
+136 - Lost control due to vehicle fault,Lost Control
+137 - Lost control avoiding another vehicle,Lost Control
+138 - Lost control on unsealed road,Lost Control
+142 - Didn't signal when turning left,Failed to Signal in Time
+150 - Overtaking,Overtaking
+151 - Overtaking line of traffic or queue,Overtaking
+153 - Failed to notice oncoming traffic,Overtaking
+155 - Overtaking at no passing line,Overtaking
+156 - Overtaking with insufficient visibility,Overtaking
+158 - Overtaking on left,Overtaking
+159 - Cut in after overtaking,Overtaking
+160 - Overtaking vehicle signaling right turn,Overtaking
+170 - Wrong lane/turned from wrong position,Wrong Lane/Turned From Wrong Position
+171 - Turned right from incorrect lane,Wrong Lane/Turned From Wrong Position
+174 - Turned right from left side of road,Wrong Lane/Turned From Wrong Position
+175 - Turned left from near centre line,Wrong Lane/Turned From Wrong Position
+181 - Following too closely,In Line of Traffic
+191 - Suddenly braked,Sudden Action
+194 - Suddenly swerved to avoid pedestrian,Sudden Action
+195 - Suddenly swerved to avoid animal,Sudden Action
+197 - Suddenly swerved to avoid vehicle,Sudden Action
+200 - Forbidden movements,Forbidden Movements
+201 - Wrong way in one way street,Forbidden Movements
+204 - Driving or riding on footpath,Forbidden Movements
+205 - On incorrect side of the island or median,Forbidden Movements
+300 - Failed to give way,Failed to Give Way
+301 - Failed to give way at stop sign,Failed to Give Way
+302 - Failed to give way at give way sign,Failed to Give Way
+303 - Failed to give way when turning to non-turning traffic,Failed to Give Way
+306 - Failed to give way to ped on a xing,Failed to Give Way
+307 - Failed to give way when turning at signals to ped,Failed to Give Way
+308 - Failed to give way at driveway,Failed to Give Way
+311 - Failed to give way to ped on footpath or verge,Failed to Give Way
+312 - Failed to give way entering roadway not from driveway or intersection,Failed to Give Way
+313 - Failed to give way to emergency vehicle,Failed to Give Way
+314 - Failed to give way when waved through by other driver,Failed to Give Way
+321 - Did not stop at stop sign,Did not Stop
+322 - Did not stop at steady red light,Did not Stop
+323 - Did not stop at steady red arrow,Did not Stop
+330 - Inattentive,Inattentive: Failed to Notice
+331 - Failed to notice car slowing,Inattentive: Failed to Notice
+332 - Failed to notice bend in road,Inattentive: Failed to Notice
+333 - Failed to notice indication of vehicle in front,Inattentive: Failed to Notice
+334 - Failed to notice traffic lights,Inattentive: Failed to Notice
+335 - Inattentive: failed to notice intersection or its stop/give way control,Inattentive: Failed to Notice
+340 - Failed to notice lane use arrows / markings,Inattentive: Failed to Notice
+341 - Obstruction on roadway,Inattentive: Failed to Notice
+350 - Attention diverted,Attention Diverted By:
+351 - Attention diverted by passengers,Attention Diverted By:
+352 - Attention diverted by scenery or persons outside vehicle,Attention Diverted By:
+353 - Attention diverted by other traffic,Attention Diverted By:
+354 - Attention diverted by animal or insect in vehicle,Attention Diverted By:
+355 - Attention diverted while trying to find intersection,Attention Diverted By:
+357 - Emotionally upset/road rage,Attention Diverted By:
+358 - Attention diverted by cigarette etc,Attention Diverted By:
+359 - Attention diverted by cell phone,Attention Diverted By:
+363 - Attention diverted by driver dazzled by sun/lights,Attention Diverted By:
+370 - Did not see or look for other party until too late,Did Not See or Look for Another Party Until Too Late
+371 - Didnt see/look behind when reversing/manoeuvering,Did Not See or Look for Another Party Until Too Late
+"372 - Didnt see/look behind when changing lanes, position or direction",Did Not See or Look for Another Party Until Too Late
+373 - Didnt see/look behind when pulling out from parked position,Did Not See or Look for Another Party Until Too Late
+374 - Didnt see/look behind when opening door or leaving vehicle,Did Not See or Look for Another Party Until Too Late
+375 - Didnt see/look when required to give way to traffic from another direction,Did Not See or Look for Another Party Until Too Late
+376 - Didnt see/look when required to give way to ped,Did Not See or Look for Another Party Until Too Late
+377 - Didnt see/look when visibility obstructed by other vehicles,Did Not See or Look for Another Party Until Too Late
+378 - Didnt see/look when visibility limited by roadside features,Did Not See or Look for Another Party Until Too Late
+"380 - Misjudged speed, distance or position",Misjudged speed
+"381 - Misjudged speed, etc of vehicle coming from behind or alongside",Misjudged speed
+382 - Misjudged speed etc of vehicle coming from another dirn with right of way,Misjudged speed
+383 - Misjudged pedestrians movement or intention,Misjudged speed
+386 - Misjudged speed of own vehicle,Misjudged speed
+387 - Misjudged intentions of other party,Misjudged speed
+400 - Inexperience,Inexperience
+402 - New driver showed inexperience,Inexperience
+403 - Driving unfamiliar vehicle,Inexperience
+404 - Overseas/migrant driver failed to adjust to NZ road rules and road conditions,Inexperience
+405 - Inexperienced driver under instruction,Inexperience
+407 - Driver over-reacted,Inexperience
+"410 - Fatigue (drowsy, tired, fell asleep)",Fatigue (Drowsy
+411 - Fatigue due to long trip,Fatigue (Drowsy
+412 - Fatigue due to lack of sleep,Fatigue (Drowsy
+414 - Fatigue due to working long hours before driving,Fatigue (Drowsy
+420 - Incorrect use of vehicle controls,Incorrect use of vehicle controls
+421 - Started in gear,Incorrect use of vehicle controls
+423 - Wrong pedal,Incorrect use of vehicle controls
+426 - Lights not switched on,Incorrect use of vehicle controls
+427 - Foot slipped or got caught under pedal,Incorrect use of vehicle controls
+430 - Showing off,Showing Off
+431 - Showing off racing,Showing Off
+433 - Showing off wheelspins/wheelies/doughnuts/drifting etc,Showing Off
+434 - Intimidating driving,Showing Off
+440 - Parked or stopped,Parked or Stopped
+443 - Parked or stopped not as close a practicable to side of road,Parked or Stopped
+500 - Illness and disability,Illness and Disability
+501 - Illness with no warning (eg heart attack),Illness and Disability
+503 - Defective vision,Illness and Disability
+504 - Medical illness (not sudden eg flu),Illness and Disability
+505 - Mental illness (eg depression),Illness and Disability
+506 - Attempted suicide,Illness and Disability
+507 - Impared ability due to old age,Illness and Disability
+510 - Intentional or criminal,Intentional or Criminal
+512 - Intentional collision,Intentional or Criminal
+514 - Evading enforcement,Intentional or Criminal
+517 - Stolen vehicle,Intentional or Criminal
+523 - Riding in insecure position,Driver / Passenger
+524 - Interferred with driver,Driver / Passenger
+526 - Overloaded vehicle (with passengers),Driver / Passenger
+532 - Casualty thrown from vehicle,Miscellaneous Person
+

@@ -1,0 +1,6 @@
+driverAtFault|fault
+1 veh, dvr at fault|TRUE
+>1 party, dvr prime fault|TRUE
+>1 party, no dvr fault|FALSE
+1 veh, no dvr fault|FALSE
+>1 party, dvr part fault|TRUE
