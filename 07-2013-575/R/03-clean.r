@@ -65,8 +65,8 @@ colnames(crashes) <- c("count", "crashID", "day", "month"
                        , "year", "hour", "severity", "stateHighway")
 colnames(drivers) <- c("count", "crashID", "sex", "age", "injury", "role"
                        , "driverAtFault", "licence", "overseas", "ethnicity")
-colnames(victims) <- c("count", "crashID", "driverPassengerOther", "sex", "age"
-                       , "injury", "role", "driverAtFault", "ethnicity")
+colnames(victims) <- c("count", "crashID", "driverPassengerOther", "sex", "injury"
+                       , "role", "age", "driverAtFault", "ethnicity")
 colnames(driversCauses) <- c("count", "crashID", "role", "driverCause"
                              , "driverCauseCategory")
 
@@ -122,42 +122,14 @@ crashes$urbanRuralRoadHighway <- factor(crashes$urbanRuralRoadHighway
 drivers <- join(drivers, crashes[, c("crashID", "urbanRural", "stateHighway")])
 
 # aggregate ethnicities into groups
-ethnicGroup <- read.csv(header = TRUE, 
-                        stringsAsFactors = TRUE, 
-                        text="ethnicity,ethnicGroup
-Asian,Other
-Cook Islander,Pacific Islander
-European,European
-Fijian,Pacific Islander
-NZ Maori,NZ Maori
-Other,Other
-Other Pacific Islander,Pacific Islander
-Samoan,Pacific Islander
-Tongan,Pacific Islander
-Unknown,Pacific Islander
-Pacific Islander,Pacific Islander")
 drivers$ethnicity <- factor(join(data.frame(ethnicity = drivers$ethnicity)
                                  , ethnicGroup
                                  , by = "ethnicity")$ethnicGroup)
-rm(ethnicGroup)
 
 # aggregate ages into groups
 drivers$ageGroup <- cut(drivers$age, breaks=c(seq(0, 69, 5), 100)
                   , right = FALSE
-                  , labels=c("X0.4.Years"
-                             , "X5.9.Years"
-                             , "X10.14.Years"
-                             , "X15.19.Years"
-                             , "X20.24.Years"
-                             , "X25.29.Years"
-                             , "X30.34.Years"
-                             , "X35.39.Years"
-                             , "X40.44.Years"
-                             , "X45.49.Years"
-                             , "X50.54.Years"
-                             , "X55.59.Years"
-                             , "X60.64.Years"
-                             , "X65.Years.and.Over"))
+                  , labels=ageGroups)
 
 
 # apply crash lookup tables -----------------------------------------------
@@ -189,7 +161,18 @@ victims$alcohol  <- (victims$crashID %in% crashes[crashes$alcohol == TRUE, "cras
 drivers$alcohol <- as.factor(drivers$alcohol)
 drivers$alcohol <- factor(drivers$alcohol, levels = c(TRUE, FALSE))
 
-# ethnicity
+
+# victims -----------------------------------------------------------------
+
+# aggregate ethnicities into groups
+victims$ethnicity <- factor(join(data.frame(ethnicity = victims$ethnicity)
+                                 , ethnicGroup
+                                 , by = "ethnicity")$ethnicGroup)
+
+# aggregate ages into groups
+victims$ageGroup <- cut(victims$age, breaks=c(seq(0, 69, 5), 100)
+                        , right = FALSE
+                        , labels=ageGroups)
 
 
 # normalize by population etc. --------------------------------------------
