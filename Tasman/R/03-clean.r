@@ -167,6 +167,19 @@ drivers$alcohol <- factor(drivers$alcohol, levels = c(TRUE, FALSE))
 # ethnicity
 
 
+# victims -----------------------------------------------------------------
+
+# aggregate ethnicities into groups
+victims$ethnicity <- factor(join(data.frame(ethnicity = victims$ethnicity)
+                                 , ethnicGroup
+                                 , by = "ethnicity")$ethnicGroup)
+
+# aggregate ages into groups
+victims$ageGroup <- cut(victims$age, breaks=c(seq(0, 69, 5), 100)
+                        , right = FALSE
+                        , labels=ageGroups)
+
+
 # normalize by population etc. --------------------------------------------
 
 # population
