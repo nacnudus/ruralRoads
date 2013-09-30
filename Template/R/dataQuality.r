@@ -24,7 +24,7 @@ require(reshape2)
 dataQuality <- function(x) {
   # fails if there is no missing data - but that's a good thing, right?
   z <- melt(x[, 2:5], measure.vars = 1:4)
-  z <- dcast(z, variable ~ value)
+  z <- dcast(z, variable ~ value, length)
   z <- cbind(z
              , sum = rowSums(z[, -1])
              , z[, -1] / rowSums(z[, -1]))
@@ -33,6 +33,8 @@ dataQuality <- function(x) {
 
 
 # coordinates. -----------------------------------------------------------
+
+Coordinates <- loadCrashes("data/coordinates.csv")
 
 # left join all the other tables onto Coordinates to see how many matches there
 # are.
