@@ -282,7 +282,9 @@ rm(x)
 [Input text here]
 
 ```{r ageTable, results = tableResults, cache = TRUE}
-x <- dcast(drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
+x <- dcast(drivers[!is.na(drivers$age) &
+                     !is.na(drivers$urbanRural) &
+                     drivers$fault == TRUE & drivers$alcohol == TRUE, ]
            , urbanRural + age ~ ., sum, value.var = "countAgeGroupPopulation"
            , drop = FALSE)
 x <- x[x$age >= 15, ]
@@ -303,7 +305,7 @@ rm(x)
 ```
 
 ```{r age, cache = TRUE}
-x <- drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
+x <- drivers[!is.na(drivers$age) & !is.na(drivers$urbanRural) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
 ggplot(x, aes(age, weight = countAgeGroupPopulation
               , fill = as.character(excelPalette[1]))) +
   geom_histogram(binwidth = 5, colour = "black") +
@@ -323,7 +325,7 @@ rm(x)
 [Input text here]
 
 ```{r ethnicityTableDrivers, results = tableResults, cache = TRUE, }
-x <- ddply(drivers[drivers$fault == TRUE & drivers$alcohol == TRUE, ]
+x <- ddply(drivers[!is.na(drivers$urbanRural) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
            , .(ethnicity, urbanRural), function(x) (sum(x$count)))
 x <- dcast(x, ethnicity ~ urbanRural, sum, margins = TRUE
            , drop = FALSE)
@@ -346,8 +348,8 @@ rm(x)
 ```
 
 ```{r ethnicityTablePopulation, results = tableResults, cache = TRUE}
-x <- dcast(mDataT[mDataT$variable %in% c("European", "NZ Maori", "Other"
-                                        , "Pacific Islander"), ]
+x <- dcast(mDataLocal[mDataLocal$variable %in% c("European", "NZ Maori"
+                                          , "Other", "Pacific Peoples"), ]
            , variable ~ urbanRural, sum, na.rm = TRUE, margins = TRUE
            , drop = FALSE)
 # remove NA column
@@ -373,7 +375,9 @@ rm(x)
 ```
 
 ```{r ethnicityTable, results = tableResults, cache = TRUE}
-x <- dcast(drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
+x <- dcast(drivers[!is.na(drivers$age) & 
+                     !is.na(drivers$urbanRural) & 
+                     drivers$fault == TRUE & drivers$alcohol == TRUE, ]
            , urbanRural + ethnicity ~ ., sum, value.var = "countUrbanEthnicity"
            , drop = FALSE)
 colnames(x) <- c("Urban/Rural", "Ethnicity", "Drink-Drivers per 1000")
@@ -389,7 +393,7 @@ rm(x)
 ```
 
 ```{r ethnicity, cache = TRUE}
-x <- drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
+x <- drivers[!is.na(drivers$age) & !is.na(drivers$urbanRural) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
 ggplot(x, aes(ethnicity, weight = countUrbanEthnicity
               , fill = ethnicity)) +
   geom_bar(colour = "black") + 
