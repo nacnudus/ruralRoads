@@ -43,3 +43,4 @@ ggplot(y, aes(policeDistrict, weight=value, group=urrh, fill=urrh)) + geom_bar(p
   xlab(NULL) +
   ylab("1000 km") +
   ggtitle("Road Length")
+ggsave("plots/roadLength.png", last_plot(), width=297, height=210, units="mm", dpi=600)
