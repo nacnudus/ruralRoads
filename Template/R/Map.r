@@ -13,7 +13,7 @@ coordinates <- loadCrashes("data/coordinates.csv")
 # clean -------------------------------------------------------------------
 
 # subset for Bay of Plenty meshblocks
-meshblocksLocal <- subset(meshblocks, meshblocks@data$policeDistrict == "TASMAN" & 
+meshblocksLocal <- subset(meshblocks, meshblocks@data$policeDistrict == "AUCKLAND CITY" & 
                           meshblocks@data$urbanRural == "urban")
 # shake everything up a bit to prevent any non-noded intersections errors
 meshblocksLocal <- gBuffer(meshblocksLocal, width=0, byid=TRUE)
@@ -24,7 +24,7 @@ meshblocksLocal <- unionSpatialPolygons(meshblocksLocal, rep(1, length(meshblock
 highways <- subset(roads500k, !is.na(roads500k@data$hway_num))
 
 # subset for Bay of Plenty stations
-stationsLocal <- subset(stations, stations@data$DISTRICT_N == "Tasman")
+stationsLocal <- subset(stations, stations@data$DISTRICT_N == "Auckland City")
 
 # labels for stations
 stationLabels <- as.data.frame(gCentroid(stationsLocal,byid=TRUE)@coords)
@@ -34,7 +34,7 @@ stationLabels$label <- stationsLocal@data$STATION_NA
 # do ----------------------------------------------------------------------
 
 # plot and save
-png("plots/Tasman.png", width=420/2, height=594/2, units="mm", res=600) # A4 portrait
+png("plots/AucklandCity.png", width=420/2, height=594/2, units="mm", res=600) # A4 portrait
 plot(stationsLocal, lwd = 0.4, col = "lightgrey")
 plot(coastline, lwd = 0.4, add = TRUE)
 plot(meshblocksLocal, lwd = 0.2, col = "lightblue", add = TRUE)
