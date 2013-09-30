@@ -1,3 +1,6 @@
+source("R/01-function.r")
+source("R/02-load.r")
+
 # meshblockData -----------------------------------------------------------
 
 # convert meshblockID from numeric to character, which means the colClass
@@ -5,7 +8,7 @@
 meshblockData$meshblockID <- as.character(meshblockData$meshblockID)
 
 
-# T meshblocks ----------------------------------------------------------
+# Local meshblocks ----------------------------------------------------------
 
 meshblockDataLocal <- meshblockData[meshblockData$policeDistrict == "TASMAN", ]
 
@@ -64,14 +67,19 @@ crashMeshblocks <- join(crashMeshblocks
 
 # column headings of datasets ---------------------------------------------
 
-colnames(crashes) <- c("count", "crashID", "day", "month"
-                       , "year", "hour", "severity", "stateHighway")
-colnames(drivers) <- c("count", "crashID", "sex", "age", "injury", "role"
-                       , "driverAtFault", "licence", "overseas", "ethnicity")
-colnames(victims) <- c("count", "crashID", "driverPassengerOther", "sex", "age"
-                       , "injury", "role", "driverAtFault", "ethnicity")
-colnames(driversCauses) <- c("count", "crashID", "role", "driverCause"
-                             , "driverCauseCategory")
+# Order alphabetically because the actual order is inconsistently supplied
+# by CAS.
+
+colnames(crashes)[order(colnames(crashes))] <- c("count", "day", "hour", "crashID", "month"
+                         , "year", "stateHighway", "severity")
+colnames(drivers)[order(colnames(drivers))] <- c("count", "crashID", "age", "ethnicity"
+                                                 , "injury", "licence", "overseas", "role"
+                                                 , "sex", "fault")
+colnames(victims)[order(colnames(victims))] <- c("count", "crashID", "driverPassengerOther"
+                                                 , "age", "fault", "ethnicity", "injury"
+                                                 , "role", "sex")
+colnames(driversCauses)[order(colnames(driversCauses))] <- c("count", "crashID", "driverCause"
+                                                             , "driverCauseCategory", "role")
 
 
 # crashes -----------------------------------------------------------------
