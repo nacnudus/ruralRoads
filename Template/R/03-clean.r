@@ -14,7 +14,7 @@ meshblockDataLocal <- meshblockData[meshblockData$policeDistrict == "TASMAN", ]
 
 # nicer ethnic groups for joining to drivers/victims
 colnames(meshblockDataLocal)[25:30] <- c("Asian", "European", "NZ Maori"
-                                       , "Pacific Islander"
+                                       , "Pacific Peoples"
                                        , "MELAA.Ethnic.Groups", "Other")
 meshblockDataLocal$Other2 <- rowSums(meshblockDataLocal[, c("MELAA.Ethnic.Groups"
                                                         , "Other")]
