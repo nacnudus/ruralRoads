@@ -71,7 +71,7 @@ Roads have been divided into four categories, according to the type of road they
 * rural highways
 
 ```{r roadTable, results = tableResults, cache = TRUE}
-pandoc.table(SummaryT[c("urban", "rural"), c("road", "highway")]
+pandoc.table(SummaryLocal[c("urban", "rural"), c("road", "highway")]
              , caption = "Road in Tasman (km)"
              ,style = tableStyle
              , split.tables = Inf)
@@ -109,7 +109,7 @@ Areas of [District] have been categorised into "urban" and "rural", based on a S
 
 ```{r populationTable, results = tableResults, cache = TRUE}
 pandoc.table(data.frame("Region" = c("urban", "rural")
-                        , Population = SummaryT[c("urban", "rural")
+                        , Population = SummaryLocal[c("urban", "rural")
                                                   , "population"])
              , caption = "Population of Tasman"
              , round = 0
@@ -166,7 +166,8 @@ Compare with the first graph, "Number of Crashes".  Weighting by population is a
 
 ```{r crashesHourlyByNumberTable, results = tableResults, cache = TRUE}
 x <- dcast(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
-           ,  hour ~ urbanRural + alcohol, length, value.var = "count")
+           ,  hour ~ urbanRural, length, value.var = "count"
+           , drop = FALSE)
 colnames(x) <- c("Hour of Day", "Rural", "Urban")
 pandoc.table(x
              , caption = "Crashes where Alcohol was a Factor by hour of the day"
@@ -196,7 +197,8 @@ ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
 
 ```{r crashesHourlyByPercentageTable, results = tableResults, cache = TRUE}
 x <- dcast(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
-           , hour ~ urbanRural, sum, value.var = "countCrashUrbanHour")
+           , hour ~ urbanRural, sum, value.var = "countCrashUrbanHour"
+           , drop = FALSE)
 colnames(x) <- c("Hour of Day", "Rural", "Urban")
 pandoc.table(x
              , caption = "% of Crashes where alcohol was a factor by hour of the day"
@@ -231,7 +233,8 @@ ggplot(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
 
 ```{r crashesWeeklyTable, results = tableResults, cache = TRUE}
 x <- dcast(crashes[!is.na(crashes$hour) & crashes$alcohol == TRUE, ]
-           , urbanRural + weekday + hour ~ ., sum, value.var = "countCrashUrbanWeekdayHour3")
+           , urbanRural + weekday + hour ~ ., sum
+           , value.var = "countCrashUrbanWeekdayHour3", drop = FALSE)
 # group into threes
 x$hour3 <- cut(as.integer(x$hour), breaks = seq(0, 24, 3), right = FALSE, labels = c(paste(seq(0, 21, 3), "-", seq(3, 24, 3), sep = "")))
 x <- ddply(x, .(urbanRural, weekday, hour3), function(x) (sum(x$`NA`)))
@@ -280,7 +283,8 @@ rm(x)
 
 ```{r ageTable, results = tableResults, cache = TRUE}
 x <- dcast(drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
-           , urbanRural + age ~ ., sum, value.var = "countAgeGroupPopulation")
+           , urbanRural + age ~ ., sum, value.var = "countAgeGroupPopulation"
+           , drop = FALSE)
 x <- x[x$age >= 15, ]
 # group into fives
 x$age5 <- cut(x$age, breaks = seq(15, 79, 5), right = FALSE, labels = c(paste(seq(15, 69, 5), "-", seq(19, 69, 5), sep = ""), "70+"))
@@ -321,7 +325,8 @@ rm(x)
 ```{r ethnicityTableDrivers, results = tableResults, cache = TRUE, }
 x <- ddply(drivers[drivers$fault == TRUE & drivers$alcohol == TRUE, ]
            , .(ethnicity, urbanRural), function(x) (sum(x$count)))
-x <- dcast(x, ethnicity ~ urbanRural, sum, margins = TRUE)
+x <- dcast(x, ethnicity ~ urbanRural, sum, margins = TRUE
+           , drop = FALSE)
 # nicer Total row and column headings
 colnames(x) <- c("Ethnicity", "Rural Drivers", "Urban Drivers", "Total")
 x$Ethnicity <- as.character(x$Ethnicity)
@@ -343,7 +348,8 @@ rm(x)
 ```{r ethnicityTablePopulation, results = tableResults, cache = TRUE}
 x <- dcast(mDataT[mDataT$variable %in% c("European", "NZ Maori", "Other"
                                         , "Pacific Islander"), ]
-      , variable ~ urbanRural, sum, na.rm = TRUE, margins = TRUE)
+           , variable ~ urbanRural, sum, na.rm = TRUE, margins = TRUE
+           , drop = FALSE)
 # remove NA column
 x <- x[, -4]
 # order alphabetically leaving (all) at the bottom
@@ -368,7 +374,8 @@ rm(x)
 
 ```{r ethnicityTable, results = tableResults, cache = TRUE}
 x <- dcast(drivers[!is.na(drivers$age) & drivers$fault == TRUE & drivers$alcohol == TRUE, ]
-           , urbanRural + ethnicity ~ ., sum, value.var = "countUrbanEthnicity")
+           , urbanRural + ethnicity ~ ., sum, value.var = "countUrbanEthnicity"
+           , drop = FALSE)
 colnames(x) <- c("Urban/Rural", "Ethnicity", "Drink-Drivers per 1000")
 pandoc.table(x
              , caption = "Drink-drivers in crashes per 1000 people by urban/rural and ethnicity"
