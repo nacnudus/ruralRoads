@@ -8,6 +8,7 @@ require(stringr)
 require(xtable)
 require(pander)
 require(knitr)
+require(grid) # for unit()
 
 source("../R/01-function.r")
 
