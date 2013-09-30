@@ -74,7 +74,7 @@ colnames(crashes)[order(colnames(crashes))] <- c("count", "day", "hour", "crashI
                          , "year", "stateHighway", "severity")
 colnames(drivers)[order(colnames(drivers))] <- c("count", "crashID", "age", "ethnicity"
                                                  , "injury", "licence", "overseas", "role"
-                                                 , "sex", "fault")
+                                                 , "sex", "driverAtFault")
 colnames(victims)[order(colnames(victims))] <- c("count", "crashID", "driverPassengerOther"
                                                  , "age", "fault", "ethnicity", "injury"
                                                  , "role", "sex")
@@ -92,9 +92,12 @@ crashes$year <- as.factor(crashes$year)
 # crashes$hour is bizarre.  Hour 25 is CAS's version of an NA.  Hour 1 is
 # between midnight and 0100 hours.
 crashes$hour <- as.numeric(crashes$hour)
-crashes$hour[crashes$hour == 25] <- NA
-crashes$hour <- crashes$hour - 1
-
+# sometimes CAS doesn't return funny hours though
+if (identical(range(crashes$hour), c(1, 25))) {
+  crashes$hour[crashes$hour == 25] <- NA
+  crashes$hour <- crashes$hour - 1
+}
+    
 # get weekdays by name
 crashes$weekday <- wday(ymd(paste(crashes$year, crashes$month, crashes$day)))
 crashes$weekday <- factor(crashes$weekday)
