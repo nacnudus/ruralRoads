@@ -202,11 +202,17 @@ meshblocksList <- dlply(urbanRural
 # in the D ruralness category.
 
 
+
+# build stations/areas/districts up from meshblocks discarding oceans -----
+source(R/buildUpRegions.r)
+
+
 # spatialData file --------------------------------------------------------
 
 # for quickly loading into a new EC2 instance without having to compute it
 # from scratch
 
 save(meshblocks, meshblocksList, stations, stationLabels, districts, areas
-     , stations, coastline, coastpoly, roads500k, roads50k
+     , stations, coastline, coastpoly, roads500k, roads50k, stationsPoly
+     , areasPoly, districtsPoly
      , file = "output/spatialData.Rdata")
