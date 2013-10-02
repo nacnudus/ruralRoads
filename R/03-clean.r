@@ -204,7 +204,7 @@ meshblocksList <- dlply(urbanRural
 
 
 # build stations/areas/districts up from meshblocks discarding oceans -----
-source(R/buildUpRegions.r)
+source("R/buildUpRegions.r")
 
 
 # spatialData file --------------------------------------------------------
