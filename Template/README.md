@@ -62,6 +62,9 @@ Each table is named with by its region, followed by a description, e.g. BoP-coor
 * month
 * year
 * hour
+* Police District
+* Police Area
+* Police Station
 
 ### BoP-drivers.txt
 * crashID
