@@ -1,7 +1,7 @@
-crashes <- read.csv("data/crashes.txt", header = TRUE)
-drivers <- read.csv("data/drivers.txt", header = TRUE)
-driversCauses <- read.csv("data/drivers-causes.txt", header = TRUE)
-victims <- read.csv("data/victims.txt", header = TRUE)
+crashes <- read.csv("data/crashes.csv", header = TRUE)
+drivers <- read.csv("data/drivers.csv", header = TRUE)
+driversCauses <- read.csv("data/drivers-causes.csv", header = TRUE)
+victims <- read.csv("data/victims.csv", header = TRUE)
 
 # lookup tables
 causeCategories <- read.csv("data/causeCategories.csv")
