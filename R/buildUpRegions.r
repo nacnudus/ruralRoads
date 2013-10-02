@@ -1,7 +1,8 @@
 # Build up from meshblocks to station, area and district polygons that
 # exclude islands.  This is faster than gIntersection on coastpoly.
 
-load("output/spatialData.Rdata")
+# load("output/spatialData.Rdata") # this only works if there is a spatialData.  Otherwise it
+# all has to be in memory.
 
 # Offshore meshblocks can be subsetted by their exclusion from the urban/rural profile.
 land <- subset(meshblocks, meshblocks$urbanRuralGrade != "Area outside urban/rural profile")
