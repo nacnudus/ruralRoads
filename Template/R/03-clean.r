@@ -10,7 +10,8 @@ meshblockData$meshblockID <- as.character(meshblockData$meshblockID)
 
 # Local meshblocks ----------------------------------------------------------
 
-meshblockDataLocal <- meshblockData[meshblockData$policeDistrict == "TASMAN", ]
+# meshblockDataLocal <- meshblockData[meshblockData$policeDistrict == "TASMAN", ]
+meshblockDataLocal <- meshblockData
 
 # nicer ethnic groups for joining to drivers/victims
 colnames(meshblockDataLocal)[25:30] <- c("Asian", "European", "NZ Maori"
@@ -71,7 +72,7 @@ crashMeshblocks <- join(crashMeshblocks
 # by CAS.
 
 colnames(crashes)[order(colnames(crashes))] <- c("count", "day", "hour", "crashID", "month"
-                         , "year", "stateHighway", "severity")
+                         , "year", "CASdistrict", "CASarea", "CASstation", "stateHighway", "severity")
 colnames(drivers)[order(colnames(drivers))] <- c("count", "crashID", "age", "ethnicity"
                                                  , "injury", "licence", "overseas", "role"
                                                  , "sex", "driverAtFault")
